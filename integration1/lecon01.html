@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 1 | Intégration I | 582-104-SF</title>  
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours01" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container avbar navbar-expand-lg bg-body-tertiary">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="cours02.php">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="cours03.php">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="cours04.php">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="cours05.php">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="cours06.php">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="cours07.php">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="cours08.php">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="cours09.php">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="cours10.php">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="cours11.php">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="cours12.php">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="cours13.php">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="cours14.php">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="cours15.php">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link"><strong>Leçon 1 <br>Introduction au HTML [1]</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Qu'est-ce qu'une page web?</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">Balises HTML</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Attributs</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Imbrication des éléments</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Structure des éléments</a>
+                        <a href="#section06" class="list-group-item list-group-item-action">Quelques balises pour commencer</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+           
+            <div class="col-8">
+            <article>
+                <header>
+                    <div class="cours-numero">Leçon 1</div>
+                    <h1>Introduction au HTML [1]</h1>
+                </header>
+                <section id="section01">
+                    <h2>Qu'est-ce qu'une page web ?</h2>
+                    <p>Une page web est un document numérique qui permet d'afficher du texte, des images et des contenus média variés.</p>
+                    <p>La structure du contenu de la page web est assurée par un document <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+                    <p>Le rendu visuel  de la page web est pris en charge par un navigateur web graphique, en fonction des informations de mise en forme inscrites dans la feuille de style, ou <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+                    <h3>HTML pour la structure</h3>
+                    <p>C'est le langage HTML qui permet d'élaborer la structure du contenu d'une page web.</p>
+                    <p>HTML signifie <i>Hypertext Markup Language</i>, ou «&nbsp;langage de balisage hypertexte&nbsp;» en français. </p>
+                    <p>Il s'agit d'un langage  créé et utilisé pour rédiger les pages web en recourant au principe du <strong>balisage</strong>. </p>
+                    <p>Le balisage sert à <strong>donner un sens</strong> au contenu de la page web.</p>
+                    <div class="note">
+                        <p>HTML n'est pas un langage de programmation à proprement parlé mais bien un langage de balisage, car il n'utilise pas de variables et ne permet pas de décrire une action à exécuter.</p>
+                    </div>
+                    <p>Que vous utilisiez un éditeur de texte simple (par exemple, <i>TextEdit</i> sur MacOS) ou un éditeur HTML dédié, <strong>un document HTML n'est rien de plus qu'un simple document texte</strong>.</p>
+                    <aside>
+                        <div class="references-section">
+                            <ul>
+                                <li>
+                                    <a href="http://html5forwebdesigners.com/history/index.html" target="_blank">Une brève histoire du balisage (en anglais) <i class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
+                                <li>
+                                    <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">La toute première page web <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                <li>
+                                    <a href="https://fr.wikibooks.org/wiki/Le_langage_HTML/Introduction" target="_blank">Le langage HTML/Introduction <i class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <h3>CSS pour la mise en forme</h3>
+                    <p>CSS signifie <em>Cascading Style Sheet</em> ou, en français, «&nbsp;feuille de style en cascade&nbsp;».</p>
+                    <p>Au document HTML s'adjoint une feuille de style - ou CSS - qui contient les règles de style, c'est-à-dire les informations de mise en forme.</p>
+                    <p>Ce sont les règles de style qui permettent de positionner les éléments de contenu de la page. Autrement dit, pour un même contenu, la mise en forme peut varier du tout au tout, comme le montre le site des <a href="http://www.csszengarden.com/tr/francais/" target="_blank">Jardins&nbsp;Zen <i class="bi bi-box-arrow-up-right"></i></a>.</p>
+                    <aside>
+                        <div class="references-section">
+                            <ul>
+                                <li>
+                                    <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">Feuille de style en cascade (Wikipédia) <i class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <p>Nous reviendrons bientôt au langage CSS. </p>
+                    <p>Voyons d'abord les bases du langage HTML.</p>
+                </section> <!-- .section01 -->
+                <section id="section02">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Balises HTML</h2>
+                    <p>Le langage HTML&nbsp;: 
+                    </p><ul>
+                        <li>sert à structurer le contenu d'une page web;</li>
+                        <li>sert à donner du sens au contenu d'une page web;</li>
+                        <li>repose sur l'utilisation de <strong>balises</strong>.</li>
+                    </ul>
+                    <p>Voici comment est écrit un paragraphe en langage HTML :</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;p&gt;</span>HTML repose sur l'utilisation de balises.<span class="rose">&lt;/p&gt;</span>
+                    </pre>
+                    <h3>Les régles d'écriture des balises</h3>
+                    <p>Les <strong>balises</strong> sont délimitées par des <strong>chevrons</strong> ouvrant (<code>&lt;</code>) et fermant (<code>&gt;</code>).</p>
+                    <p>Les balises fonctionnent par <strong>paires</strong> (mais il y a des exceptions), soit une balise ouvrante (<code>&lt;p&gt;</code>) et une balise fermante (<code>&lt;/p&gt;</code>).</p>
+                    <p>Ces paires délimitent la portion de texte à laquelle elles s'appliquent.</p>
+                    <h4>Balises vides</h4>
+                    <p>Parfois, une balise est refermée immédiatement et ne forme pas de paire: c'est une balise dite «vide». Elle délimite alors un <strong>point</strong> et non une <strong>zone</strong> du document. Par exemple, la balise <code>&lt;br&gt;</code> , qui commande un changement de ligne, ou encore la balise <code>&lt;img&gt;</code>, qui commande l'affichage d'une image, sont des balises vides.</p>
+                    <h4>Syntaxe</h4>
+                    <p>Le nom des balises s'écrit <strong>tout en minuscules</strong>. Par exemple, <code>&lt;strong&gt;...&lt;/strong&gt;</code> est la  façon correcte d'écrire cette balise. </p>
+                    <div class="note">
+                        <p>Le langage HTML est permissif quant à la syntaxe utilisée. En conséquence, il existe plusieurs façons valides de rédiger une balise. Par exemple, on peut aussi bien écrire <code>&lt;p&gt; ...&lt;/p&gt;</code> ou <code>&lt;P&gt;...&lt;/P&gt;</code>, ou encore <code>&lt;br&gt;</code>, <code>&lt;br /&gt;</code> ou <code>&lt;BR&gt;</code>. Chacune de ces formes est valide. Cependant, les bonnes pratiques en matière d'intégration commandent avant tout <strong>l'uniformité dans la rédaction du code</strong>. C'est pourquoi les conventions d'écriture énumérées ici, bien qu'elles ne soient pas les seules valides, seront néanmoins <strong>imposées</strong> dans le cadre des travaux réalisés durant la session.</p>
+                    </div> <!-- .note -->
+                    <h3>Les éléments</h3>
+                    <p>Un élément est l'ensemble composé :</p>
+                    <ul>
+                        <li>d'une <strong>balise ouvrante</strong>,</li>
+                        <li>d'un <strong>contenu</strong> et </li>
+                        <li>de la <strong>balise fermante</strong> correspondante.</li>
+                    </ul>
+                    <p>L'exemple de balisage qui suit fait intervenir l'élément <code><span class="rose">&lt;strong&gt;</span></code> qui permet de souligner l'importance d'une partie du texte&nbsp;:</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code exemple-code--unwrap">                        <span class="rose">&lt;p&gt;</span>HTML est un <span class="rose">&lt;strong&gt;</span>langage de balisage<span class="rose">&lt;/strong&gt;</span> et non pas un langage de programmation.<span class="rose">&lt;/p&gt;</span>
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">HTML est un <strong>langage de balisage</strong> et non pas un langage de programmation.</p>
+                    <div class="tf">
+                        <p class="tf-intitule">Travail formatif 1</p>
+                        <ol>
+                            <li>Rendez-vous sur le <a href="https://codepen.io/" target="_blank">site de Codepen <i class="bi bi-box-arrow-up-right"></i></a> et créez un compte.</li>
+                            <li>Assurez-vous d'être enregistré·e (Log in) avant de continuer.</li>
+                            <li>Maintenant, expérimentez le balisage dans la fenêtre de code ci-dessous : il suffit d'insérez le curseur de la souris dans le code HTML (à gauche) pour le modifier et d'en constater le résultat à l'affichage (à droite).</li>
+                            <li>Ensuite, cliquez sur «&nbsp;Fork on Codepen&nbsp;» pour ouvrir une nouvelle fenêtre et travailler plus librement. L'opération <i>Fork</i> signifie que vous pouvez sauvegarder une version du travail dans votre compte Codepen et la conserver pour référence.</li>
+                            <li>Une fois dans la fenêtre de Codepen, cliquez sur le bouton <i>Fork</i> <img class="icone" src="images/cours01_codepen_fork.jpg" alt="Bouton Fork de Codepen"> au bas de la fenêtre pour sauvegarder ce «&nbsp;pen&nbsp;» dans votre collection, et renommez-le au besoin.</li>
+                        </ol>
+                        <div class="bloc-codepen">
+                           
+                        </div>
+                    </div>
+                    <p>Dans cet exemple, nous distinguons&nbsp;:</p>
+                    <ul>
+                        <li>l'élément&nbsp;: <code><span class="rose">&lt;strong&gt;</span>langage de balisage<span class="rose">&lt;/strong&gt;</span></code></li>
+                        <li>le contenu de l'élément&nbsp;: <code>langage de balisage</code></li>
+                        <li>la balise ouvrante&nbsp;: <code><span class="rose">&lt;strong&gt;</span></code></li>
+                        <li>la balise fermante&nbsp;: <code><span class="rose">&lt;/strong&gt;</span></code></li>
+                    </ul>
+                    <p>Le contenu «<code> langage de balisage </code>» sera renforcé par rapport au reste du texte à l'aide d'une police plus grasse par le moteur de rendu des navigateurs graphiques.</p>
+                    <p>Voyons maintenant comment on  peut caractériser une balise par un attribut.</p>
+                </section> <!-- .section02 -->
+                <section id="section03">
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                </div>
+                    <h2>Les attributs</h2>
+                    <p>Plusieurs <a href="#section02">balises</a> peuvent être personnalisées par des attributs.</p>
+                    <p>Les attributs sont caractérisés par  une valeur.</p>
+                    <h3>Les règles d'écriture</h3>
+                    <p>La valeur des attributs est insérée à l'intérieur d'apostrophes doubles: <code>" "</code>.</p>
+                    <p>La valeur des attributs peut être écrite de différentes manières, selon la nature de l'attribut:</p>
+                    <ul>
+                        <li>plusieurs attributs ont des valeurs prescrites qui doivent être choisies à partir d'une liste de valeurs déterminées à l'avance, comme les attributs <code>lang</code>, <code>type</code>, etc.;</li>
+                        <li>les attributs globaux comme <code>class</code> et <code>id</code> qui sont utilisés pour générer des actions par la programmation ou pour créer un effet de mie en forme par les <abbr title="Cascading Style Sheets" lang="en">CSS</abbr> doivent avoir des valeurs sans caractères spéciaux ni espaces, et qui ne doivent pas débuter par un chiffre;</li>
+                        <li>certains attributs comme <code>alt</code> ou <code>title</code> peuvent contenir des espaces et des caractères spéciaux, et les attributs qui appellent des adresses <abbr title="Uniform Resource Locator" lang="en">URL</abbr> (<code>href</code>, <code>src</code>, etc.) peuvent contenir tous les caractères servant à composer ces adresses. </li>
+                    </ul>
+                    <h4>Exemple 1</h4>
+                    <pre class="exemple-code">                        &lt;section <span class="rose">lang="fr"</span>&gt; ... &lt;/section&gt;
+                    </pre>
+                    <p>Cet exemple  présente : </p>
+                    <ol>
+                        <li>un élément <code>section</code> délimité par les balises HTML, </li>
+                        <li>un attribut <code>lang</code> qui personnalise cet élément ;</li>
+                        <li>une valeur  <code>fr</code> qui caractérise cet attribut.</li>
+                    </ol>
+                    <div class="note">
+                        <p>Les différentes valeurs qu'un attribut<code> lang </code>peut prendre sont prescrites; dans ce cas, cet attribut sert à indiquer la langue principale utilisée dans la section et ses valeurs peuvent prendre les valeurs suivantes: <code>fr</code> pour français, <code>en</code> pour anglais ou encore <code>es</code> pour espagnol, par exemple.</p>
+                    </div>
+                    <aside>
+                        <div class="references-section">
+                            <ul>
+                                <li><a href="https://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">Valeurs de langues HTML <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <h4>Exemple 2</h4>
+                    <pre class="exemple-code">                        &lt;small <span class="rose">class="copyright"</span>&gt;© 2022 Sylvain Lamoureux&lt;/small&gt;
+                    </pre>
+                    <p>Cet exemple  présente un élément délimité par les balises <code>small</code>, caractérisé par un attribut<code> class </code>prenant la valeur<code><strong> copyright</strong></code>.</p>
+                    <div class="note">
+                        <p>La valeur d'un attribut<code> class </code>ou<code> id</code> ne peut avoir ni espaces ni caractères spéciaux, ni débuter par un chiffre.</p>
+                    </div>
+                    <h4>Exemple 3</h4>
+                    <pre class="exemple-code">                        &lt;img <span class="rose">src="<span class="vert">https://monsite.com/images/elephants.webp</span>" alt="<span class="vert">Des éléphants marchent dans la brousse.</span>"</span>&gt;
+                    </pre>
+                    <p>Cet exemple présente un élément <code>img</code> caractérisée par un attribut <code>src</code> prenant la valeur <code>"https..."</code> et par un attribut <code>alt</code> prenant la valeur <code>"Des éléphants..."</code>.</p>
+                    <div class="tf">
+                        <p class="tf-intitule">Travail formatif 2</p>
+                        <p>Dans le code HTML de l'exemple suivant, remplacez l'adresse de l'image par l'adresse d'une image de votre choix de votre choix que vous trouverez sur un site web :</p>
+                        <div class="bloc-codepen">
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <p>Notez qu'un attribut tel que <code>alt</code> peut  avoir des valeurs comprenant des espaces, des chiffres et des caractères spéciaux.</p>
+                    </div>
+                    <div class="note">
+                        <p>Observez bien l'exemple précédent: l'élément <code>img</code> contient deux attributs, soit <code class="rose">src</code> et <code class="rose">alt</code>. Un élément peut donc inclure plusieurs attributs lorsque nécessaire, chacun de ces attributs étant séparé par une espace.</p>
+                    </div>
+                </section> <!-- .section03 -->
+                <section id="section04">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>L'imbrication des éléments</h2>
+                    <p>Les éléments peuvent être imbriqués. </p>
+                    <p>Une simple page Web contient typiquement un grand nombre d'imbrications d'éléments. </p>
+                    <h3>Les règles d'écriture</h3>
+                    <p>Les balises des éléments imbriqués ne doivent pas se chevaucher.</p>
+                    <p>Voici un exemple simple d'imbrication :</p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;h1&gt;</span>Les bases du <span class="vert">&lt;abbr title="HyperText Markup Language"&gt;</span>HTML<span class="vert">&lt;/abbr&gt;</span>: l'imbrication des éléments<span class="rose">&lt;/h1&gt;</span>
+                    </pre>
+                    <p>Dans cet exemple: </p>
+                    <ul>
+                        <li>l'élément <code>abbr</code> est imbriqué à l'intérieur de l'élément <code>h1</code>;</li>
+                        <li>l'élément <code>abbr</code> doit donc absolument se refermer avant que l'élément <code>h1</code> ne se referme.</li>
+                    </ul>
+                    <p>C'est comme si un élément HTML était une boîte qui peut contenir une autre boîte ou être contenu dans une autre boîte.</p>
+                    <p>Une autre façon de visualiser le HTML est justement de l'afficher sous forme de boîtes imbriquées. Ce type d'affichage s'appelle le « modèle du document »:</p>
+                    <figure class="w50">
+                        <figcaption>Le modèle de document de l'exemple cité plus haut.</figcaption>
+                        <img src="images/cours01_imbrication01.jpg" alt="Modèle du document">
+                    </figure>
+                    <h3>L'imbrication est omniprésente dans les pages Web</h3>
+                    <p>L'imbrication est incontournable dans la structure de base de la moindre page Web.</p>
+                    <div class="tf">
+                        <p class="tf-intitule">Travail formatif 2</p>
+                        <p>Créez un dossier à l'endroit qui vous convient sur votre ordinateur et nommez-le en indiquant votre groupe, votre nom de famille, l'initiale de votre prénom et l'identication du travail, comme ceci: <strong>gr1_tremblayp_ex1</strong> ou <strong>gr2_tremblayp_ex1</strong> (en substituant <i>tremblayp</i> pour votre nom de famille et l'initiale de votre prénom).</p>
+                        <ul>
+                            <li>Installez <strong>Visual Studio Code</strong> sur votre portable (<a href="https://code.visualstudio.com/" target="_blank">Télécharger Visual Studio Code : cliquez sur <i>Other plateforms</i> pour la version Windows</a>)</li>
+                            <li>Installez le navigateur <i>Google Chrome</i> sur votre portable (<a href="https://www.google.fr/chrome/?brand=FHFK&amp;gclid=CjwKCAjw64eJBhAGEiwABr9o2CJuc-ESNtMiTejrwq4uV-6Cpd6H-PVcWrst_0hne6fjv15dqEjMkRoCCz8QAvD_BwE&amp;gclsrc=aw.ds" target="_blank">Télécharger Google Chrome (voir le lien en bas de page pour Autres plates-formes au besoin)</a>)</li>
+                            <li>Ouvrez le logiciel <i>Visual Studio Code</i> qui devrait être situé dans le dossier Applications de votre ordinateur ;</li>
+                            <li>À partir du menu <em>Fichier</em>, choisissez <em>Ouvrir...</em> ;</li>
+                            <li>Atteignez le dossier que vous venez de créer et ouvrez-le ;</li>
+                            <li>À Partir du menu <em>Fichier</em>, choisissez <em>Nouveau fichier</em> afin de créez un nouveau fichier HTML.</li>
+                            <li>Sélectionnez le menu <strong>Fichier/Enregistrer...</strong> et nommez le fichier <strong>monarticle.html</strong> ; ce fichier sera inséré automatiquement dans le dossier précédemment créé ; </li>
+                            <li>Assurez-vous que le fichier <strong>monarticle.html</strong> est sélectionné dans la colonne de gauche de Visual Studio Code ;</li>
+                            <li>Inscrivez du texte dans la fenêtre, à droite, sur la ligne numéroté «1».</li>
+                            <li>Visualisez le résultat dans le navigateur <em>Chrome</em>: pour cela, il suffit de retrouver le fichier <strong>monarticle.html</strong> sur votre ordinateur et de l'ouvrir en double-cliquant dessus;</li>
+                            <li>Suivez les directives du professeur pour la suite. </li>
+                        </ul> 
+                    </div>
+                    <p>Jetez un coup d'oeil au code source de la page que vous lisez présentement ; vous constaterez qu'il présente plusieurs niveaux d'imbrication.</p>
+                    <div class="note">
+                        <p>Vous pouvez aussi faire la commande clavier <kbd>⌥⌘U</kbd> ou <kbd>⌘U</kbd> (Mac) ou <kbd>Ctrl+U</kbd> (PC) pour faire afficher le code source de n'importe quelle page HTML.</p>
+                    </div>
+                    <aside>
+                        <div class="references-section">
+                            <ul>
+                                <li><a href="https://code.visualstudio.com/#alt-downloads" target="_blank">Visual Studio Code: Éditeur de code <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                <li><a href="https://www.google.fr/chrome/?brand=FHFK&amp;gclid=CjwKCAjw64eJBhAGEiwABr9o2CJuc-ESNtMiTejrwq4uV-6Cpd6H-PVcWrst_0hne6fjv15dqEjMkRoCCz8QAvD_BwE&amp;gclsrc=aw.ds" target="_blank">Google Chrome <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                <li><a href="https://codepen.io/" target="_blank">Codepen: Éditeur de code en ligne collaboratif <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </section> <!-- .section04 -->
+                <section id="section05">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>La structure des éléments</h2>
+                    <p>Les éléments ne se comportent pas tous de la même façon dans le flux du contenu. Deux grands types d'éléments se distinguent à cet égard.
+                    </p><h3>Deux grands types d'éléments</h3>
+                    <p>Les éléments <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> se distinguent en deux grands types:</p>
+                    <ol>
+                        <li>les éléments de type<strong> bloc;</strong></li>
+                        <li>les éléments de type <strong>en ligne</strong> (ou «au fil du texte»).</li>
+                    </ol>
+                    <p>Les éléments de type <strong>bloc</strong> délimitent des blocs entiers comme des titres, des paragraphes, des listes, des citations, etc.</p>
+                    <p>Les éléments de type <strong>en ligne</strong> sont prévus pour enrichir localement des portions de texte : hyperliens, renforcement, etc.).</p>
+                    <p>Il en découle des spécificités d'affichage.</p>
+                    <h4>Exemple</h4>
+                    <p>Des éléments de type bloc écrits côte à côte dans le code HTML seront tout de même placés par défaut l'un sous l'autre par le navigateur graphique.</p>
+                    <p>Par exemple, les deux éléments <code>&lt;p&gt;</code> écrits comme suit en HTML : </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;p&gt;</span>Premier paragraphe<span class="rose">&lt;/p&gt;&lt;p&gt;</span>Deuxième paragraphe<span class="rose">&lt;/p&gt;</span> 
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                    <p>Premier paragraphe</p>
+                    <p>Deuxième paragraphe</p>
+                    </div>
+                    <p>Les <strong>éléments en ligne</strong> s'appliquent généralement à des portions de texte, tel que des groupes de mots dans une phrase. Par exemple : le renforcement d'une partie de texte avec la balise <code>strong</code> ou encore le balisage d'un acronyme ou d'une abbréviation avec <code>abbr</code>. La plupart des éléments en ligne ont des particularités d'affichage dans les navigateurs graphiques: par exemple, <code>strong</code> est affiché en gras, <code>em</code> est affiché en italique et <code>code</code> est affiché avec une police mono-espace. Mais d'autres éléments en ligne ne montrent aucune particularité à l'affichage.</p>
+                    <h3>Contenus autorisés selon les types de balises</h3>
+                    <ul>
+                        <li>Un élément de type bloc peut contenir un ou plusieurs éléments de type bloc;</li>
+                        <li> Un élément de type bloc peut contenir un ou plusieurs éléments en ligne; </li>
+                        <li>Par contre, certains éléments de type bloc, comme les éléments  <em>paragraphe</em> (<code>p</code>) et  <em>titre</em> (<code>h1</code>, <code>h2</code>,...) ne peuvent inclurent que des éléments en ligne;</li>
+                        <li>Un élément en ligne  peut parfois renfermer  d'autres éléments en ligne, et peut aussi dans certains cas renfermer un élément de type bloc. </li>
+                    </ul>
+                    <div class="note">
+                        <p>La distinction bloc vs en ligne est fondamentale lors de l'étape de la mise en forme du document à l'aide de CSS. Nous y reviendrons.</p>
+                    </div>
+                </section> <!-- section05 -->
+                <section id="section06">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Quelques balises pour commencer</h2>
+                    <table>
+                        <caption>Tableau 1.1 Quelques balises en ligne</caption>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Élément</th>
+                            <th width="75%" scope="col">Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;</code></td>
+                            <td>Désigne un lien hypertexte. S'accompagne de l'attribut <code>href</code> qui contient la cible du lien.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_a.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;b&gt;</code></td>
+                            <td>Identifie du texte stylistiquement particulier, mais sans emphase particulière: la liste de mots clés d'un résumé d'article, le nom d'un produit, etc. Peut être utilisé aussi pour le nom d'une personne dans une suite de noms de personnalités connues par exemple. À utiliser en dernier recours, quand aucun autre élément plus signifiant peut être utilisé.<br><a href="http://www.w3schools.com/tags/tag_b.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;cite&gt;</code></td>
+                            <td>Indique le titre d'une oeuvre (livre, film, chanson, poème, peinture, etc.).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_cite.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;em&gt;</code></td>
+                            <td>Indique du texte à prononcer avec une certaine emphase.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_em.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;i&gt;</code></td>
+                            <td>Indique des expressions de langue étrangère, du jargon technique, des noms latins de plantes ou d'animaux (généralement affiché en italique dans le navigateur). S'accompagne parfois d'un attribut <code>class</code> pour plus de précision ou encore l'attribut <code>lang</code> pour désigner la langue d'origine de l'expression.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_i.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;</code></td>
+                            <td>Inclut une image dans le document. S'accompagne  de l'attribut <code>src</code> qui indique l'adresse de l'image. S'accompagne obligatoirement de l'attribut <code>alt</code> (texte alternatif pour mal-voyants, pour navigateurs graphiques en mode texte, pour navigateurs audio ou encore lorsque l'image ne s'affiche pas).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_img.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;q&gt;</code></td>
+                            <td>Délimite une citation courte. Parfois affiché avec des apostrophes doubles dans le navigateur.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_q.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;small&gt;</code></td>
+                            <td>Indique un court texte de référence (les « petits caractères »). La source d'un texte, le copyright, la licence d'utilisation, etc. Ne peut être utiliser pour un texte long, comportant plusieurs paragraphes comme le contrat d'utilisation d'un logiciel.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_small.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;mark&gt;</code></td>
+                            <td>Indique un bout de texte sur lequel on souhaite attirer l'attention ou qui est à retenir pour le lecteur (généralement affiché en surlignage jaune dans le navigateur).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_mark.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;strong&gt;</code></td>
+                            <td>Indique un texte important. L'importance relative d'un contenu peut être signalée par l'imbrication d'éléments <code>strong</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_strong.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figcaption&gt;</code></td>
+                            <td>Utilisé pour affiché la légende d'une image. L'élément <code>figcaption</code> est généralement utilisé avec l'élément <code>img</code>, à l'intérieur d'un élément <code>figure</code> (voir plus bas, dans les éléments de type bloc). <code>strong</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_figcaption.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;time&gt;</code></td>
+                            <td>Utilisé pour baliser un indicateur de temps (années, mois, jour, heure). Il est utilisé avec l'attribut <code>datetime</code> dont la valeur.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_time.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                    </tbody></table>
+                    <table>
+                        <caption>Tableau 1.2 Quelques balises de type bloc</caption>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Balise</th>
+                            <th width="75%" scope="col">Commentaires</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;blockquote&gt;</code></td>
+                            <td>Introduit des citations longues. Lorsque la citation comporte plusieurs paragraphes, il est préférable d'insérer des éléments  <code>p</code> à l'intérieur d'un <code>blockquote</code>plutôt qu'une succession d'éléments <code>blockquote</code>.
+                                <br><a target="_blank" href="http://www.w3schools.com/tags/tag_blockquote.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="24"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></td>
+                            <td>HTML prévoit six niveaux de titres, placés en hiérarchie à partir du titre principal, <code>&lt;h1&gt;</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_hn.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td height="88"><code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code></td>
+                            <td>Les balises &lt;ol&gt; et &lt;ul&gt; désignent respectivement des listes ordonnées et des listes à puces simples. Elles contiennent exclusivement les éléments d'objet de liste (&lt;li&gt;).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_ul.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Désigne un paragraphe de texte. Tout comme les titres, cet élément bloc ne peut contenir d'autres éléments blocs.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_p.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figure&gt;</code></td>
+                            <td>L'élément figure est utilisé pour présenter une image à l'aide de l'élément <code>img</code>, et sa légende à l'aide de l'élément <code>figcaption</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_figure.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                    </tbody></table>
+                </section> <!-- section06 -->
+                <section id="sectionAE">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Activité d'évaluation</h2>
+                    
+                    <h3>Ex1 - Introduction au langage HTML</h3>
+                    <p>L'exercice 1 est une introduction à l'utilisation du langage HTML pour structurer une page web.</p>
+                    <h4>Document à remettre</h4>
+                    <ol>
+                        <li>Un dossier nommé : <i>gr1_nominitialeprenom_ex1</i> ou <i>gr2_nominitialeprenom_ex1</i></li>
+                        <li>Ce dossier contient un document html nommé : <strong>monarticle.html</strong></li>
+                    </ol>
+                    <div class="note">
+                        <p class="note-intitule">Les dossiers et les fichiers de l'exercice 1</p>
+                        <figure class="w50">
+                            <figcaption>Arborescence de fichiers de l'exercice 1</figcaption>
+                            <img class="bordure" src="images/cours01_ex1_arbo.jpg" alt="Nomenclature du dossier de remise">
+                        </figure>
+                    </div>
+                    <h4>Échéancier</h4>
+                    <p>Remettez le travail <strong>sur Teams</strong>, dans l'espace prévu à cette fin, <strong>au plus tard</strong> <strong>le lundi (groupes du mercredi) ou le mercredi (groupe du vendredi) suivant le cours, 9h du matin.</strong></p>
+                    <h4>Grille d'évaluation</h4>
+                    <p>Voir la grille d'évaluation complète sur Teams/Devoirs.</p>
+
+                    <h4>Travail à faire</h4>
+                    <p>Dans le cadre de l'Ex1, vous devez composer la structure d'une page HTML à l'aide de l'éditeur de code <em>VSCode</em>. </p>
+                    <p>Votre travail doit être validé à l'aide du navigateur <em>Chrome</em> (c'est-à-dire que l'affichage doit être satisfaisant sur ce navigateur).</p>     
+                    <figure class="w90">
+                        <figcaption class="legende">Code de départ pour l'Ex1: vous devez d'abord réécrire le code ci-dessous dans votre document HTML (il s'agit de la structure de base du document HTML), puis rédiger le reste du code à la place de <code>(...)</code>, dans l'élément <code>body</code></figcaption>
+                        <img class="bordure" src="images/cours01_tp1_01.jpg" alt="Code de EX1">
+                    </figure>
+                    <figure class="w90">
+                        <figcaption class="legende">L'image ci-dessous montre ce à quoi devrait ressembler votre travail final dans Google Chrome (c'est-à-dire le code de base illustré plus haut + le code que vous aurez ajouté); vous devez vous inspirer de cette image pour deviner les éléments HTML dont vous aurez besoin pour faire le travail</figcaption>
+                        <img class="bordure" src="images/cours01_tp1_02.jpg" alt="Affichage dans Chrome de l&#39;exemple du tp1">
+                    </figure>
+                    <h4>Spécifications pour l'Ex1</h4>
+                    <p><strong>I. Préparez le travail : </strong></p>
+                    <ul>
+                        <li>Ouvrez  l'éditeur de code <i>Visual Studio Code</i>. </li>
+                        <li>Dans le  menu <em>Fichier</em>, choisissez <em>Ouvrir un dossier</em>;</li>
+                        <li>Ouvrez le dossier précédemment créé dans le travail formatif (gr1_..._ex1) si ce n'est déjà fait ;</li>
+                        <li>Dans <i>Visual Studio Code</i>, identifiez le fichier <code>monarticle.html</code> dans la colonne de gauche et cliquez dessus une fois pour l'activer dans la fenêtre d'édition.</li>
+                        <li>Écrivez-y le code demandé en suivant les étapes décrites ci-dessous.</li>
+                    </ul>
+                    <p><strong>II. Réalisez le travail</strong></p>
+                    <p><strong>1.</strong> Votre document HTML comprend les élément suivants:</p>
+                    <ul>
+                        <li>Les balises de base de la page web : 
+                            <ul>
+                                <li><code>html</code> </li>
+                                <li><code>head</code></li>
+                                <li><code>meta</code> (voir le <code>meta</code> du code de base affiché plus haut et reproduisez son contenu tel quel)</li>
+                                <li><code>title</code> avec le contenu affiché dans le code de base</li>
+                                <li><code>body</code></li>
+                            </ul>
+                        </li>
+                        <li>Les éléments de type bloc : 
+                            <ul>
+                                <li><code>h1</code>, <code>h2</code> (deux niveaux de titres)</li>
+                                <li><code>p</code> (chaque paragraphe doit être balisé avec cet élément)</li>
+                                <li><code>figure</code> (contient une image avec une légende)</li>
+                                <li><code>ul</code> (liste simple pour les médias sociaux tout en bas de la page)</li>
+                                <li><code>li</code> (éléments de la liste)</li>
+                            </ul>
+                        </li>
+                        <li>Les éléments de type en ligne : 
+                            <ul>
+                                <li><code>i</code> (les mots ou expressions dans une langue autre que le français dans le texte)</li>
+                                <li><code>img</code> (pour afficher une image; cette balise contient les attributs <code>src</code> et <code>alt</code>)</li>
+                                <li><code>figcaption</code> (pour baliser la légende sous une image, à l'intérieur d'un élément <code>figure</code>)</li>
+                                <li><code>small</code> (pour baliser le copyright)</li>
+                                <li><code>a</code> (hyperlien; cette balise contient l'attribut <code>href</code> dont la valeur est l'adresse de destination du lien)
+                            </li></ul>
+                        </li>
+                    </ul>
+                    <p><strong>2.</strong> Votre document HTML doit présenter une <strong>indentation</strong>, c'est-à-dire un retrait pour chaque niveau d'imbrication.</p> 
+                    <p><strong>3.</strong>Votre document doit présenter des changements
+                        de ligne après chaque élément de type bloc pour que sa lecture soit claire.</p>
+                </section>
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>
+            </article>
+            </div> </div><!-- .row -->
+                  <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            582-104-SF Intégration I - Techniques d'intégration multimédia<br>
+            ©2025 Sylvain Lamoureux - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </div> <!-- .container -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body></html>

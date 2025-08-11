@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 2 | Intégration I | 582-104-SF</title>  
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours02" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container avbar navbar-expand-lg bg-body-tertiary">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="cours02.php">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="cours03.php">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="cours04.php">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="cours05.php">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="cours06.php">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="cours07.php">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="cours08.php">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="cours09.php">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="cours10.php">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="cours11.php">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="cours12.php">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="cours13.php">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="cours14.php">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="cours15.php">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link"><strong>Leçon 2 <br>Introduction au HTML [2]</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Un bon balisage, qu'est-ce que c'est ?</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">Structure d'un document</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Le formulaire HTML: un survol</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Éléments de formulaires courants</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Les bonnes pratiques</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+           
+            <div class="col-8">
+            <article>
+                <header>
+                    <div class="cours-numero">Leçon 2</div>
+                    <h1>Introduction au HTML [2]</h1>
+                </header>
+                <section id="section01">
+                    <h2>Un bon balisage, qu'est-ce que c'est ?</h2>
+                    <p>L'écriture de documents <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> bien structurés est  la clé du web actuel et conforme aux standards.</p>
+                    <p>Vous devriez suivre les quatre recommandations suivantes lors de la création de contenu publié sur le web.</p>
+                    <h3>Écrire des documents conformes et valides, 
+                        respectant les standards du web</h3>
+                    <ul>
+                        <li>Les balises et les attributs HTML doivent être utilisés conformément aux règles établies par les recommandations du <a href="http://www.w3.org/" target="_blank">W3C <i class="bi bi-box-arrow-up-right"></i></a>, le <em>World Wide Web Consortium</em>. </li>
+                        <li>En respectant les standards, vos documents sont compatibles avec les technologies web en développement et les plus récentes fonctionnalités des navigateurs. </li>
+                        <li>Il existe des outils en ligne pour la validation du balisage : nous les utiliserons régulièrement au cours de la session. </li>
+                    </ul>
+                    <div class="tf">
+                        <h3>Travail formatif : validez votre code</h3>
+                        <p>Utilisez le validateur à cette adresse pour valider le code de votre exercice 1 : <a href="https://validator.w3.org/" target="_blank">Validateur W3C <i class="bi bi-box-arrow-up-right"></i></a></p>
+                        <p>Choissez l'onglet <em>Validate by File Upload</em> et choisissez le fichier html de votre exercice 1</p>
+                        <img class="w70 bordure" src="images/cours02_tf_validator01.jpg" alt="L&#39;onglet Validate by File Upload">
+                    </div>
+                    <h3>Utiliser un balisage sémantique pour donner du sens au contenu</h3>
+                    <p>Le balisage sémantique consiste à utiliser les balises pour <strong>donner du sens</strong> au contenu d'une page web.</p>
+                    <p class="phrase-cle">&gt;&gt;&gt; Les éléments du document web doivent être sémantiques...</p>
+                    <p>... c'est-à-dire, signifiants et descriptifs.</p>
+                    <p class="phrase-cle">&gt;&gt;&gt; Le balisage sémantique met l'accent...</p>
+                    <p>... sur le choix d'éléments décrivant le contenu de manière adéquate et non sur leur présentation dans le navigateur : </p>
+                    <ul>
+                        <li>Par exemple, l'utilisation  d'un élément <code>i</code> dans le seul but de créer de l'italique est à proscrire. Il ne doit être utilisé que pour baliser un mot ou une expression en langue étrangère ou du jargon technique ;</li>
+                        <li>L'usage d'un élément pour autre chose que ce qu'il signifie apauvrit le sens donné au contenu et rend l'interprétation du document aléatoire.</li>
+                    </ul>
+                    <p class="phrase-cle">&gt;&gt;&gt; Le balisage sémantique n'est pas qu'une simple conformité aux standards...</p>
+                    <p>...car un document peut être considéré valide quant aux standards de l'écriture, mais déficient sur le plan de la <em>signification</em> du contenu.</p>
+                    <div class="note">
+                        <p>Par exemple, si vous utilisez un élément de paragraphe générique tel que <code>p</code> plutôt qu'un élément <code>h1</code> ou <code>h2</code> pour baliser un titre, votre document sera <em>valide</em>, mais pauvre en <em>sens</em>.</p>
+                    </div>
+                    <p class="phrase-cle">&gt;&gt;&gt; Un balisage sémantique garantit une compatibilité... </p>
+                    <p>...avec un grand nombre d'environnements de navigation. </p>
+                    <p class="phrase-cle">&gt;&gt;&gt; Un balisage sémantique permet aux agents utilisateurs non humains...</p>
+                    <p>...d'analyser correctement le contenu et de décider comment le traiter (exemple : la fonction d'indexation d'un moteur de recherche ou la lecture vocale du contenu à l'écran).</p>
+                    <div class="note">
+                        <h3>Un web sémantique</h3>
+                        <p>Le web sémantique est une notion importante. C'est ce qui permet aux différents programmes de <strong>comprendre le sens des informations</strong> qu'ils traitent.</p>
+                        <p>Qu'il s'agisse d'un moteur de recherche ou d'une technologie d'assistance, ces programmes ont besoin de pouvoir identifier la nature des données qu'ils parcourent, que ce soit pour les référencer ou pour les restituer correctement. </p>
+                        <p>C'est Tim Berners-Lee, l'inventeur du <i>World Wide Web</i> qui, le premier, évoqua le web sémantique: </p>
+                        <blockquote cite="http://www.ingeoclouds.com/ingeoclouds/index.php/fr/presentation/web-semantique">
+                            <p>«&nbsp;J'ai fait un rêve pour le Web [dans lequel les ordinateurs] deviennent capables d'analyser toutes les données sur le Web — le contenu, les liens, et les transactions entre les personnes et les ordinateurs. Un «&nbsp;Web Sémantique&nbsp;», qui devrait rendre cela possible, n'a pas encore émergé, mais quand ce sera fait, les mécanismes d'échange au jour le jour, de bureaucratie et de nos vies quotidiennes seront traités par des machines dialoguant avec d'autres machines. Les «&nbsp;agents intelligents&nbsp;» qu'on nous promet depuis longtemps vont enfin se concrétiser.&nbsp;»</p>
+                            <p>—&nbsp;Tim Berners-Lee, <i>Weaving the Web</i></p>
+                        </blockquote>
+                    </div>
+                    <h3>Structurer logiquement les documents</h3>
+                    <p class="phrase-cle">&gt;&gt;&gt; La lecture de la source du document devrait être logique</p>
+                    <p>Le contenu doit être ordonné et hiérarchisé. Les titres et les sous-titres doivent suivre une hiérarchie claire et signifiante.</p>
+                    <p class="phrase-cle">&gt;&gt;&gt; La structure logique ne doit pas être subordonnée à la structure graphique </p>
+                    <p>On ne doit pas sacrifier le <strong>sens</strong> et la <strong>structure</strong> du contenu balisé pour des considérations graphiques.</p>
+                    <p>Ce qui ne veut pas dire à l'inverse de sacrifier la qualité de la présentation graphique : des règles de style bien conçues s'occupent de l'aspect graphique.</p>
+                    <h3>Séparer la présentation de la structure</h3>
+                    <p>Un bon balisage consiste à utiliser des balises dont la sémantique est adéquate tout en les liant à des règles de style répertoriées dans une feuille de style distincte du HTML.</p>
+                    <div class="tf">
+                        <h3>Travail formatif</h3>
+                        <p>Voici le balisage et le texte d'une recette tirée d'un site de cuisine :</p>
+                        <div class="bloc-codepen">
+                            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="578" width="100%" name="cp_embed_1" scrolling="no" src="images/JjXeNyj(1).html" style="width: 100%; overflow:hidden; display:block;" title="c02-balisage sémantique" loading="lazy" id="cp_embed_JjXeNyj"></iframe></div>
+                            <script async="" src="images/ei.js"></script>
+                        </div>
+                        <p>D'après ce que nous venons de voir à propos du balisage sémantique et de la structure d'un document :</p>
+                        <ol>
+                            <li>Corrigez le balisage en fonction des bonnes pratiques énoncées au début du cours et du balisage sémantique;</li>
+                            <li>Ajoutez de l'indentation au balisage afin de mettre en évidence l'imbrication du code et afin qu'il soit plus lisible.</li>
+                        </ol>
+                    </div>
+                </section> <!-- #section01 -->
+                <section id="section02">
+                    <div class="haut-de-page">
+                        <a href="#" target="_blank">Haut de page</a>
+                    </div>
+                    <h2>Structure du document</h2>
+                    <p>Avant de créer le contenu réel, il est nécessaire de donner une structure globale valide au document <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> lui-même. Revenons sur la structure du document que nous avons vue en partie lors du premier cours.</p>
+                    <h3>Un document HTML complet comporte trois parties</h3>
+                    <ul>
+                        <li>une déclaration de la version HTML</li>
+                        <li>un entête</li>
+                        <li>un corps</li>
+                    </ul>
+                    <p id="structure_de_base">Voici la structure minimale exigée pour vos pages HTML : </p>
+                    <figure class="w70">
+                        <figcaption>Structure minimale d'un document HTML</figcaption>
+                        <img class="bordure" src="images/cours02_struct_min_html5.jpg" alt="Structure minimale d&#39;une page HTML5.">
+                    </figure>
+                    <h4>Déclaration de type de document (DTD: Document Type Definition)</h4>
+                    <p>Pour être valide, un document HTML <strong>doit</strong> commencer par une <strong>déclaration de type de document </strong>qui identifie la version HTML utilisée dans le document : </p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;!DOCTYPE html&gt;</span>
+                    </pre>
+                    <p>La déclaration permet notamment au validateur de déterminer la version de HTML à valider.</p>
+                    <p>L'absence de déclaration de type de document - ou encore une déclaration de type de document erronnée - peut engendrer un comportement d'affichage erratique de la part des navigateurs.</p> 
+                    <h4>Entête du document (élément <code>head</code>)</h4>
+                    <p>L'en-tête contient des informations essentielles sur le document (mais qui ne font pas partie de son contenu graphique). </p>
+                    <p>On y trouve au minimum :</p>
+                    <ul>
+                        <li>un élément <code>title</code> dont le contenu textuel doit être descriptif pour qu'il soit valide ;</li>
+                        <li>un élément <code>meta</code> précisant le mode d'encodage de caractères.</li>
+                    </ul>
+                    <div class="note">
+
+                        <p><code>&lt;meta charset=<span class="rose">"UTF-8"</span>&gt;</code> <br>  
+                            L'encodage <strong>UTF-8</strong> permet d'interpréter correctement les caractères spéciaux de la langue française que vous utilisez dans le corps (<code>body</code>) de vos pages HTML.</p>
+                        <p><a href="https://fr.wikipedia.org/wiki/UTF-8" target="_blank">UTF-8 sur Wikipedia <i class="bi bi-box-arrow-up-right"></i></a></p><br>
+                        <p><code>&lt;title&gt;<span class="vert">Titre de la page - Nom du site</span>&lt;/title&gt; </code><br>
+                        Dans un navigateur, le contenu de l'élément <code>title</code> est affiché dans l'onglet de la page. Il est typiquement composé du titre de la page courante et du nom du site web auquel cette page appartient. </p>
+                        <blockquote>
+                            <p>« Le titre d'une page fait partie des éléments principaux qui sont scannés lors de l'indexation d'une page. C'est aussi le texte qui est affiché parmi les résultats du moteur de recherche, de façon proéminente et donc visible par les utilisateurs qui trouvent votre site grâce à un moteur de recherche. » </p>
+                        <p>tiré de : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/title" target="_blank">&lt;title&gt; : l'élément de titre du document (MDN Web docs) <i class="bi bi-box-arrow-up-right"></i></a></p>
+                        </blockquote>
+                        
+                    </div>
+                    <p>Outre l'encodage du texte, nous verrons d'autres types de contenus destinés à l'élément <code>meta</code>  lors des prochains cours. </p>
+                    <p>Les données fournies dans les éléments <code>meta</code> sont utilisées par les serveurs, les navigateurs web et les moteurs de recherche mais restent invisibles à l'affichage dans un navigateur graphique.</p>
+                    <h4>Corps du document (élément <code>body</code>)</h4>
+                    <p>Le corps du document délimité avec <code>&lt;body&gt;&lt;/body&gt;</code> contient tout le contenu du document, soit la partie affichée dans la fenêtre d'un navigateur graphique ou encore dictée par un lecteur d'écran.</p>
+
+                </section> <!-- section02 -->
+                <section id="section03">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Le formulaire HTML: un survol</h2>
+                    <p>Les formulaires HTML sont caratérisés par des éléments qui permettent de collecter des informations auprès des utilisateurs.</p>
+                    <p>Le formulaire le plus connu est sans doute le champ de recherche de Google&nbsp;: </p>
+                    <figure class="w80">
+                        <figcaption>Formulaire de recherche de Google</figcaption>
+                        <img class="bordure" src="images/cours03_form01.jpg" alt="Formulaire de recherche du site de Google.">
+                    </figure>
+                    <p>L'utilisateur remplit le formulaire et appuie sur un bouton pour soumettre les informations au serveurs:</p>
+                    <figure class="w80">
+                        <figcaption>Processus d'envoi d'un formulaire</figcaption>
+                        <img class="bordure" src="images/cours03_form02.jpg" alt="Processus d&#39;envoi d&#39;un formulaire.">
+                    </figure>
+                    <p>Un formulaire peut comprendre plusieurs contrôles, chacun récoltant des informations différentes. </p>
+                    <p>Le serveur doit pouvoir mettre en correspondance les données saisies et les éléments du formulaire.</p>
+                    <p>C'est ici que le nom (l'attribut <code>name</code>) entre en jeu: il sert à nommer le contrôle et à identifier la valeur entrée par l'utilisateur. Lors de l'envoi du formulaire, il se forme ainsi des couples <strong>nom / valeur</strong> qui sont traités par le programme: </p>
+                    <figure class="w80">
+                        <figcaption>Couple nom/valeur</figcaption>
+                        <img class="bordure" src="images/cours03_form03.jpg" alt="Couple nom-valeur">
+                    </figure>
+                    <h2>Structure d'un formulaire &lt;form&gt;</h2>
+                    <p>Quelques caractéristiques :</p>
+                    <ul>
+                        <li>Les éléments d'un formulaire (c'est-à-dire un groupe de contrôles utilisés pour recueillir des informations) sont obligatoirement inclus dans les balises <code>&lt;form&gt;&lt;/form&gt;</code>.</li>
+                        <li>Tout contenu web (texte <code>&lt;p&gt;</code>, image <code>&lt;img&gt;</code>, tableau <code>&lt;table&gt;</code>, etc.) peut être ajouté dans un élément <code>form</code>, mais son rôle principal est de servir de conteneur à des <strong>contrôles</strong> (cases à cocher, champs de saisie, boutons, etc.) permettant de saisir des informations.</li>
+                        <li>Le formulaire possède les attributs nécessaires pour interagir avec son programme de traitement.</li>
+                        <li>Un même document HTML peut contenir plusieurs formulaires, mais <strong>il est strictement interdit d'insérer un formulaire dans un autre formulaire</strong>, car cela crée un comportement inconsistant dont le rendu final dépendra du navigateur.</li>
+                        <li>Quand l'utilisateur a fini de remplir son formulaire et appuie sur le bouton <em>Envoyer</em>, le navigateur prend les informations, les organise sous forme de paires <em>nom/valeur</em>, les encode pour leur transfert et les envoie au serveur.</li>
+                    </ul>
+                    <h3>Syntaxe</h3>
+                    <p>Les éléments qui composent un formulaire sont inclus entre les balises <code>&lt;form&gt;</code> et <code>&lt;/form&gt;</code> dont la syntaxe minimale est la suivante : </p>
+                    <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
+
+                        (...)
+
+                        &lt;/form&gt;
+                    </pre>
+                    <p>où:</p>
+                    <ul>
+                        <li><code>action</code> (obligatoire) a pour valeur l'URI du programme qui traite les données recueillies par le formulaire. <br>
+                        </li>
+                        <li><code>method</code> (obligatoire) est la méthode de transmission des données du formulaire: 
+                            <ul>
+                                <li>Valeur <code>"get"</code> : transmet les données en clair dans l'adresse URL; la taille des données ne peut dépasser 256 octets. Utile pour les formulaires courts, comme un champ de recherche, où la sécurité n'est pas un enjeu. On ne doit pas envoyer de mots de passe ou autres données sensibles par cette méthode ;</li>
+                                <li>Valeur <code>"post" </code>: transmet les données dans le corps de la requête; la taille des données n'est pas limitée. Cette méthode est souvent préférée à la première pour les formulaires longs ou qui nécessitent un bon degré de sécurité, car elle n'affiche pas en clair les données saisies dans le formulaire et permet leur encryptage.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section> <!-- #section03 -->
+                <section id="section04">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Éléments de formulaire courants</h2>
+                    <h3>Champ de texte <code>&lt;input type=<span class="rose">"text"</span>&gt;</code>  </h3>
+                    <div class="references-section">
+                        <ul>
+                            <li><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"nom"</span>&gt;Votre nom : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"text"</span> name=<span class="rose">"nom"</span> id=<span class="rose">"nom"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <form>
+                            <p><label for="nom">Votre nom : </label>
+                            <input type="text" name="nom" id="nom"></p>
+                        </form>
+                    </div>
+                    <h4>Attributs courants<code></code></h4>
+                    <p><code>type="text"</code></p>
+                    <p>Lorsque l'attribut <code>type</code> vaut <code>text</code>, il crée un champ de saisie d'une seule ligne de texte.</p>
+                    <div class="note">
+                        <p>Si l'attribut <code>type</code> n'est pas spécifié pour un élément <code>input</code>, ce dernier est par défaut un champ de texte.</p>
+                    </div>
+                    <p><code>name</code></p>
+                    <p>Chaque contrôle de formulaire exige un attribut <code>name</code> afin d'être identifié correctement à l'étape du traitement des données. Sa valeur identifie le contrôle et est envoyée au serveur conjointement aux données. </p>
+                    <p><code>maxlength</code></p>
+                    <p>L'attribut <code>maxlength</code> fixe une limite sur le nombre de caractères accepté dans un champ de saisie lorsque nécessaire. Par exemple, si l'utilisateur doit indiquer une année, <code>maxlength</code> peut valoir <code>4</code>.  </p>
+                    <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_2" scrolling="no" src="images/MvZdaj.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form01" loading="lazy" id="cp_embed_MvZdaj"></iframe></div>
+                    <script async="" src="images/ei(1).js"></script>
+                    <h3>Saisie d'un mot de passe: <code>&lt;input type=<span class="rose">"password"</span>&gt;</code></h3>
+                    <div class="references-section">
+                        <ul>
+                            <li><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"usager"</span>&gt;Nom d'usager : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"text"</span> name=<span class="rose">"usager"</span> id=<span class="rose">"usager"</span>&gt;
+                        &lt;label for=<span class="rose">"motdepasse"</span>&gt;Mot de passe : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"password"</span> name=<span class="rose">"motdepasse"</span> id=<span class="rose">"motdepasse"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p>
+                        <label for="nom">Nom d'usager : </label>
+                        <input type="text" name="nom" id="nom" value="Joe">
+                    </p>
+                    <p>
+                        <label for="mot">Mot de passe : </label>
+                        <input type="password" name="mot" id="mot" value="123456">
+                    </p>
+                    </div>
+                    <h4>Attributs</h4>
+                    <p><code>type="password"</code></p>
+                    <p>Lorsque l'attribut type vaut <code>password</code>, il crée un contrôle qui présente les caractéristiques d'un champ de saisie, à l'exception près que les caractères sont masqués. </p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ de mot de passe qui est envoyé au serveur avec le mot de passe saisi.</p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<em>label</em>). </p>
+                    <p><code>maxlength</code></p>
+                    <p>L'attribut <code>maxlength</code> fixe une limite sur le nombre de caractères acceptés dans un champ de saisie lorsque nécessaire.  </p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_3" scrolling="no" src="images/prqmbb.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form02" loading="lazy" id="cp_embed_prqmbb"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <div class="note">
+                        <p>Bien que le mot de passe soit masqué à l'écran, les données saisies ne sont pas envoyées au serveur de manière sécurisée. Ce contrôle ne doit pas donc pas être utilisé tel quel pour l'envoi de données sensibles, tel qu'un numéro de carte bancaires. Pour une sécurité totale, le serveur doit être configuré de manière particulière, mais ce sujet est hors des cadres du présent cours.</p>
+                    </div>
+                    <h3>Saisie d'un courriel: <code>&lt;input type=<span class="rose">"email"</span>&gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"courriel"</span>&gt;Votre courriel : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"email"</span> name=<span class="rose">"courriel"</span> id=<span class="rose">"courriel"</span> placeholder=<span class="rose">"adresse de courriel"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Envoyer"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <label for="courriel">Votre courriel : </label>
+                        <input type="email" name="courriel" id="courriel" placeholder="adresse de courriel">
+                        <input type="submit" value="Envoyer">
+                    </p>
+                    <h4>Attributs</h4>
+                    <p><code>type="email"</code></p>
+                    <p>L'élément <code>input</code> de type <code>email</code> facilite la saisie d'une adresse de messagerie. Les navigateurs contrôleront le format des informations fournies. Certains téléphones optimisent leur clavier en affichant des touches utiles pour le contexte (comme <em><code>@</code>, <code>.com</code></em> ou autres).</p>
+                    <div class="note">
+                        <p>Saisissez du texte autre qu'un courriel dans le champ de saisie, puis appuyez sur le bouton «Envoyer» pour  faire l'essai de la validation par le navigateur. </p>
+                        <figure class="w60">
+                            <figcaption>Champs de type courriel : texte de validation de Google Chrome</figcaption>
+                            <img class="bordure" src="images/cours03_form04.jpg" alt="">
+                        <p></p>
+                    </figure></div>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ de courriel qui est envoyé au serveur avec les informations saisies. </p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<em>label</em>). </p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_4" scrolling="no" src="images/qXLGRY.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form03" loading="lazy" id="cp_embed_qXLGRY"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Saisie d'un URL: <code>&lt;input type=<span class="rose">"url"</span>&gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"url_pf"</span>&gt;<span class="vert">Adresse de mon portfolio :</span> &lt;/label&gt;
+                        &lt;input type=<span class="rose">"url"</span> name=<span class="rose">"url_pf"</span> id=<span class="rose">"url_pf"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Envoyer"</span>&gt;
+                        </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <form action="https://hautemontagne.ca/html/cours/trt.php" method="post">
+                            <label for="url_pf">Adresse de mon portfolio : </label>
+                            <input type="url" name="url_pf" id="url_pf">
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                    <h4>Attributs</h4>
+                    <p><code>type="url"</code></p>
+                    <p>Un champ de saisie de type <code>url</code> peut être utilisé lorsque l'utilisateur doit saisir l'adresse d'une page web. Les navigateurs contrôleront le format des informations fournies. Certains téléphones présentent un clavier optimisé affichant des touches utiles pour le contexte (comme <em><code>.com</code></em> ou autres). Pour les anciens navigateurs cet élément est traité comme un simple champ de texte.</p>
+                    <div class="note">
+                        <p>Saisissez du texte autre qu'un URL dans le champ de saisie, puis appuyez sur le bouton « Envoyer » pour  faire l'essai de la validation.</p>
+                        <figure class="w50">
+                            <figcaption>Champ de type url : texte de validation de Google Chrome</figcaption>
+                            <img class="bordure" src="images/cours03_form05.jpg" alt="Valisation input de type url">  
+                        </figure>
+                    </div>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ d'<code>url</code> qui est envoyé au serveur avec les informations saisies. </p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<em>label</em>).</p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_5" scrolling="no" src="images/EvGzWo.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form04" loading="lazy" id="cp_embed_EvGzWo"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Champ de recherche : <code>&lt;input type=<span class="rose">"search"</span>&gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;input type=<span class="rose">"search"</span> name=<span class="rose">"search"</span> placeholder=<span class="rose">"Saisir un mot clé"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Rechercher"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <input type="search" name="search">
+                        <input type="submit" value="Rechercher">
+                    </p>
+                    <h4>Attributs</h4>
+                    <p><code>type="search"</code></p>
+                    <p>Le champ de saisie de type <code>search</code> est traité de manière particulière par les navigateurs. Safari et Chrome, par exemple, ajoutent un bouton en forme de « x » pour effacer les informations déjà saisies et arrondissent les angles du champ.</p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ de recherche qui est envoyé au serveur avec les informations saisies.  </p>
+                    <p><code>placeholder</code></p>
+                    <p>Avec n'importe quel champ de saisie de texte, vous pouvez définir l'attribut <code>placeholder</code> dont la valeur donne le texte qui est affiché dans le champ en attendant que l'utilisateur clique dans cette zone.</p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_6" scrolling="no" src="images/PKXvmM.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form05" loading="lazy" id="cp_embed_PKXvmM"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Saisie d'une date : <code>&lt;input type=<span class="rose">"date"</span>&gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"date"</span>&gt;Date de départ : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"date"</span> name=<span class="rose">"date"</span> id=<span class="rose">"date"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Réserver"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <label for="date">Date de départ : </label>
+                        <input type="date" name="date" id="date">
+                        <input type="submit" value="Réserver">
+                    </p>
+                    <h4>Attributs</h4>
+                    <p><code>type="date"</code></p>
+                    <p>L'élément <em>input</em> de type <code>date</code> est tout désigné dans la situation où  l'utilisateur doit fournir une date. Les navigateurs compatibles font afficher un calendrier contextuel lorsque l'utilisateur clique dans le champ de saisie. Pour les anciens navigateur, cet élément est traité comme un simple champ de texte.</p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ de date qui est envoyé au serveur avec les informations saisies. </p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<code>label</code>). </p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_7" scrolling="no" src="images/PKXvjM.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form06" loading="lazy" id="cp_embed_PKXvjM"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Saisie d'une couleur : <code>&lt;input type=<span class="rose">"color"</span>&gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"couleur"</span>&gt;Couleur de dossard : &lt;/label&gt;
+                        &lt;input type=<span class="rose">"color"</span> name=<span class="rose">"couleur"</span> id=<span class="rose">"couleur"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Choisir"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <label for="date">Couleur de dossard : </label>
+                        <input type="color" name="couleur" id="couleur">
+                        <input type="submit" value="Réserver">
+                    </p>
+                    <h4>Attributs</h4>
+                    <p><code>type="colorte"</code></p>
+                    <p>L'élément <em>input</em> de type <code>color</code> est tout désigné dans la situation où l'utilisateur doit choisir une couleur. Les navigateurs compatibles font afficher un sélecteur de couleur contextuel lorsque l'utilisateur clique dans le champ de saisie. Pour les anciens navigateur, cet élément est traité comme un simple champ de texte.</p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> donne le nom du champ de date qui est envoyé au serveur avec les informations saisies. </p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<code>label</code>). </p>
+                    <div class="bloc-codepen">
+                        
+                    </div>
+                    <h3>Zone de texte multiligne: <code>&lt;textarea&gt;</code></h3>
+                    <p>L'élément <code>textarea</code> permet de créer une zone de saisie de texte multiligne. Contrairement aux autres éléments de saise, celui-ci n'est pas vide. Vous devez donc inclure les balises d'ouverture et de fermeture. </p>
+                    <p>Le texte qui apparaît entre les balises sera affiché dans la zone de texte lors du chargement de la page. Si l'utilisateur ne supprime pas ce texte, le message envoyé au serveur le contiendra, en plus du texte saisi. Certains sites ajoutent du code JavaScript pour effacer le texte initial lorsque l'utilisateur clique dans la zone de texte.</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;textarea name=<span class="rose">"avis"</span>&gt;<span class="vert">Écrivez votre avis ici...</span>&lt;/textarea&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <textarea name="avis" style="width:300px; height:100px;">Écrivez votre avis ici...</textarea>
+                    </p>
+                    <h4>Attributs</h4>
+                    <p><code>name</code></p>
+                    <p>Lorsque le formulaire est soumis, le navigateur envoie le texte entré par l'utilisateur avec le nom spécifié par l'attribut <code>name</code> (obligatoire).</p>
+                    <p><code>cols</code>, <code>rows</code>    </p>
+                    <p>Pour ajuster la taille du <code>textarea</code>, on peut utiliser les attributs <code>cols</code> (dont la valeur est un nombre de caractères) et <code>rows</code> (dont la valeur est un nombre de lignes), mais il est préférable d'utiliser les propriétés <code>width</code> et <code>height</code> des CSS afin de faciliter l'entretien de la page.</p>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="269" width="100%" name="cp_embed_8" scrolling="no" src="images/EvrXez.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form09" loading="lazy" id="cp_embed_EvrXez"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Cases à cocher:  <code>&lt;input type=<span class="rose">"checkbox"</span>&gt;</code></h3>
+                    <p>Les <code>input</code> de type <code>checkbox</code> permettent de créer un groupe d'options à cocher. Ce type de <code>input</code> est privilégié lorsque l'on veut offrir à l'utilisateur la possibilité de cocher <strong>une ou plusieurs</strong> options d'un groupe de cases. </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code"> 
+                      &lt;p&gt;Parmi ces services de musique en ligne, lequel ou lesquels avez-vous utilisés ?&lt;/p&gt;
+                      &lt;ul&gt;
+                      &nbsp;&nbsp;&lt;li&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="gpmusic" id="gpmusic"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="gpmusic"&gt;Google Play Music&lt;/label&gt;
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &nbsp;&nbsp;&lt;li&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="spotify" id="spotify"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="spotify"&gt;Spotify&lt;/label&gt;
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &nbsp;&nbsp;&lt;li&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="deezer" id="deezer"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="deezer"&gt;Deezer&lt;/label&gt; 
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &nbsp;&nbsp;&lt;li&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="applem" id="applem"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="applem"&gt;Apple Music&lt;/label&gt;
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &nbsp;&nbsp;&lt;li&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="tidal" id="tidal"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="tidal"&gt;Tidal&lt;/label&gt; 
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &nbsp;&nbsp;&lt;li&gt;	
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="rose">type="checkbox"</span> name="service" value="aucun" id="aucun"&gt;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="aucun"&gt;Aucun&lt;/label&gt; 
+                      &nbsp;&nbsp;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    </pre>        
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p style="font-family:sans-serif; color:#666; font-size:1.4rem">Parmi ces services de musique en ligne, lequel ou lesquels avez-vous utilisés ? </p>
+                        <ul class="sans-picot" style="list-style:none">
+                            <li><input type="checkbox" name="service" value="gpmusic" id="gpmusic">
+                            <label for="gpmusic">Google Play Music</label></li>
+                            <li><input type="checkbox" name="service" value="spotify" id="spotify">
+                            <label for="spotify">Spotify</label>	</li>
+                            <li><input type="checkbox" name="service" value="deezer" id="deezer">
+                            <label for="deezer">Deezer</label> </li>
+                            <li><input type="checkbox" name="service" value="applem" id="applem">
+                            <label for="applem">Apple Music</label></li>
+                            <li><input type="checkbox" name="service" value="tidal" id="tidal">
+                            <label for="tidal">Tidal</label> </li>
+                            <li><input type="checkbox" name="service" value="aucun" id="aucun">
+                            <label for="aucun">Aucun</label></li>
+                        </ul> 
+                    </div>
+                    <div class="note">
+                        <p>L'exemple précédent montre les couples <code>input</code> et <code>label</code> insérés dans des éléments de liste <code>&lt;li&gt;</code> car il s'agit d'une liste d'options. Mais ce n'est pas obligatoire: d'autres stratégies de balisage sont possibles ici. On utilise parfois des éléments <code>&lt;p&gt;</code> ou <code>&lt;div&gt;</code> pour regrouper ces éléments, ou encore des bris de ligne dans certaines cisconstances. </p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_9" scrolling="no" src="images/LjMoBX.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form07" loading="lazy" id="cp_embed_LjMoBX"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <p>On pourrait aussi précocher une option lorsque cela est pertinent grâce à l'attribut <code>checked="checked"</code>.</p>
+                    <p>Voici un autre exemple d'utilisation de case à cocher, mais cette fois-ci avec une case unique.</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;p&gt;Pour rester informé, abonnez-vous à notre infolettre !&lt;/p&gt;
+                        &lt;input <span class="rose">type="checkbox"</span> name="info" value="info" id="info"&gt;
+                        &lt;label for="info"&gt;Abonnez-moi à l'infolettre&lt;/label&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p style="font-family:sans-serif; font-size:1.4em; color:#666">Pour rester informé, abonnez-vous à notre infolettre !</p>
+                        <p>
+                            <input type="checkbox" name="infolettre" value="infolettre" id="infolettre">
+                            <label for="infolettre">Abonnez-moi à l'infolettre</label>
+                        </p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_10" scrolling="no" src="images/zdezmX.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form10" loading="lazy" id="cp_embed_zdezmX"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h4>Attributs</h4>
+                    <p><code>type="checkbox"</code></p>
+                    <p>Les cases à cocher permettent à l'utilisateur de sélectionner et de désélectionner une ou plusieurs options. </p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> sert à indentifier un groupe de cases à cocher. Sa valeur est envoyée au serveur accompagnée des valeurs des options sélectionnées. La valeur <em>name</em> doit être la même pour l'ensemble des cases à cocher d'un même groupe.</p>
+                    <p><code>value</code></p>
+                    <p>L'attribut <code>value</code> est la valeur envoyée au serveur lorsque la case correspondante est cochée. Chaque case d'un groupe doit avoir une valeur distincte.</p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> sert à lier la case à cocher à son intitulé (<code>label</code>). </p>
+                    <p><code>checked</code></p>
+                    <p>L'attribut <code>checked</code> permet d'indiquer que la case correspondante sera déjà cochée au chargement de la page. Sa valeur est <code>checked</code>.</p>
+                    <h3>Boutons radio: <code>&lt;input type=<span class="rose">"radio"</span>&gt;</code></h3>
+                    <p>Les <code>input</code> de type <code>radio</code> (« boutons radio ») se manipulent un peu de la même façon que les <code>checkbox</code>.</p>
+                    <p> À la différence des <code>checkbox</code> toutefois,  l'utilisateur ne peut cocher qu'un seul bouton radio à la fois à l'intérieur d'un même groupe. L'attribut <code>name</code> sert à identifier un groupe.</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;input <span class="rose">type="radio"</span> name="menu" value="poulet" id="poulet"&gt;
+                        &lt;label for="poulet"&gt;Plat de poulet&lt;/label&gt;
+                        &lt;input <span class="rose">type="radio"</span> name="menu" value="viande" id="viande"&gt;
+                        &lt;label for="viande"&gt;Plat de viande rouge&lt;/label&gt;
+                        &lt;input <span class="rose">type="radio"</span> name="menu" value="vegetarien" id="vegetarien"&gt;
+                        &lt;label for="vegetarien"&gt;Plat végétarien&lt;/label&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p style="font-family:sans-serif; font-size:1.4em; color:#666">Choisissez votre plat du midi : </p>
+                        <p>
+                            <input type="radio" name="menu" value="poulet" id="poulet">
+                            <label for="poulet">Plat de poulet</label><br>
+                            <input type="radio" name="menu" value="viande" id="viande">
+                            <label for="viande">Plat de viande rouge</label><br>
+                            <input type="radio" name="menu" value="vegetarien" id="vegetarien">
+                            <label for="vegetarien">Plat végétarien</label>
+                        </p>
+                    </div>
+                    <h4>Attributs</h4>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> identifie un groupe de boutons radio. Un seul et même nom assure que l'utilisateur ne peut choisir qu'une seule option. La valeur de <code>name</code> est envoyée au serveur afin d'identifier correctement le groupe de boutons radio et la réponse qui lui est associée.</p>
+                    <p><code>value</code></p>
+                    <p>L'attribut <code>value</code> est la valeur envoyée au serveur lorsque l'option correspondante est sélectionnée. Chaque bouton d'un groupe doit avoir une valeur distincte.</p>
+                    <p><code>id</code></p>
+                    <p>L'attribut <code>id</code> sert à lier le bouton radio à son intitulé (<code>label</code>)</p>
+                    <p><code>checked</code></p>
+                    <p>L'attribut <code>checked</code> avec la valeur <code>checked</code> permet de cocher un bouton à l'avance. Un seul bouton peut avoir cet attribut.</p>
+                    <div class="note">
+                        <p>Lorsqu'un bouton est sélectionné, il ne peut plus être désélectionné L'utilisateur peut uniquement choisir une autre option. C'est pourquoi lorsque vous n'offrez qu'un seul choix (par exemple, pour signaler que vous avez lu et accepté des conditions), vous devez alors utiliser une case à cocher. </p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_11" scrolling="no" src="images/JyxJxj.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form11" loading="lazy" id="cp_embed_JyxJxj"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h3>Menu déroulant et  liste déroulante: <code>select, option</code></h3>
+                    <p>Un menu déroulant ou une liste déroulante permet à l'utilisateur de sélectionner une option parmi celles prédéfinies.</p>
+                    <p>L'élément <code>select</code> permet de créer un menu déroulant ou une liste déroulante. Il contient au moins deux éléments <code>option</code>.  </p>
+                    <h4>Menu déroulant  </h4>
+                    <p>Par défaut, la valeur de l'attribut <code>size</code> est de 1 (une seule option visible). </p>
+                    <p>La sélection multiple est impossible dans un menu déroulant, un peu comme un groupe de boutons radio.</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">&lt;label for=<span class="rose">"pays"</span>&gt;Pays : &lt;/label&gt;
+                        &lt;select name=<span class="rose">"listepays"</span> id=<span class="rose">"pays"</span>&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"australie"</span>&gt;Australie&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"belgique"</span>&gt;Belgique&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"canada"</span>&gt;Canada&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"danemark"</span>&gt;Danemark&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"france"</span> selected=<span class="rose">"selected"</span>&gt;France&lt;/option&gt;
+                        &lt;/select&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat">
+                        <label for="pays">Pays : </label>
+                        <select name="listepays" id="pays">
+                            <option value="australie">Australie</option>
+                            <option value="belgique">Belgique</option>
+                            <option value="canada">Canada</option>
+                            <option value="danemark">Danemark</option>
+                            <option value="france" selected="selected">France</option>
+                        </select>
+                    </p>
+                    <div class="note">
+                        <p>Notez l'attribut <code>selected=<span class="rose">"selected"</span></code> utilisé pour pré-sélectionner un élément de la liste, en l'occurrence « France » dans l'exemple ci-haut.</p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="444" width="100%" name="cp_embed_12" scrolling="no" src="images/xLmNya.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form08" loading="lazy" id="cp_embed_xLmNya"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <h4>La liste déroulante</h4>
+                    <p>La liste déroulante permet d'afficher plus d'une option à la fois. Si cela est souhaité, elle peut permettre la sélection multiple. </p>
+                    <p>La valeur «5» donnée à l'attribut <code>size</code> permet de créer une liste déroulante avec cinq options visibles à la fois. </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;select name=<span class="rose">"listepays"</span> size=<span class="rose">"5"</span> multiple=<span class="rose">"multiple"</span>&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"australie"</span>&gt;Australie&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"belgique"</span>&gt;Belgique&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"canada"</span>&gt;Canada&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"danemark"</span>&gt;Danemark&lt;/option&gt;
+                        &nbsp;&nbsp;&lt;option value=<span class="rose">"france"</span> &gt;France&lt;/option&gt;
+                        &lt;/select&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <p class="resultat" style="font-size:1.3rem; color:#666">
+                        <label for="pays">Pays : </label>
+                        <select name="listepays" id="pays" size="5" multiple="multiple">
+                            <option value="australie">Australie</option>
+                            <option value="belgique">Belgique</option>
+                            <option value="canada">Canada</option>
+                            <option value="danemark">Danemark</option>
+                            <option value="france">France</option>
+                        </select>
+                    </p>
+                    <h4>Attributs de <code>select</code></h4>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> précise le nom du contrôle de formulaire qui est envoyé au serveur, accompagné de la valeur sélectionnée par l'utilisateur.</p>
+                    <p><code>size</code></p>
+                    <p>L'attribut <code>size</code> permet de transformer un menu déroulant en liste déroulante. Sa valeur précise le nombre d'options à afficher.</p>
+                    <p><code>multiple=<span class="rose">"multiple"</span></code></p>
+                    <p>L'attribut <code>multiple</code> avec la valeur <em>multiple</em> permet de sélectionner plusieurs options dans la liste (<strong>fonctionnel seulement lorsque <em>size</em> vaut plus de 1</strong>).</p>
+                    <div class="note">
+                        <p>L'utilisateur doit cependant appuyer simultanément sur la touche <strong>Ctrl</strong> (Windows) ou <strong>Cmd</strong> (MacOS) pour faire une sélection multiple.</p>
+                    </div>
+                    <h4>Attributs de <code>option</code></h4>
+                    <p><code>value</code></p>
+                    <p>L'attribut <code>value </code> précise la valeur qui sera envoyée au serveur avec le nom du contrôle lors de la sélection de l'option.</p>
+                    <p><code>selected=<span class="rose">"selected"</span></code></p>
+                    <p>L'attribut <code>selected</code> sert à pré-sélectionner une option du menu déroulant ou de la liste déroulante. Sa valeur doit être <code>selected</code>. Si cet attribut n'est pas défini, la première option est sélectionnée par défaut. Si l'utilisateur ne choisit pas une autre option, c'est donc cette valeur qui est envoyée au serveur. </p>
+                    <h3>Envoi de fichier: <code>&lt;input type=<span class="rose">"file"</span>&gt;</code></h3>
+                    <p>Si vous souhaiter permettre à l'utilisateur d'envoyer un fichier comme une image, une vidéo ou un PDF, vous devez utiliser un élément <em>input</em> de type <em>file</em>.  </p>
+                    <p>Seule la méthode <code>post</code> accepte ce type d'envoi.</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;p&gt;Envoyez votre curriculum vitae au format PDF :&lt;/p&gt;
+                        &lt;input type=<span class="rose">"file"</span> name=<span class="rose">"cv"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p style="font-family:sans-serif;font-size:1.4em;color:#666">Envoyez votre curriculum vitae au format PDF :</p>
+                        <p>
+                            <input style="font-family:sans-serif;font-size:1.4rem;color:#666" type="file" name="cv">
+                        </p>
+                    </div>
+                    <h4>Attributs</h4>
+                    <p><code>type="file"</code></p>
+                    <p>Ce type d'élément crée dans certains navigateurs un champ comparable à un champ de saisie suivi d'un bouton <em>Parcourir</em>; d'autres navigateurs afficheront plutôt un bouton <em>Choisir le fichier</em>, suivi du texte « aucun fichier sélectionné » ou du nom du fichier sélectionné. Lorsque l'utilisateur clique sur le bouton, une fenêtre apparaît afin qu'il puisse sélectionner sur son ordinateur le fichier à envoyer. L'aspect de cette fenêtre dépend du système d'exploitation utilisé.</p>
+                    <p><code>accept</code></p>
+                    <p>L'attribut <em>accept</em> permet en principe de préciser le type de fichier à télécharger (mp3, pdf, jpg, etc.). Les navigateurs ne prennent cependant pas en charge cet attribut. Il est  conseiller pour le moment de valider le type de fichiers par des scripts serveur.</p>
+                    <h3>Bouton d'envoi: <code>&lt;input type=<span class="rose">"submit"</span> ... &gt;</code></h3>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;p&gt;Abonnez-vous à notre liste de diffusion :&lt;/p&gt;
+                        &lt;input type=<span class="rose">"email"</span> name=<span class="rose">"courriel"</span>&gt;
+                        &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Envoyer"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <p style="font-family:sans-serif;font-size:1.4rem;color:#666">Abonnez-vous à notre liste de diffusion :</p>
+                        <p>
+                            <input type="text" name="courriel">
+                            <input type="submit" value="Envoyer">
+                        </p>
+                    </div> 
+                    <h4>Attributs</h4>
+                    <p><code>type="submit"</code></p>
+                    <p>Le bouton d'envoi est utiisé pour soumettre le formulaire au serveur.</p>
+                    <p><code>value</code></p>
+                    <p>L'attribut <code>value</code> détermine le texte qui s'affiche dans le bouton. </p>
+                    <p><code>name</code></p>
+                    <p>L'attribut <code>name</code> est reconnu mais non obligatoire.</p>
+                    <h3>Exemple de formulaire simple et fonctionnel</h3>
+                    <p>Un formulaire doit se placer à l'intérieur d'un élément <code>&lt;form&gt;</code>. Il présente des contrôles et se termine par un bouton d'envoi des données : </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
+                        &nbsp;&nbsp;&lt;label for="usager"&gt;<span class="vert">Nom d'usager :</span> &lt;/label&gt;
+                        &nbsp;&nbsp;&lt;input type="text" name="usager" id="usager"&gt;
+                        &nbsp;&nbsp;&lt;label for="motdepasse"&gt;<span class="vert">Mot de passe :</span> &lt;/label&gt;
+                        &nbsp;&nbsp;&lt;input type="password" name="motdepasse" id="motdepasse"&gt;
+                        &nbsp;&nbsp;&lt;input type="submit" value="Se connecter"&gt;
+                        &lt;/form&gt; 
+                    </pre> 
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="391" width="100%" name="cp_embed_13" scrolling="no" src="images/MWgVQWY.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form14" loading="lazy" id="cp_embed_MWgVQWY"></iframe></div>
+                        <script async="" src="images/ei.js"></script>
+                    </div>
+                </section> <!-- #section04 -->
+                <section id="section05">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Les bonnes pratiques</h2>
+                    <h3>L'élément <code>label</code></h3><p>L’élément&nbsp;<code>label</code>&nbsp;est un intitulé accompagnant un champ de formulaire.</p>
+                    <p>Son utilisation permet aux navigateurs d’associer explicitement cet intitulé au champ de formulaire. </p>
+                    <p>Ainsi, <strong>un clic sur l’intitulé donnera le&nbsp;focus&nbsp;au champ de formulaire</strong>, ce qui est très pratique notamment pour les boutons radio ou les cases à cocher parfois trop petits pour certains utilisateurs à dextérité réduite.</p>
+                    <p>Cette association intitulé/champ est importante également pour les lecteurs d’écran, qui ont besoin d'étiquettes explicites pour&nbsp;associer chaque champ de formulaire à un texte.</p>
+                    <h4>Associer un <code>label</code> avec son champ</h4>
+                    <p>On associe<strong></strong> le <code>label</code> au champ auquel il est lié par l'intermédiaire de l'attribut <code>for</code> auquel on donne la même valeur que le <code>id</code> du champ concerné, comme ceci:</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;label for=<span class="rose">"prenom"</span>&gt;Prénom : &lt;/label&gt;
+                        &lt;input type="text" name=<span>"prenom"</span> id=<span class="rose">"prenom"</span>&gt;
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_14" scrolling="no" src="images/zdXwrr.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form13" loading="lazy" id="cp_embed_zdXwrr"></iframe></div>
+                        <script async="" src="images/ei(1).js"></script>
+                    </div>
+                    <div class="note">
+                        <p>Les attributs <code>id</code> et <code>name</code> peuvent sembler redondants lorsqu'ils sont appliqués à des éléments de contrôles d'un formulaire comme <code>input</code> ou <code>select</code>, d'autant plus qu'on leur donne souvent la même valeur. Leurs fonctions sont cependant distinctes. </p>
+                        <ul>
+                            <li>La valeur de l'attribut <code>name</code> est transmise au programme de traitement du formulaire lorsque celui-ci est envoyé. </li>
+                            <li>L'attribut <code>id</code> est utilisé pour donner à l'élément un identifiant unique auquel il est possible d'accéder dans une feuille de style, un script ou un élément <code>label</code> comme on le voit dans l'exemple précédent. </li>
+                            <li>Un attribut <code>id</code> ne peut donc pas remplacer <code>name</code> car sa valeur n'est pas envoyée avec le formulaire. </li>
+                        </ul>
+                    </div>
+                    <h3>Les éléments <code>fieldset</code> et <code>legend</code></h3>
+                    <p>L'élément <code>fieldset</code> est utilisé pour créer un groupe logique de contrôles. Il contient  un élément <code>legend</code> qui décrit ce groupe logique. </p>
+                    <p>L'ajout d'éléments <code>legend</code> dans un formulaire favorise l'accessibilité, car il est reconnu par les lecteurs d'écran et les agents utilisateurs non humains.</p>
+                    <p>Exemple d'utilisation d'un élément <code>fieldset</code> avec son élément <code>legend</code>:</p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;fieldset&gt;
+                        &nbsp;&nbsp;&lt;legend&gt;Adresse résidentielle&lt;/legend&gt;
+                        &nbsp;&nbsp;&lt;label for=<span class="rose">"rue"</span>&gt;Rue : &lt;/label&gt;
+                        &nbsp;&nbsp;&lt;input type="text" name=<span class="rose">"rue"</span> id=<span class="rose">"rue"</span>&gt;
+                        &nbsp;&nbsp;&lt;label for=<span class="rose">"ville"</span>&gt;Ville : &lt;/label&gt;
+                        &nbsp;&nbsp;&lt;input type="text" name=<span class="rose">"ville"</span> id=<span class="rose">"ville"</span>&gt;
+                        &nbsp;&nbsp;&lt;label for=<span class="rose">"codepostal"</span>&gt;Code postal : &lt;/label&gt;
+                        &nbsp;&nbsp;&lt;input type="text" name=<span class="rose">"codepostal"</span> id=<span class="rose">"codepostal"</span>&gt;
+                        &lt;/fieldset&gt;  
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <fieldset style="font-family:sans-serif;font-size:1.4rem;color:#666;padding:1rem">
+                            <legend>Adresse résidentielle</legend>
+                            <p style="font-size:1.4rem">
+                                <label for="rue">Rue : </label>
+                                <input type="text" name="rue" id="rue" accesskey="1">
+                            </p>
+                            <p style="font-size:1.4rem">
+                                <label for="ville">Ville : </label>
+                                <input type="text" name="ville" id="ville" tabindex="2">
+                            </p>
+                            <p style="font-size:1.4rem">
+                                <label for="code_postal">Code postal : </label>
+                                <input type="text" name="code_postal" id="code_postal">
+                            </p>
+                        </fieldset>
+                    </div>
+                </section> <!-- section05 -->
+
+                <!-- ACTIVITÉS D'ÉVALUATION -->
+                <section id="sectionAE">
+                    <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                    <h2>Activité d'évaluation</h2>
+                    
+                    <h3>Exercice 2 - Intro au HTML (2): le formulaire HTML</h3>
+                    <p>L'exercice 2 consiste à créer une page Web comportant un formulaire. Cette page s'ajoute à celle que vous avez créée la semaine dernière dans le cadre de l'exercice 1.</p>
+                    <h4>Documents à remettre</h4>
+                    <p>Un <strong>dossier </strong>rigoureusement nommé comme suit:</p>
+                    <ul>
+                        <li>groupe du mercredi 9h : <strong>gr1_nomprenom_ex2</strong></li>
+                        <li>groupe du vendredi 8h : <strong>gr2_nomprenom_ex2</strong></li>
+                    </ul>
+                    <p>contenant les fichiers <code>monarticle.html</code>, <code>monformulaire.html</code> et un dossier <code>images</code> contenant les quatre images de la semaine dernière en plus de l'image fournie cette semaine.</p>
+                    <div class="note">
+                        <p>Structure de fichiers : </p>
+                        <figure class="w40">
+                            <figcaption>Structure de fichiers de l'exercice 2</figcaption>
+                            <img class="bordure" src="images/cours02_ex2b_arbo.jpg" alt="arborescence de ex2"><br>ou<br><img class="bordure" src="images/cours02_ex2a_arbo.jpg" alt="arborescence de ex2">
+                        </figure>
+                    </div>
+                    <h4>Échéancier</h4>
+                    <p>Remettez le dossier complet, zippé, dans l'espace Teams/Devoir, au plus tard :</p>
+                    <ul>
+                        <li><strong>le lundi (groupes du mercredi) ou le mercredi (groupe du vendredi) suivant le cours, 9h le matin</strong></li>
+                    </ul>
+                    <h4>Grille d'évaluation</h4>
+                    <p>Voir la grille d'évaluation complète sur Teams/Devoirs.</p>
+                    <h4>Travail à faire</h4>
+                    <p>Vous devez créer la page <code>monformulaire.html</code> du site « Blogue plein air » (voir Ex1).</p>
+                    <p>Pour cela, suivez cette procédure :</p>
+                    <p>1) Créez un dossier au nom de <strong>gr1_nomprenom_ex2</strong> ou <strong>gr2_nomprenom_ex2</strong>, dans lequel vous insérez le fichier <strong>monarticle.html</strong> de l'exercice 1, et dans lequel vous insérez également le dossier <strong>images</strong> de l'exercice 1. </p>
+                    <p>Dans le dossier <strong>images</strong>, insérez l'image supplémentaire fournie dans Teams/Devoirs pour l'exercice 2.
+                    </p><p>2) Ouvrez <abbr title="Visual Studio Code">Visual Studio Code</abbr>(VSC) et chargez ensuite le dossier <strong>gr1_nomprenom_ex2</strong> ou <strong>gr1_nomprenom_ex2</strong> (menu <strong>Fichier/Ouvrir un dossier</strong>...)</p>
+                    <p>3) Faites afficher le fichier <code>monarticle.html</code> dans la fenêtre d'édition de VSC ;</p>
+                    <p>4) Dans le fichier <strong>monarticle.html</strong>, effectuez d'abord les corrections proposées par le professeur ;</p>
+                    <p>5) Ajoutez les éléments <code>meta</code> suivants (à la suite de l'élément <code>title</code> déjà en place dans la partie <code>&lt;head&gt;</code> de votre page) pour rendre la page plus efficace :
+                        </p><pre class="exemple-code">                        &lt;meta name="description" content="<span class="rose">La Gaspésie est un véritable paradis du ski de randonnée</span>"&gt;
+                        &lt;meta name="keywords" content="<span class="rose">plein air, ski, randonnée, Gaspésie, Chic-chocs, FQME</span>"&gt; 
+                        &lt;meta name="author" content="<span class="rose">Inscrire votre nom ici</span>"&gt;
+                        </pre>
+                    <p>6) Complétez la section <code>body</code> de la façon suivante :</p>
+                    <ol>
+                        <li>Juste après le nom du blogue (Blogue plein air), insérez une liste non ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong> (voir l'image suivante)</li>
+                    </ol> 
+                    <p>7) Une fois ces modifications faites, créez le document <code>monformulaire.html</code>.</p>
+                    <p>8) Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvelle créé.</p>
+                    <p>9) Faites afficher le fichier monformulaire.html dans VSC.</p>
+                    <p>10) Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : Contactez-nous ! - Blogue plein air</p>
+                    <p>10) Modifiez la section <code>body</code> de la façon suivante :</p>
+                    <ol>
+                        <li>Changez le contenu du titre de la page <code>h1</code> par « Contactez-nous ! » afin de refléter le contenu de cette nouvelle page ; </li>
+                        <li>Remplacez le texte « Par Raphaël Charron » par « Contribuez à notre blogue ! »</li>
+                        <li>Retirez tout le texte de l'article sauf la section « Nos médias sociaux » et le copyright ;</li>
+                        <li>À la place du texte retiré, ajoutez un formulaire comme celui affiché dans l'exemple présenté plus bas. <br>
+                            Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br>
+                        </li>
+                    </ol> 
+                    <figure class="w80">
+                        <figcaption>Exemple de résultat pour l'exercice 2</figcaption>
+                        <img class="bordure" src="images/cours02_tp2_resultat.jpg" alt="Exemple pour l&#39;exercice 2.">  
+                    </figure>   
+                    <div class="note">
+                        <p>
+                            Inspirez-vous des exemples de contrôles de formulaire décrits dans les notes de la Leçon 2 pour créer le formulaire de la page monformulaire.html.
+                        </p>
+                        <p>
+                            N'oubliez pas que les éléments <code>form</code>, <code>input</code> et autres comportent des règles d'utilisation que vous devez appliquer (par exemple, des éléments et des attributs obligatoires comme action, method, name, id, etc.). Voir les notes de cours à ce sujet.
+                        </p>
+                    </div>
+                </section>  <!-- #sectionAE -->
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>    
+            </article>
+            </div> </div><!-- .row -->
+                  <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            582-104-SF Intégration I - Techniques d'intégration multimédia<br>
+            ©2025 Sylvain Lamoureux - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </div> <!-- .container -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body></html>
