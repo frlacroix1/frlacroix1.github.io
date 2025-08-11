@@ -428,7 +428,6 @@ MODÈLE DE PAGE: COURS
 -------------------- */
 /* HEADER */
 .cours-numero {
-  text-align: center;
   font-size: 1.5em;
 }
 
@@ -444,8 +443,6 @@ h5 {
 h1 {
   font-size: 2.4em;
   text-transform: uppercase;
-  text-align: center;
-  text-shadow: 2px 1px 1px #999;
 }
 
 h2 {
@@ -748,5 +745,46 @@ footer.footer-commun {
 }
 
 /* -----------------
-ADAPTATION
+ADAPTATION FRED
 -------------------- */
+body{
+  background-color:#15131f;
+}
+article header{
+  color:#9d69ca;
+}
+header.navbar{
+  font-size:0.8em;
+  text-transform:uppercase;
+}
+header.navbar, #sidebar-nav a.titre{
+  color:#e98a58;
+}
+section{
+  padding:20px;
+  background-color:#FFF;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border:1px solid #9d69ca;
+  margin-bottom:30px;
+}
+
+a.list-group-item {
+    z-index: 2;
+    color: #FFF;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+a.list-group-item:hover {
+    z-index: 2;
+    color: #9d69ca !important;
+}
+
+
+.list-group-item.active, .list-group-item:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #e98a58 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
