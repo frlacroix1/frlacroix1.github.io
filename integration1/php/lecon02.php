@@ -1,49 +1,20 @@
-<!doctype html>
-<html lang="fr-ca">
-    <head>
-        
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="robots" content="noindex,nofollow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Leçon 2 | Intégration I | 582-104-SF</title>  
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-    </head>
-    <body class="cours cours02" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
-        <header class="navbar navbar-expand-lg bd-navbar">
-            <nav class="container avbar navbar-expand-lg">
-                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
-                    <ul class="dropdown-menu lecons">
-                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
-                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
-                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
-                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
-                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
-                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
-                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
-                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
-                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
-                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
-                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
-                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
-                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
-                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
-                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
-                    </ul>
-                    </div>
-            </nav>
-        </header>
-
-        <div class="container">
-            <div class="row">
-               
+<?php 
+  global $prms; 
+  $prms = array();
+  $prms['titre_lecon'] = "Leçon 2";
+?>
+<?php require_once('header.php'); ?>
+                <div class="col-4 ">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Leçon 2 <br>Introduction au HTML [2]</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Un bon balisage, qu'est-ce que c'est ?</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">Structure d'un document</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Le formulaire HTML: un survol</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Éléments de formulaires courants</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Les bonnes pratiques</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
            
             <div class="col-8">
             <article>
@@ -835,36 +806,4 @@
                         </p>
                     </div>
                 </section>  <!-- #sectionAE -->
-                <footer>
-                    <div class="haut-de-page">
-                        <a href="#">Retour en haut de la page</a>
-                    </div>
-                </footer>    
-            </article>
-            </div>
-            
-             <div class="col-4 table-des-matieres">
-                    <nav id="sidebar-nav" class="list-group sticky-top ">
-                        <p><a href="#" class="nav-link titre"><strong>Table des matières</strong></a></p>
-                        <a href="#section01" class="list-group-item list-group-item-action">Un bon balisage, qu'est-ce que c'est ?</a>
-                        <a href="#section02" class="list-group-item list-group-item-action">Structure d'un document</a>
-                        <a href="#section03" class="list-group-item list-group-item-action">Le formulaire HTML: un survol</a>
-                        <a href="#section04" class="list-group-item list-group-item-action">Éléments de formulaires courants</a>
-                        <a href="#section05" class="list-group-item list-group-item-action">Les bonnes pratiques</a>
-                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
-                    </nav>
-                </div>
-        </div><!-- .row -->
-                  <footer class="footer-commun flottants">
-        <div class="credits">
-          <small>
-            <br>Ce contenu a été tiré en grande partie du site web de <a href="https://hautemontagne.ca/" target="_blank">Sylvain Lamoureux</a><br>
-            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
-          </small>
-        </div>
-      </footer>        </div> <!-- .container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-        <script src="js/functions.js"></script>
-    </body>
-</html>
+<?php require_once('footer.php'); ?>

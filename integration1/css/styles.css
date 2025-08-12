@@ -751,6 +751,9 @@ body{
   background-color:#15131f;
 }
 article header{
+  padding-left:0;
+  padding-right:0;
+  margin-top:50px;
   color:#9d69ca;
 }
 header.navbar{
@@ -788,3 +791,6 @@ a.list-group-item:hover {
     background-color: transparent !important;
     border-color: transparent !important;
 }
+
+.table-des-matieres{margin-top:110px;}
+.table-des-matieres > nav{padding-top:26px;}
