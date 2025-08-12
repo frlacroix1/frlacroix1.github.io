@@ -1,1 +1,0 @@
-<?php header('Location: https://frlacroix1.github.io/integration1/lecon01.php'); ?>
