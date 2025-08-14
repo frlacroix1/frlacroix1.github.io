@@ -41,16 +41,27 @@
             </nav>
         </header>
 
-        <div class="container">
-            <div class="row">
-               
-           
-            <div class="col-8">
-            <article>
-                <header>
+        <main class="container">
+             <header>
                     <div class="cours-numero">Leçon 2</div>
                     <h1>Introduction au HTML [2]</h1>
                 </header>
+            <div class="row">
+              
+           <div class="col-lg-4 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Table des matières</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Un bon balisage, qu'est-ce que&nbsp;c'est&nbsp;?</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">Structure d'un document</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Le formulaire HTML: un survol</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Éléments de formulaires courants</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Les bonnes pratiques</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-8 order-lg-1">
+            <article>
+                
                 <section id="section01">
                     <h2>Un bon balisage, qu'est-ce que c'est ?</h2>
                     <p>L'écriture de documents <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> bien structurés est  la clé du web actuel et conforme aux standards.</p>
@@ -109,8 +120,12 @@
                         <h3>Travail formatif</h3>
                         <p>Voici le balisage et le texte d'une recette tirée d'un site de cuisine :</p>
                         <div class="bloc-codepen">
-                            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="578" width="100%" name="cp_embed_1" scrolling="no" src="images/JjXeNyj(1).html" style="width: 100%; overflow:hidden; display:block;" title="c02-balisage sémantique" loading="lazy" id="cp_embed_JjXeNyj"></iframe></div>
-                            <script async="" src="images/ei.js"></script>
+                            <p class="codepen" data-height="578" data-default-tab="html,result" data-slug-hash="EaVoYxy" data-pen-title="c02-balisage sémantique" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/EaVoYxy">
+  c02-balisage sémantique</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                         </div>
                         <p>D'après ce que nous venons de voir à propos du balisage sémantique et de la structure d'un document :</p>
                         <ol>
@@ -255,8 +270,12 @@
                     <p>Chaque contrôle de formulaire exige un attribut <code>name</code> afin d'être identifié correctement à l'étape du traitement des données. Sa valeur identifie le contrôle et est envoyée au serveur conjointement aux données. </p>
                     <p><code>maxlength</code></p>
                     <p>L'attribut <code>maxlength</code> fixe une limite sur le nombre de caractères accepté dans un champ de saisie lorsque nécessaire. Par exemple, si l'utilisateur doit indiquer une année, <code>maxlength</code> peut valoir <code>4</code>.  </p>
-                    <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_2" scrolling="no" src="images/MvZdaj.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form01" loading="lazy" id="cp_embed_MvZdaj"></iframe></div>
-                    <script async="" src="images/ei(1).js"></script>
+                    <p class="codepen" data-height="265" data-default-tab="html,result" data-slug-hash="ZYbvzYY" data-pen-title="c03-form01" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ZYbvzYY">
+  c03-form01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     <h3>Saisie d'un mot de passe: <code>&lt;input type=<span class="rose">"password"</span>&gt;</code></h3>
                     <div class="references-section">
                         <ul>
@@ -290,8 +309,12 @@
                     <p><code>maxlength</code></p>
                     <p>L'attribut <code>maxlength</code> fixe une limite sur le nombre de caractères acceptés dans un champ de saisie lorsque nécessaire.  </p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_3" scrolling="no" src="images/prqmbb.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form02" loading="lazy" id="cp_embed_prqmbb"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="265" data-default-tab="html,result" data-slug-hash="qEOpWEr" data-pen-title="c03-form02" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEOpWEr">
+  c03-form02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <div class="note">
                         <p>Bien que le mot de passe soit masqué à l'écran, les données saisies ne sont pas envoyées au serveur de manière sécurisée. Ce contrôle ne doit pas donc pas être utilisé tel quel pour l'envoi de données sensibles, tel qu'un numéro de carte bancaires. Pour une sécurité totale, le serveur doit être configuré de manière particulière, mais ce sujet est hors des cadres du présent cours.</p>
@@ -323,8 +346,12 @@
                     <p><code>id</code></p>
                     <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<em>label</em>). </p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_4" scrolling="no" src="images/qXLGRY.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form03" loading="lazy" id="cp_embed_qXLGRY"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="myepbyx" data-pen-title="c03-form03" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myepbyx">
+  c03-form03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Saisie d'un URL: <code>&lt;input type=<span class="rose">"url"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
@@ -355,8 +382,12 @@
                     <p><code>id</code></p>
                     <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<em>label</em>).</p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_5" scrolling="no" src="images/EvGzWo.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form04" loading="lazy" id="cp_embed_EvGzWo"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvjpzvM" data-pen-title="c03-form04" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/pvjpzvM">
+  c03-form04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Champ de recherche : <code>&lt;input type=<span class="rose">"search"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
@@ -376,8 +407,12 @@
                     <p><code>placeholder</code></p>
                     <p>Avec n'importe quel champ de saisie de texte, vous pouvez définir l'attribut <code>placeholder</code> dont la valeur donne le texte qui est affiché dans le champ en attendant que l'utilisateur clique dans cette zone.</p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_6" scrolling="no" src="images/PKXvmM.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form05" loading="lazy" id="cp_embed_PKXvmM"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBKpGpb" data-pen-title="c03-form05" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/wBKpGpb">
+  c03-form05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Saisie d'une date : <code>&lt;input type=<span class="rose">"date"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
@@ -399,8 +434,12 @@
                     <p><code>id</code></p>
                     <p>L'attribut <code>id</code> permet d'associer le champ de saisie à son intitulé (<code>label</code>). </p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_7" scrolling="no" src="images/PKXvjM.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form06" loading="lazy" id="cp_embed_PKXvjM"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="empyZVd" data-pen-title="c03-form06" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/empyZVd">
+  c03-form06</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Saisie d'une couleur : <code>&lt;input type=<span class="rose">"color"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
@@ -440,8 +479,12 @@
                     <p><code>cols</code>, <code>rows</code>    </p>
                     <p>Pour ajuster la taille du <code>textarea</code>, on peut utiliser les attributs <code>cols</code> (dont la valeur est un nombre de caractères) et <code>rows</code> (dont la valeur est un nombre de lignes), mais il est préférable d'utiliser les propriétés <code>width</code> et <code>height</code> des CSS afin de faciliter l'entretien de la page.</p>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="269" width="100%" name="cp_embed_8" scrolling="no" src="images/EvrXez.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form09" loading="lazy" id="cp_embed_EvrXez"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEOpZxV" data-pen-title="c03-form09" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEOpZxV">
+  c03-form09</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Cases à cocher:  <code>&lt;input type=<span class="rose">"checkbox"</span>&gt;</code></h3>
                     <p>Les <code>input</code> de type <code>checkbox</code> permettent de créer un groupe d'options à cocher. Ce type de <code>input</code> est privilégié lorsque l'on veut offrir à l'utilisateur la possibilité de cocher <strong>une ou plusieurs</strong> options d'un groupe de cases. </p>
@@ -494,11 +537,15 @@
                         </ul> 
                     </div>
                     <div class="note">
-                        <p>L'exemple précédent montre les couples <code>input</code> et <code>label</code> insérés dans des éléments de liste <code>&lt;li&gt;</code> car il s'agit d'une liste d'options. Mais ce n'est pas obligatoire: d'autres stratégies de balisage sont possibles ici. On utilise parfois des éléments <code>&lt;p&gt;</code> ou <code>&lt;div&gt;</code> pour regrouper ces éléments, ou encore des bris de ligne dans certaines cisconstances. </p>
+                        <p>L'exemple précédent montre les couples <code>input</code> et <code>label</code> insérés dans des éléments de liste <code>&lt;li&gt;</code> car il s'agit d'une liste d'options. Mais ce n'est pas obligatoire: d'autres stratégies de balisage sont possibles ici. On utilise parfois des éléments <code>&lt;p&gt;</code> ou <code>&lt;div&gt;</code> pour regrouper ces éléments, ou encore des bris de ligne dans certaines circonstances. </p>
                     </div>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_9" scrolling="no" src="images/LjMoBX.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form07" loading="lazy" id="cp_embed_LjMoBX"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                       <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YPyYqev" data-pen-title="c03-form07" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/YPyYqev">
+  c03-form07</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <p>On pourrait aussi précocher une option lorsque cela est pertinent grâce à l'attribut <code>checked="checked"</code>.</p>
                     <p>Voici un autre exemple d'utilisation de case à cocher, mais cette fois-ci avec une case unique.</p>
@@ -516,8 +563,12 @@
                         </p>
                     </div>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_10" scrolling="no" src="images/zdezmX.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form10" loading="lazy" id="cp_embed_zdezmX"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBKpGyb" data-pen-title="c03-form10" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/wBKpGyb">
+  c03-form10</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h4>Attributs</h4>
                     <p><code>type="checkbox"</code></p>
@@ -566,8 +617,12 @@
                         <p>Lorsqu'un bouton est sélectionné, il ne peut plus être désélectionné L'utilisateur peut uniquement choisir une autre option. C'est pourquoi lorsque vous n'offrez qu'un seul choix (par exemple, pour signaler que vous avez lu et accepté des conditions), vous devez alors utiliser une case à cocher. </p>
                     </div>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_11" scrolling="no" src="images/JyxJxj.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form11" loading="lazy" id="cp_embed_JyxJxj"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxvpqWZ" data-pen-title="c03-form11" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/zxvpqWZ">
+  c03-form11</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h3>Menu déroulant et  liste déroulante: <code>select, option</code></h3>
                     <p>Un menu déroulant ou une liste déroulante permet à l'utilisateur de sélectionner une option parmi celles prédéfinies.</p>
@@ -600,8 +655,12 @@
                         <p>Notez l'attribut <code>selected=<span class="rose">"selected"</span></code> utilisé pour pré-sélectionner un élément de la liste, en l'occurrence « France » dans l'exemple ci-haut.</p>
                     </div>
                     <div class="bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="444" width="100%" name="cp_embed_12" scrolling="no" src="images/xLmNya.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form08" loading="lazy" id="cp_embed_xLmNya"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="450" data-default-tab="html,result" data-slug-hash="azvENYw" data-pen-title="c03-form08" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/azvENYw">
+  c03-form08</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <h4>La liste déroulante</h4>
                     <p>La liste déroulante permet d'afficher plus d'une option à la fois. Si cela est souhaité, elle peut permettre la sélection multiple. </p>
@@ -694,8 +753,12 @@
                     </pre> 
                     <p class="resultat-etiquette">Résultat</p>
                     <div class="resultat bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="391" width="100%" name="cp_embed_13" scrolling="no" src="images/MWgVQWY.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form14" loading="lazy" id="cp_embed_MWgVQWY"></iframe></div>
-                        <script async="" src="images/ei.js"></script>
+                        <p class="codepen" data-height="420" data-default-tab="html,result" data-slug-hash="GgpyZxw" data-pen-title="c03-form14" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/GgpyZxw">
+  c03-form14</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                 </section> <!-- #section04 -->
                 <div class="haut-de-page">
@@ -716,8 +779,12 @@
                     </pre>
                     <p class="resultat-etiquette">Résultat</p>
                     <div class="resultat bloc-codepen">
-                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_14" scrolling="no" src="images/zdXwrr.html" style="width: 100%; overflow:hidden; display:block;" title="c03-form13" loading="lazy" id="cp_embed_zdXwrr"></iframe></div>
-                        <script async="" src="images/ei(1).js"></script>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yyYpOje" data-pen-title="c03-form13" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/yyYpOje">
+  c03-form13</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
                     <div class="note">
                         <p>Les attributs <code>id</code> et <code>name</code> peuvent sembler redondants lorsqu'ils sont appliqués à des éléments de contrôles d'un formulaire comme <code>input</code> ou <code>select</code>, d'autant plus qu'on leur donne souvent la même valeur. Leurs fonctions sont cependant distinctes. </p>
@@ -843,17 +910,7 @@
             </article>
             </div>
             
-             <div class="col-4 table-des-matieres">
-                    <nav id="sidebar-nav" class="list-group sticky-top ">
-                        <p><a href="#" class="nav-link titre"><strong>Table des matières</strong></a></p>
-                        <a href="#section01" class="list-group-item list-group-item-action">Un bon balisage, qu'est-ce que c'est ?</a>
-                        <a href="#section02" class="list-group-item list-group-item-action">Structure d'un document</a>
-                        <a href="#section03" class="list-group-item list-group-item-action">Le formulaire HTML: un survol</a>
-                        <a href="#section04" class="list-group-item list-group-item-action">Éléments de formulaires courants</a>
-                        <a href="#section05" class="list-group-item list-group-item-action">Les bonnes pratiques</a>
-                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
-                    </nav>
-                </div>
+             
         </div><!-- .row -->
                   <footer class="footer-commun flottants">
         <div class="credits">
@@ -862,7 +919,7 @@
             582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
           </small>
         </div>
-      </footer>        </div> <!-- .container -->
+      </footer>        </main> <!-- .container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
         <script src="js/functions.js"></script>

@@ -750,10 +750,9 @@ ADAPTATION FRED
 body{
   background-color:#15131f;
 }
-article header{
+main header{
   padding-left:0;
   padding-right:0;
-  margin-top:50px;
   color:#9d69ca;
 }
 header.navbar{
@@ -793,5 +792,4 @@ a.list-group-item:hover {
     border-color: transparent !important;
 }
 
-.table-des-matieres{margin-top:110px;}
-.table-des-matieres > nav{padding-top:26px;}
+.table-des-matieres > nav{padding-top:10px; padding-bottom:26px;}
