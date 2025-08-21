@@ -742,7 +742,9 @@ PIED DE PAGE COMMUN
 footer.footer-commun {
   margin-top: 2em;
   text-align: center;
+  color:#FFF;
 }
+footer.footer-commun a{color:#FFF;}
 
 /* -----------------
 ADAPTATION FRED
