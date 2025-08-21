@@ -573,7 +573,7 @@ code {
 }
 
 .tf {
-  background: #dcedf5 url(../images/tf.png) no-repeat scroll 3px 5px;
+  background: #dcedf5 url(../images/tf.png) no-repeat scroll 10px 20px;
   background-size: 20px;
 }
 
@@ -795,3 +795,6 @@ a.list-group-item:hover {
 }
 
 .table-des-matieres > nav{padding-top:10px; padding-bottom:26px;}
+
+.haut-de-page{margin-bottom:30px;}
+.haut-de-page > a{color:#FFF;}
