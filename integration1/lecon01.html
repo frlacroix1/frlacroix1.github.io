@@ -169,11 +169,8 @@
                     <div class="tf" id="section02-f1">
                         <p class="tf-intitule">Travail formatif 1</p>
                         <ol>
-                            <li>Rendez-vous sur le <a href="https://codepen.io/" target="_blank">site de Codepen <i class="bi bi-box-arrow-up-right"></i></a> et créez un compte.</li>
-                            <li>Assurez-vous d'être enregistré·e (Log in) avant de continuer.</li>
-                            <li>Maintenant, expérimentez le balisage dans la fenêtre de code ci-dessous : il suffit d'insérer le curseur de la souris dans le code HTML (à gauche) pour le modifier et d'en constater le résultat à l'affichage (à droite).</li>
-                            <li>Ensuite, cliquez sur «&nbsp;Fork on Codepen&nbsp;» pour ouvrir une nouvelle fenêtre et travailler plus librement. L'opération <i>Fork</i> signifie que vous pouvez sauvegarder une version du travail dans votre compte Codepen et la conserver pour référence.</li>
-                            <li>Une fois dans la fenêtre de Codepen, cliquez sur le bouton <i>Fork</i> <img class="icone" src="images/cours01_codepen_fork.jpg" alt="Bouton Fork de Codepen"> au bas de la fenêtre pour sauvegarder ce «&nbsp;pen&nbsp;» dans votre collection, et renommez-le au besoin.</li>
+                            <li>La fenêtre de code ci-dessous vous permettra d'expérimenter le balisage&nbsp;: il suffit d'insérer le curseur de la souris dans le code HTML (à gauche) pour le modifier et d'en constater le résultat à l'affichage (à droite).</li>
+                            <li>Ajoutez le code suivant à la toute fin et modifiez son contenu: <br><code><span class="rose">&lt;p&gt;</span>Je suis un paragraphe<span class="rose">&lt;/p&gt;</span></code></li>
                         </ol>
                         <div class="bloc-codepen">
                         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNVYVjr" data-pen-title="c01-html01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -390,7 +387,7 @@
                         </tr>
                         <tr>
                             <td><code>&lt;img&gt;</code></td>
-                            <td>Inclut une image dans le document. S'accompagne  de l'attribut <code>src</code> qui indique l'adresse de l'image. S'accompagne obligatoirement de l'attribut <code>alt</code> (texte alternatif pour mal-voyants, pour navigateurs graphiques en mode texte, pour navigateurs audio ou encore lorsque l'image ne s'affiche pas).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_img.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
+                            <td>Inclut une image dans le document. S'accompagne  de l'attribut <code>src</code> qui indique l'adresse de l'image. <strong>S'accompagne obligatoirement de l'attribut</strong> <code>alt</code> (texte alternatif pour mal-voyants, pour navigateurs graphiques en mode texte, pour navigateurs audio ou encore lorsque l'image ne s'affiche pas).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_img.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -460,14 +457,14 @@
                     <h4>Document à remettre</h4>
                     <ol>
                         <li>Un dossier nommé : <i>gr1_nominitialeprenom_ex1</i> ou <i>gr2_nominitialeprenom_ex1</i></li>
-                        <li>Ce dossier contiendra un document html nommé <strong>monarticle.html</strong> et un sous-dossier nommé <strong>images</strong> </li>
+                        <li>Ce dossier contiendra un document html nommé <strong>monarticle.html</strong> et un sous-dossier nommé <strong>images</strong>.</li>
                         <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur LÉA.</li>
                     </ol>
                     <div class="note">
                         <p class="note-intitule">Les dossiers et les fichiers de l'exercice 1</p>
                         <figure class="w50">
                             <figcaption>Arborescence de fichiers de l'exercice 1.</figcaption>
-                            <img class="bordure" src="images/cours01_ex1_arbo.jpg" alt="Nomenclature du dossier de remise">
+                            <img class="bordure" src="images/cours01_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="88">
                         </figure>
                     </div>
                     <h4>Échéancier</h4>
@@ -490,7 +487,15 @@
                     <h4>Spécifications pour l'Ex1</h4>
                     <p><strong>I. Préparez le travail : </strong></p>
                     <ol>
-                        <li>Ouvrez  l'éditeur de code <i>Visual Studio Code</i>. </li>
+                       <li>Téléchargez et décompressez l'archive <a href="materiel/Ex1.zip"><strong>Ex1.zip</strong></a>. </li>
+                       <li>L'archive Ex1.zip contient :
+                        <ul>
+                            <li>le fichier <strong>ex1_texte.txt</strong>: les textes originaux de l'article de blogue; </li>
+                            <li>le sous-dossier <strong>/images</strong>: les images de l'article de blogue. Déplacez ce sous-dossier dans votre dossier de travail (gr1_..._ex1). <br>
+                            <img class="bordure" src="images/cours01_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="225"></li>
+                            </ul>
+                        </li>
+                        <li>Ouvrez l'éditeur de code <i>Visual Studio Code</i>. </li>
                         <li>Dans le  menu <em>Fichier</em>, choisissez <em>Ouvrir un dossier</em>;</li>
                         <li>Ouvrez le dossier précédemment créé dans <a href="#f3">le travail formatif 3</a> (gr1_..._ex1) si ce n'est déjà fait ;</li>
                         <li>Dans <i>Visual Studio Code</i>, identifiez le fichier <code>monarticle.html</code> dans la colonne de gauche et cliquez dessus une fois pour l'activer dans la fenêtre d'édition.</li>
@@ -530,6 +535,19 @@
                     <p><strong>2.</strong> Votre document HTML doit présenter une <strong>indentation</strong>, c'est-à-dire un retrait pour chaque niveau d'imbrication.</p> 
                     <p><strong>3.</strong>Votre document doit présenter des changements
                         de ligne après chaque élément de type bloc pour que sa lecture soit claire.</p>
+                    <p><strong>4.</strong>Vérifiez le résultat final de votre travail en ouvrant le fichier monarticle.html dans Google Chrome.</p>
+                    <p><strong>III. Remettez le travail</strong></p>
+                     <ol>
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez à son dossier par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/cours01_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="225">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez Compresser &raquo;&laquo;. <br>
+                            <img class="bordure" src="images/cours01_ex1_compresser.jpg" alt="Compresser le dossier" width="458">
+                        </li>
+                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.<br>
+                            <img class="bordure" src="images/cours01_ex1_zip.jpg" alt="Remettre l'archive ZIP sur LÉA" width="240">
+                        </li>
+                    </ol>
                 </section>
                 <footer>
                     <div class="haut-de-page">
