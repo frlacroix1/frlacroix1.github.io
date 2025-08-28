@@ -79,10 +79,29 @@
             <article>
                 
                 <section id="section01">
+                    <div class="tf">
+                        <p class="tf-intitule">Création d'une boîte à outils</p>
+                        <p>À partir de maintenant, nous allons vous créer une boîte à outils qui pourra vous servir lors de vos travaux</p>
+                        <ol>
+                            <li>Rendez-vous sur le <a href="https://codepen.io/" target="_blank">site de Codepen <i class="bi bi-box-arrow-up-right"></i></a> et créez-vous un compte.</li>
+                            <li>Assurez-vous d'être enregistré·e (Log in) avant de continuer.</li>
+                            <li>Maintenant, tel que vu à la leçon 1, expérimentez le balisage dans la fenêtre de code ci-dessous : il suffit d'insérez le curseur de la souris dans le code HTML (à gauche) pour le modifier et d'en constater le résultat à l'affichage (à droite).<div class="bloc-codepen">
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNVYVjr" data-pen-title="c01-html01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNVYVjr">
+                            c01-html01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                            </div></li>
+                            <li>Ensuite, cliquez sur «&nbsp;Edit on Codepen&nbsp;» (en haut à droite) pour ouvrir une nouvelle fenêtre et travailler plus librement. </li>
+                            <li>Une fois dans la fenêtre de Codepen, cliquez sur le bouton <i>Fork</i> <img class="icone" src="images/cours01_codepen_fork.jpg" alt="Bouton Fork de Codepen"> (au bas de la fenêtre à droite) pour sauvegarder ce «&nbsp;pen&nbsp;» dans votre collection, et renommez-le au besoin. L'opération <i>Fork</i> signifie que vous pouvez sauvegarder une version du travail dans votre compte Codepen et la conserver pour référence.</li>
+                        </ol>
+                        
+                    </div>
                     <h2>Un bon balisage, qu'est-ce que c'est ?</h2>
                     <p>L'écriture de documents <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> bien structurés est  la clé du web actuel et conforme aux standards.</p>
                     <p>Vous devriez suivre les quatre recommandations suivantes lors de la création de contenu publié sur le web.</p>
-                    <h3>Écrire des documents conformes et valides, 
+                    <h3>1. Écrire des documents conformes et valides, 
                         respectant les standards du web</h3>
                     <ul>
                         <li>Les balises et les attributs HTML doivent être utilisés conformément aux règles établies par les recommandations du <a href="http://www.w3.org/" target="_blank">W3C <i class="bi bi-box-arrow-up-right"></i></a>, le <em>World Wide Web Consortium</em>. </li>
@@ -91,11 +110,11 @@
                     </ul>
                     <div class="tf">
                         <h3>Travail formatif : validez votre code</h3>
-                        <p>Utilisez le validateur à cette adresse pour valider le code de votre exercice 1 : <a href="https://validator.w3.org/" target="_blank">Validateur W3C <i class="bi bi-box-arrow-up-right"></i></a></p>
-                        <p>Choissez l'onglet <em>Validate by File Upload</em> et choisissez le fichier html de votre exercice 1</p>
+                        <p>Utilisez le validateur à cette adresse pour valider le code de votre exercice&nbsp;1&nbsp;: <br><a href="https://validator.w3.org/" target="_blank">Validateur&nbsp;W3C&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></p>
+                        <p>Choissez l'onglet <em>Validate by File Upload</em> et choisissez le fichier html de votre exercice&nbsp;1</p>
                         <img class="w70 bordure" src="images/cours02_tf_validator01.jpg" alt="L&#39;onglet Validate by File Upload">
                     </div>
-                    <h3>Utiliser un balisage sémantique pour donner du sens au contenu</h3>
+                    <h3>2. Utiliser un balisage sémantique pour donner du sens au contenu</h3>
                     <p>Le balisage sémantique consiste à utiliser les balises pour <strong>donner du sens</strong> au contenu d'une page web.</p>
                     <p class="phrase-cle">&gt;&gt;&gt; Les éléments du document web doivent être sémantiques...</p>
                     <p>... c'est-à-dire, signifiants et descriptifs.</p>
@@ -124,13 +143,13 @@
                             <p>—&nbsp;Tim Berners-Lee, <i>Weaving the Web</i></p>
                         </blockquote>
                     </div>
-                    <h3>Structurer logiquement les documents</h3>
+                    <h3>3. Structurer logiquement les documents</h3>
                     <p class="phrase-cle">&gt;&gt;&gt; La lecture de la source du document devrait être logique</p>
                     <p>Le contenu doit être ordonné et hiérarchisé. Les titres et les sous-titres doivent suivre une hiérarchie claire et signifiante.</p>
                     <p class="phrase-cle">&gt;&gt;&gt; La structure logique ne doit pas être subordonnée à la structure graphique </p>
                     <p>On ne doit pas sacrifier le <strong>sens</strong> et la <strong>structure</strong> du contenu balisé pour des considérations graphiques.</p>
                     <p>Ce qui ne veut pas dire à l'inverse de sacrifier la qualité de la présentation graphique : des règles de style bien conçues s'occupent de l'aspect graphique.</p>
-                    <h3>Séparer la présentation de la structure</h3>
+                    <h3>4. Séparer la présentation de la structure</h3>
                     <p>Un bon balisage consiste à utiliser des balises dont la sémantique est adéquate tout en les liant à des règles de style répertoriées dans une feuille de style distincte du HTML.</p>
                     <div class="tf">
                         <h3>Travail formatif</h3>
