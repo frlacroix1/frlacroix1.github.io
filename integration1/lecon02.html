@@ -106,7 +106,13 @@
                     
                     <h2>Un bon balisage, qu'est-ce que c'est ?</h2>
                     <p>L'écriture de documents <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> bien structurés est  la clé du web actuel et conforme aux standards.</p>
-                    <p>Vous devriez suivre les quatre recommandations suivantes lors de la création de contenu publié sur le web.</p>
+                    <p>Vous devriez suivre <strong>les quatre recommandations</strong> suivantes lors de la création de contenu publié sur le web.</p>
+                    <ol>
+                        <li>Écrire des documents conformes et valides, respectant les standards du web</li>
+                        <li>Utiliser un balisage sémantique pour donner du sens au contenu</li>
+                        <li>Structurer logiquement les documents</li>
+                        <li>Séparer la présentation de la structure</li>
+                    </ol>
                     <h3>1. Écrire des documents conformes et valides, 
                         respectant les standards du web</h3>
                     <ul>
@@ -232,19 +238,29 @@
                     
                     <h2>Le formulaire HTML: un survol</h2>
                     <p>Les formulaires HTML sont caratérisés par des éléments qui permettent de collecter des informations auprès des utilisateurs.</p>
+                    
                     <p>Le formulaire le plus connu est sans doute le champ de recherche de Google&nbsp;: </p>
                     <figure class="w80">
                         <figcaption>Formulaire de recherche de Google</figcaption>
                         <img class="bordure" src="images/cours03_form01.jpg" alt="Formulaire de recherche du site de Google.">
                     </figure>
-                    <p>L'utilisateur remplit le formulaire et appuie sur un bouton pour soumettre les informations au serveurs:</p>
+                    <h3>Exemples d'utilisations de formulaire sur des sites:</h3>
+                    <ul>
+                        <li><strong>Social:</strong> communiquer, s'inscrire à une infolettre, répondre à un sondage, participer, partager.</li>
+                        <li><strong>Commercial:</strong> passer une commande, acheter un billet, réserver une chambre, faire un don.</li>
+                        <li><strong>Productivité:</strong> réaliser une tâche, mettre à jour ses coordonnées après un déménagement.</li>
+                        </ul>
+                   <h3>Fonctionnement d'un formulaire</h3>
+                    <p>L'utilisateur remplit le formulaire et appuie sur un bouton pour soumettre les informations au&nbsp;serveur:</p>
                     <figure class="w80">
                         <figcaption>Processus d'envoi d'un formulaire</figcaption>
                         <img class="bordure" src="images/cours03_form02.jpg" alt="Processus d&#39;envoi d&#39;un formulaire.">
                     </figure>
                     <p>Un formulaire peut comprendre plusieurs contrôles, chacun récoltant des informations différentes. </p>
                     <p>Le serveur doit pouvoir mettre en correspondance les données saisies et les éléments du formulaire.</p>
-                    <p>C'est ici que le nom (l'attribut <code>name</code>) entre en jeu: il sert à nommer le contrôle et à identifier la valeur entrée par l'utilisateur. Lors de l'envoi du formulaire, il se forme ainsi des couples <strong>nom / valeur</strong> qui sont traités par le programme: </p>
+                    <p>C'est ici que le nom (l'attribut <code>name</code>) entre en jeu: il sert à nommer le contrôle et à identifier la valeur entrée par l'utilisateur. Lors de l'envoi du formulaire, il se forme ainsi des couples <strong>nom / valeur</strong> qui sont traités par le programme: 
+                   </p>
+                    <pre class="exemple-code">&lt;input type="text" name="username"&gt;</pre>
                     <figure class="w80">
                         <figcaption>Couple nom/valeur</figcaption>
                         <img class="bordure" src="images/cours03_form03.jpg" alt="Couple nom-valeur">
@@ -262,13 +278,14 @@
                     <p>Les éléments qui composent un formulaire sont inclus entre les balises <code>&lt;form&gt;</code> et <code>&lt;/form&gt;</code> dont la syntaxe minimale est la suivante : </p>
                     <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
 
-                        (...)
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="username"&gt;
+                        &nbsp;&nbsp;&nbsp;&nbsp;(...)
 
                         &lt;/form&gt;
                     </pre>
                     <p>où:</p>
                     <ul>
-                        <li><code>action</code> (obligatoire) a pour valeur l'URI du programme qui traite les données recueillies par le formulaire. <br>
+                        <li><code>action</code> (obligatoire) a pour valeur l'URL du programme qui traite les données recueillies par le formulaire. <br>
                         </li>
                         <li><code>method</code> (obligatoire) est la méthode de transmission des données du formulaire: 
                             <ul>
@@ -281,10 +298,26 @@
                 <div class="haut-de-page">
                         <a href="#">Haut de page</a>
                     </div>
-                <section id="section04">
+                <section id="section04" class="liste-h3">
                     
                     <h2>Éléments de formulaire courants</h2>
-                    <h3>Champ de texte <code>&lt;input type=<span class="rose">"text"</span>&gt;</code>  </h3>
+                    <ul>
+                        <li><a href="#f01">Champ de texte</a></li>
+                        <li><a href="#f02">Saisie d'un mot de passe</a></li>
+                        <li><a href="#f03">Saisie d'un courriel</a></li>
+                        <li><a href="#f04">Saisie d'un URL</a></li>
+                        <li><a href="#f05">Champ de recherche</a></li>
+                        <li><a href="#f06">Saisie d'une date</a></li>
+                        <li><a href="#f07">Saisie d'une couleur</a></li>
+                        <li><a href="#f08">Zone de texte multiligne</a></li>
+                        <li><a href="#f09">Cases à cocher</a></li>
+                        <li><a href="#f10">Boutons radio</a></li>
+                        <li><a href="#f11">Menu déroulant et liste déroulante</a></li>
+                        <li><a href="#f12">Envoi de fichier</a></li>
+                        <li><a href="#f13">Bouton d'envoi</a></li>
+                        <li><a href="#f14">Exemple de formulaire simple et fonctionnel</a></li>
+                    </ul>
+                    <h3 id="f01">Champ de texte <code>&lt;input type=<span class="rose">"text"</span>&gt;</code>  </h3>
                     <div class="references-section">
                         <ul>
                             <li><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></li>
@@ -317,7 +350,7 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h3>Saisie d'un mot de passe: <code>&lt;input type=<span class="rose">"password"</span>&gt;</code></h3>
+                    <h3 id="f02">Saisie d'un mot de passe: <code>&lt;input type=<span class="rose">"password"</span>&gt;</code></h3>
                     <div class="references-section">
                         <ul>
                             <li><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></li>
@@ -360,7 +393,7 @@
                     <div class="note">
                         <p>Bien que le mot de passe soit masqué à l'écran, les données saisies ne sont pas envoyées au serveur de manière sécurisée. Ce contrôle ne doit pas donc pas être utilisé tel quel pour l'envoi de données sensibles, tel qu'un numéro de carte bancaires. Pour une sécurité totale, le serveur doit être configuré de manière particulière, mais ce sujet est hors des cadres du présent cours.</p>
                     </div>
-                    <h3>Saisie d'un courriel: <code>&lt;input type=<span class="rose">"email"</span>&gt;</code></h3>
+                    <h3 id="f03">Saisie d'un courriel: <code>&lt;input type=<span class="rose">"email"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;label for=<span class="rose">"courriel"</span>&gt;Votre courriel : &lt;/label&gt;
                         &lt;input type=<span class="rose">"email"</span> name=<span class="rose">"courriel"</span> id=<span class="rose">"courriel"</span> placeholder=<span class="rose">"adresse de courriel"</span>&gt;
@@ -394,7 +427,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Saisie d'un URL: <code>&lt;input type=<span class="rose">"url"</span>&gt;</code></h3>
+                    <h3 id="f04">Saisie d'un URL: <code>&lt;input type=<span class="rose">"url"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;label for=<span class="rose">"url_pf"</span>&gt;<span class="vert">Adresse de mon portfolio :</span> &lt;/label&gt;
                         &lt;input type=<span class="rose">"url"</span> name=<span class="rose">"url_pf"</span> id=<span class="rose">"url_pf"</span>&gt;
@@ -430,7 +463,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Champ de recherche : <code>&lt;input type=<span class="rose">"search"</span>&gt;</code></h3>
+                    <h3 id="f05">Champ de recherche : <code>&lt;input type=<span class="rose">"search"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;input type=<span class="rose">"search"</span> name=<span class="rose">"search"</span> placeholder=<span class="rose">"Saisir un mot clé"</span>&gt;
                         &lt;input type=<span class="rose">"submit"</span> value=<span class="rose">"Rechercher"</span>&gt;
@@ -455,7 +488,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Saisie d'une date : <code>&lt;input type=<span class="rose">"date"</span>&gt;</code></h3>
+                    <h3 id="f06">Saisie d'une date : <code>&lt;input type=<span class="rose">"date"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;label for=<span class="rose">"date"</span>&gt;Date de départ : &lt;/label&gt;
                         &lt;input type=<span class="rose">"date"</span> name=<span class="rose">"date"</span> id=<span class="rose">"date"</span>&gt;
@@ -482,7 +515,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Saisie d'une couleur : <code>&lt;input type=<span class="rose">"color"</span>&gt;</code></h3>
+                    <h3 id="f07">Saisie d'une couleur : <code>&lt;input type=<span class="rose">"color"</span>&gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;label for=<span class="rose">"couleur"</span>&gt;Couleur de dossard : &lt;/label&gt;
                         &lt;input type=<span class="rose">"color"</span> name=<span class="rose">"couleur"</span> id=<span class="rose">"couleur"</span>&gt;
@@ -504,7 +537,7 @@
                     <div class="bloc-codepen">
                         
                     </div>
-                    <h3>Zone de texte multiligne: <code>&lt;textarea&gt;</code></h3>
+                    <h3 id="f08">Zone de texte multiligne: <code>&lt;textarea&gt;</code></h3>
                     <p>L'élément <code>textarea</code> permet de créer une zone de saisie de texte multiligne. Contrairement aux autres éléments de saise, celui-ci n'est pas vide. Vous devez donc inclure les balises d'ouverture et de fermeture. </p>
                     <p>Le texte qui apparaît entre les balises sera affiché dans la zone de texte lors du chargement de la page. Si l'utilisateur ne supprime pas ce texte, le message envoyé au serveur le contiendra, en plus du texte saisi. Certains sites ajoutent du code JavaScript pour effacer le texte initial lorsque l'utilisateur clique dans la zone de texte.</p>
                     <p class="code-etiquette">Code</p>
@@ -527,7 +560,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Cases à cocher:  <code>&lt;input type=<span class="rose">"checkbox"</span>&gt;</code></h3>
+                    <h3 id="f09">Cases à cocher:  <code>&lt;input type=<span class="rose">"checkbox"</span>&gt;</code></h3>
                     <p>Les <code>input</code> de type <code>checkbox</code> permettent de créer un groupe d'options à cocher. Ce type de <code>input</code> est privilégié lorsque l'on veut offrir à l'utilisateur la possibilité de cocher <strong>une ou plusieurs</strong> options d'un groupe de cases. </p>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code"> 
@@ -622,7 +655,7 @@
                     <p>L'attribut <code>id</code> sert à lier la case à cocher à son intitulé (<code>label</code>). </p>
                     <p><code>checked</code></p>
                     <p>L'attribut <code>checked</code> permet d'indiquer que la case correspondante sera déjà cochée au chargement de la page. Sa valeur est <code>checked</code>.</p>
-                    <h3>Boutons radio: <code>&lt;input type=<span class="rose">"radio"</span>&gt;</code></h3>
+                    <h3 id="f10">Boutons radio: <code>&lt;input type=<span class="rose">"radio"</span>&gt;</code></h3>
                     <p>Les <code>input</code> de type <code>radio</code> (« boutons radio ») se manipulent un peu de la même façon que les <code>checkbox</code>.</p>
                     <p> À la différence des <code>checkbox</code> toutefois,  l'utilisateur ne peut cocher qu'un seul bouton radio à la fois à l'intérieur d'un même groupe. L'attribut <code>name</code> sert à identifier un groupe.</p>
                     <p class="code-etiquette">Code</p>
@@ -665,7 +698,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </div>
-                    <h3>Menu déroulant et  liste déroulante: <code>select, option</code></h3>
+                    <h3 id="f11">Menu déroulant et  liste déroulante: <code>select, option</code></h3>
                     <p>Un menu déroulant ou une liste déroulante permet à l'utilisateur de sélectionner une option parmi celles prédéfinies.</p>
                     <p>L'élément <code>select</code> permet de créer un menu déroulant ou une liste déroulante. Il contient au moins deux éléments <code>option</code>.  </p>
                     <h4>Menu déroulant  </h4>
@@ -741,7 +774,7 @@
                     <p>L'attribut <code>value </code> précise la valeur qui sera envoyée au serveur avec le nom du contrôle lors de la sélection de l'option.</p>
                     <p><code>selected=<span class="rose">"selected"</span></code></p>
                     <p>L'attribut <code>selected</code> sert à pré-sélectionner une option du menu déroulant ou de la liste déroulante. Sa valeur doit être <code>selected</code>. Si cet attribut n'est pas défini, la première option est sélectionnée par défaut. Si l'utilisateur ne choisit pas une autre option, c'est donc cette valeur qui est envoyée au serveur. </p>
-                    <h3>Envoi de fichier: <code>&lt;input type=<span class="rose">"file"</span>&gt;</code></h3>
+                    <h3 id="f12">Envoi de fichier: <code>&lt;input type=<span class="rose">"file"</span>&gt;</code></h3>
                     <p>Si vous souhaiter permettre à l'utilisateur d'envoyer un fichier comme une image, une vidéo ou un PDF, vous devez utiliser un élément <em>input</em> de type <em>file</em>.  </p>
                     <p>Seule la méthode <code>post</code> accepte ce type d'envoi.</p>
                     <p class="code-etiquette">Code</p>
@@ -760,7 +793,7 @@
                     <p>Ce type d'élément crée dans certains navigateurs un champ comparable à un champ de saisie suivi d'un bouton <em>Parcourir</em>; d'autres navigateurs afficheront plutôt un bouton <em>Choisir le fichier</em>, suivi du texte « aucun fichier sélectionné » ou du nom du fichier sélectionné. Lorsque l'utilisateur clique sur le bouton, une fenêtre apparaît afin qu'il puisse sélectionner sur son ordinateur le fichier à envoyer. L'aspect de cette fenêtre dépend du système d'exploitation utilisé.</p>
                     <p><code>accept</code></p>
                     <p>L'attribut <em>accept</em> permet en principe de préciser le type de fichier à télécharger (mp3, pdf, jpg, etc.). Les navigateurs ne prennent cependant pas en charge cet attribut. Il est  conseiller pour le moment de valider le type de fichiers par des scripts serveur.</p>
-                    <h3>Bouton d'envoi: <code>&lt;input type=<span class="rose">"submit"</span> ... &gt;</code></h3>
+                    <h3 id="f13">Bouton d'envoi: <code>&lt;input type=<span class="rose">"submit"</span> ... &gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;p&gt;Abonnez-vous à notre liste de diffusion :&lt;/p&gt;
                         &lt;input type=<span class="rose">"email"</span> name=<span class="rose">"courriel"</span>&gt;
@@ -781,7 +814,7 @@
                     <p>L'attribut <code>value</code> détermine le texte qui s'affiche dans le bouton. </p>
                     <p><code>name</code></p>
                     <p>L'attribut <code>name</code> est reconnu mais non obligatoire.</p>
-                    <h3>Exemple de formulaire simple et fonctionnel</h3>
+                    <h3 id="f14">Exemple de formulaire simple et fonctionnel</h3>
                     <p>Un formulaire doit se placer à l'intérieur d'un élément <code>&lt;form&gt;</code>. Il présente des contrôles et se termine par un bouton d'envoi des données : </p>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
@@ -890,46 +923,50 @@
                         <p>Structure de fichiers : </p>
                         <figure class="w40">
                             <figcaption>Structure de fichiers de l'exercice 2</figcaption>
-                            <img class="bordure" src="images/cours02_ex2b_arbo.jpg" alt="arborescence de ex2"><br>ou<br><img class="bordure" src="images/cours02_ex2a_arbo.jpg" alt="arborescence de ex2">
+                            <img class="bordure" src="images/cours02_ex2b_arbo.jpg" alt="arborescence de ex2">
                         </figure>
                     </div>
                     <h4>Échéancier</h4>
-                    <p>Remettez le dossier complet, zippé, dans l'espace Teams/Devoir, au plus tard :</p>
+                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
                     <ul>
-                        <li><strong>le lundi (groupes du mercredi) ou le mercredi (groupe du vendredi) suivant le cours, 9h le matin</strong></li>
-                    </ul>
-                    <h4>Grille d'évaluation</h4>
-                    <p>Voir la grille d'évaluation complète sur Teams/Devoirs.</p>
+                        <li><strong>groupe 1 :</strong> au plus tard le <strong>dimanche suivant en fin de journée</strong></li>
+                        <li><strong>groupe 2 :</strong> au plus tard le <strong>mercredi suivant à 12h</strong></li>
+                        </ul>
                     <h4>Travail à faire</h4>
                     <p>Vous devez créer la page <code>monformulaire.html</code> du site « Blogue plein air » (voir Ex1).</p>
                     <p>Pour cela, suivez cette procédure :</p>
-                    <p>1) Créez un dossier au nom de <strong>gr1_nomprenom_ex2</strong> ou <strong>gr2_nomprenom_ex2</strong>, dans lequel vous insérez le fichier <strong>monarticle.html</strong> de l'exercice 1, et dans lequel vous insérez également le dossier <strong>images</strong> de l'exercice 1. </p>
-                    <p>Dans le dossier <strong>images</strong>, insérez l'image supplémentaire fournie dans Teams/Devoirs pour l'exercice 2.
-                    </p><p>2) Ouvrez <abbr title="Visual Studio Code">Visual Studio Code</abbr>(VSC) et chargez ensuite le dossier <strong>gr1_nomprenom_ex2</strong> ou <strong>gr1_nomprenom_ex2</strong> (menu <strong>Fichier/Ouvrir un dossier</strong>...)</p>
-                    <p>3) Faites afficher le fichier <code>monarticle.html</code> dans la fenêtre d'édition de VSC ;</p>
-                    <p>4) Dans le fichier <strong>monarticle.html</strong>, effectuez d'abord les corrections proposées par le professeur ;</p>
-                    <p>5) Ajoutez les éléments <code>meta</code> suivants (à la suite de l'élément <code>title</code> déjà en place dans la partie <code>&lt;head&gt;</code> de votre page) pour rendre la page plus efficace :
-                        </p><pre class="exemple-code">                        &lt;meta name="description" content="<span class="rose">La Gaspésie est un véritable paradis du ski de randonnée</span>"&gt;
+                    <ol>
+                        <li>Téléchargez et décompressez l'archive <a href="materiel/Ex2.zip"><strong>Ex2.zip</strong> <i class="bi bi-download"></i></a>. <br>Ce dossier contient une page HTML et toutes les images nécessaires pour l'exercice.</li>
+                        <li>Renommez le dossier <strong>grX_nomInitialprenom_ex2</strong> selon votre numéro de groupe et votre nom. Déplacez-le dans votre dossier du cours <strong>Intégration 1</strong> selon votre organisation de travail.</li>
+                        <li>Dans VSCode, ouvrez votre dossier de travail (Menu <em>Fichier > Ouvrir un dossier</em>)</li>
+                        <li>Faites afficher le fichier <code>monarticle.html</code> dans la fenêtre d'édition de VSCode.</li>
+                        <li>Dans le fichier <strong>monarticle.html</strong>, effectuez d'abord ces corrections:
+                            <ol>
+                                <li>À la suite de l'élément <code>title</code> déjà en place dans la partie <code>&lt;head&gt;</code> de votre page, ajoutez les éléments <code>meta</code> suivants pour rendre la page plus efficace :<br>
+                        <pre class="exemple-code">                        &lt;meta name="description" content="<span class="rose">La Gaspésie est un véritable paradis du ski de randonnée</span>"&gt;
                         &lt;meta name="keywords" content="<span class="rose">plein air, ski, randonnée, Gaspésie, Chic-chocs, FQME</span>"&gt; 
                         &lt;meta name="author" content="<span class="rose">Inscrire votre nom ici</span>"&gt;
-                        </pre>
-                    <p>6) Complétez la section <code>body</code> de la façon suivante :</p>
-                    <ol>
-                        <li>Juste après le nom du blogue (Blogue plein air), insérez une liste non ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong> (voir l'image suivante)</li>
-                    </ol> 
-                    <p>7) Une fois ces modifications faites, créez le document <code>monformulaire.html</code>.</p>
-                    <p>8) Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvelle créé.</p>
-                    <p>9) Faites afficher le fichier monformulaire.html dans VSC.</p>
-                    <p>10) Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : Contactez-nous ! - Blogue plein air</p>
-                    <p>10) Modifiez la section <code>body</code> de la façon suivante :</p>
-                    <ol>
-                        <li>Changez le contenu du titre de la page <code>h1</code> par « Contactez-nous ! » afin de refléter le contenu de cette nouvelle page ; </li>
-                        <li>Remplacez le texte « Par Raphaël Charron » par « Contribuez à notre blogue ! »</li>
-                        <li>Retirez tout le texte de l'article sauf la section « Nos médias sociaux » et le copyright ;</li>
-                        <li>À la place du texte retiré, ajoutez un formulaire comme celui affiché dans l'exemple présenté plus bas. <br>
-                            Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br>
+                        </pre></li>
+                        <li>Dans la section <code>body</code>, juste après le nom du blogue (Blogue plein air), insérez une liste non ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong>.<br><img src="images/cours02_deux_liens.jpg" width="159"></li>
+                            </ol>
                         </li>
-                    </ol> 
+                        <li>Une fois ces modifications faites, créez le document <code>monformulaire.html</code>.</li>
+                        <li>Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvelle créé.</li>
+                        <li>Faites afficher le fichier monformulaire.html dans VSC.</p>
+                        <li>Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : Contactez-nous ! - Blogue plein air</li>
+                        <li>Modifiez la section <code>body</code> de la façon suivante :
+                        <ol>
+                            <li>Changez le contenu du titre de la page <code>h1</code> par « Contactez-nous ! » afin de refléter le contenu de cette nouvelle page ; </li>
+                            <li>Remplacez le texte « Par Raphaël Charron » par « Contribuez à notre blogue ! »</li>
+                            <li>Retirez tout le texte de l'article <strong>sauf</strong> la section « Nos médias sociaux » et le copyright ;</li>
+                            <li>À la place du texte retiré, ajoutez un formulaire comme celui affiché dans l'exemple présenté plus bas. <br>
+                                Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br>
+                            </li>
+                        </ol> 
+                    </li>
+                    </ol>
+            
+                    
                     <figure class="w80">
                         <figcaption>Exemple de résultat pour l'exercice 2</figcaption>
                         <img class="bordure" src="images/cours02_tp2_resultat.jpg" alt="Exemple pour l&#39;exercice 2.">  
