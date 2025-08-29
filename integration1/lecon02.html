@@ -913,11 +913,11 @@
                     <h3>Exercice 2 - Intro au HTML (2): le formulaire HTML</h3>
                     <p>L'exercice 2 consiste à créer une page Web comportant un formulaire. Cette page s'ajoute à celle que vous avez créée la semaine dernière dans le cadre de l'exercice 1.</p>
                     <h4>Documents à remettre</h4>
-                    <p>Un <strong>dossier </strong>rigoureusement nommé comme suit:</p>
-                    <ul>
-                        <li>groupe du mercredi 9h : <strong>gr1_nomprenom_ex2</strong></li>
-                        <li>groupe du vendredi 8h : <strong>gr2_nomprenom_ex2</strong></li>
-                    </ul>
+                    <ol>
+                        <li>Un dossier nommé <i>grX_nomInitialeprenom_ex2</i> (remplacez X par votre numéro de groupe)</li>
+                        <li>Ce dossier contiendra les documents html nommés <strong>monarticle.html</strong>, <strong>monformulaire.html</strong> et le sous-dossier nommé <strong>images</strong>.</li>
+                        <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur&nbsp;LÉA.</li>
+                    </ol>
                     <p>contenant les fichiers <code>monarticle.html</code>, <code>monformulaire.html</code> et un dossier <code>images</code> contenant les quatre images de la semaine dernière en plus de l'image fournie cette semaine.</p>
                     <div class="note">
                         <p>Structure de fichiers : </p>
@@ -929,8 +929,8 @@
                     <h4>Échéancier</h4>
                     <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
                     <ul>
-                        <li><strong>groupe 1 :</strong> au plus tard le <strong>dimanche suivant en fin de journée</strong></li>
-                        <li><strong>groupe 2 :</strong> au plus tard le <strong>mercredi suivant à 12h</strong></li>
+                        <li><strong>groupe 1 :</strong> au plus tard le <strong>samedi 6 septembre en fin de journée</strong></li>
+                        <li><strong>groupe 2 :</strong> au plus tard le <strong>mercredi 3 septembre à 12h</strong></li>
                         </ul>
                     <h4>Travail à faire</h4>
                     <p>Vous devez créer la page <code>monformulaire.html</code> du site « Blogue plein air » (voir Ex1).</p>
@@ -947,38 +947,57 @@
                         &lt;meta name="keywords" content="<span class="rose">plein air, ski, randonnée, Gaspésie, Chic-chocs, FQME</span>"&gt; 
                         &lt;meta name="author" content="<span class="rose">Inscrire votre nom ici</span>"&gt;
                         </pre></li>
-                        <li>Dans la section <code>body</code>, juste après le nom du blogue (Blogue plein air), insérez une liste non ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong>.<br><img src="images/cours02_deux_liens.jpg" width="159"></li>
+                        <li>Dans la section <code>body</code>, juste après le nom du blogue (Blogue plein air), insérez une liste non&nbsp;ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong>.
+                            <br>
+                            <img class="bordure" src="images/cours02_deux_liens.jpg" alt="Les deux liens à ajouter" width="159">
+                        </li>
                             </ol>
                         </li>
                         <li>Une fois ces modifications faites, créez le document <code>monformulaire.html</code>.</li>
-                        <li>Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvelle créé.</li>
+                        <li>Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvellement&nbsp;créé.</li>
                         <li>Faites afficher le fichier monformulaire.html dans VSC.</p>
-                        <li>Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : Contactez-nous ! - Blogue plein air</li>
+                        <li>Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : <em>Contactez-nous ! - Blogue plein air</em></li>
                         <li>Modifiez la section <code>body</code> de la façon suivante :
                         <ol>
                             <li>Changez le contenu du titre de la page <code>h1</code> par « Contactez-nous ! » afin de refléter le contenu de cette nouvelle page ; </li>
                             <li>Remplacez le texte « Par Raphaël Charron » par « Contribuez à notre blogue ! »</li>
                             <li>Retirez tout le texte de l'article <strong>sauf</strong> la section « Nos médias sociaux » et le copyright ;</li>
                             <li>À la place du texte retiré, ajoutez un formulaire comme celui affiché dans l'exemple présenté plus bas. <br>
-                                Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br>
+                                Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br><figure>
+                        <figcaption>Exemple du résultat attendu pour l'exercice 2</figcaption>
+                        <img class="bordure" src="images/cours02_tp2_resultat.jpg" alt="Exemple pour l&#39;exercice 2.">  
+                    </figure>   
                             </li>
                         </ol> 
                     </li>
                     </ol>
             
                     
-                    <figure class="w80">
-                        <figcaption>Exemple de résultat pour l'exercice 2</figcaption>
-                        <img class="bordure" src="images/cours02_tp2_resultat.jpg" alt="Exemple pour l&#39;exercice 2.">  
-                    </figure>   
+                    
                     <div class="note">
                         <p>
                             Inspirez-vous des exemples de contrôles de formulaire décrits dans les notes de la Leçon 2 pour créer le formulaire de la page monformulaire.html.
                         </p>
                         <p>
-                            N'oubliez pas que les éléments <code>form</code>, <code>input</code> et autres comportent des règles d'utilisation que vous devez appliquer (par exemple, des éléments et des attributs obligatoires comme action, method, name, id, etc.). Voir les notes de cours à ce sujet.
+                            N'oubliez pas que les éléments <code>form</code>, <code>input</code> et autres comportent des règles d'utilisation que vous devez appliquer (par exemple, des éléments et des attributs obligatoires comme <code>action</code>, <code>method</code>, <code>name</code>, <code>id</code>, etc.). Voir les notes de cours à ce sujet.
                         </p>
                     </div>
+                    <h4>Prêt à remettre le travail?</h4>
+                     <ol>
+                        <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.</li>
+                        <li>Assurez-vous d'avoir bien activé les liens vers les différentes pages de votre micro-site: <br>
+                            <img class="bordure" src="images/cours02_deux_liens.jpg" alt="Les deux liens à ajouter" width="159">
+                        </li>
+                        <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.
+                        </li>
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez à son dossier par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/cours02_ex2b_arbo.jpg" alt="arborescence de ex2">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
+                        </li>
+                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.
+                        </li>
+                    </ol>
                 </section>  <!-- #sectionAE -->
                 <footer>
                     <div class="haut-de-page">
