@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 3 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours03" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 3</div>
+                    <h1>Introduction au HTML [3]</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Table des matières</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Informations ignorées par les navigateurs</a> 
+                        <a href="#section02" class="list-group-item list-group-item-action">Éléments HTML : saut de ligne et séparateur</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Éléments HTML : listes</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Éléments HTML : tableau</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Intégrer une vidéo dans un document HTML à l'aide de iframe</a>
+                        <a href="#section06" class="list-group-item list-group-item-action">Intégrer un favicon dans un document HTML</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+                 <section id="section01">
+                    <h2>Informations ignorées par les navigateurs</h2>
+                    <p>Certaines informations d'un document <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> sont ignorées ou ont peu d'impact sur la présentation du document lorsque ce dernier est affiché par un navigateur graphique.</p>
+                    <p>Voici quelques exemples d'informations ignorées par les navigateurs.</p>
+                    <h3>Retour à la ligne</h3>
+                    <p>Dans un document <abbr title="Hypertext Markup Language" lang="en">HTML</abbr>, les retours à la ligne sont traités comme des espaces. </p>
+                    <p>Le texte et les éléments se suivent jusqu'à l'arrivée d'un éléments de type bloc comme <code>p</code> ou<code> h2 </code>dans le flux du texte.</p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJmovXy" data-pen-title="c02-html04" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/XJmovXy">
+                      c02-html04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Tabulations et espaces multiples</h3>
+                    <p>Lorsque qu'un navigateur rencontre plusieurs espaces blancs consécutifs dans un document <abbr title="Hypertext Markup Language" lang="en">HTML</abbr>, il les affiche comme un seul espace. L'exemple suivant montre que les espaces multiples ajoutés entre les lettres dans le HTML (à gauche) ne sont pas reproduite à l'affichage (à droite):</p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="myeaNEE" data-pen-title="c02-html01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myeaNEE">
+                      c02-html01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Éléments &lt;p&gt; vides</h3>
+                    <p>Les éléments de paragraphes vides (<code>&lt;p&gt;&lt;/p&gt;</code> ou <code>&lt;p&gt;</code> seul), qui ne contiennent pas de texte, sont considérés comme redondants par tous les navigateurs et sont ignorés à l'affichage. Par exemple, ce paragraphe que vous lisez est suivi d'un paragraphe vide qui ne s'affiche pas dans le navigateur.</p>
+                    <div class="note">
+                        <p>Vous constaterez parfois l'utilisation d'une astuce  pour créer des espaces entre les paragraphes, soit l'insertion d'un paragraphe contenant une espace insécable, comme ceci: <code>&lt;p&gt;<span class="rose">&amp;nbsp;</span>&lt;/p&gt;</code>. Il s'agit d'une pratique à proscrire, car un élément <code>p</code> annonce du contenu, d'une part, et, d'autre part, les règles de style permettent de faire ce travail de manière plus efficace et systématique. </p>
+                    </div>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPYwxpP" data-pen-title="c02-html05" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/dPYwxpP">
+                      c02-html05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Texte en commentaire dans le HTML</h3>
+                    <p>Les navigateurs n'affichent pas le texte placé entre les balises spéciales suivantes: </p>
+                    <p><code><span class="rose">&lt;!--</span></code> et <code><span class="rose">--&gt;</span></code></p>
+                    <p>Ces balises servent à inscrire un commentaire dans le code HTML, par exemple : </p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;!--</span> Le menu principal débute ici. SL <span class="rose">--&gt;</span>
+                    </pre>
+                    <p>Une espace doit être placée <strong>après</strong> l'élément initial et <strong>avant</strong> l'élément final. </p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gbaZVwL" data-pen-title="c02-html03" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/gbaZVwL">
+                      c02-html03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="note">
+                        <p>On peut utiliser les balises de commentaire HTML pour masquer temporairement du contenu afin d'éviter de le retirer définitivement du document, et cela pour des fins de <strong>test</strong> ou de <strong>restructuration</strong>. </p>
+                    </div>
+                </section> <!-- #section01 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section02">
+                    <h2>Éléments HTML : saut de ligne et séparateur</h2>
+                    <table width="" border="">
+                        <caption>Tableau 2.3 Saut de ligne et séparateur</caption>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Élément</th>
+                            <th width="75%" scope="col">Description</th>
+                        </tr>
+                        <tr>
+                            <td>&lt;br&gt;</td>
+                            <td>Saut de ligne : pour forcer un changement de ligne, par exemple entre les vers d'un poème ou d'une chanson. On ne doit pas utiliser cet élément pour créer des paragraphes ou des espaces entre les paragraphes. <br><a href="http://www.w3schools.com/tags/tag_br.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;hr&gt;</td>
+                            <td>Séparateur : pour créer une séparation entre deux blocs de contenu distincts. Par exemple, pour souligner un changement de sujet dans un long texte (comme des chapitres) ou un changement de scène dans un scénario. <br><a href="http://www.w3schools.com/tags/tag_hr.asp">Essayez-le!</a></td>
+                        </tr>
+                    </tbody></table>
+                </section> <!-- #section02 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section03">
+                    <h2>Éléments HTML : les listes</h2>
+                    <table width="" border="">
+                        <caption>Tableau 2.4 Les listes</caption>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Élément</th>
+                            <th width="75%" scope="col">Description</th>
+                        </tr>
+                        <tr>
+                            <td>ul</td>
+                            <td>Liste non ordonnée (utilisée lorsqu'il n'y a pas de notion d'ordre entre les éléments de liste. Exemple: boutons de navigation.) <br><a href="http://www.w3schools.com/tags/tag_ul.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>ol</td>
+                            <td>Liste ordonnée (utilisée lorsqu'il y a un ordre explicite entre les éléments de liste; exemple: les étapes de réalisation d'une recette) <br><a href="http://www.w3schools.com/tags/tag_ol.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>li</td>
+                            <td>Élément de liste <br><a href="http://www.w3schools.com/tags/tag_li.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>dl</td>
+                            <td>Liste de définitions (utilisée lorsque les éléments de liste se déclinent en deux éléments: terme et définition) <br><a href="http://www.w3schools.com/tags/tag_dl.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>dt</td>
+                            <td>Terme d'une liste de définition <br><a href="http://www.w3schools.com/tags/tag_dt.asp">Essayez-le!</a></td>
+                        </tr>
+                        <tr>
+                            <td>dd</td>
+                            <td>Définition d'une liste de définition <br><a href="http://www.w3schools.com/tags/tag_dd.asp">Essayez-le!</a></td>
+                        </tr>
+                    </tbody></table>
+                    <h3>Liste non ordonnée</h3>
+                    <p>Les éléments d'une liste non ordonnée sont marqués par une puce. La liste représente une série d'éléments qui n'ont pas d'ordre particuliers, comme les ingrédients d'une recette par exemple. </p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNVOXwr" data-pen-title="c02-liste01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNVOXwr">
+                      c02-liste01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Liste ordonnée</h3>
+                    <p>Chaque élément d'une liste ordonnée possède un numéro. La liste peut représenter par exemple les étapes d'une procédure qui doivent être effectuées dans l'ordre. </p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QwjzeKa" data-pen-title="c02-liste02" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/frlacroix/pen/QwjzeKa">
+                    c02-liste02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Liste de définitions</h3>
+                    <p>Ces listes sont constituées d'un ensemble de termes accompagnés de leurs définition. </p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYbVgpM" data-pen-title="c02-liste03" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ZYbVgpM">
+                      c02-liste03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <h3>Liste imbriquée</h3>
+                    <p>Il est possible d'imbriquer une liste dans une autre. Remarquez bien la syntaxe: la liste imbriquée se trouve à l'intérieur de l'élément de liste auquelle elle est reliée. </p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxvygKe" data-pen-title="c02-liste04" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/zxvygKe">
+                      c02-liste04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                </section> <!-- section03 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section04">
+                    <h2>Éléments HTML : tableau de données</h2>
+                    <p>Les éléments de tableau <acronym title="Hypertext Markup Language" lang="en">HTML</acronym>, introduits pour la première fois dans le navigateur <a href="http://en.wikipedia.org/wiki/Netscape_Navigator" target="_blank">Netscape 1.1</a>, ont été créés pour <strong>organiser des données</strong> en lignes et en colonnes.</p>
+                    <p>Ils servent à présenter des statistiques, des données de tout ordre, des calendriers et d'autres types d'informations qu'il est avantageux de présenter sous forme de lignes et de colonnes. </p>
+                    <div class="note">
+                        <p>Les tableaux <strong>ne doivent pas servir au contrôle de la mise en pages</strong> des sites web. L'organisation graphique des pages Web est plutôt contrôlée par les règles de style.</p>
+                    </div>
+                    <h3>Principaux éléments de tableau HTML</h3>
+                    <table width="" border="">
+                        <caption>Tableau 2.5 Quelques éléments de tableau HTML</caption>
+                        <tbody><tr>
+                            <th width="15%" scope="col">Élément</th>
+                            <th width="45%" scope="col">Description</th>
+                            <th width="40%" scope="col">Certains attributs</th>
+                        </tr>
+                        <tr>
+                            <td>table</td>
+                            <td>Déclare un tableau <br><a href="http://www.w3schools.com/tags/tag_table.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>caption</td>
+                            <td>Titre d'un tableau (lorqu'un élément &lt;table&gt; est son parent) <br><a href="http://www.w3schools.com/tags/tag_caption.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>tr</td>
+                            <td>Ligne d'un tableau <br><a href="http://www.w3schools.com/tags/tag_tr.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>th</td>
+                            <td>Cellule d'en-tête d'un tableau <br><a href="http://www.w3schools.com/tags/tag_th.asp">Essayez-le!</a></td>
+                            <td>abbr, colspan</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>Cellule d'un tableau <br><a href="http://www.w3schools.com/tags/tag_td.asp">Essayez-le!</a></td>
+                            <td>colspan, rowspan</td>
+                        </tr>
+
+                        <tr>
+                            <td>thead</td>
+                            <td>Identifie l'en-tête d'un tableau <br><a href="http://www.w3schools.com/tags/tag_thead.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>tbody</td>
+                            <td>Identifie le corps d'un tableau <br><a href="http://www.w3schools.com/tags/tag_tbody.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>tfoot</td>
+                            <td>Identifie le pied d'un tableau; se place après &lt;thead&gt; <br><a href="http://www.w3schools.com/tags/tag_tfoot.asp">Essayez-le!</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody></table>
+                    <h3>Structure d'un tableau respectant les standards du web et les règles d'accessibilité  </h3>
+                    <p>Voici un exemple présentant un tableau plus complet, respectant les standards du Web et les règles d'accessibilité :</p>
+                    <figure class="w80">
+                        <figcaption>Exemple de tableau.</figcaption>
+                        <img class="bordure" src="images/cours02_tab02.jpg" alt="Exemple de balisage d&#39;un tableau complet.">
+                    </figure>
+                    <ul>
+                        <li>Les éléments <code>table</code> (tableau) et <code>tr</code> (ligne du tableau)
+                            donnent la structure de base du tableau.</li>
+                        <li>Les élément <code>th</code> (cellule d'entête) et <code>td</code> (cellule normale) contiennent le contenu visible du tableau. </li>
+                        <li>Une cellule peut contenir tous les types de données pouvant être affichés dans un document. </li>
+                    </ul>
+                    <div class="note">
+                        <p>Dans un tableau HTML de base,<strong> le nombre de colonnes est déduit à partir du nombre de cellules composant la plus grande ligne</strong>. </p>
+                    </div>
+                    <h3>Affichage de l'exemple précédent dans un navigateur Web</h3>
+                    <figure class="w80">
+                        <figcaption>Exemple d'un tableau de données respectant les standards du web.</figcaption>
+                        <img class="bordure" src="images/cours02_tab01b.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>CODEPEN / Exemple de tableau</figcaption>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYvqomL" data-pen-title="c03-table01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/frlacroix/pen/VYvqomL">
+                        c03-table01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </figure>
+                    <h3>Notes à propos de l'exemple précédent</h3>
+                    <ul>
+                        <li>Grâce aux éléments d'entête des colonnes (<code>th</code>), un lecteur d'écran peut lire chaque ligne de données de cette manière: <em>« Planète : Mercure; Diamètre par rapport à la Terre : 0,38; Durée de révolution en années : 0,24; Lunes : 0 »</em> et ainsi de suite. </li>
+                    </ul>
+                    <div class="note">
+                        <p>Les cellules d'entête (th) sont indispensables afin d'associer une signification aux données de chaque cellule. Sans cellules d'entête, les cellules du tableau sont lues à la queue leu leu, de la première à la dernière, ce qui rend le tableau difficile à déchiffrer.</p>
+                    </div>
+                    <ul>
+                        <li>Lorsque le texte des cellules d'entête (<code>th</code>) est long, l'ajout de l'attribut <code>abbr</code> permet de suggérer une version plus courte de ces textes. Dans l'exemple ci-haut, lors des répétitions, le lecteur retiendra donc <em>« Diamètre »</em> plutôt que <em>« Diamètre par rapport à la Terre »</em>.</li>
+                        <li>Il peut paraître curieux d'insérer le pied du tableau (<code>tfoot</code>)
+                            juste après l'en-tête (<code>thead</code>) et avant le corps (<code>tbody</code>), comme le montre l'exemple plus haut, mais il s'agit d'une pratique recommandée dans les bonnes pratiques du web. Dans le cas de tableaux contenant beaucoup de données, le pied pourra s'afficher  avant même que l'ensemble du contenu du corps ne soit téléchargé sur l'écran de l'usager. De même, dans un tableau trop long pour être affiché au complet sur un écran, les éléments <code>thead</code> et <code>tfoot</code> portent le potentiel d'être affichés en permanence alors que les lignes du tableau défilent (mais cette fonctionnalité n'est pas encore implantée dans les navigateurs actuels). Notez que, malgré sa position dans le HTML, le pied s'affiche bel et bien tout en bas du tableau.</li>
+                        <li>L'attribut <code>colspan</code> inséré dans une cellule permet d'étendre cette dernière sur un nombre déterminé de colonnes, comme c'est le cas de la cellule (<code>td</code>) du pied de tableau (<code>tfoot</code>) qui s'étend sur quatre colonnes grâce à sa valeur « 4 ». </li>
+                    </ul>
+                    <!-- 
+                    <h3>Structure d'un tableau HTML : quelques remarques</h3>
+                    <figure>
+                        <figcaption>VIDÉO / Structure d'un tableau HTML</figcaption>
+                        <video controls>
+                            <source src="../../video/I1-Cours03-02_Structure_dun_tableau_html.mp4" type="video/mp4">
+                            Votre navigateur ne peut lire cette vidéo. Voici un lien pour la visionner: <a href="https://web.microsoftstream.com/video/e6c87cc2-2808-4cb9-95fa-4a937fbe4a93"></a>
+                        </video>
+                    </figure>
+                            -->
+                </section> <!-- #section04 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section05">
+                    <h2>Intégrer une vidéo dans un document HTML à l'aide de l'élément <i>iframe</i></h2>
+                    <p>Voyons ici une première méthode pour intégrer une vidéo dans un document HTML.</p>
+                    <p>Les sites de diffusion vidéo comme YouTube ou Vimeo présentent des options qui facilitent le partage d'une vidéo ou encore son imbrication dans un document HTML.</p>
+                    <h3>Le cas de Youtube</h3>
+                    <p>Pour intégrer une vidéo à partir du site Youtube, sélectionnez une vidéo, comme par exemple, cette vidéo: <a href="https://youtu.be/tvyTQFog-rc?si=bHQZQNBngeeRTAn7">Mont Sainte-Anne en vélo de montagne : la GRISANTE 2.0 - Ep7</a>, puis cliquez sur le bouton <i>Partager</i></p>
+                    <figure class="w80">
+                        <figcaption>Exemple de vidéo choisie sur le site Youtube</figcaption>
+                        <img class="bordure" src="images/cours03_iframe-01.jpg" alt="Exemple de vidéo sur le site Youtube">
+                    </figure>
+                    <p>Cliquez sur le bouton <i>Partager</i> :</p> 
+                    <figure class="w40">
+                        <figcaption>Le bouton Partager</figcaption>
+                        <img class="bordure" src="images/cours03_iframe-02.jpg" alt="Exemple de vidéo sur le site Youtube">
+                    </figure>
+                    <p>Dans la fenêtre de partage, cliquez sur le bouton <i>Intégrer</i>.</p>
+                    <figure class="w50">
+                        <figcaption>Cliquez en suite sur <i>Copier</i> pour copier le code dans la mémoire vive.</figcaption>
+                        <img class="bordure" src="images/cours03_iframe-03.jpg" alt="Exemple de vidéo sur le site Youtube">
+                    </figure>
+                    <p>Copiez le code (cmd+c ou ctrl+c), et collez-le (cmd+v ou ctrl+v) dans une balise <code>figure</code> en ajoutant une légende avec un élément <code>figcaption</code>.</p>
+                    <figure class="w80">
+                        <figcaption>Insérez le iframe dans un figure</figcaption>
+                        <img class="bordure" src="images/cours03_iframe-04.jpg" alt="Exemple de vidéo sur le site Youtube">
+                    </figure>
+                    <p class="resultat-etiquette">Résultat (essayez-le sur CodePen)</p>
+                   <p class="codepen" data-height="660" data-default-tab="html,result" data-slug-hash="myeaNOE" data-pen-title="c03_iframe01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myeaNOE">
+                      c03_iframe01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <!--
+                    <figure>
+                        <figcaption>VIDÉO / Intégrer une vidéo dans un document HTML à l'aide de iframe</figcaption>
+                        <video controls>
+                            <source src="../../video/I1-Cours03_integrer-iframe-video-dans-html.mp4" type="video/mp4">
+                            Votre navigateur ne peut lire cette vidéo. Voici un lien pour la visionner: <a href="https://web.microsoftstream.com/video/e6c87cc2-2808-4cb9-95fa-4a937fbe4a93"></a>
+                        </video>
+                    </figure>
+                            -->
+                </section> <!-- #section05 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section06">
+                    <h2>Insérer un favicon dans un document HTML</h2>
+                    <p>Le <i>favicon</i> est l'icône qui apparaît à la gauche du contenu de l'élément <code>title</code> dans l'entête de l'onglet d'un navigateur ainsi que dans la liste de favoris d'un utilisateur.</p>
+                    <p>Pour le faire afficher, il suffit d'insérer une image carrée de 48 x 48px (ou un multiple, comme 96 x 96px ou 144 x 144px, etc.) à la racine de votre dossier de site web (car son url doit être stable) et de lier cette image par un élément <code>link</code>.</p>
+                    <p>L'élément <code>link</code> doit être placé dans l'élément <code>head</code> et comporter les attributs suivants : 
+                    </p><p class="code-etiquette">Code</p>
+                    <div class="resultat">
+                        <img class="bordure w70" src="images/cours03_favicon-00.jpg" alt="Favicon">
+                    </div>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                        <img class="w40" src="images/cours03_favicon-01.jpg" alt="Favicon">
+                    </div>
+                    
+                </section> <!-- #section06 -->
+                <!-- ACTIVITÉS D'ÉVALUATION -->
+                 <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="sectionAE">
+                    <h2>Activités d'évaluation</h2>
+                    
+                    <h3>TP1 - Intro au HTML (3)</h3>
+                    <p>Le TP1 est le premier travail sommatif de la session: il vaut pour 5% de la note finale. Il fait la synthèse des apprentissages du premier bloc ayant pour thème l'utilisation du langage HTML pour structurer une page web. On ajoute cette semaine les éléments de tableau HTML et l'élément iframe qui sert à insérer une vidéo provenant d'un autre site web.</p>
+                    <h4>Documents fournis</h4>
+                    <p>Voir les documents fournis dans TEAMS/DEVOIRS: <strong>texte_tp1.txt</strong>, <strong>bras-du-nord_1000.jpg, favicon.png</strong>.</p>
+                    <h4>Documents à remettre</h4>
+                    <p>Un dossier compressé (.zip) nommé:</p>
+                    <ul>
+                        <li><strong>gr1_nomprenom_tp1.zip (groupe du vendredi 12h)</strong></li>
+                        <li><strong>gr2_nomprenom_tp1.zip (groupe du vendredi 8h)</strong></li>
+                    </ul>
+                    <p>Ce dossier contient:</p>
+                    <ul>
+                        <li>trois fichiers HTML nommés <strong>monarticle.html, monformulaire.html et montableau.html</strong></li>
+                        <li>un fichier png nommé favicon.png ;
+                        </li><li>Un dossier nommé <strong>images</strong>, contenant six images.</li>
+                    </ul>
+                    <div class="note">
+                        <p>Modèle d'arborescence de fichiers pour la remise du tp1 :</p>
+                        <figure class="w40">
+                            <figcaption>Structure de fichiers du tp1 pour le groupe 1</figcaption>
+                            <img class="bordure" src="images/cours03_tp1_arbo01.jpg">
+                        </figure>
+                        <figure class="w40">
+                            <figcaption>Structure de fichiers du tp1 pour le groupe 2</figcaption>
+                            <img class="bordure" src="images/cours03_tp1_arbo02.jpg">
+                        </figure>
+                    </div> <!-- .note -->
+                    <h4>Échéancier</h4>
+                    <p>Remettez le travail  <strong>sur TEAMS/DEVOIR</strong>, dans l'espace prévu à cette fin, <strong>au plus tard le mercredi suivant le cours, à 9h (groupe du vendredi 8h) ou 12h (groupe du vendredi 12h).</strong></p>
+                    <h4>Grille d'évaluation</h4>
+                    <p>Voir la grille d'évaluation complète sur Teams/Devoir.</p>
+                    <h4>Travail à faire</h4>
+                    <p>Dans le cadre du TP1, vous devez ajouter une page HTML, montableau.html, à vos deux pages créées précedemment. </p>
+                    <p>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfisant sur ce navigateur).</p>
+                    <p>Première étape: créez votre <strong>structure de fichiers</strong> : </p>
+                    <ol>
+                        <li>Créez un dossier au nom de  ou <strong>gr2_nomprenom_tp1</strong> ;</li>
+                        <li>Glissez dans ce dossier: le dossiers "images" et les fichiers <i>monarticle.html</i> et <i>monformulaire.html</i> ;</li>
+                        <li>Télécharger les fichiers du tp1: texte_tp1.txt, bras-du-nord.jpg et favicon.png ;</li>
+                        <li>Insérez le fichier bras-du-nord.jpg dans le dossier "images" ;</li>
+                        <li>Insérez le fichier favicon.pmg à la racine du dossier de travail.</li>
+                    </ol>
+                    <p>Deuxième étape: <strong>ouvrez ce <strong>dossier</strong> dans VSCode</strong> : </p>
+                    <ol>
+                        <li>Ouvrez VSCode ;</li>
+                        <li>Sélectionnez <strong>Fichier / Ouvrir un dossier...</strong> ;</li>
+                    </ol>
+                    <p><strong>Créez un nouveau document HTML</strong> : </p>
+                    <ol>
+                        <li>Dans la colonne de gauche de VSCode, sous « GR1_NOMPRENOM_TP1 ou GR2_NOMPRENOM_TP1 », cliquez sur le bouton droit de la souris et choisissez "Nouveau fichier" pour créer un nouveau fichier; nommez ce fichier <strong>montableau.html</strong></li>
+                        <li>À partir de l'un des deux fichiers html déjà créés, copiez et collez le code de la structure de base de la page.</li>
+                        <li>Mettez à jour le contenu des éléments <i>title</i>, <i>h1</i>, <i>time</i>, du paragraphe de la source et de l'image d'entête.</li>
+                        <li>Ajoutez un hyperlien dans la liste de liens du haut de la page vers le document <code>montableau.html</code>.</li>
+                        <li>Ajoutez également ce nouveau lien dans les deux autres pages de votre site (monarticle.html et monformulaire.html).</li>
+                        <li>Ajoutez le code du favicon aux TROIS pages de votre site.</li>
+                        <li>Dans <code>montableau.html</code>, mettez en place le contenu spécifique de la page (texte, tableau et vidéo) tout en ajoutant le balisage adéquat (à noter que le texte de la page se trouve dans le fichier texte_tp1.txt).</li>
+                    </ol>
+                    <figure class="w80">
+                        <figcaption>Résultat attendu pour la page montableau.html</figcaption>
+                        <img class="bordure" src="images/cours03_tp3_montableau.jpg" alt="Résultat attendu pour le tp3">
+                    </figure>
+                </section>  <!-- #sectionAE -->
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>     
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            <br>Ce contenu a été tiré du site web de Sylvain Lamoureux<br>
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>
