@@ -335,29 +335,37 @@
                     </div>
                 <section id="section05">
                     <h2>Intégrer une vidéo dans un document HTML à l'aide de l'élément <i>iframe</i></h2>
+                    <figure class="w50">
+                        <figcaption>Exemple de vidéo intégrée dans une page Web.</figcaption>
+                        <iframe width="462" height="260" src="https://www.youtube.com/embed/Z90rTdVoomY?si=1CM1_3MHcvg_8B5r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </figure>
+                    
                     <p>Voyons ici une première méthode pour intégrer une vidéo dans un document HTML.</p>
-                    <p>Les sites de diffusion vidéo comme YouTube ou Vimeo présentent des options qui facilitent le partage d'une vidéo ou encore son imbrication dans un document HTML.</p>
+                    <p>Les sites de diffusion vidéo comme <a href="https://www.youtube.com/" target="_blank">YouTube <i class="bi bi-box-arrow-up-right"></i></a> ou <a href="https://vimeo.com/" target="_blank">Vimeo <i class="bi bi-box-arrow-up-right"></i></a> présentent des options qui facilitent le partage d'une vidéo ou encore son imbrication dans un document HTML.</p>
                     <h3>Le cas de Youtube</h3>
-                    <p>Pour intégrer une vidéo à partir du site Youtube, sélectionnez une vidéo, comme par exemple, cette vidéo: <a href="https://youtu.be/tvyTQFog-rc?si=bHQZQNBngeeRTAn7">Mont Sainte-Anne en vélo de montagne : la GRISANTE 2.0 - Ep7</a>, puis cliquez sur le bouton <i>Partager</i></p>
+                    <p>Voici les étapes pour vidéo à partir du site Youtube: </p>
+                        <p>1. Sélectionnez une vidéo, comme par exemple, cette vidéo: <a href="https://youtu.be/tvyTQFog-rc?si=bHQZQNBngeeRTAn7" target="_blank"><em>Mont Sainte-Anne en vélo de montagne&nbsp;: la GRISANTE 2.0 -&nbsp;Ep7 </em><i class="bi bi-box-arrow-up-right"></i></a>.</p>
+                        <p>2. Cliquez sur le bouton <i>Partager</i>&nbsp;:</p> 
                     <figure class="w80">
                         <figcaption>Exemple de vidéo choisie sur le site Youtube</figcaption>
                         <img class="bordure" src="images/cours03_iframe-01.jpg" alt="Exemple de vidéo sur le site Youtube">
                     </figure>
-                    <p>Cliquez sur le bouton <i>Partager</i> :</p> 
+                    <p>3. Dans la fenêtre de partage, cliquez sur le bouton <i>Intégrer</i>&nbsp;:</p>
                     <figure class="w40">
                         <figcaption>Le bouton Partager</figcaption>
                         <img class="bordure" src="images/cours03_iframe-02.jpg" alt="Exemple de vidéo sur le site Youtube">
                     </figure>
-                    <p>Dans la fenêtre de partage, cliquez sur le bouton <i>Intégrer</i>.</p>
+                    <p>4. Copiez le code se trouvant dans la colonne de droite (bouton Copier en bas à droite ou CMD+C CTRL+C):</p>
                     <figure class="w50">
                         <figcaption>Cliquez en suite sur <i>Copier</i> pour copier le code dans la mémoire vive.</figcaption>
                         <img class="bordure" src="images/cours03_iframe-03.jpg" alt="Exemple de vidéo sur le site Youtube">
                     </figure>
-                    <p>Copiez le code (cmd+c ou ctrl+c), et collez-le (cmd+v ou ctrl+v) dans une balise <code>figure</code> en ajoutant une légende avec un élément <code>figcaption</code>.</p>
+                    <p>5. Collez ce code (CMD+V ou CTRL+V) dans une balise <code>figure</code> en ajoutant une légende avec un élément <code>figcaption</code>.</p>
                     <figure class="w80">
                         <figcaption>Insérez le iframe dans un figure</figcaption>
                         <img class="bordure" src="images/cours03_iframe-04.jpg" alt="Exemple de vidéo sur le site Youtube">
                     </figure>
+                    <p>6. Essayez par vous-même dans le <em>pen</em> ci-dessous pour voir le&nbsp;résultat&nbsp;:</p>
                     <p class="resultat-etiquette">Résultat (essayez-le sur CodePen)</p>
                    <p class="codepen" data-height="660" data-default-tab="html,result" data-slug-hash="myeaNOE" data-pen-title="c03_iframe01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                       <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myeaNOE">
@@ -365,7 +373,15 @@
                       on <a href="https://codepen.io">CodePen</a>.</span>
                     </p>
                     <script async src="https://public.codepenassets.com/embed/index.js"></script>
-
+                    <p>&nbsp;</p>
+                    <div class="tf">
+                        <h3>Rappel - Création de votre boîte à outils <em>Codepen</em></h3>
+                        <p>Il vous est possible de sauvegarder des fragments de code <em>Codepen</em> dans votre collection personnelle pour vous y référer rapidement lorsque vous en aurez besoin.</p>
+                        <ol>
+                            <li>Cliquez sur «&nbsp;Edit/Fork on Codepen&nbsp;» (en haut à droite) pour ouvrir une nouvelle fenêtre et travailler plus librement. </li>
+                            <li>Une fois dans la fenêtre de Codepen, cliquez sur le bouton <i>Fork</i> <img class="icone" src="images/cours01_codepen_fork.jpg" alt="Bouton Fork de Codepen"> (au bas de la fenêtre à droite) pour sauvegarder ce «&nbsp;pen&nbsp;» dans votre collection, et renommez-le au besoin. L'opération <i>Fork</i> signifie que vous pouvez sauvegarder une version du travail dans votre compte Codepen et la conserver pour référence.</li>
+                        </ol>
+                    </div>
                     <!--
                     <figure>
                         <figcaption>VIDÉO / Intégrer une vidéo dans un document HTML à l'aide de iframe</figcaption>
@@ -402,66 +418,81 @@
                     <h2>Activités d'évaluation</h2>
                     
                     <h3>TP1 - Intro au HTML (3)</h3>
-                    <p>Le TP1 est le premier travail sommatif de la session: il vaut pour 5% de la note finale. Il fait la synthèse des apprentissages du premier bloc ayant pour thème l'utilisation du langage HTML pour structurer une page web. On ajoute cette semaine les éléments de tableau HTML et l'élément iframe qui sert à insérer une vidéo provenant d'un autre site web.</p>
-                    <h4>Documents fournis</h4>
-                    <p>Voir les documents fournis dans TEAMS/DEVOIRS: <strong>texte_tp1.txt</strong>, <strong>bras-du-nord_1000.jpg, favicon.png</strong>.</p>
+                    <p>Le TP1 est le premier travail sommatif de la session: <strong>il vaut pour 5% de la note finale</strong>. Il fait la synthèse des apprentissages du premier bloc ayant pour thème l'utilisation du langage HTML pour structurer une page web. On ajoute cette semaine les éléments de tableau HTML et l'élément iframe qui sert à insérer une vidéo provenant d'un autre site web.</p>
+           
                     <h4>Documents à remettre</h4>
-                    <p>Un dossier compressé (.zip) nommé:</p>
-                    <ul>
-                        <li><strong>gr1_nomprenom_tp1.zip (groupe du vendredi 12h)</strong></li>
-                        <li><strong>gr2_nomprenom_tp1.zip (groupe du vendredi 8h)</strong></li>
-                    </ul>
-                    <p>Ce dossier contient:</p>
-                    <ul>
-                        <li>trois fichiers HTML nommés <strong>monarticle.html, monformulaire.html et montableau.html</strong></li>
-                        <li>un fichier png nommé favicon.png ;
-                        </li><li>Un dossier nommé <strong>images</strong>, contenant six images.</li>
-                    </ul>
+                    <ol>
+                        <li>Un dossier nommé <i>grX_nomInitialeprenom_tp1</i> (remplacez X par votre numéro de groupe)</li>
+                        <li>Ce dossier contiendra: 
+                            <ul>
+                                <li>trois fichiers HTML nommés <strong>monarticle.html, monformulaire.html et montableau.html</strong></li>
+                                <li>un fichier png nommé favicon.png ;</li>
+                                <li>Un dossier nommé <strong>images</strong>, contenant six images.</li>
+                            </ul>
+                        </li>
+                        <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur&nbsp;LÉA.</li>
+                    </ol>
+                    
                     <div class="note">
-                        <p>Modèle d'arborescence de fichiers pour la remise du tp1 :</p>
+                        <p>Structure de fichiers pour le TP1&nbsp;:</p>
                         <figure class="w40">
-                            <figcaption>Structure de fichiers du tp1 pour le groupe 1</figcaption>
+                            <figcaption>Structure de fichiers du TP1</figcaption>
                             <img class="bordure" src="images/cours03_tp1_arbo01.jpg">
-                        </figure>
-                        <figure class="w40">
-                            <figcaption>Structure de fichiers du tp1 pour le groupe 2</figcaption>
-                            <img class="bordure" src="images/cours03_tp1_arbo02.jpg">
                         </figure>
                     </div> <!-- .note -->
                     <h4>Échéancier</h4>
-                    <p>Remettez le travail  <strong>sur TEAMS/DEVOIR</strong>, dans l'espace prévu à cette fin, <strong>au plus tard le mercredi suivant le cours, à 9h (groupe du vendredi 8h) ou 12h (groupe du vendredi 12h).</strong></p>
-                    <h4>Grille d'évaluation</h4>
-                    <p>Voir la grille d'évaluation complète sur Teams/Devoir.</p>
+                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <ul>
+                        <li>groupe 1 : <strong>au plus tard le jeudi suivant à 8h</strong></li>
+                        <li>groupe 2 : <strong>au plus tard le mercredi suivant à 12h</strong></li>
+                    </ul>
+                    <h4>Grille de correction</h4>
+                    <p><a href="materiel/TP1-Grille-de-correction.pdf" target="_blank">Consultez la grille de correction pour le travail&nbsp;<i class="bi bi-file-pdf"></i></a>. Référéz-vous à cette grille pour vérifier votre travail avant de le remettre sur&nbsp;LÉA.</p>
                     <h4>Travail à faire</h4>
-                    <p>Dans le cadre du TP1, vous devez ajouter une page HTML, montableau.html, à vos deux pages créées précedemment. </p>
-                    <p>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfisant sur ce navigateur).</p>
                     <p>Première étape: créez votre <strong>structure de fichiers</strong> : </p>
                     <ol>
-                        <li>Créez un dossier au nom de  ou <strong>gr2_nomprenom_tp1</strong> ;</li>
-                        <li>Glissez dans ce dossier: le dossiers "images" et les fichiers <i>monarticle.html</i> et <i>monformulaire.html</i> ;</li>
-                        <li>Télécharger les fichiers du tp1: texte_tp1.txt, bras-du-nord.jpg et favicon.png ;</li>
-                        <li>Insérez le fichier bras-du-nord.jpg dans le dossier "images" ;</li>
-                        <li>Insérez le fichier favicon.pmg à la racine du dossier de travail.</li>
+                        <li>Créez un dossier nommé <em>grX_nomInitialeprenom_tp1</em>. Ce sera votre dossier de projet pour le .</li>
+                        <li>Dans ce dossier, glissez le dossiers "images" et les fichiers <strong>monarticle.html</strong> et <strong>monformulaire.html</strong> que vous avez créé dans la&nbsp;leçon&nbsp;2.</li>
+                        <li>Téléchargez et décompressez l'archive <a href="materiel/TP1.zip" class="btn btn-primary" role="button">TP1.zip <i class="bi bi-download"></i></a>. Cette archive contient trois fichiers nécessaires pour le travail: <strong>texte_tp1.txt</strong>, <strong>bras-du-nord_1000.jpg</strong> et <strong>favicon.png</strong>.</li>
+                        <li>Déplacez le fichier <strong>bras-du-nord.jpg</strong> dans le dossier "images".</li>
+                        <li>Déplacez le fichier <strong>favicon.png</strong> à la racine du dossier de travail, c'est-à-dire au même niveau que les fichiers HTML.</li>
+                        <li>Conservez le fichier <strong>texte_tp1.txt</strong> sous la main, car il contient les textes que vous pourrez copier-coller dans votre travail.</li>
                     </ol>
                     <p>Deuxième étape: <strong>ouvrez ce <strong>dossier</strong> dans VSCode</strong> : </p>
                     <ol>
-                        <li>Ouvrez VSCode ;</li>
-                        <li>Sélectionnez <strong>Fichier / Ouvrir un dossier...</strong> ;</li>
-                    </ol>
-                    <p><strong>Créez un nouveau document HTML</strong> : </p>
-                    <ol>
-                        <li>Dans la colonne de gauche de VSCode, sous « GR1_NOMPRENOM_TP1 ou GR2_NOMPRENOM_TP1 », cliquez sur le bouton droit de la souris et choisissez "Nouveau fichier" pour créer un nouveau fichier; nommez ce fichier <strong>montableau.html</strong></li>
-                        <li>À partir de l'un des deux fichiers html déjà créés, copiez et collez le code de la structure de base de la page.</li>
+                        <li>Ouvrez VSCode.</li>
+                        <li>Sélectionnez <strong>Fichier > Ouvrir un dossier...</strong>.</li>
+                        <li>Ouvrez votre dossier de travail <em>grX_nomInitialeprenom_tp1</em>.</li>
+                        <li>Cliquez sur <strong>Fichier > Nouveau fichier...</strong>, nommez ce nouveau fichier <strong>montableau.html</strong> et appuyez sur ENTER.</li>
+                        <li>Sauvegardez ce nouveau fichier dans votre dossier de travail (<em>grX_nomInitialeprenom_tp1</em>).</li>
+                        <li>À partir du fichier <strong>monarticle.html</strong> déjà existant, copiez et collez l'entièreté de son code dans votre nouveau fichier <strong>montableau.html</strong>. Ce sera votre base de travail que vous ajusterez.</li>
                         <li>Mettez à jour le contenu des éléments <i>title</i>, <i>h1</i>, <i>time</i>, du paragraphe de la source et de l'image d'entête.</li>
                         <li>Ajoutez un hyperlien dans la liste de liens du haut de la page vers le document <code>montableau.html</code>.</li>
-                        <li>Ajoutez également ce nouveau lien dans les deux autres pages de votre site (monarticle.html et monformulaire.html).</li>
+                        <li>Ajoutez également ce nouveau lien dans les deux autres pages de votre site (<strong>monarticle.html</strong> et <strong>monformulaire.html</strong>).</li>
                         <li>Ajoutez le code du favicon aux TROIS pages de votre site.</li>
-                        <li>Dans <code>montableau.html</code>, mettez en place le contenu spécifique de la page (texte, tableau et vidéo) tout en ajoutant le balisage adéquat (à noter que le texte de la page se trouve dans le fichier texte_tp1.txt).</li>
+                        <li>En vous fiant aux textes contenus dans le fichier <strong>texte_tp1.txt</strong>, mettez en page le contenu de la page <code>montableau.html</code> (texte, tableau et vidéo) en utilisant le balisage adéquat. Référez-vous aux notes de cours pour vous aider.</li>
                     </ol>
-                    <figure class="w80">
+                    <figure>
                         <figcaption>Résultat attendu pour la page montableau.html</figcaption>
-                        <img class="bordure" src="images/cours03_tp3_montableau.jpg" alt="Résultat attendu pour le tp3">
+                        <img class="bordure" src="images/cours03_tp3_montableau.jpg" alt="Résultat attendu pour le TP1">
                     </figure>
+                                        <h4>Prêt à remettre le travail?</h4>
+                     <ol>
+                        <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.</li>
+                        <li>Dans toutes les pages de votre projet, assurez-vous d'avoir bien activé les liens vers les différentes pages de votre micro-site: <br>
+                            <img class="bordure" src="images/cours03_navigation.jpg" alt="Navigation à ajouter" width="159">
+                        </li>
+                        <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.
+                        </li>
+                        <li>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfaisant sur ce navigateur).</li>
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez à son dossier par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/cours03_tp1_arbo01.jpg" alt="arborescence de TP1" width="300">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
+                        </li>
+                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.
+                        </li>
+                    </ol>
                 </section>  <!-- #sectionAE -->
                 <footer>
                     <div class="haut-de-page">
