@@ -74,6 +74,7 @@
                         <a href="#section04" class="list-group-item list-group-item-action">Composantes d'une feuille de style</a>
                         <a href="#section04-exemple" class="list-group-item list-group-item-action">Exemple de sélecteur : h1</a>
                         <a href="#section05" class="list-group-item list-group-item-action">Les sélecteurs du DOM</a>
+                        <a href="#t01" class="list-group-item list-group-item-action">Créer un feuille de style interne</a>
                         <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
                     </nav>
                 </div>
@@ -82,33 +83,29 @@
                 
                  <section id="section01">
                     <h2>CSS</h2>
-                    <p>Les&nbsp;feuilles de style en cascade, généralement appelées <abbr title="Cascading Style Sheet">CSS</abbr>,&nbsp;de l'anglais&nbsp;<i><strong>Cascading Style Sheets</strong></i>, forment un&nbsp;langage informatique qui décrit la présentation des documents&nbsp;<abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;et&nbsp;<abbr title="Extensible Markup Language">XML</abbr>. Les&nbsp;standards&nbsp;définissant CSS sont publiés par le&nbsp;World Wide Web Consortium (W3C). </p>
-                    <p>Introduit au milieu des années 1990, CSS devient couramment utilisé dans la&nbsp;conception de sites web&nbsp;et bien pris en charge par les&nbsp;navigateurs web&nbsp;dans les&nbsp;années 2000.</p>
-                    <ul>
-                        <li>1996 : acceptation des <strong>CSS niveau 1</strong> par le W3C, qui les lia au HTML</li>  
-                        <li>1998 : <strong>CSS niveau 2</strong></li>
-                        <li>2007 : <strong>CSS niveau 2.1</strong></li>
-                        <li>Aujourd'hui : <strong>CSS niveau 3</strong></li>
-                        <li><strong>CSS niveau 4 </strong>: le développement de plusieurs modules des CSS de niveau 4 est  en cours depuis 2010. </li>
-                    </ul>
-                    <div class="note">
-                        <p>CSS de niveau 3.0 est développée en parallèle à la version 2.1 depuis 1999. CSS3 devient «&nbsp;modulaire&nbsp;», afin de faciliter ses mises à jour et  son implémentation par des agents utilisateurs aux capacités et aux besoins de plus en plus variés (navigateurs graphiques, navigateurs pour mobiles, navigateurs vocaux). <strong>C'est cette version qui est maintenant très largement employée par les développeurs web</strong>.</p>
-                    </div>
+                    <p>CSS (<i>Cascading Style Sheets</i>) est un langage qui contrôle l’apparence des pages web.</p>
                     <h3>Séparer la structure de la forme</h3>
-                    <p>Avec la généralisation de l'usage des CSS, désormais le mot d'ordre est : <em>séparer la structure de la forme!</em> C'est-à-dire que les instructions concernant la structure (HTML) d'une page web sont complètement séparées des informations concernant sa mise en forme (CSS).</p>
-                    <h4>Les avantages</h4>
                     <ul>
-                        <li>Conception simplifiée des pages Web;</li>
-                        <li>Compatibilité accrue sur une large variété d'agents utilisateurs (ordinateurs de table, assistants personnels, téléphone portable, synthétiseur vocal, navigateur braille, etc.);</li>
-                        <li>Entretien et mise à jour simplifiés.</li>
+                        <li>HTML définit la&nbsp;structure et le&nbsp;contenu.</li>
+                        <li>CSS définit la&nbsp;présentation&nbsp;: couleurs, polices, marges, disposition.</li>
                     </ul>
+                    <p>Depuis son introduction en 1996, CSS a beaucoup évolué. Aujourd’hui, on parle de <strong>CSS3</strong>, qui regroupe de nombreux modules modernes (flexbox, grid, animations, variables, etc.) largement utilisés par les développeurs web.</p>
+                    <p>Un style est formé de règles appliquées à des éléments HTML.</p>
+                    <p class="code-etiquette">Exemple minimal de HTML et de CSS</p>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvjmrrN" data-pen-title="c04-css-exemple-simple" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/frlacroix/pen/pvjmrrN">
+                    c04-css-exemple-simple</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <br>
+                    <p>Dans l'exemple ci-dessus, tous les éléments <code>&lt;p&gt;</code> (paragraphes) seront affichés en bleu avec une taille de 20 pixels.</p>
+                    
                     <h3>Références</h3>
                     <div class="references-section">
                         <ul>
                             <li><a href="http://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">CSS dans Wikipédia <i class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li><a href="http://www.yoyodesign.org/doc/w3c/css2/cover.html" target="_blank">CSS 2.1: les spécifications officielles <i class="bi bi-box-arrow-up-right"></i></a></li>
                             <li><a href="http://www.w3.org/Style/CSS/specs.en.html" target="_blank">CSS: une liste de toutes les spécifications <i class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li><a href="http://www.w3.org/Style/CSS/current-work" target="_blank">CSS: travaux en cours <i class="bi bi-box-arrow-up-right"></i></a></li>
                         </ul>
                     </div>
                 </section> <!-- #section01 -->
@@ -183,96 +180,61 @@
                         <a href="#">Haut de page</a>
                     </div>
                     <h2>Rédiger des CSS</h2>
-                    <p>Tout comme pour le <abbr title="Hypertext Markup Language" lang="en">HTML</abbr>, la méthode la plus simple pour rédiger les <abbr title="Cascading Style Sheet" lang="en">CSS</abbr> consiste à utiliser <strong>un éditeur de texte brut</strong>. </p>
-                    <p>Les fichiers CSS sont en effet de <strong>simples documents texte</strong>. </p>
-                    <div class="note">
-                        <p>On ne peut pas utiliser des outils de traitement de texte comme <em>Word</em> ou encore des formats de texte comme <em>rtf</em> pour coder, car ils insèrent par défaut dans le code des éléments indésirables de mise en forme, comme des retours de ligne, des espaces multiples, des tabulateurs, des paragraphes, de la mise en forme indésirée... Seuls les éditeurs de texte brut peuvent faire le travail de codage.</p>
-                    </div>
-                    <p>La rédaction des CSS peut  se faire à l'aide d'un éditeur de code comme <em>Visual Studio Code</em>. </p>
-                    <h3>Où trouve-t-on les règles de style?</h3>
-                    <table width="100%">
-                        <thead>
-                            <tr>
-                                <th width="15%" scope="col">Lieux</th>
-                                <th width="85%" scope="col">Remarques</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>en ligne</td>
-                                <td>À même le balisage HTML à l'aide d'un attribut <code>style="..."</code>. Cette méthode  ne doit être employée que dans des situations exceptionnelles, car elle contrevient au principe de séparation entre le contenu et sa mise en forme.</td>
-                            </tr>
-                            <tr>
-                                <td>à l'interne</td>
-                                <td>À l'intérieur d'un élément <code>&lt;style&gt;</code> dans l'en-tête (<code>&lt;head&gt;</code>) d'un fichier HTML (<code>.html</code>). Cette méthode est surtout utile pour tester une page ou encore insérer quelques règles de style spécifiques à une page en particulier.</td>
-                            </tr>
-                            <tr>
-                                <td>à l'externe</td>
-                                <td>Dans un fichier de texte brut comportant l'extension <code>.css</code> et qui est lié à la page HTML par l'intermédiaire d'un élément<code> &lt;link&gt;</code> ou  <code>@import</code>.<br>
-                                Les règles de style rédigées à l'externe sont privilégiées dans la plupart des situations car elles permettent une séparation  nette entre le contenu et sa présentation.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h4>En ligne</h4>
-                    <p>Les règles de style en ligne sont rédigées à même le balisage HTML. Voici un exemple de règle de style en ligne associée à un élément <code>&lt;p&gt;</code>: </p>
-                    <pre class="exemple-code">                        &lt;p<span class="rose"> style="font-size:2em"</span>&gt; ... &lt;/p&gt;
+                    <p>La méthode la plus simple pour rédiger les <abbr title="Cascading Style Sheet" lang="en">CSS</abbr> consiste à utiliser <strong>un éditeur de texte brut</strong> tel que <em>Visual Studio Code</em>. Les fichiers CSS sont en effet de <strong>simples documents texte</strong>. </p>
+                    <p>Il existe trois façons d’ajouter du CSS à une page HTML :</p>
+                    <ol>
+                        <li>En ligne (<i>inline</i>)</li>
+                        <li>Interne (balise <code>&lt;style&gt;</code>)</li>
+                        <li>Externe (fichier .css)</li>
+                    </ol>
+                    <h3>1. En ligne (<i>inline</i>)</h3>
+                    <p>Les règles de style en ligne peuvent être rédigées à même le balisage HTML, directement dans l’attribut <code>style</code> d'une balise. La règle s’applique uniquement à cet&nbsp;élément.</p>
+                <p class="code-etiquette">Exemple de CSS en ligne:</p>
+                <pre class="exemple-code">                        &lt;p<span class="rose"> style="color: red;"</span>&gt; ... &lt;/p&gt;
                     </pre>
-                    <p>Cette règle de style, rédigée à l'intérieur de la balise ouvrante d'un élément <code>&lt;p&gt;</code> (paragraphe), permet d'appliquer une taille de police de caractère de <code>2em</code> au texte du paragraphe concerné. </p>
-                    <p>Règle générale, cette pratique est à éviter. Mais il existe des situations particulières où les styles en ligne sont pertinents. </p>
-                    <p>Le tableau présentant les couleurs « nommées » des CSS 2.1 que vous pouvez consulter un peu plus bas est un exemple d'utilisation pertinente de règles de style en ligne : </p>
-                    <ul>
-                        <li>La colonne de droite de ce tableau comporte 16 cellules de couleurs différentes. </li>
-                        <li>Dans une feuille de style externe ou interne, il aurait fallu rédiger 16 règles de style distinctes pour ces 16 cellules. </li>
-                        <li>En plus de ces 16 règles, il aurait aussi fallu inscrire 16 noms de classe distincts dans le balisage HTML. </li>
-                        <li>Dans cette situation, où chaque cellule est un cas particulier, il peut être pertinent d'avoir recourt aux règles de style en ligne. </li>
-                    </ul>
-                    <p>Extrait du balisage du tableau cité en exemple (remarquez les règles de style en ligne apparaissant dans les balises ouvrantes <code>&lt;td&gt;</code>): </p>
+                    <p><strong>Règle générale, cette pratique est à éviter.</strong> Mais il existe des situations particulières où les styles en ligne sont pertinents.</p>
                     <figure class="bloc-codepen">
-                        <figcaption>CODEPEN / Utilisation de styles en ligne</figcaption>
-                       <p class="codepen" data-height="540" data-default-tab="html,result" data-slug-hash="myeYeaz" data-pen-title="c04-css-style-en-ligne01" data-editable="true" data-user="frlacroix" style="height: 540px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <figcaption><strong>Bon exemple d'utilisation du CSS en ligne:</strong> dans cette liste, chacun des 10 éléments affiche une couleur différente, donc il peut être pertinent d'avoir recourt aux règles de style en ligne.</figcaption>
+                       <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="myeYeaz" data-pen-title="c04-css-style-en-ligne01" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myeYeaz">
   c04-css-style-en-ligne01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     </figure>
-                    <h4>Feuille de style interne</h4>
-                    <p>La feuille de style interne est rédigée à même l'en-tête du document HTML, dans un élément <code>&lt;style&gt; ... &lt;/style&gt; </code>mais reste tout de même isolée du balisage HTML proprement dit, comme le montre cet exemple:</p>
-                    <div class="note">
-                        <p>Les règles de style d'une feuille de style interne sont souvent insérées dans des marques de commentaires HTML <code>&lt;!--</code> et <code>--&gt;</code> de telle sorte qu'aucun contenu de la feuille de style ne soit interprété comme une commande HTML.</p>
-                    </div>
-                    <p class="code-etiquette">Exemple de feuille de style interne</p>
+                     <h3>2. Interne (balise <code>&lt;style&gt;</code>)</h3>
+                    <p>Dans l’en-tête du document HTML (<code>&lt;head&gt;</code>), à l’intérieur d’une balise <code>&lt;style&gt;</code>. </p><p>Les règles définies dans <code>&lt;style&gt;</code> s’appliquent à tous les éléments de la page qui correspondent aux&nbsp;sélecteurs.</p>
+                   <p class="code-etiquette">Exemple de feuille de style interne</p>
                     <pre class="exemple-code">                    &lt;!DOCTYPE html&gt;
                     &lt;html lang="fr"&gt;
                     &nbsp;&nbsp;&lt;head&gt;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Asie centrale - Voyages à travers le monde&lt;/title&gt;
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="rose">&lt;style&gt;</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="gris">&lt;!--</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="rose">h2 {
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
-                    &nbsp;&nbsp;&nbsp;&nbsp;}</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="gris">--&gt;</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="rose">p {color: red;}</span>
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="rose">&lt;/style&gt;</span>
                     &nbsp;&nbsp;&lt;/head&gt;
                     &nbsp;&nbsp;&lt;body&gt;
                     &nbsp;&nbsp;(...)
                     </pre>
-
-                    <h4>Feuille de style externe (ou « attachée »)</h4>
-                    <p>La feuille de style externe est consignée dans un document comportant l'extension <code>.css</code>. Elle est liée au document HTML par un élément <code>link</code> placé dans la partie <code>head</code> de ce document.</p>
-                    <p>On trouve au tout début d'une <strong>feuille de style externe</strong> la spécification du type d'encodage de caractères employé (<code>@charset "utf-8";</code>) comme le montre cet exemple:</p>
-                    <p class="code-etiquette">Exemple de feuille de style externe</p>
-                    <pre class="exemple-code">                    <span class="rose">@charset "utf-8";
-                    html {</span>
-                    &nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;
-                    <span class="rose">}
-                    header {</span>
-                    &nbsp;&nbsp;background-color: black;
-                    &nbsp;&nbsp;max-width: 1000px;
-                    <span class="rose">}</span>
-                    (...)
+                    <p>Dans l'exemple ci-dessus, le navigateur affichera toutes les balises <code>&lt;p&gt;</code> de la page dans la couleur&nbsp;<code>red</code>.</p>
+                   <h3>3. Externe (fichier .css)</h3>
+                   <p>Dans un fichier séparé, lié à la page par une balise <code>&lt;link&gt;</code>.</p>
+                   <p><strong>C’est la méthode recommandée.</strong> Elle permet de réutiliser les styles et de séparer clairement le contenu (HTML) de la présentation&nbsp;(CSS).</p>
+                   <p class="code-etiquette">Exemple de liaison d'un fichier externe dans un document HTML</p>
+                    <pre class="exemple-code">                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="fr"&gt;
+                    &nbsp;&nbsp;&lt;head&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="rose">&lt;link rel="stylesheet" href="styles.css"&gt;</span>
+                    &nbsp;&nbsp;&lt;/head&gt;
+                    &nbsp;&nbsp;&lt;body&gt;
+                    &nbsp;&nbsp;(...)
                     </pre>
+                    <p class="code-etiquette">Exemple de contenu du fichier styles.css</p>
+                    <pre class="exemple-code">
+                        <span class="rose">@charset "utf-8";
+                    p {
+                    &nbsp;&nbsp;color: red;
+                    }</pre>
+                    <p>Dans l'exemple ci-dessus, toutes les pages liées au fichier <code>styles.css</code> appliqueront les règles de styles qui y sont inscrites.</p>
                     <div class="note">
                         <p><strong>@charset "utf-8";</strong> </p>
                         <p>Il ne doit y avoir ni caractère, ni commentaire, ni espace avant la déclaration du codage de caractères au début d'une feuille de style externe. Pour plus de détails, consultez les <a href="http://www.w3.org/International/questions/qa-css-charset.fr.php" target="_blank">règles du W3C <i class="bi bi-box-arrow-up-right"></i></a>. </p>
@@ -284,47 +246,58 @@
                         <a href="#">Haut de page</a>
                     </div>
                 <section id="section04">
-                    <div class="haut-de-page">
-                        <a href="#">Haut de page</a>
-                    </div>
                     <h2>Les composantes d'une feuille de style</h2>
-                    <p>La feuille de style est le document (indépendant ou imbriqué) contenant les règles de style. </p>
-                    <p>Une règle de style est en quelque sorte une directive contenant des indications de mise en forme visant un ou des éléments de contenu d'une page web.</p>
-                    <p>La règle de style est composée des quatre éléments suivants:</p>
-                    <ol>
-                        <li>sélecteur</li>
-                        <li>déclaration</li>
-                        <li>propriété</li>
-                        <li>valeur</li>
+                    <p>Une règle CSS est composée de deux parties principales&nbsp;:</p>
+                    <ol style="margin-bottom:0; padding-bottom:0;">
+                        <li><strong>Le sélecteur</strong>
+                            <ul style="margin-bottom:0; padding-bottom:0;">
+                                <li>Indique quel élément HTML sera stylisé.</li>
+                                <li>Exemple : <code>p</code> cible tous les paragraphes.</li>
+                            </ul>
+                        </li>
+                        <li><strong>La déclaration</strong>
+                            <ul style="margin-bottom:0; padding-bottom:0;">
+                                <li>Définie entre <code>{ }</code>.</li>
+                                <li>Contient une ou plusieurs propriétés et valeurs.</li>
+                                <li>Exemple :<pre class="exemple-code">p <span class="rose">{
+                                &nbsp;&nbsp;color: red;</span>     /* propriété: color, valeur: red */
+                                &nbsp;&nbsp;<span class="rose">font-size: 1.4em;</span> /* propriété: font-size, valeur: 1.4em */
+                                <span class="rose">}</span>
+                                </pre></li>
+                            </ul>
+                        </li>
+                        </li>
                     </ol>
-                    <figure class="w50">
-                        <figcaption>Les quatre éléments d'une règle de style</figcaption>
-                        <img class="bordure" src="images/cours04/css-declaration-small.png" alt="">
-
-                    </figure>
-                    <h3 id="regle_de_style">Règle de style</h3>
-                    <p class="code-etiquette">Exemple de règle de style écrite avec une déclaration par ligne</p>
+                    <p class="code-etiquette">Résumé visuel</p>
+                    <pre class="exemple-code">
+                    sélecteur {
+                    &nbsp;&nbsp;propriété: valeur;
+                    &nbsp;&nbsp;propriété: valeur;
+                    }
+                    </pre>
+                    
+                    <h3 id="regle_de_style">Bonnes pratiques pour les règles de style</h3>
+                    <p><strong>La méthode à utiliser pour bien organiser le code et faciliter sa consultation&nbsp;:</strong> </p>
+                        <ul style="margin:0; padding-bottom: 0;;">
+                            <li>indenter chaque ligne (avec la touche <i class="bi bi-indent"></i>)</li>
+                            <li>faire un saut de ligne après chaque déclaration</li>
+                        </ul>
+                    <p class="code-etiquette"><i class="bi bi-check"></i> Exemple d'un code lisible et bien organisé</p>
                     <pre class="exemple-code">                    <span class="rose">h1 {</span>
                     &nbsp;&nbsp;font-family: Georgia, "Times New Roman", serif;
                     &nbsp;&nbsp;font-size: 1.4em;
                     &nbsp;&nbsp;color: #0033cc;
                     <span class="rose">}</span>
                     </pre>
-                    <p>Dans cet exemple, la <em>règle</em> permet de mettre en forme l'élément <code class="rose">h1</code> en lui attribuant une police de caractère (<code>Georgia</code>) ainsi qu'une taille de police (<code>1.4em</code>) et une couleur de police (<code>#0033cc</code>).</p>
-                    <p>À noter que cette règle de style est écrite avec des sauts de ligne et de l'indentation pour assurer que le code soit lisible et bien organisé. <strong>C'est la méthode que nous utiliserons tout au long de la session</strong>.</p>
-                    <p>Il vous arrivera en effet de voir la même règle écrite ainsi:</p>
-                    <p class="code-etiquette">Règle de style écrite dans retour à la ligne</p>
+                    <p class="code-etiquette"><i class="bi bi-x-octagon-fill"></i> Règle de style écrite dans retour à la ligne. Moins facile à lire.</p>
                     <pre class="exemple-code exemple-code--nowrap">                        <span class="rose">h1 {</span>font-family:Georgia, "Times New Roman", serif;font-size:1.4em;color:#0033cc;<span class="rose">}</span>
                     </pre>
-                    <p>C'est tout aussi valide, mais moins facile à lire et à corriger.</p>
-                    <p>À l'instar du HTML, les CSS exploitent les espaces blancs, l'indentation et les sauts de ligne pour une meilleure lisibilité.</p>
-                    <p>Dans une règle de style, l'élément qui choisit la portion du document HTML à mettre en forme est le <em>sélecteur</em>. </p>
                     <h3>Sélecteur</h3>
-                    <p>Un <em>sélecteur</em> correspond à <strong>l'élément </strong>ou<strong> les éléments HTML</strong> auxquels une règle CSS s'applique.</p>
+                    <p>Sélecteur = le ou les éléments HTML auxquels une règle CSS s'applique.</p>
                     <p>Le sélecteur de l'exemple précédent est <code class="rose">h1</code>. Il s'agit, dans ce cas, d'un élément HTML simple.  </p>
                     <ul>
-                        <li>Il est écrit <em>avant</em> la première accolade. </li>
-                        <li>Notez qu'il est écrit sans les chevrons qui encadrent la balise correspondante dans le document HTML.  </li>
+                        <li>Il est écrit <em>avant</em> la première accolade (<code>{</code>). </li>
+                        <li>Notez qu'il est écrit sans les chevrons (<code>&lt;&gt;</code>) qui encadrent la balise correspondante dans le document HTML.  </li>
                     </ul>
                     <div class="tf" id="section04-exemple">
                         <p class="tf-intitule">Exemple de sélecteur : h1</p>
@@ -337,206 +310,101 @@
                         <br>
                         <ol>
                             <li>Cliquez sur «&nbsp;Edit/Fork on Codepen&nbsp;» (en haut à droite).</li>
-                            <li>Entrez des valeurs pour les trois propriétés de l'exemple suivant et cliquez sur «&nbsp;Result&nbsp;» pour voir le résultat</li>
+                            <li>Dans l'onglet CSS, entrez des valeurs pour les trois propriétés de l'exemple suivant et cliquez sur «&nbsp;Result&nbsp;» pour voir le résultat.</li>
                         </ol>
                         
                     </div>
-                    <p>Lorsque plusieurs éléments HTML, classes ou identifiants apparaissent au sein d'une même règle, séparés par des virgules, on dit que le sélecteur est «groupé».</p>
-                    <p class="code-etiquette">Sélecteur groupé</p>
+                    <h4>Sélecteur groupé</h4>
+                    <p>Un <strong>sélecteur groupé</strong> applique la même règle à plusieurs éléments, séparés par des virgules.</p>
                     <pre class="exemple-code exemple-xode--nowrap"><span class="rose">h1, h2, h3 {</span> ...</pre>
-                    <p>Lorsque le sélecteur comporte une série d'éléments HTML, de classes ou d'identifiants placés dans un ordre hiérarchique, avec des espaces mais sans virgules, on dit que le sélecteur est «composé». </p>
-                    <p class="code-etiquette">Sélecteur composé</p>
+                    <p>Dans l'exemple ci-dessus, la règle de style va s'appliquer à toutes les balises <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> et <code>&lt;h3&gt;</code>.</p>
+                    <h4>Sélecteur composé</h4>
+                    <p>Un <strong>sélecteur composé</strong> cible des éléments en relation hiérarchique (séparés par des espaces, sans virgules).</p>
+                    
                     <pre class="exemple-code exemple-xode--nowrap"><span class="rose">ul li a {</span> ...</pre>
+                        <p>Dans l'exemple ci-dessus, la règle s’appliquera uniquement aux <code>&lt;a&gt;</code> contenus dans un <code>&lt;li&gt;</code> placé dans un <code>&lt;ul&gt;</code>.</p>
                     <h3>Déclaration</h3>
-                    <p>Les <em>déclarations</em> sont placées entre les accolades pour les isoler des <em>sélecteurs</em>.</p>
-                    <p>Une déclaration est composée d'une <em>propriété</em> et d'une <em>valeur</em> CSS séparées par un deux-points, le tout se terminant par un point-virgule. Voici l'une des trois déclarations de l'exemple cité plus haut:</p>
-                    <p class="code-etiquette">Exemple de déclaration</p>
-                    <pre class="exemple-code exemple-xode--nowrap">font-family: Georgia, "Times New Roman", serif;</pre>
-                    <p>Lorsque plusieurs déclarations apparaissent au sein d'une même règle, comme c'est le cas de l'exemple ci-haut, on dit qu'elles sont <em>groupées</em>. Elles doivent être séparées par des points-virgules. </p>
-                    <p class="code-etiquette">Exemple de déclarations groupées</p>
-                    <pre class="exemple-code exemple-xode--nowrap">                    font-family: Georgia, "Times New Roman", serif;
-                    font-size: 1.4em;
-                    color: #0033cc;
+                    <p>Les <em>déclarations</em> sont placées entre les accolades pour les isoler des <em>sélecteurs</em>. Chaque déclaration est composée d'une <em>propriété</em> et d'une <em>valeur</em> CSS séparées par un deux-points (<code>:</code>), le tout se terminant par un point-virgule (<code>;</code>)</p>
+                    <pre class="exemple-code">
+                    sélecteur {
+                    <span class="rose">&nbsp;&nbsp;propriété: valeur;
+                    &nbsp;&nbsp;propriété: valeur;</span>
+                    }
                     </pre>
                     <h3>Propriété</h3>
-                    <p>La propriété décrit un aspect de la présentation d'un élément, comme sa couleur, sa taille, etc. </p>
-                    <p>CSS3 propose plus de <strong>300</strong> propriétés et ce nombre est en progression. </p>
-                    <p>La propriété est toujours suivie par une <strong>valeur</strong> dont elle est séparée par un deux-points.</p>
-                    <p>Dans l'exemple précédent, <code>font-family</code>, <code>font-size</code> et <code>color</code> sont les propriétés ; elles représentent respectivement la police de caractère, sa taille et sa couleur.</p>
+                    <p>Une <strong>propriété CSS</strong> décrit un aspect visuel d’un élément HTML (ex. couleur, taille, police).</p>
+                    <p>Il existe plus de 300 propriétés en CSS3, et ce nombre augmente avec les évolutions du langage.</p>
+                    <p>Chaque propriété est suivie d’une <strong>valeur</strong>, séparée par un <strong>deux-points</strong> (<code>:</code>).</p>
+                    <p>Exemples de propriété&nbsp;:</p>
+                    <ul>
+                        <li><code>font-family</code>&nbsp;: police de caractère</li>
+                        <li><code>font-size</code>&nbsp;: taille de la police</li>
+                        <li><code>color</code>&nbsp;: couleur du texte</li>
+                    </ul>
                     <p class="references-section"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference" target="_blank">Liste non exhaustive de propriétés CSS <i class="bi bi-box-arrow-up-right"></i></a></p>
                     <h3>Valeur</h3>
-                    <p>La valeur est un descripteur définissant une apparence spécifique, comme un nom ou un code de couleur, une mesure de longueur, un pourcentage ou un nombre d'unités.</p>
-                    <p>Dans l'exemple qui précède, les valeurs sont <code>Georgia, "Times New Roman", serif, 1.4em</code> et <code>#0033cc</code>.</p>
-                    <h3><a name="couleur">Notes sur la couleur</a></h3>
+                    <p>Une <strong>valeur</strong> précise l’apparence d’une propriété CSS.</p>
+                    <p>Elle peut être : nom de couleur, code de couleur, unité de longueur, pourcentage, nombre, etc.</p>
+                    <p>Exemples de valeur&nbsp;:</p>
+                    <ul>
+                        <li><code>Georgia, "Times New Roman", serif</code></li>
+                        <li><code>1.4em</code></li>
+                        <li><code>#0033cc</code></li>
+                    </ul>
+                    <h3><a name="couleur">Notes sur la couleur en CSS</a></h3>
+                    <p>La couleur est un aspect fondamental de la présentation visuelle : elle affecte tant le texte que les fonds, bordures et autres éléments graphiques. En CSS, on dispose de plusieurs façons de définir une couleur, chacune adaptée à des besoins différents (précision, compatibilité, effets de transparence…).</p>
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                        <th>Exemple d’utilisation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Notation hexadécimale longue</td>
+                        <td>Code commençant par <code>#</code>, suivi de 6 chiffres hexadécimaux (RR, GG, BB).</td>
+                        <td><code>color: #0a4dee</code></td>
+                        </tr>
+                        <tr>
+                        <td>Notation hexadécimale courte</td>
+                        <td>Un seul chiffre par composante, dupliqué implicitement.</td>
+                        <td><code>color: #f06;</code></td>
+                        </tr>
+                        <tr>
+                        <td>RGB</td>
+                        <td>Fonction <code>rgb(r, g, b)</code> avec valeurs 0–255.</td>
+                        <td><code>color: rgb(50, 10, 204);</code></td>
+                        </tr>
+                        <tr>
+                        <td>RGBA</td>
+                        <td>Comme RGB mais avec canal alpha (opacité 0–1).</td>
+                        <td><code>color: rgba(50, 10, 204, 0.4);</code></td>
+                        </tr>
+                        <tr>
+                        <td>HSL</td>
+                        <td>Fonction <code>hsl(h, s%, l%)</code> : teinte 0–360°, saturation %, luminosité %.</td>
+                        <td><code>color: hsl(100, 50%, 28%);</code></td>
+                        </tr>
+                        <tr>
+                        <td>HSLA</td>
+                        <td>HSL avec canal alpha.</td>
+                        <td><code>color: hsla(24, 0%, 98%, 0.6);</code></td>
+                        </tr>
+                        <tr>
+                        <td>Couleurs nommées</td>
+                        <td>Mots-clés prédéfinis (≈140 en CSS).</td>
+                        <td><code>color: olive;</code></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
                     <div class="references-section">
-                        <h5>Références supplémentaires</h5> 
+                        <h5>Références et informations supplémentaires</h5> 
                         <ul>
                             <li><a href="http://fr.wikipedia.org/wiki/Couleurs_du_Web" target="_blank">Les couleurs du web (Wikipedia) <i class="bi bi-box-arrow-up-right"></i></a></li>
                             <li><a href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank">CSS Legal Color Values <i class="bi bi-box-arrow-up-right"></i></a></li>
-                        </ul>
-                    </div>
-                    <h4>Notation hexadécimale longue</h4>
-                    <p>La notation numérique de la couleur utilisée dans l'exemple suivant  se nomme <a href="http://fr.wikipedia.org/wiki/Hexad%C3%A9cimal" target="_blank">notation hexadécimale longue <i class="bi bi-box-arrow-up-right"></i></a>&nbsp;:</p>
-                    <ol>
-                        <li>les deux premiers chiffres désignent le <strong>rouge</strong>, </li>
-                        <li>les deux chiffres du milieu, le <strong>vert</strong>, </li>
-                        <li>les deux chiffres de la fin, le <strong>bleu</strong>.</li>
-                    </ol>
-                    <p class="code-etiquette">Exemple : notation hexadécimale longue</p>
-                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
-                    &nbsp;&nbsp;color: #0a4dee;
-                    <span class="rose">}</span>
-                    </pre>
-                    <div class="references-section"><a href="https://g.co/kgs/jc6CHV" target="_blank">Voir cette couleur dans Google <i class="bi bi-box-arrow-up-right"></i></a></div>
-                    <h4>Notation hexadécimale courte</h4>
-                    <p>Cette variante de la notation hexadécimale utilise seulement 3 chiffres, lorsque les chiffres sont implicitement dédoublés. Ainsi, <code>#999999</code> devient <code>#999, #ff0066 </code>devient <code>#f06</code>, etc.</p>
-                    <p class="code-etiquette">Exemple : notation hexadécimale courte</p>
-                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
-                    &nbsp;&nbsp;color: #f06;
-                    <span class="rose">}</span>
-                    </pre>
-                    <div class="references-section"><a href="https://g.co/kgs/jgrkBH" target="_blank">Voir cette couleur dans Google <i class="bi bi-box-arrow-up-right"></i></a></div>
-                    <h4>RGB (Red, Green, Blue)</h4>
-                    <p>Les couleurs peuvent aussi être décrites à l'aide du conteneur <code>rgb()</code>: </p>
-                    <ul>
-                        <li> Valeurs entre 0 et 255 : <code>rgb(50, 10, 204)</code></li>
-                    </ul>
-                    <p class="code-etiquette">Exemple : le conteneur rgb( ))</p>
-                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
-                    &nbsp;&nbsp;color: rgb(50, 10, 204);
-                    <span class="rose">}</span>
-                    </pre>
-                    <div class="references-section"><a href="https://g.co/kgs/do1UKs" target="_blank">Voir cette couleur dans Google <i class="bi bi-box-arrow-up-right"></i></a></div>
-                    <h4>RGBA (Red, Green, Blue, Alpha channel)</h4>
-                    <p>Le conteneur <code>rgba()</code> permet d'ajouter une valeur d'opacité (entre 0 et 1) à la couleur décrite:</p>
-                    <p class="code-etiquette">Exemple : le conteneur rgba( )</p>
-                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
-                    &nbsp;&nbsp;color: rgba(50, 10, 204, 0.4);
-                    <span class="rose">}</span>
-                    </pre>
-                    <h4>HSL (Hue, Saturation, Lightness)</h4>
-                    <p>Les couleurs peuvent aussi être décrites à l'aide du conteneur <code>hsl() </code>qui décrit la teinte (<em>hue</em>) en degrés (0 étant rouge, 120 étant vert et 240 étant bleu), la saturation (<em>saturation</em>) en % et la luminosité (<em>lightness</em>) en %.</p>
-                    <p class="code-etiquette">Exemple : le conteneur hsl( )</p>
-                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
-                    &nbsp;&nbsp;color: hsl(100, 50%, 28%);
-                    <span class="rose">}</span>
-                    </pre>
-                    <div class="references-section"><a href="https://g.co/kgs/9XqTdd" target="_blank">Voir cette couleur dans Google <i class="bi bi-box-arrow-up-right"></i></a></div>
-                    <h4>HSLA (Hue, Saturation, Lightness, Alpha channel)</h4>
-                    <p>Le conteneur HSLA permet d'ajouter une valeur d'opacité à la couleur décrite. </p>
-                    <p class="code-etiquette">Exemple : le conteneur hsla( )</p>
-                    <pre class="exemple-code">                    <span class="rose">p {</span>
-                    &nbsp;&nbsp;background-color: hsla(24, 0%, 98%, 0.6);
-                    <span class="rose">}</span>
-                    </pre>
-                    <h4>Couleurs nommées</h4>
-                    <p>Certains mots de couleur peuvent également servir à titre de valeur des propriétés de couleur : </p>
-                    <p class="code-etiquette">Exemple : couleur nommée</p>
-                    <pre class="exemple-code">                    <span class="rose">footer {</span>
-                    &nbsp;&nbsp;background-color: maroon;
-                    <span class="rose">}</span>
-                    </pre>
-                    <p>Le HTML reconnaît les termes de 140 couleurs, dont 17 couleurs dites standards. Les couleurs standards sont listées dans le tableau suivant: </p>
-                    <table>
-                        <caption>Les noms de couleur standards du HTML/CSS</caption>
-                        <thead>
-                            <tr>
-                                <th>Terme HTML</th>
-                                <th>Code hexadécimal</th>
-                                <th>Couleur</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>aqua</code></td>
-                                <td>#00ffff</td>
-                                <td style="background-color:aqua">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>black</code></td>
-                                <td>#000000</td>
-                                <td style="background-color:black">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>blue</code></td>
-                                <td>#0000ff</td>
-                                <td style="background-color:blue">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>fuchsia</code></td>
-                                <td>#ff00ff</td>
-                                <td style="background-color:fuchsia">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>green</code></td>
-                                <td>#008000</td>
-                                <td style="background-color:green">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>gray</code></td>
-                                <td>#808080</td>
-                                <td style="background-color:gray">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>lime</code></td>
-                                <td>#00ff00</td>
-                                <td style="background-color:lime">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>maroon</code></td>
-                                <td>#800000</td>
-                                <td style="background-color:maroon">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>navy</code></td>
-                                <td>#000080</td>
-                                <td style="background-color:navy">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>olive</code></td>
-                                <td>#808000</td>
-                                <td style="background-color:olive">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>orange</code></td>
-                                <td>#ffa500</td>
-                                <td style="background-color:orange">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>purple</code></td>
-                                <td>#800080</td>
-                                <td style="background-color:purple">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>red</code></td>
-                                <td>#ff0000</td>
-                                <td style="background-color:red">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>silver</code></td>
-                                <td>#c0c0c0</td>
-                                <td style="background-color:silver">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>teal</code></td>
-                                <td>#008080</td>
-                                <td style="background-color:teal">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>white</code></td>
-                                <td>#ffffff</td>
-                                <td style="background-color:white">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><code>yellow</code></td>
-                                <td>#ffff00</td>
-                                <td style="background-color:yellow">&nbsp;</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h3>Informations supplémentaires</h3>
-                    <div class="references-section">
-                        <ul>
                             <li><a href="http://htmlcolorcodes.com/color-names/" target="_blank">Liste complète des noms de couleurs du HTML/CSS (140) <i class="bi bi-box-arrow-up-right"></i></a></li>
                             <li><a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3School color picker <i class="bi bi-box-arrow-up-right"></i></a></li>
                             <li><a href="https://www.google.ca/search?q=color+picker&amp;oq=color+picker&amp;aqs=chrome.0.69i59j0j69i60j0l3.2831j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank">Google color picker <i class="bi bi-box-arrow-up-right"></i></a></li>
@@ -546,150 +414,176 @@
                         <a href="#">Haut de page</a>
                     </div>
                 <section id="section05">
-                    <div class="haut-de-page">
-                        <a href="#">Haut de page</a>
-                    </div>
+                    
                     <h2>Les sélecteurs du DOM</h2>
-                    <p>Les exemples de règles CSS les plus évidents utilisent des balises HTML comme sélecteurs: <code>body</code>, <code>h1</code>, <code>p</code>, <code>ul</code>...</p>
-                    <p>Ces règles affectent donc toutes les instances de ces balises dans les pages HTML auxquelle elles sont liées. Par exemple, une règle appliquée au sélecteur <code>h1</code> affecte tous les éléments <code>h1</code> du document HTML auquel cette règle de style est liée.</p>
-                    <p>Cet effet n'est pas toujours désirable: on souhaite parfois n'intervenir que sur certaines balises d'un type donné: par exemple, les hyperliens du menu n'ont pas nécessairement les mêmes attributs visuels que ceux du contenu. Or, il s'agit pourtant de la même balise <code>a</code> dans les deux cas.</p>
-                    <p>Pour pallier à cette situation, il existe une panoplie de sélecteurs qui permettent une sélectivité variable, selon le besoin.</p>
-                    <p>Le tableau suivant énumére bon nombre de sélecteurs (il y en a d'autres!) qui permettent de sélectionner directement les éléments du <abbr title="Document Object Model">DOM</abbr>.</p>
-                    <table>
-                        <caption>Les principaux sélecteurs du DOM (Document Object Model*)</caption>
+                    <p>Un <strong>sélecteur CSS</strong> sert à cibler un ou plusieurs éléments du document HTML afin d’appliquer un style.</p>
+                    <p>Il existe différents types de sélecteurs, chacun adapté à une situation particulière&nbsp;:</p>
+                    <ul>
+                        <li><a href="#s01">Sélecteurs de base</a></li>
+                        <li><a href="#s02">Sélecteurs combinés</a></li>
+                        <li><a href="#s03">Sélecteurs d’attributs</a></li>
+                        <li><a href="#s04">Sélecteurs pseudo-classes</a></li>
+
+                    </ul>
+
+                    <h3 id="s01">Sélecteurs de base</h3>
+                    <table class="table table-striped">
+                        
+                    <thead>
+                        <tr>
+                        <th>Sélecteur</th>
+                        <th>Description</th>
+                        <th>Exemple d’utilisation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Type (balise)</td>
+                        <td>Cible tous les éléments d’un type donné.</td>
+                        <td><code>h2 {}</code><br> Sélectionne tous les éléments &lt;h2&gt;</td>
+                        </tr>
+                        <tr>
+                        <td>Classe (.nom)</td>
+                        <td>Cible les éléments ayant un attribut <code>class</code>.</td>
+                        <td><code>.important { font-weight: bold; }</code></td>
+                        </tr>
+                        <tr>
+                        <td>Identifiant (#id)</td>
+                        <td>Cible un élément unique avec un attribut <code>id</code>.</td>
+                        <td><code>#header { background: gray; }</code></td>
+                        </tr>
+                        <tr>
+                        <td>Universel (*)</td>
+                        <td>Cible tous les éléments du document.</td>
+                        <td><code>* { margin: 0; }</code></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <h3 id="s02">Sélecteurs combinés</h3>
+                    <table class="table table-striped">
+                        
                         <thead>
                             <tr>
-                                <th width="155">Sélecteur</th>
-                                <th width="209">Description</th>
-                                <th width="250">Exemple</th>
+                            <th>Sélecteur</th>
+                            <th>Description</th>
+                            <th>Exemple d’utilisation</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">* Le DOM, <i>Document Object Model</i>, est le modèle d'objets de document HTML. En d'autres termes, il s'agit de la façon dont les éléments sont agencés les uns par rapport aux autres dans un document HTML. Les sélecteurs de cette liste permettent de cibler de différentes manières les éléments (les «objets») du DOM.</td>
-                            </tr>
-                        </tfoot>
                         <tbody>
                             <tr>
-                                <td><code>*</code></td>
-                                <td>Sélecteur universel</td>
-                                <td><code>* {}</code><br>
-                                    Sélectionne tous les élément du document</td>
+                            <td>Descendant (E&nbsp;F)</td>
+                            <td>Cible un élément contenu dans un autre.</td>
+                            <td><code>li a {}</code><br> Sélectionne tous les élément &lt;a&gt; descendants de &lt;li&gt;.</td>
                             </tr>
                             <tr>
-                                <td><code>élément</code></td>
-                                <td>Sélecteur de type</td>
-                                <td><code>h2 {}</code><br>
-                                    Sélectionne l'élément &lt;h2&gt;</td>
+                            <td>Enfant direct (E&nbsp;&gt;&nbsp;F)</td>
+                            <td>Cible uniquement les enfants immédiats.</td>
+                            <td><code>li &gt; a {}</code><br> Sélectionne tous les élément &lt;a&gt; qui sont des enfants d'un éléments &lt;li&gt;, mais sans les autres éléments &lt;a&gt; de la page</td>
                             </tr>
                             <tr>
-                                <td><code>élément élément</code></td>
-                                <td>Sélecteur de descendant</td>
-                                <td><code>li a {}</code><br>
-                                    Sélectionne tous les élément &lt;a&gt; descendants de &lt;li&gt;.</td>
-                            </tr> 
-                            <tr>
-                                <td><code>élément&gt;élément</code></td>
-                                <td>Sélecteur d'enfant</td>
-                                <td><code>li &gt; a {}</code><br>
-                                    Sélectionne tous les élément &lt;a&gt; qui sont des enfants d'un éléments &lt;li&gt;, mais sans les autres éléments &lt;a&gt; de la page</td>
+                            <td>Frère adjacent (E&nbsp;+&nbsp;F)</td>
+                            <td>Cible l’élément immédiatement suivant.</td>
+                            <td><code>h1 + p {}</code><br> Sélectionne chaque élément &lt;p&gt; qui vient immédiatement après un élément frère &lt;h1&gt;, sans les éléments &lt;p&gt; suivants</td>
                             </tr>
                             <tr>
-                                <td><code>élément+élément</code></td>
-                                <td>Sélecteur d'adjacence directe</td>
-                                <td><code>h1 + p {}</code><br>
-                                    Sélectionne chaque élément &lt;p&gt; qui vient immédiatement après un élément frère &lt;h1&gt;, sans les éléments &lt;p&gt; suivants</td>
+                            <td>Frères généraux (E&nbsp;~&nbsp;F)</td>
+                            <td>Cible tous les frères suivants.</td>
+                            <td><code>h1 ~ p {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont précédés d'un élément frère &lt;h1&gt;</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                        <h3 id="s03">Sélecteurs d’attributs</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                <th>Sélecteur</th>
+                                <th>Description</th>
+                                <th>Exemple d’utilisation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>[attr]</td>
+                                <td>Cible les éléments possédant un attribut.</td>
+                                <td><code>[title] { text-decoration: underline; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr="valeur"]</td>
+                                <td>Cible un attribut ayant une valeur précise.</td>
+                                <td><code>input[type="text"] { border: 1px solid #ccc; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr^="val"]</td>
+                                <td>Valeur commençant par…</td>
+                                <td><code>a[href^="https"] { color: green; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr$="val"]</td>
+                                <td>Valeur finissant par…</td>
+                                <td><code>a[href$=".pdf"] { color: red; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr*="val"]</td>
+                                <td>Valeur contenant…</td>
+                                <td><code>a[href*="exemple"] { color: orange; }</code></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                    <h3 id="s04">Sélecteurs pseudo-classes</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th>Sélecteur</th>
+                            <th>Description</th>
+                            <th>Exemple d’utilisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>:hover</td>
+                            <td>État au survol.</td>
+                            <td><code>a:hover { text-decoration: underline; }</code></td>
                             </tr>
                             <tr>
-                                <td><code>élément~élément</code></td>
-                                <td>Sélecteur d'adjacence générale</td>
-                                <td><code>h1 ~ p {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont précédés d'un élément frère &lt;h1&gt;</td>
+                            <td>:first-child</td>
+                            <td>Cible le premier enfant.</td>
+                            <td><code>p:first-child {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont des premiers enfants de leur parent</td>
                             </tr>
                             <tr>
-                                <td><code>[attribut]</code></td>
-                                <td>Sélecteur d'attribut simple</td>
-                                <td><code>input[type="text"] {}</code><br>
-                                    Sélectionne tous les élément &lt;input&gt; de type "text"</td>
+                            <td>:last-child</td>
+                            <td>Cible le dernier enfant.</td>
+                            <td><code>p:last-child {}</code><br>Sélectionne tous les éléments &lt;p&gt; qui sont des derniers enfants de leur parent</td>
                             </tr>
                             <tr>
-                                <td><code>[attribut^="valeur"]</code></td>
-                                <td>Sélecteur d'attribut dont la valeur débute par une chaîne de caractères</td>
-                                <td><code>a[href^="http"] {}</code><br>
-                                    Sélectionne tous les élément &lt;a&gt; dont la valeur de l'attribut href débute par "http" (liens externes)</td>
+                            <td>:nth-child(n)</td>
+                            <td>Cible l’enfant à une position donnée.</td>
+                            <td><code>p:nth-child(3) {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont des troisièmes enfants de leur parent</td>
                             </tr>
                             <tr>
-                                <td><code>[attribut$="valeur"]</code></td>
-                                <td>Sélecteur d'attribut dont la valeur se termine par une chaîne de caractères</td>
-                                <td><code>img[src$=".jpg"] {}</code><br>
-                                    Sélectionne tous les élément &lt;img&gt; dont la valeur de l'attribut src se termine par ".jpg"</td>
-                            </tr>
-                            <tr>
-                                <td><code>[attribut*="valeur"]</code></td>
-                                <td>Sélecteur d'attribut dont la valeur contient une chaîne de caractères</td>
-                                <td><code>[class*="button"] {}</code><br>
-                                    Sélectionne tous les élément dont l'attribut class contient "button"</td>
-                            </tr>
-                            <tr>
-                                <td><code>:first-child</code></td>
-                                <td>Sélecteur de premier enfant</td>
-                                <td><code>p:first-child {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des premiers enfants de leur parent</td>
-                            </tr>
-                            <tr>
-                                <td><code>:nth-child(n)</code></td>
-                                <td>Sélecteur de n<sup>ème</sup> enfant</td>
-                                <td><code>p:nth-child(3) {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des troisièmes enfants de leur parent</td>
-                            </tr>
-                            <tr>
-                                <td><code>:last-child</code></td>
-                                <td>Sélecteur de dernier enfant</td>
-                                <td><code>p:last-child {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des derniers enfants de leur parent</td>
-                            </tr>
-                            <tr>
-                                <td><code>:only-child</code></td>
-                                <td>Sélecteur d'enfant unique</td>
-                                <td><code>li:only-child {}</code><br>
-                                    Sélectionne tous les éléments &lt;li&gt; qui sont enfant unique dans une liste</td>
-                            </tr>
-                            <tr>
-                                <td><code>:first-of-type</code></td>
-                                <td>Sélecteur du premier d'un type</td>
-                                <td><code>p:first-of-type {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des premiers enfants de type &lt;p&gt; de leur parent</td>
-                            </tr>
-                            <tr>
-                                <td><code>:nth-of-type(n)</code></td>
-                                <td>Sélecteur du n<sup>ème</sup> d'un type</td>
-                                <td><code>p:nth-of-type(3) {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des troisièmes éléments de type &lt;p&gt; de leur parent</td>
-                            </tr>
-                            <tr>
-                                <td><code>:last-of-type</code></td>
-                                <td>Sélecteur du dernier d'un type</td>
-                                <td><code>p:last-of-type {}</code><br>
-                                    Sélectionne tous les éléments &lt;p&gt; qui sont des derniers enfants de type &lt;p&gt; de leur parent</td>
+                            <td>:not()</td>
+                            <td>Exclut un sélecteur.</td>
+                            <td><code>p:not(.important) { color: gray; }</code></td>
                             </tr>
                             <tr>
                                 <td><code>::first-letter</code></td>
                                 <td>Sélecteur de la première lettre d'un élément</td>
-                                <td><code>p::first-letter {}</code><br>
-                                    Sélectionne la première lettre de l'élément &lt;p&gt;</td>
+                                <td><code>p::first-letter {}</code><br> Sélectionne la première lettre de l'élément &lt;p&gt;</td>
                             </tr>
                             <tr>
                                 <td><code>::first-line</code></td>
                                 <td>Sélecteur de la première ligne d'un élément</td>
-                                <td><code>p::first-line {}</code><br>
-                                    Sélectionne la première ligne de l'élément &lt;p&gt;</td>
+                                <td><code>p::first-line {}</code><br> Sélectionne la première ligne de l'élément &lt;p&gt;</td>
                             </tr>
-                        </tbody>     
-                    </table>
-                    <div class="tf">
+                        </tbody>
+                        </table>
+
+                    <div class="tf" id="t01">
                         <p class="tf-intitule">Créer un feuille de style interne</p>
                         <ol>
-                            <li>Téléchargez les documents source <a href="https://hautemontagne.ca/sources/tf_cours04_victoire-de-mtl.zip">tf_cours04_victoire-de-mtl.zip</a></li>
+                            <li>Téléchargez les documents source <a href="materiel/tf_cours04_victoire-de-mtl.zip" class="btn btn-primary" role="button">tf_cours04_victoire-de-mtl.zip <i class="bi bi-download"></i></a></li>
                             <li>Décompressez le dossier et ouvrez ce dossier dans VSCode.</li>
                             <li>Voir les instructions données classe pour la suite.</li>
                         </ol>  
