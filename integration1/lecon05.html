@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 5 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours05" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 5</div>
+                    <h1>Le modèle de boîte CSS et le&nbsp;texte</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Leçon 5</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">CSS&nbsp;: le&nbsp;modèle de&nbsp;boîte</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">CSS&nbsp;: héritage, cascade et&nbsp;spécificité</a>           
+                        <a href="#section04" class="list-group-item list-group-item-action">Le texte sur le&nbsp;Web</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Les collections de&nbsp;polices</a>
+                        <a href="#section06" class="list-group-item list-group-item-action">Les familles de polices</a>
+                        <a href="#section07" class="list-group-item list-group-item-action">Les unités de taille</a>
+                        <a href="#section08" class="list-group-item list-group-item-action">Les propriétés des fontes et du&nbsp;texte</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+                
+                 <section id="section01">
+          <h2>CSS : le modèle de boite</h2>
+          <p>CSS est souvent illustré par un modèle de boîte :</p>
+          <figure class="w80">
+            <img src="images/cours05/cours06_boite01.jpg" alt="Le modèle de boîte décomposé">
+          </figure>
+          <p><code>padding</code> (marge interne) est transparent : il s'agit de l'espace adjacent au contenu  et laisse voir  la couleur d'arrière-plan ou l'image d'arrière-plan de l'élément auquel il appartient.</p>
+          <p><code>margin</code> (marge externe) est transparent : il laisse voir la couleur d'arrière-plan ou l'image d'arrière-plan de l'élément parent sous-jacent, et non pas de l'élément auquel il appartient.</p>
+          <p><code>border</code> (bordure) se situe entre le <code>padding</code> et le <code>margin</code>. </p>
+          <div class="note">
+            <p>En français, <code>padding</code> est traduit indifféremment par « remplissage », «&nbsp;espacement » ou « marge interne », alors que <code>margin</code> est traduit par « marge » ou  « marge externe ».</p>
+          </div>
+          <figure class="w70">
+            <img src="images/cours05/cours06_boite01b.jpg" alt="Le modèle de boîte tel qu&#39;il apparaît à l&#39;écran">
+          </figure>
+          <div class="tf">
+            <p class="tf-intitule">Le modèle de boite CSS</p>
+            <p>Pour comprendre le modèle de boîte, voyez en classe cette démo Codepen:</p>
+            <p class="codepen" data-height="730" data-default-tab="html,result" data-slug-hash="RNrbMwN" data-pen-title="c05-modele_de_boite" data-editable="true" data-user="frlacroix" style="height: 730px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/frlacroix/pen/RNrbMwN">
+                c05-modele_de_boite</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+
+          <h3>Comment calculer la largeur d'un élément?</h3>
+          <p>Par exemple, considérons les valeurs suivantes pour width, padding, border et margin&nbsp;:</p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">          <span class="rose">div {</span>
+          &nbsp;&nbsp;width: 130px; 
+          &nbsp;&nbsp;padding: 10px;
+          &nbsp;&nbsp;border: 10px;
+          &nbsp;&nbsp;margin: 10px;
+          &nbsp;&nbsp;<span class="vert">box-sizing: content-box;</span>
+          <span class="rose">}</span>
+          </pre>
+          <p>Et voyons le résultat&nbsp;:</p>
+          <p class="resultat-etiquette">Résultat</p>
+          <figure class="w100">
+            <img src="images/cours05/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
+          </figure>
+          <p><strong>La largeur totale affichée est donc de 10+10+10+130+10+10+10 = 190 px</strong></p>
+          <p>Lorsque la valeur de <code>box-sizing</code> passe à <code>border-box</code>, les mêmes valeurs donnent une largeur différente&nbsp;:</p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">          <span class="rose">div {</span>
+          &nbsp;&nbsp;width: 130px; 
+          &nbsp;&nbsp;padding: 10px;
+          &nbsp;&nbsp;border: 10px;
+          &nbsp;&nbsp;margin: 10px;
+          &nbsp;&nbsp;<span class="vert">box-sizing: border-box;</span>
+          <span class="rose">}</span>
+          </pre>
+          <p class="resultat-etiquette">Résultat</p>
+          <figure class="w100">
+            
+            <img src="images/cours05/cours06_boite03b.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
+          </figure>
+          <p><strong>La largeur totale affichée est donc de 10+130+10 = 150 px</strong></p>
+          <p>C'est-à-dire que la valeur donnée à <code>width</code> inclut maintenant les valeurs de <code>padding</code> et de <code>border</code>.</p>
+          <div class="note">
+            <p class="note-intitule">Notez <code>padding</code>, <code>border</code> et <code>margin</code> sont des propriétés dites « raccourcies » </p>
+            <ul>
+              <li>Lorsqu'on utilise <code>margin</code> ou <code>padding</code> tout seul, accompagné d'une seule valeur (ex.: <code>margin:10px;</code>), cette valeur s'applique à la fois aux marges du haut, de droite, du bas et de gauche, alors que la formule longue, telle que <code>margin-top</code> par exemple, ne s'applique qu'à la marge du haut.</li>
+              <li>Vous croiserez souvent une déclaration écrite comme ceci : <code><br>
+                margin: 5px 10px 15px 12px;</code> <br>
+                Elle signifie la même chose que ces quatres déclarations : <br>
+                <code>margin-top: 5px;<br>
+                  margin-right: 10px;<br>
+                  margin-bottom: 15px;<br>
+                  margin-left: 12px; </code>
+              </li>
+            </ul>
+          </div>
+        </section><!-- fin section 01 --> 
+<div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section02">
+          
+          <h2>CSS : héritage, cascade et spécificité</h2>
+          <h3>Héritage</h3>
+          <p>L'héritage dans les <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> signifie  la transmission des valeurs des propriétés CSS des ancêtres vers les descendants.</p>
+          <p>Nous avons vu que l'élément <code>html</code> est l'ancêtre de tous les ancêtres. Considérez la règle suivante pour l'élément <code>html</code> : </p>
+          <pre class="exemple-code">            <span class="rose">html {</span>
+            &nbsp;&nbsp;font-family: Segoe, "Trebuchet MS", Verdana, sans-serif;
+            &nbsp;&nbsp;color: blue;
+            <span class="rose">}</span>
+          </pre>
+          <p> Le texte de tous les éléments descendants de <code>html</code> dans le document hérite de ces valeurs, peu importe la profondeur de la descendance.</p>
+          <p>L'héritage ne s'applique pas à toutes les propriétés. </p>
+          <p>Par exemple, cela n'aurait pas de pertinence que l'ajout d'une bordure à un élément <code>article</code> se répercute à tous ses enfants et descendants (tels des <code>p</code>, <code>h1</code>, <code>h2</code>, etc.). La propriété bordure ne peut donc être transmise aux descendants d'un conteneur. </p>
+          <h3>Cascade</h3>
+          <p>Le mot <em>cascade</em> de l'expression « feuille de style en cascade » ou <i>cascading style sheet (CSS)</i> signifie le passage d'un niveau de mise en forme à un autre, dans un ordre contrôlé, dans le meilleur des cas.</p>
+          <p>Sa fonction est de permettre au navigateur de décider parmi les différentes options quelle source doit être utilisée pour décrire une propriété particulière.  </p>
+          <h3>Sources des règles de style</h3>
+          <p>Les styles proviennent de plusieurs sources. </p>
+          <p>1) D'abord, <strong>le navigateur possède sa propre feuille de style</strong>. C'est pourquoi <code>h1</code> possède une taille propre par défaut et que les paragraphes ont d'emblée une certaine marge entre eux.  </p>
+          <p>2) Ensuite, il y a <strong>les règles de style de l'auteur</strong>, soit celles écrites par vous-même en tant qu'auteur d'une page Web. </p>
+          <p>Comme on l'a vu, celles-ci peuvent-être de trois types: </p>
+          <ul>
+            <li><em>feuille de style liée</em>;</li>
+            <li><em>feuille de style insérée</em>;</li>
+            <li><em>règles de style en ligne</em> (à même les éléments de balisage). </li>
+          </ul>
+          <p>Voici l'ordre dans lequel le navigateur passe en revue les localisations des règles de style:</p>
+          <figure class="w90">
+            <img src="images/cours05/css-ordre-de-la-cascade.png" alt="Cascade: l&#39;ordre des règles de style">
+          </figure>
+          <div class="note">
+            <p>Un agent utilisateur est un programme informatique qui représente une entité, par exemple, un navigateur dans le cadre d'une utilisation sur le Web.</p>
+          </div>
+          <p>La cascade détermine l'ordre de lecture des règles de style et, en même temps, l'ordre dans lequel ces règles de style sont <strong>mises à jour</strong> au fur et à mesure que la cascade progresse.</p>
+          <p>La mise à jour des règles à appliquer suit l'ordre de la cascade, mais cela, en fonction d'un certains nombre de règles.</p>
+          <h3>Les règles de la cascade</h3>
+          <h4>Règle 1: Trouver toutes les déclarations s'appliquant à chaque élément</h4>
+          <p>Avec le chargement de chaque page, le navigateur scrute tous les éléments de la page et voit si une règle de style s'applique à l'un de ces éléments.</p>
+          <h4>Règle 2: Trier par ordre</h4>
+          <p>Le navigateur passe à travers chacune des cinq sources de règles de style potentielles, en mettant à jour les propriétés qui sont redéfinies plus bas dans la cascade. La <strong>dernière</strong> mise à jour sera celle qui prévaudra à l'affichage. </p>
+          <p>Par exemple, supposons que, dans l'exemple illustré par le tableau, deux des paragraphes du document passé en revue ont des règles de styles <em>en ligne</em> définissant la couleur du texte comme étant rouge. Dans ce cas, tous les éléments <code>p</code> auront un texte bleu sauf ceux ayant une règle de style en ligne redéfinissant le texte comme étant rouge.</p>
+          <table summary="Exemple d&#39;application de la cascade dans le rendu graphique des navigateurs">
+            <caption>Exemple d'application de la cascade</caption>
+            <thead>
+            <tr>
+              <th>Localisation</th>
+              <th>Élément</th>
+              <th>Propriété</th>
+              <th>Valeur</th>
+            </tr>
+            </thead>
+            <tbody><tr>
+              <td>Feuille de style par défaut</td>
+              <td>tous les p</td>
+              <td>color</td>
+              <td>black</td>
+            </tr>
+            <tr>
+              <td>Feuille de style de l'utilisateur</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Feuille de style de l'auteur: externe</td>
+              <td>tous les p</td>
+              <td>color</td>
+              <td>blue</td>
+            </tr>
+            <tr>
+              <td>Feuille de style de l'auteur: interne</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Règles de l'auteur en ligne</td>
+              <td>certains p</td>
+              <td>color</td>
+              <td>red</td>
+            </tr>
+          </tbody></table> 
+          <h4>Règle 3: Trier par spécificité</h4>
+          <p>Un sélecteur d'<strong>identifiant</strong> est plus spécifique qu'un sélecteur de <strong>classe</strong>.</p>
+          <p>Un sélecteur de <strong>classe</strong> est plus spécifique qu'un sélecteur de type (<strong>élément HTML</strong>). </p>
+          <p>La spécificité est plus puissante que l'ordre: c'est-à-dire qu'une règle plus spécifique rencontrée plus haut dans la cascade l'emporte sur une règle moins spécifique rencontrée plus bas dans la cascade.</p>
+            <p>Si deux règles ont le même poids, celle qui se trouve plus bas dans la cascade l'emporte.</p>
+          <p>La spécificité (ou le poids) se calcule par A-B-C, c'est-à-dire:</p>
+          <ul>
+            <li>Ajoutez 1 à <strong>A</strong> pour chaque identifiant dans le sélecteur.</li>
+            <li>Ajoutez 1 à <strong>B</strong> pour chaque classe (ou pseudo-classe) dans le sélecteur.</li>
+            <li>Ajoutez 1 à <strong>C</strong> pour chaque élément (ou pseudo-élément) dans le sélecteur.</li>
+          </ul>
+          <p>Lisez le résultat un peu comme un nombre normal à trois chiffres: par exemple, 0-2-0 (20) est plus spécifique que 0-0-9 (9) et 0-0-9 (9) est plus spécifique que 0-0-3 (3). </p>
+            <p>Nous n'utilisons ni identifiant ni classe pour le moment, mais voici tout de même une comparaison des sélecteurs d'éléments HTML (ou sélecteur de type) avec les sélecteurs de classe (.item-de-liste) et d'identifiant (#item-de-liste): </p>
+          <table summary="Exemples de calcul de la spécificité d&#39;un sélecteur">
+            <caption>Calcul de la spécificité de quelques sélecteurs de type, un sélecteur de classe (.item-de-liste) et un sélecteur d'identifiant (#item-de-liste)</caption>
+            <thead>
+            <tr>
+              <th>Sélecteur</th>
+              <th>A-B-C</th>
+              <th>Spécificité</th>
+            </tr>
+            </thead>
+            <tbody><tr>
+              <td>li</td>
+              <td>0-0-1</td>
+              <td style="text-align:right">1</td>
+            </tr>
+            <tr>
+              <td>ul p</td>
+              <td>0-0-2</td>
+              <td style="text-align:right">2</td>
+            </tr>
+            <tr>
+              <td>nav ul li</td>
+              <td>0-0-3</td>
+              <td style="text-align:right">3</td>
+            </tr>
+            <tr>
+              <td>header nav ul li</td>
+              <td>0-0-4</td>
+              <td style="text-align:right">4</td>
+            </tr>
+            <tr>
+              <td>body header nav ul li</td>
+              <td>0-0-5</td>
+              <td style="text-align:right">5</td>
+            </tr>
+            <tr>
+              <td>.item-de-liste</td>
+              <td>0-1-0</td>
+              <td style="text-align:right">10</td>
+            </tr>
+            <tr>
+              <td>#item-de-liste</td>
+              <td>1-0-0</td>
+              <td style="text-align:right">100</td>
+            </tr>
+          </tbody></table>
+
+          <div class="tf">
+            <p class="tf-intitule">La spécificité</p>
+            <p>Entrez des valeurs pour la propriété <i>color</i> pour les différentes règles de style et constatez la valeur qui s'applique dans la fenêtre <i>Result</i>.</p>
+            <p>Calculez la spécificité de chaque sélecteur et constatez son effet dans l'application de la couleur du texte.</p>
+              <p class="codepen" data-height="670" data-default-tab="html,result" data-slug-hash="vELBREY" data-pen-title="c05-specificite01" data-editable="true" data-user="frlacroix" style="height: 670px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/frlacroix/pen/vELBREY">
+                c05-specificite01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+
+          <div class="note">
+              <p class="note-intitule">Outil diagnostic: <code>!important</code></p>
+              <p>Le poids de la déclaration est aussi pris en compte. Vous pouvez définir une règle comme étant «importante», comme ceci</p>
+              <p class="rdstyle">a:link {
+              color: blue <span class="rose">!important</span>;
+                }</p>
+              <p>Le mot <strong>!important</strong> est écrit à la suite de la valeur, après une espace et avant le point-virgule. <strong>Il force le navigateur à afficher cette valeur, quelles que soit les valeurs rencontrées plus bas dans la cascade</strong>. 	</p> 
+              <p>Vous devez utiliser cet outil avec parcimonie.</p>
+              <p>Le mot <strong>!important</strong> constitue surtout un <strong>outil diagnostic</strong>  pour le développeur web. Utilisé <strong>temporairement</strong>, il permet en effet de détecter des conflits de règles de style lors de la conception de la mise en forme d'une page Web.</p>
+          </div>
+
+        </section><!-- fin section02 --> 
+
+        <section id="section04">
+          <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+          <h2>Le texte sur le Web</h2>
+          <p>Le web présente un défi sur le plan de la typographie. </p>
+          <p>Pour commencer, il faut accepter de ne pas avoir le plein contrôle de la typographie sur le Web.</p>
+          <p>Par ailleurs, la typographie donne le ton en ce qui concerne la qualité visuelle d'un site.</p>
+          <p>Voici les principales propriétés CSS associées au texte : </p>
+          <h3>Proprétés <abbr title="Cascading Style Sheet">CSS</abbr>  associées aux polices de caractères et au texte</h3>
+          <dl class="css-texte"> 
+            <dt>color</dt>
+            <dd>Couleur du texte<br>
+              <a href="https://www.w3schools.com/cssref/pr_text_color.asp" target="_blank">Essayez-le sur W3School ! <i class="bi bi-box-arrow-up-right"></i></a><br>
+              <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">Noms des couleurs <i class="bi bi-box-arrow-up-right"></i></a><br>
+              <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Color Picker <i class="bi bi-box-arrow-up-right"></i></a> </dd>
+            <dt>direction</dt>
+            <dd>Sens d'écriture</dd>
+            <dt>font</dt>
+            <dd>Ensemble des propriétés concernant les caractères</dd>
+            <dt>font-family</dt>
+            <dd>Police de caractères</dd>
+            <dt>font-size</dt>
+            <dd>Taille des caractères</dd>
+            <dt>font-size-adjust</dt>
+            <dd>Hauteur des lignes de texte</dd>
+            <dt>font-stretch</dt>
+            <dd>Étirement ou compression des caractères</dd>
+            <dt>font-style</dt>
+            <dd>Mise en italique</dd>
+            <dt>font-variant</dt>
+            <dd>Mise en petites capitales</dd>
+            <dt>font-weight</dt>
+            <dd>Mise en gras ou extra-gras</dd>
+            <dt>letter-spacing</dt>
+            <dd>Espacement des lettres</dd>
+            <dt>line-height</dt>
+            <dd>Hauteur de ligne</dd>
+            <dt>text-align</dt>
+            <dd>Détermine l'alignement horizontal du texte à l'intérieur d'un élément</dd>
+            <dt>text-decoration</dt>
+            <dd>Soulignement ou rayure du texte</dd>
+            <dt>text-indent</dt>
+            <dd>Indentation du texte</dd>
+            <dt>text-justify</dt>
+            <dd>Justification du texte</dd>
+            <dt>text-overflow</dt>
+            <dd>Détermine s'il faut afficher le contenu débordant d'un cadre plein sous forme de points de suspension (...) à la fin de la ligne</dd>
+            <dt>text-shadow</dt>
+            <dd>Définit les effets d'ombre à appliquer au texte de l'élément</dd>
+            <dt>text-transform</dt>
+            <dd>Contrôle la capitalisation (majuscules/minuscules) du texte d'un élément</dd>
+            <dt>vertical-align</dt>
+            <dd>Définit l'alignement vertical de l'élément par rapport à la ligne (et non la page)</dd>
+            <dt>word-spacing</dt>
+            <dd>Définit l'espacement entre les mots</dd>
+            <dt>white-space</dt>
+            <dd>Gère les espaces multiples et les bris de ligne<br>
+              <a href="https://www.w3schools.com/cssref/pr_text_white-space.asp" target="_blank">Essayez-le sur W3School <i class="bi bi-box-arrow-up-right"></i></a> </dd>
+          </dl>
+          <div class="clear"></div>
+          <div class="note">
+               <p>Voici un lien qui peut être utile pour obtenir la définition des propriétés et des mots-clés utiles en CSS: <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference" target="_blank">Référence CSS - Mozilla Developer Network <i class="bi bi-box-arrow-up-right"></i></a></p>
+          </div>
+          <div class="tf">
+            <p class="tf-intitule">Les propriétés du texte</p>
+            <p>Entrez des valeurs pour les propriétés du texte et voyez le résultat.</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwVPowX" data-pen-title="css-texte01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/KwVPowX">
+  css-texte01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+          <h3>Les polices de caractères sur le web</h3>
+          <p>À la base, ce sont les polices de caractères installées sur l'appareil de l'utilisateur qui déterminent les possibilités des navigateurs quant à l'affichage   du texte dans les pages web. </p>
+          <p>Même si une police de caractères est spécifiée par le concepteur web par l'intermédiaire des règles de style, <strong>celle-ci  sera affichée en autant qu'elle soit installée sur l'appareil de l'utilisateur</strong>. Si elle n'y figure pas, c'est la police par défaut du navigateur qui sera affichée.  </p>
+          <p>Un autre facteur qui rend difficile le choix d'une police de caractères est <strong>l'inconsistance de leurs noms d'une plate-forme à l'autre</strong>: <em>Times New Roman</em> peut aussi se nommer <em>TimesNR</em> ou <em>Times Roman</em>, par exemple.</p>
+          <h3>Le problème de la taille des caractères</h3>
+          <p>En matière de typographie, la taille présente un autre défi, car la résolution des écrans varie et la taille par défaut des polices changent d'un navigateur à l'autre et d'une plate-forme à l'autre.</p>
+        </section> <!-- fin section04 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section05">
+          
+          <h2>Les collections de polices</h2>
+          <p>Valeurs: <code>serif</code>, <code>sans-serif</code>, <code>monospace</code>, <code>fantasy</code>, <code>cursive</code>.</p>
+          <p>Pour spécifier une fonte générique, à partir d'une collection de polices, vous pouvez écrire ceci&nbsp;: </p>
+          <pre class="exemple-code">            p {
+            &nbsp;&nbsp;<span class="rose">font-family</span>: sans-serif; 
+            }</pre>
+          <p>Le navigateur affiche la fonte par défaut de cette collection (<code>Helvetica</code> ou <code>Arial</code>, dans la plupart des cas).</p>
+          <p>Le Pen suivant présente les différentes valeurs de collections de polices, telles qu'elles sont affichées par défaut dans Google Chrome&nbsp;:</p>
+          <p class="codepen" data-height="620" data-default-tab="html,result" data-slug-hash="LEGPdEv" data-pen-title="c06-font01" data-editable="true" data-user="frlacroix" style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/LEGPdEv">
+  c06-font01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section> <!-- fin section05 -->
+        <section id="section06">
+          <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+          <h2>Les familles de polices</h2>
+          <p>Les familles de polices ne font pas partie du navigateur, mais <strong>résident plutôt dans le système d'exploitation de l'ordinateur de l'utilisateur</strong>. Voici les familles les plus courantes telles qu'elles s'affichent dans les navigateurs courants&nbsp; :</p>
+          <p class="codepen" data-height="530" data-default-tab="html,result" data-slug-hash="GgoKxJp" data-pen-title="c06-font02" data-editable="true" data-user="frlacroix" style="height: 530px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/GgoKxJp">
+            c06-font02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <p>Ces familles de polices permettent  d'être plus spécifique que l'exemple ci-haut où le choix de la police s'arrêtait à la collection. </p>
+          <p>Par exemple:</p>
+          <pre class="exemple-code">            p { 
+            &nbsp;&nbsp;<span class="rose">font-family</span>:"Trebuchet MS", Helvetica, Arial, sans-serif; 
+            }
+          </pre>
+          <p>Cette déclaration indique au navigateur :</p>
+          <ul>
+            <li>d'afficher en priorité la police <code>Trebuchet MS</code><em>;</em></li>
+            <li>d'afficher en deuxième lieu la police <code>Helvetica</code> ou en troisième lieu la police <code>Arial </code>dans le cas où <code>Trebuchet MS</code> n'est pas installé sur l'appareil de l'utilisateur;</li>
+            <li>d'utiliser  la fonte <code>sans-serif</code> par défaut du système dans l'éventualité où aucune des polices proposées n'est installée sur l'appareil de l'utilisateur. </li>
+          </ul>
+          <div class="note">
+            <p>À noter: puisque <strong>Trebuchet MS</strong> est composé de plus d'un mot, il faut obligatoirement inscrire cette valeur entre apostrophes dans la règle de style.</p>
+          </div>
+          <p>Autre exemple utilisant cette fois une police <code>serif</code>: </p>
+          <pre class="exemple-code">            p { 
+            &nbsp;&nbsp;<span class="rose">font-family</span>:"Hoefler Text", Times, serif; 
+            }
+          </pre>
+          <p>Cette déclaration indique au navigateur que&nbsp;: </p>
+          <ul>
+            <li><code>Hoefler Text </code>étant mentionné en premier, c'est cette police qui doit être affichée en priorité&nbsp;;</li>
+            <li><em>Windows</em> ne disposant pas de <code>Hoefler Text</code>,  c'est <code>Times</code> qui est affiché dans ce contexte&nbsp;;</li>
+            <li>si aucune de ces polices n'est disponible, c'est la fonte <code>serif</code> par défaut du système d'exploitation de l'utilisateur qui sera affichée.</li>
+          </ul>
+        </section> <!-- fin section06 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section07">
+          
+          <h2>Les unités de taille des polices de caractère</h2>
+          <p>La taille des polices sur le web peut-être déterminée de trois manières: </p>
+          <ol>
+            <li><strong>absolue </strong></li>
+            <li><strong>relative </strong></li>
+            <li><strong>par des mots-clés</strong></li>
+          </ol>
+          <h3>1_ Unités de taille absolues</h3>
+          <p>Une taille absolue a une signification prédéfinie ou un équivalent dans le monde réel. </p>
+          <p>Pour les périphériques ayant un faible nombre de points par pouce, l’unité&nbsp;<code>px</code>&nbsp;représente le pixel de référence physique&nbsp;et les autres unités sont définies de façon relative à lui. Ainsi,&nbsp;<code>1in</code>&nbsp;est définit comme&nbsp;<code>96px</code>, ce qui équivaut à&nbsp;<code>72pt</code>. Sur de tels périphériques, cette définition à pour conséquence que la longueur exprimée en pouces (in), centimètres (cm) et millimètres (mm) ne correspondent pas forcément à la longueur de l’unité physique du même nom.</p>
+          <p>Pour les périphériques ayant un nombre de points par pouce élevé, les pouces (<code>in</code>), centimètres (<code>cm</code>) et millimètres (<code>mm</code>) sont définis comme leur équivalent physique. Par conséquent, l’unité&nbsp;<code>px</code>&nbsp;est définie comme étant relative à eux (1/96 de pouce).</p>
+          <dl>
+            <dt>px</dt>
+            <dd>Pixel. Pour l'affichage sur écran, correspond typiquement à un pixel de l'affichage. Pour les écrans en haute résolution et les imprimantes, un pixel CSS correspondant à plusieurs pixels du périphérique, de sorte que le nombre de pixels par pouce (ppi) reste aux alentours de 96.</dd>
+            <dt>mm</dt>
+            <dd>Un millimètre. Pour l'affichage sur écran, le nombre de pixels par millimètre est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dt>cm</dt>
+            <dd>Un centimètre (ou 10 millimètres). Pour l'affichage sur écran, le nombre de pixels par centimètre est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dt>in</dt>
+            <dd>Un pouce (soit 2,54 centimètres). Pour l'affichage sur écran, le nombre de pixels par pouce est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dt>pt</dt>
+            <dd>Un point pica (soit 1/72e de pouce). Pour l'affichage sur écran, le nombre de pixels par point est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dt>pc</dt>
+            <dd>Un pica (soit 12 points, soit 1/6e de pouce). Pour l'affichage sur écran, le nombre de pixels par pica est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dt>mozmm</dt>
+            <dd>Une unité expérimentale qui tente de représenter exactement un millimètre, quelque soit la taille ou la résolution de l’affichage. C’est rarement ce que nous voulons, mais cela peut être utile, en particulier pour les terminaux mobiles.</dd>
+        </dl> 
+          <div class="note">
+            <p>La taille réelle des <strong>pixels</strong> varie bien sûr en fonction de la résolution de l'écran. En ce sens, cette unité est <strong>en partie relative</strong>. Mais il faut retenir que  la taille des caractères en pixels ne peut être changée lorsque l'option «Zoom texte seulement» est activée. En conséquence, l'utilisation de <code>px</code> comme unité de taille des caractères rend vos pages web un peu moins accessibles que l'utilisation d'une unité relative comme <code>em</code> ou <code>%</code>.</p>
+          </div>
+          <h3>2_ Unités de taille relatives</h3><br>
+          <h4>Unités de taille reliées à la police</h4>
+          <dl>
+            <dt><strong>%</strong></dt> <dd>Pourcentage. Il ne s'agit pas d'une unité à proprement parler, mais on peut l'employer pour plusieurs propriétés CSS. «<code>100%</code>» est la valeur par défaut des polices dans les navigateurs (cela correspond à <code>1em</code> ou <code>16px</code> dans la plupart des navigateurs). Le pourcentage utilisé est en relation avec la taille spécifiée pour le conteneur parent ou le premier conteneur ancêtre, le cas échéant.</dd>
+            <dt><strong>em</strong></dt> <dd>Traditionnellement, <code>em</code> correspond à la dimension de la lettre M dans la police utilisée; dans les <acronym title="Cascading Style Sheet" lang="en">CSS</acronym>, cette unité de mesure correspond en pratique à la hauteur d'une ligne, sans l'espace interligne; par défaut, les navigateurs donnent la taille de <code>1em</code> aux caractères, soit une hauteur équivalente à 16 pixels. La taille de <code>em</code> utilisée est en relation avec la taille spécifiée pour le conteneur parent ou le premier conteneur ancêtre, le cas échéant.</dd>
+            <dt><strong>rem</strong></dt> <dd>Le <code>rem</code>, ou "root em", est la même chose que le <code>em</code>, mais cependant toujours en relation avec la taille de caractère spécifiée à la racine du document HTML (l'élément <code>&lt;html&gt;</code>) et non au premier ancêtre dont la taille est spécifiée. </dd>
+            <dt><strong>ex</strong></dt> <dd><code>ex</code>   représente la hauteur de la lettre <strong>x</strong> dans la police utilisée (ou plus généralement la hauteur des lettres de bas de casse de la police). <code>1ex = 0.5em</code> dans de nombreuses polices.</dd>
+            <dt>ch</dt>
+            <dd><code>ch</code>  représente la largeur du caractère « 0 » dans la police utilisée.</dd>
+          </dl>
+          <h4>Unités de taille reliées au « viewport »</h4>
+          <dl>
+            <dt><strong>vh</strong></dt>
+            <dd><code>1vh</code> = 1/100e de la hauteur du <em>viewport</em>.</dd>
+            <dt><strong>vw</strong></dt>
+            <dd><code>1vw</code> = 1/100e de la largeur du <em>viewport</em>.</dd>
+            <dt>vmin</dt>
+            <dd><code>1vmin</code> = 1/100e de la valeur minimale entre la hauteur et la largeur du <em>viewport</em>.</dd>
+            <dt>vmax</dt>
+            <dd><code>1vmax</code> = 1/100e de la valeur maximale entre la hauteur et la largeur du <em>viewport</em>.  </dd>
+          </dl>
+          <h4>Les mots-clés suivants sont aussi des unités de mesure relatives</h4>
+          <dl>
+            <dt><strong>smaller</strong></dt> <dd>Indique une diminution d'un intervalle par rapport à la valeur spécifiée pour un conteneur parent ou ancêtre dans les feuilles de style de l'auteur ou du navigateur.</dd>
+            <dt><strong>larger</strong></dt> <dd>Indique une augmentation d'un intervalle par rapport à la valeur spécifiée pour un conteneur parent ou ancêtre  dans les feuilles de style de l'auteur ou du navigateur.</dd>
+          </dl>
+          <h3>3_ La taille par mots-clés</h3>
+          <p>La taille  peut aussi être exprimée avec des mots clés: </p>
+          <ul>
+            <li><strong>xx-small</strong></li>
+            <li><strong>x-small</strong></li>
+            <li><strong>small</strong></li>
+            <li><strong>medium</strong> (taille par défaut dans les navigateurs; correspond à 1em ou 16px)</li>
+            <li><strong>large</strong></li>
+            <li><strong>x-large</strong></li>
+            <li><strong>xx-large</strong></li>
+          </ul>
+          <p>Ces mots ne représentent pas une dimension particulière, mais ils ont un rapport constant les uns aux autres. La taille par défaut est <strong>medium</strong> dans les navigateurs conformes aux standards.</p>
+          <h3>Unités relatives vs absolues</h3>
+          <p>Les unités relatives confèrent aux page web un plus grand degré <strong>d'accessibilité</strong>, puisqu'elles donnent à l'utilisateur plus de contrôle sur la taille du texte affichée. </p>
+          <div class="note">
+            <p>Le W3C, l'organisme qui régit les normes du web, recommande  d'utiliser des unités relatives pour régler la taille du texte dans une page Web. L'unité <code>em</code> est la plus utilisée par les intégrateurs soucieux de l'accessibilité web.</p>
+          </div>
+          <h3>Niveau de précision des unités</h3>
+          <p>Les unités <code>em</code> et  <code>%</code> permettent de préciser plus finement la taille du texte que les sept mots-clés. On peut utiliser par exemple « <code>0.93em</code> » ou « <code>93%</code> ». </p>
+          <p>Par ailleurs, l'unité <code>em</code> accepte  jusqu'à trois décimales (par exemple: <code>0.931em</code>).</p>
+          <h3><em>em</em> vs <em>%</em></h3>
+          <p>L'utilisation des <code>em</code> et des des <code>%</code> est comparable: la valeur par défaut est de 1 dans le premier cas et de 100 dans le second.</p>
+          <p>Pour augmenter la taille de 20% par rapport à la valeur par défaut on écrit donc 1.2em ou 120%, selon l'unité utilisée. </p>
+          <div class="note">
+            <p>Lorsque vous utilisez des tailles de police relatives comme le <code>em</code> ou le <code>%</code>, il faut tenir compte de la cascade, car la propriété <code>font-size</code> est transmises aux conteneurs enfants ou descendants.</p> 
+            <p>Dans l'exemple suivant, voyez comment la taille des caractères change lorsque la valeur de <code>1.2em</code> est utilisée de manière successive dans des conteneurs imbriqués&nbsp;:</p>
+    
+            <p>Si on utilisait 120% plutôt que 1.2em dans l'exemple ci-contre, le résultat serait exactement le même.  </p>
+              <p class="codepen" data-height="365" data-default-tab="html,result" data-slug-hash="qEbWodw" data-pen-title="c05-unite_em01" data-editable="true" data-user="frlacroix" style="height: 365px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEbWodw">
+                c05-unite_em01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+          <div class="tf">
+          <p class="tf-intitule">Travail formatif : expérimentez avec cet exemple</p>
+          <p class="codepen" data-height="485" data-default-tab="html,result" data-slug-hash="xbZKjqO" data-pen-title="c06-unite01" data-editable="true" data-user="frlacroix" style="height: 485px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/xbZKjqO">
+  c06-unite01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+          <aside>
+            <div class="references-section">
+              <ul>
+                <li>Pour vérifier notamment la compatibilité avec les navigateurs: <a href="https://developer.mozilla.org/fr/docs/Web/CSS/longueur" target="_blank">Les unités de longueur <i class="bi bi-box-arrow-up-right"></i></a></li>
+                <li>À propos des unités de longueur CSS: <a href="http://katydecorah.com/css-ruler/" target="_blank">CSS Ruler <i class="bi bi-box-arrow-up-right"></i></a>   </li>
+                <li>Sur w3Schools.com: <a href="http://www.w3schools.com/cssref/css_units.asp" target="_blank">CSS Units <i class="bi bi-box-arrow-up-right"></i></a></li>
+                <li>Pourquoi des unités relatives pour les tailles de texte: <a href="http://www.24joursdeweb.fr/2013/lachez-prise-sans-perdre-le-controle-grace-a-l-unite-css-em/" target="_blank">Lâchez prise sans perdre le contrôle grâce à l'unité CSS em <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+          </aside>
+        </section><!-- fin #section07 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section08">
+          
+          <h2>Les propriétés des fontes et du texte</h2>
+          <h3>Les propriétés des fontes</h3><br>
+          <h4>font-style</h4>
+          <p>Fonction : permet de passer de la fonte normale à l'italique.</p>
+          <p>Valeurs : <code>normal</code>, <code>italic</code>, <code>oblique</code>.</p>
+          <p>Exemple :</p>
+          <p class="codepen" data-height="225" data-default-tab="html,result" data-slug-hash="OPMLvyR" data-pen-title="c06-font14" data-editable="true" data-user="frlacroix" style="height: 225px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/OPMLvyR">
+  c06-font14</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <div class="note">
+            <p>Quelle est la différence entre l'usage de l'élément <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code> dans le balisage HTML et l'usage de la déclaration <code>font-style:italic</code> dans le CSS?</p>
+          </div>
+          <h4>font-variant</h4>
+          <p>Fonction : permet de passer aux petites capitales.</p>
+          <p>Valeurs : <code>small-caps</code> (petites capitales), <code>normal</code>.  </p>
+          <p>Exemple  : </p>
+          <p class="codepen" data-height="245" data-default-tab="html,result" data-slug-hash="jEWNzbG" data-pen-title="c06-font06" data-editable="true" data-user="frlacroix" style="height: 245px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/jEWNzbG">
+  c06-font06</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>font-weight </h4>
+          <p>Fonction : ajuste l'épaisseur du trait de la fonte.</p>
+          <p>Valeurs : <code>100</code>, <code>200</code>, <code>300</code>... <code>900</code>, <code>lighter</code>, <code>normal</code>, <code>bold</code>, <code>bolder</code>.</p>
+          <p>Ces valeurs sont interprétées de manière variable selon les navigateurs et ne sont pas toujours reconnues. </p>
+          <p>Exemple : </p>
+          <p class="codepen" data-height="550" data-default-tab="html,result" data-slug-hash="azdoYvP" data-pen-title="c06-font01" data-editable="true" data-user="frlacroix" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/azdoYvP">
+  c06-font01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <div class="note">
+            <p>Qu'elle est la différence entre l'usage de l'élément <code>strong</code> dans le HTML et l'usage de la propriété <code>font-weight</code> dans la CSS?</p>
+          </div>
+          <h4>font-size</h4>
+          <p>Fonction : ajuste la taille de la fonte.</p>
+          <p>Valeurs : nombres et unités de taille variées; mots-clés. <br>
+            (Voir plus bas pour une discussion plus détaillée sur les unités et les mots-clés.)</p>
+          <p>Cette propriété permet d'ajuster la taille du texte.</p>
+          <p>Exemple  : </p>
+          <p class="codepen" data-height="350" data-default-tab="html,result" data-slug-hash="dPGbmYx" data-pen-title="c06-font02" data-editable="true" data-user="frlacroix" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/dPGbmYx">
+  c06-font02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>line-height </h4>
+          <p>Fonction : ajuste la hauteur de la ligne.</p>
+          <p>Valeurs: <code>normal</code> (par défaut); toute valeur numérique avec ou sans unité (lorsque sans unité, il s'agit d'une valeur proportionnelle à la taille de la police). </p>
+          <p>Exemple :  </p>
+          <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WbrezrO" data-pen-title="c06-font03" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/WbrezrO">
+            c06-font03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>font-family</h4>
+          <p>Fonction : spécifie la police de caractère à afficher.</p>
+          <p>Valeurs: noms des polices de caractères. <br>
+            (Voir plus bas pour une discussion plus complète à ce propos.)  </p>
+          <p>Exemple  :</p>
+          <p class="codepen" data-height="320" data-default-tab="html,result" data-slug-hash="yyeBKev" data-pen-title="c06-font04" data-editable="true" data-user="frlacroix" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/yyeBKev">
+            c06-font04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>font: une « super-propriété »</h4>
+          <p>Le terme <code>font</code> est un raccourci pour regrouper les propriétés qui précèdent. C'est ce qu'on appelle une « super-propriété ».</p>
+          <p>Exemple  : </p>
+
+          <div class="note">
+            <p>Pour regrouper les propriétés de fonte, deux règles doivent être appliquées :</p>
+            <p><strong>Règle 1</strong>. Les valeurs pour <code>font-size</code> et<code> font-family</code> doivent <strong>toujours</strong> être déclarées pour  qu'une déclaration avec la super-propriété <code>font</code> soit valide. Les autres propriétés sont optionnelles.</p>
+            <p>Par exemple, cette déclaration comporte le minimum de valeurs pour être valide, soit font-size et font-family: </p>
+            <pre class="exemple-code">              p { 
+              &nbsp;&nbsp;<span class="rose">font</span>: 0.8em Verdana; 
+              }
+            </pre>
+            <p><strong>Règle 2</strong>. La séquence des valeurs de la super-propriété <code>font</code> doit se décliner ainsi dans cet ordre&nbsp;: </p>
+            <ol>
+              <li><code>font-style</code></li>
+              <li><code>font-variant</code></li>
+              <li><code>font-weight</code></li>
+              <li><code>font-size</code> (obligatoire)</li>
+              <li><code>line-height</code></li>
+              <li><code>font-family</code> (obligatoire)</li>
+            </ol>
+            <p class="codepen" data-height="260" data-default-tab="html,result" data-slug-hash="VYeZXaZ" data-pen-title="c06-font05" data-editable="true" data-user="frlacroix" style="height: 260px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/VYeZXaZ">
+            c06-font05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </div>
+          <div class="note">
+            <p>À retenir: lorsque vous utilisez la super propriété <code>font</code>, les valeurs des propriétés non évoquées explicitement dans cette déclaration reprennent leur valeur par défaut. Ainsi, dans l'exemple suivant, la propriété <code>font-weight</code> prend au final la valeur <code>normal</code> et non  la valeur <code>bold</code>, car la valeur <code>normal</code> est appliquée par défaut dans la propriété raccourcie <code>font</code> : </p>
+            <pre class="exemple-code">                h3 { 
+                &nbsp;&nbsp;<span class="rose">font-weight</span>: bold; 
+                &nbsp;&nbsp;<span class="rose">font</span>: 1.6em Verdana, sans-serif; 
+                }
+            </pre>
+            <p>Cette remarque vaut pour la plupart des super-propriétés.</p>
+          </div>
+          <h3>Les propriétés du texte</h3>
+          <p>Les propriétés suivantes s'appliquent au texte.</p>
+          <h4>text-indent </h4>
+          <p>Fonction : ajuste l'alinéa (le retrait de la première ligne d'un paragraphe).</p>
+          <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
+          <p>Exemple  : </p>
+          <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="gbPYerr" data-pen-title="c06-font07" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/gbPYerr">
+  c06-font07</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>letter-spacing</h4>
+          <p>Fonction : ajuste la distance entre les lettres.</p>
+          <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
+          <p>Exemple : </p>
+          <p class="codepen" data-height="350" data-default-tab="html,result" data-slug-hash="NPxKYNj" data-pen-title="c06-font09" data-editable="true" data-user="frlacroix" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/NPxKYNj">
+  c06-font09</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <p>Cette propriété peut être utilisée pour équilibrer un titre (éléments <code>h1</code>-<code>h6</code>), par exemple, ou encore pour ajuster une courte chaîne de caractères  transformée en majuscules ou en petites capitales. Ce sont communément les majuscules ou les polices compactes qui vont bénéficier de ce traitement.</p>
+          <h4>word-spacing</h4>
+          <p>Fonction : ajuste la distance entre les mots.</p>
+          <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
+          <p>Exemple :</p>
+          <p class="codepen" data-height="350" data-default-tab="html,result" data-slug-hash="raxBdeZ" data-pen-title="c06-font10" data-editable="true" data-user="frlacroix" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxBdeZ">
+  c06-font10</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <p>Cette propriété peut être utilisée pour équilibrer un titre (éléments <code>h1</code>-<code>h6</code>), par exemple.</p>
+          <h4>text-decoration</h4>
+          <p>Fonction : ajuste l'ornementation du texte.</p>
+          <p>Valeurs: <code>underline</code>, <code>overline</code>, <code>line-through</code>, <code>none</code>.</p>
+          <p>Exemple : </p>
+          <p class="codepen" data-height="380" data-default-tab="html,result" data-slug-hash="dPGbmXb" data-pen-title="c06-font11" data-editable="true" data-user="frlacroix" style="height: 380px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/dPGbmXb">
+  c06-font11</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>text-align </h4>
+          <p>Fonction : ajuste l'alignement du texte par rapport à son conteneur parent.</p>
+          <p>Valeurs : <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>.</p>
+          <p>Les valeurs <em>left</em>, <em>right</em>, <em>center</em> et <em>justify</em> sont illustrées dans l'ordre dans l'exemple suivant :</p>
+          <p class="codepen" data-height="490" data-default-tab="html,result" data-slug-hash="jEWNzra" data-pen-title="c06-font08" data-editable="true" data-user="frlacroix" style="height: 490px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/jEWNzra">
+  c06-font08</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>text-transform <br>
+          </h4>
+          <p>Fonction : ajuste la casse du texte.</p>
+          <p>Valeurs : <code>uppercase</code> (majuscules), <code>lowercase</code> (minuscules), <code>capitalize</code> (la première lettre chaque mot sera écrite en majuscule), <code>none</code>.</p>
+          <p>Exemple  : </p>
+          <p class="codepen" data-height="380" data-default-tab="html,result" data-slug-hash="azdoYZX" data-pen-title="c06-font12" data-editable="true" data-user="frlacroix" style="height: 380px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/azdoYZX">
+  c06-font12</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4>vertical-align</h4>
+          <p>Fonction : ajuste l'alignement vertical d'un élément de type <code>inline</code> ou <code>inline-block</code> par rapport à la hauteur de la ligne.</p>
+          <p>Valeurs : toutes valeurs numériques (positives et négatives), pourcentage (<code>%</code>) et aussi les mots <code>baseline</code> (défaut),<code> sub</code>, <code>super</code>, <code>top</code>, <code>text-top</code>, <code>middle</code>, <code>bottom</code>, <code>text-bottom</code>.</p>
+          <p>Exemple  : </p>
+          <p class="codepen" data-height="350" data-default-tab="html,result" data-slug-hash="RNrbMGW" data-pen-title="c06-font13" data-editable="true" data-user="frlacroix" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/RNrbMGW">
+            c06-font13</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <div class="note">
+            <p>La propriété <code>vertical-align</code> agit en relation avec la propriété <code>line-height</code>. Elle n'a d'effets que sur des éléments de type <code>inline</code> ou <code>inline-block</code>. Inutile, donc, de tenter de centrer verticalement un paragraphe ou un titre avec cette propriété... </p>
+            <p>D'autres astuces sont possibles pour aligner verticalement des éléments de type bloc.</p>
+            <p>Cette propriété est essentiellement utilisée pour aligner du texte en exposant ou en indice ou pour aligner des éléments <code>&lt;img&gt;</code> ou <code>&lt;video&gt;</code> sur une ligne.</p>
+          </div>
+        </section><!-- fin section 08 -->
+<div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section class="section09">
+          
+          <h2>Quelques pistes pour réaliser l'exercice&nbsp;4</h2>
+          <h3>Faire flotter une image</h3>
+          <p>La propriété <code>float</code> permet de faire flotter une image (ou n'importe quel autre élément) dans le texte.</p>
+          <p>Voir en classe pour la suite.</p>
+          <div class="tf">
+            <p class="tf-intitule">Rendre une image flottante</p>
+          <p class="codepen" data-height="560" data-default-tab="html,result" data-slug-hash="WbrezGE" data-pen-title="c05_image-flottante" data-editable="true" data-user="frlacroix" style="height: 560px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/WbrezGE">
+  c05_image-flottante</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+              </div>
+              <h3>Rendre une image fluide</h3>
+              <p>Par défaut, les images conservent leur taille native lorsque insérées dans le code HTML. Pour rendre les images fluides, c'est-à-dire adaptables à la taille de la fenêtre du navigateur, vous devez utliser des unités de taille relative.</p>
+              <p>Voir en class pour la suite.</p>
+              <div class="tf">
+              <p class="tf-intitule">Rendre une image d'entête fluide</p>
+              <p class="codepen" data-height="710" data-default-tab="html,result" data-slug-hash="raxBdMZ" data-pen-title="c06_images-fluides" data-editable="true" data-user="frlacroix" style="height: 710px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxBdMZ">
+  c06_images-fluides</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+              </div>
+              <h3>Centrer un élément de type bloc et lui donner une largeur maximale (tout en conservant sa fluidité)</h3>
+              <p>Par défaut, les images conservent leur taille native lorsque insérées dans le code HTML. Pour rendre les images fluides, c'est-à-dire adaptables à la taille de la fenêtre du navigateur, vous devez utliser des unités de taille relative.</p>
+              <p>Voir en class pour la suite.</p>
+              <div class="tf">
+              <p class="tf-intitule">Centrer un élément bloc et lui donner une largeur maximale tout en conservant sa fluidité</p>
+              <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPGbmOb" data-pen-title="c05_centrer-élément-bloc" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/dPGbmOb">
+  c05_centrer-élément-bloc</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+              </div>
+        </section>
+<div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <!-- ACTIVITÉS D'ÉVALUATION -->
+        <section id="sectionAE">
+          
+          <h2>Activités  d'évaluation</h2>
+          
+          <h3>EX4 - CSS : mettre en forme un document html</h3>
+          <p>L'exercice 4 a pour objectif de vous familiariser avec les proprétés CSS parmi les plus courantes.</p>
+            <p>Plus spécifiquement, vous effectuerez la mise en forme d'une page en rédigeant vous-mêmes les règles de style.</p>
+          <h4>Sources</h4>
+          <p>Téléchargez le dossier <a href="materiel/Ex4.zip" class="btn btn-primary" role="button">Ex4.zip</a>.</p>
+          <p>Référez-vous au tableau de sélecteurs pour faire votre travail: <a href="https://frlacroix1.github.io/integration1/lecon04.html#section05" target="_blank">Sélecteurs du DOM <i class="bi bi-box-arrow-up-right"></i></a>
+          </p><h4>Documents à remettre sur Teams/Devoirs</h4>
+          <p>Un <strong>dossier </strong>rigoureusement nommé comme suit (minuscules et sans espace ni caractères spéciaux):</p>
+          <ul>
+            <li>groupe du mercredi 9h : <strong>gr1_nomprenom_ex4</strong></li>
+            <li>groupes du vendredi 8h : <strong>gr2_nomprenom_ex4 </strong></li>
+          </ul>
+          <p>contenant le fichier <code>index.html</code>, le dossier <code>images</code> contenant les images, le dossier <code>css</code> contenant le fichier <code>styles.css</code> et le dossier <code>document</code> contenant le fichier pdf.</p>
+          
+          <div class="note">
+            <p>Structure de fichiers : </p>
+            <figure class="w40">
+              <figcaption>Structure de fichiers de l'exercice 4</figcaption>
+              <img class="bordure" src="images/cours05/cours05_ex4_arbo1.jpg">ou
+              <img class="bordure" src="images/cours05/cours05_ex4_arbo2.jpg">
+          <p></p>
+          </figure></div>
+          <h4>Échéancier</h4>
+          <p>Remettez le dossier complet, zippé, sur Teams/Devoirs, dans l'espace prévu à cette fin, au plus tard:</p>
+          <ul>
+          <li><strong>le mercredi suivant le cours, 9h le matin au plus tard, gr2 (vendredi am)</strong></li>
+          <li><strong>le mercredi suivant le cours, midi au plus tard, gr1 (vendredi midi)</strong></li>
+          </ul>
+          <h4>Travail à faire</h4>
+            <p>Vous devez mettre en forme la page <code>index.html</code>.</p>
+            <p>Toutes les règles de style doivent être rédigées dans la feuille de style externe, c'est-à-dire dans le document <code>styles.css</code>.</p>
+            <p>En vous inspirant des deux images suivantes, rédigez des règles de style dans le document styles.css qui permettent d'obtenir un résultat pas nécessairement identique, mais équivalent.</p>
+            <figure class="w80">
+              <figcaption>Exemple de résultat possible pour le EX4</figcaption>
+              <img class="bordure" src="images/cours05/cours05_tp5_resultat.jpg" alt="Résultat attendu de l&#39;exercice 4">
+            </figure>
+            <p>L'image suivante présente les différentes mises en forme à prévoir. Pour chacune de ces mises en forme, il aura une ou plusieurs règles de style à rédiger.</p>
+          
+
+            <figure class="w80">
+              <figcaption>Annotation des mises en forme à réaliser</figcaption>
+              <img class="bordure" src="images/cours05/cours05_tp5_resultat_annote.jpg" alt="Résultat attendu de l&#39;exercice 4">
+            </figure>
+
+            
+        </section>  <!-- fin sectionAE --> 
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>  
+                
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            <br>Ce contenu a été tiré du site web de Sylvain Lamoureux<br>
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js?"></script>
+    </body>
+</html>
