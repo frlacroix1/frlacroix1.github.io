@@ -169,9 +169,8 @@
             &nbsp;&nbsp;color: blue;
             <span class="rose">}</span>
           </pre>
-          <p> Le texte de tous les éléments descendants de <code>html</code> dans le document hérite de ces valeurs, peu importe la profondeur de la descendance.</p>
-          <p>L'héritage ne s'applique pas à toutes les propriétés. </p>
-          <p>Par exemple, cela n'aurait pas de pertinence que l'ajout d'une bordure à un élément <code>article</code> se répercute à tous ses enfants et descendants (tels des <code>p</code>, <code>h1</code>, <code>h2</code>, etc.). La propriété bordure ne peut donc être transmise aux descendants d'un conteneur. </p>
+          <p>Le texte de tous les éléments descendants de <code>html</code> dans le document hérite de ces valeurs, peu importe la profondeur de la descendance.</p>
+          <p><strong>L'héritage ne s'applique pas à toutes les propriétés.</strong> Par exemple, cela n'aurait pas de pertinence que l'ajout d'une bordure à un élément <code>main</code> se répercute à tous ses enfants et descendants (tels des <code>p</code>, <code>h1</code>, <code>h2</code>, etc.). La propriété bordure ne peut donc être transmise aux descendants d'un conteneur. </p>
           <h3>Cascade</h3>
           <p>Le mot <em>cascade</em> de l'expression « feuille de style en cascade » ou <i>cascading style sheet (CSS)</i> signifie le passage d'un niveau de mise en forme à un autre, dans un ordre contrôlé, dans le meilleur des cas.</p>
           <p>Sa fonction est de permettre au navigateur de décider parmi les différentes options quelle source doit être utilisée pour décrire une propriété particulière.  </p>
@@ -324,11 +323,11 @@
           </div>
 
         </section><!-- fin section02 --> 
-
-        <section id="section04">
-          <div class="haut-de-page">
+<div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
+        <section id="section04">
+          
           <h2>Le texte sur le Web</h2>
           <p>Le web présente un défi sur le plan de la typographie. </p>
           <p>Pour commencer, il faut accepter de ne pas avoir le plein contrôle de la typographie sur le Web.</p>
@@ -828,33 +827,24 @@
           <h2>Activités  d'évaluation</h2>
           
           <h3>EX4 - CSS : mettre en forme un document html</h3>
-          <p>L'exercice 4 a pour objectif de vous familiariser avec les proprétés CSS parmi les plus courantes.</p>
-            <p>Plus spécifiquement, vous effectuerez la mise en forme d'une page en rédigeant vous-mêmes les règles de style.</p>
+          <p>L'exercice 4 a pour objectif de vous familiariser avec les proprétés CSS parmi les plus courantes. <strong>Plus spécifiquement, vous effectuerez la mise en forme d'une page en rédigeant vous-mêmes les règles de style</strong>.</p>
           <h4>Sources</h4>
           <p>Téléchargez le dossier <a href="materiel/Ex4.zip" class="btn btn-primary" role="button">Ex4.zip</a>.</p>
           <p>Référez-vous au tableau de sélecteurs pour faire votre travail: <a href="https://frlacroix1.github.io/integration1/lecon04.html#section05" target="_blank">Sélecteurs du DOM <i class="bi bi-box-arrow-up-right"></i></a>
-          </p><h4>Documents à remettre sur Teams/Devoirs</h4>
-          <p>Un <strong>dossier </strong>rigoureusement nommé comme suit (minuscules et sans espace ni caractères spéciaux):</p>
-          <ul>
-            <li>groupe du mercredi 9h : <strong>gr1_nomprenom_ex4</strong></li>
-            <li>groupes du vendredi 8h : <strong>gr2_nomprenom_ex4 </strong></li>
-          </ul>
-          <p>contenant le fichier <code>index.html</code>, le dossier <code>images</code> contenant les images, le dossier <code>css</code> contenant le fichier <code>styles.css</code> et le dossier <code>document</code> contenant le fichier pdf.</p>
+          </p>
           
-          <div class="note">
-            <p>Structure de fichiers : </p>
-            <figure class="w40">
+          <h4>Documents à remettre</h4>
+          <p>Un <strong>dossier </strong>rigoureusement nommé <em>grX_nomInitialeprenom_ex4</em> (remplacez X par votre numéro de groupe) contenant les fichiers suivants: </p>
+          <figure class="w50">
               <figcaption>Structure de fichiers de l'exercice 4</figcaption>
-              <img class="bordure" src="images/cours05/cours05_ex4_arbo1.jpg">ou
-              <img class="bordure" src="images/cours05/cours05_ex4_arbo2.jpg">
-          <p></p>
-          </figure></div>
+              <img class="bordure" src="images/cours05/cours05_ex4_arbo1.jpg" alt="Arborescence de fichiers pour l&#39;exercice 4.">
+          </figure>
           <h4>Échéancier</h4>
-          <p>Remettez le dossier complet, zippé, sur Teams/Devoirs, dans l'espace prévu à cette fin, au plus tard:</p>
-          <ul>
-          <li><strong>le mercredi suivant le cours, 9h le matin au plus tard, gr2 (vendredi am)</strong></li>
-          <li><strong>le mercredi suivant le cours, midi au plus tard, gr1 (vendredi midi)</strong></li>
-          </ul>
+                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <ul>
+                        <li>groupe 1 : <strong>au plus tard le vendredi suivant à 8h</strong></li>
+                        <li>groupe 2 : <strong>au plus tard le mercredi suivant à 16h</strong></li>
+                    </ul>
           <h4>Travail à faire</h4>
             <p>Vous devez mettre en forme la page <code>index.html</code>.</p>
             <p>Toutes les règles de style doivent être rédigées dans la feuille de style externe, c'est-à-dire dans le document <code>styles.css</code>.</p>
@@ -870,6 +860,24 @@
               <figcaption>Annotation des mises en forme à réaliser</figcaption>
               <img class="bordure" src="images/cours05/cours05_tp5_resultat_annote.jpg" alt="Résultat attendu de l&#39;exercice 4">
             </figure>
+
+            <h4>Prêt à remettre le travail?</h4>
+                     <ol>  
+                      <li>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfaisant sur ce navigateur).</li>
+                      <li>Vérifier l'organisation de votre code dans le document styles.css&nbsp;: 
+                          <ul style="margin:0; padding-bottom: 0;;">
+                            <li>indenter chaque ligne (avec la touche TAB <i class="bi bi-indent"></i>);</li>
+                            <li>faire un saut de ligne après chaque déclaration.</li>
+                        </ul>
+                        </li>
+                        
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez au dossier <em>grX_nomInitialeprenom_ex4</em> par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/cours05/cours05_ex4_arbo1.jpg" alt="arborescence de Ex4" width="300">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
+                        </li>
+                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.</li>
+                    </ol>
 
             
         </section>  <!-- fin sectionAE --> 
