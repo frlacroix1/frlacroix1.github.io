@@ -330,8 +330,7 @@
           
           <h2>Le texte sur le Web</h2>
           <p>Le web présente un défi sur le plan de la typographie. </p>
-          <p>Pour commencer, il faut accepter de ne pas avoir le plein contrôle de la typographie sur le Web.</p>
-          <p>Par ailleurs, la typographie donne le ton en ce qui concerne la qualité visuelle d'un site.</p>
+          <p>Pour commencer, il faut accepter de ne pas avoir le plein contrôle de la typographie sur le Web. Par ailleurs, la typographie donne le ton en ce qui concerne la qualité visuelle d'un site.</p>
           <p>Voici les principales propriétés CSS associées au texte : </p>
           <h3>Proprétés <abbr title="Cascading Style Sheet">CSS</abbr>  associées aux polices de caractères et au texte</h3>
           <dl class="css-texte"> 
@@ -425,10 +424,11 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
         </section> <!-- fin section05 -->
-        <section id="section06">
-          <div class="haut-de-page">
+        <div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
+        <section id="section06">
+          
           <h2>Les familles de polices</h2>
           <p>Les familles de polices ne font pas partie du navigateur, mais <strong>résident plutôt dans le système d'exploitation de l'ordinateur de l'utilisateur</strong>. Voici les familles les plus courantes telles qu'elles s'affichent dans les navigateurs courants&nbsp; :</p>
           <p class="codepen" data-height="530" data-default-tab="html,result" data-slug-hash="GgoKxJp" data-pen-title="c06-font02" data-editable="true" data-user="frlacroix" style="height: 530px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -444,25 +444,14 @@
             }
           </pre>
           <p>Cette déclaration indique au navigateur :</p>
-          <ul>
+          <ol>
             <li>d'afficher en priorité la police <code>Trebuchet MS</code><em>;</em></li>
             <li>d'afficher en deuxième lieu la police <code>Helvetica</code> ou en troisième lieu la police <code>Arial </code>dans le cas où <code>Trebuchet MS</code> n'est pas installé sur l'appareil de l'utilisateur;</li>
             <li>d'utiliser  la fonte <code>sans-serif</code> par défaut du système dans l'éventualité où aucune des polices proposées n'est installée sur l'appareil de l'utilisateur. </li>
-          </ul>
+          </ol>
           <div class="note">
             <p>À noter: puisque <strong>Trebuchet MS</strong> est composé de plus d'un mot, il faut obligatoirement inscrire cette valeur entre apostrophes dans la règle de style.</p>
           </div>
-          <p>Autre exemple utilisant cette fois une police <code>serif</code>: </p>
-          <pre class="exemple-code">            p { 
-            &nbsp;&nbsp;<span class="rose">font-family</span>:"Hoefler Text", Times, serif; 
-            }
-          </pre>
-          <p>Cette déclaration indique au navigateur que&nbsp;: </p>
-          <ul>
-            <li><code>Hoefler Text </code>étant mentionné en premier, c'est cette police qui doit être affichée en priorité&nbsp;;</li>
-            <li><em>Windows</em> ne disposant pas de <code>Hoefler Text</code>,  c'est <code>Times</code> qui est affiché dans ce contexte&nbsp;;</li>
-            <li>si aucune de ces polices n'est disponible, c'est la fonte <code>serif</code> par défaut du système d'exploitation de l'utilisateur qui sera affichée.</li>
-          </ul>
         </section> <!-- fin section06 -->
         <div class="haut-de-page">
             <a href="#">Haut de page</a>
@@ -472,11 +461,11 @@
           <h2>Les unités de taille des polices de caractère</h2>
           <p>La taille des polices sur le web peut-être déterminée de trois manières: </p>
           <ol>
-            <li><strong>absolue </strong></li>
-            <li><strong>relative </strong></li>
-            <li><strong>par des mots-clés</strong></li>
+            <li><strong><a href="#unite1">absolue</a></strong></li>
+            <li><strong><a href="#unite2">relative</a></strong></li>
+            <li><strong><a href="#unite3">par des mots-clés</a></strong></li>
           </ol>
-          <h3>1_ Unités de taille absolues</h3>
+          <h3 id="unite1">1. Unités de taille absolues</h3>
           <p>Une taille absolue a une signification prédéfinie ou un équivalent dans le monde réel. </p>
           <p>Pour les périphériques ayant un faible nombre de points par pouce, l’unité&nbsp;<code>px</code>&nbsp;représente le pixel de référence physique&nbsp;et les autres unités sont définies de façon relative à lui. Ainsi,&nbsp;<code>1in</code>&nbsp;est définit comme&nbsp;<code>96px</code>, ce qui équivaut à&nbsp;<code>72pt</code>. Sur de tels périphériques, cette définition à pour conséquence que la longueur exprimée en pouces (in), centimètres (cm) et millimètres (mm) ne correspondent pas forcément à la longueur de l’unité physique du même nom.</p>
           <p>Pour les périphériques ayant un nombre de points par pouce élevé, les pouces (<code>in</code>), centimètres (<code>cm</code>) et millimètres (<code>mm</code>) sont définis comme leur équivalent physique. Par conséquent, l’unité&nbsp;<code>px</code>&nbsp;est définie comme étant relative à eux (1/96 de pouce).</p>
@@ -484,22 +473,22 @@
             <dt>px</dt>
             <dd>Pixel. Pour l'affichage sur écran, correspond typiquement à un pixel de l'affichage. Pour les écrans en haute résolution et les imprimantes, un pixel CSS correspondant à plusieurs pixels du périphérique, de sorte que le nombre de pixels par pouce (ppi) reste aux alentours de 96.</dd>
             <dt>mm</dt>
-            <dd>Un millimètre. Pour l'affichage sur écran, le nombre de pixels par millimètre est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dd>Un millimètre. Pour l'affichage sur écran, le nombre de pixels par millimètre est déterminé par l'estimation du système (<strong>souvent incorrecte</strong>) de la résolution de son affichage.</dd>
             <dt>cm</dt>
-            <dd>Un centimètre (ou 10 millimètres). Pour l'affichage sur écran, le nombre de pixels par centimètre est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dd>Un centimètre (ou 10 millimètres). Pour l'affichage sur écran, le nombre de pixels par centimètre est déterminé par l'estimation du système (<strong>souvent incorrecte</strong>) de la résolution de son affichage.</dd>
             <dt>in</dt>
-            <dd>Un pouce (soit 2,54 centimètres). Pour l'affichage sur écran, le nombre de pixels par pouce est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dd>Un pouce (soit 2,54 centimètres). Pour l'affichage sur écran, le nombre de pixels par pouce est déterminé par l'estimation du système (<strong>souvent incorrecte</strong>) de la résolution de son affichage.</dd>
             <dt>pt</dt>
-            <dd>Un point pica (soit 1/72e de pouce). Pour l'affichage sur écran, le nombre de pixels par point est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dd>Un point pica (soit 1/72e de pouce). Pour l'affichage sur écran, le nombre de pixels par point est déterminé par l'estimation du système (<strong>souvent incorrecte</strong>) de la résolution de son affichage.</dd>
             <dt>pc</dt>
-            <dd>Un pica (soit 12 points, soit 1/6e de pouce). Pour l'affichage sur écran, le nombre de pixels par pica est déterminé par l'estimation du système (souvent incorrecte) de la résolution de son affichage.</dd>
+            <dd>Un pica (soit 12 points, soit 1/6e de pouce). Pour l'affichage sur écran, le nombre de pixels par pica est déterminé par l'estimation du système (<strong>souvent incorrecte</strong>) de la résolution de son affichage.</dd>
             <dt>mozmm</dt>
             <dd>Une unité expérimentale qui tente de représenter exactement un millimètre, quelque soit la taille ou la résolution de l’affichage. C’est rarement ce que nous voulons, mais cela peut être utile, en particulier pour les terminaux mobiles.</dd>
         </dl> 
           <div class="note">
             <p>La taille réelle des <strong>pixels</strong> varie bien sûr en fonction de la résolution de l'écran. En ce sens, cette unité est <strong>en partie relative</strong>. Mais il faut retenir que  la taille des caractères en pixels ne peut être changée lorsque l'option «Zoom texte seulement» est activée. En conséquence, l'utilisation de <code>px</code> comme unité de taille des caractères rend vos pages web un peu moins accessibles que l'utilisation d'une unité relative comme <code>em</code> ou <code>%</code>.</p>
           </div>
-          <h3>2_ Unités de taille relatives</h3><br>
+          <h3 id="unite2">2. Unités de taille relatives</h3>
           <h4>Unités de taille reliées à la police</h4>
           <dl>
             <dt><strong>%</strong></dt> <dd>Pourcentage. Il ne s'agit pas d'une unité à proprement parler, mais on peut l'employer pour plusieurs propriétés CSS. «<code>100%</code>» est la valeur par défaut des polices dans les navigateurs (cela correspond à <code>1em</code> ou <code>16px</code> dans la plupart des navigateurs). Le pourcentage utilisé est en relation avec la taille spécifiée pour le conteneur parent ou le premier conteneur ancêtre, le cas échéant.</dd>
@@ -520,12 +509,12 @@
             <dt>vmax</dt>
             <dd><code>1vmax</code> = 1/100e de la valeur maximale entre la hauteur et la largeur du <em>viewport</em>.  </dd>
           </dl>
-          <h4>Les mots-clés suivants sont aussi des unités de mesure relatives</h4>
+          <h4>Ces mots-clés sont aussi des unités de mesure relatives</h4>
           <dl>
             <dt><strong>smaller</strong></dt> <dd>Indique une diminution d'un intervalle par rapport à la valeur spécifiée pour un conteneur parent ou ancêtre dans les feuilles de style de l'auteur ou du navigateur.</dd>
             <dt><strong>larger</strong></dt> <dd>Indique une augmentation d'un intervalle par rapport à la valeur spécifiée pour un conteneur parent ou ancêtre  dans les feuilles de style de l'auteur ou du navigateur.</dd>
           </dl>
-          <h3>3_ La taille par mots-clés</h3>
+          <h3 id="unite3">3. La taille par mots-clés</h3>
           <p>La taille  peut aussi être exprimée avec des mots clés: </p>
           <ul>
             <li><strong>xx-small</strong></li>
@@ -586,8 +575,18 @@
         <section id="section08">
           
           <h2>Les propriétés des fontes et du texte</h2>
-          <h3>Les propriétés des fontes</h3><br>
-          <h4>font-style</h4>
+          <h3>Les propriétés des fontes</h3>
+          <ul>
+            <li><a href="#font1">font-style</a></li>
+            <li><a href="#font2">font-variant</a></li>
+            <li><a href="#font3">font-weight</a></li>
+            <li><a href="#font4">font-size</a></li>
+            <li><a href="#font5">line-height</a></li>
+            <li><a href="#font6">font-family</a></li>
+            <li><a href="#font7">font: une « super-propriété&nbsp;»</a></li>
+          </ul>
+          <hr>
+          <h4 id="font1">font-style</h4>
           <p>Fonction : permet de passer de la fonte normale à l'italique.</p>
           <p>Valeurs : <code>normal</code>, <code>italic</code>, <code>oblique</code>.</p>
           <p>Exemple :</p>
@@ -600,7 +599,8 @@
           <div class="note">
             <p>Quelle est la différence entre l'usage de l'élément <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code> dans le balisage HTML et l'usage de la déclaration <code>font-style:italic</code> dans le CSS?</p>
           </div>
-          <h4>font-variant</h4>
+          <hr>
+          <h4 id="font2">font-variant</h4>
           <p>Fonction : permet de passer aux petites capitales.</p>
           <p>Valeurs : <code>small-caps</code> (petites capitales), <code>normal</code>.  </p>
           <p>Exemple  : </p>
@@ -610,7 +610,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>font-weight </h4>
+          <hr>
+          <h4 id="font3">font-weight </h4>
           <p>Fonction : ajuste l'épaisseur du trait de la fonte.</p>
           <p>Valeurs : <code>100</code>, <code>200</code>, <code>300</code>... <code>900</code>, <code>lighter</code>, <code>normal</code>, <code>bold</code>, <code>bolder</code>.</p>
           <p>Ces valeurs sont interprétées de manière variable selon les navigateurs et ne sont pas toujours reconnues. </p>
@@ -624,7 +625,8 @@
           <div class="note">
             <p>Qu'elle est la différence entre l'usage de l'élément <code>strong</code> dans le HTML et l'usage de la propriété <code>font-weight</code> dans la CSS?</p>
           </div>
-          <h4>font-size</h4>
+          <hr>
+          <h4 id="font4">font-size</h4>
           <p>Fonction : ajuste la taille de la fonte.</p>
           <p>Valeurs : nombres et unités de taille variées; mots-clés. <br>
             (Voir plus bas pour une discussion plus détaillée sur les unités et les mots-clés.)</p>
@@ -636,7 +638,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>line-height </h4>
+          <hr>
+          <h4 id="font5">line-height </h4>
           <p>Fonction : ajuste la hauteur de la ligne.</p>
           <p>Valeurs: <code>normal</code> (par défaut); toute valeur numérique avec ou sans unité (lorsque sans unité, il s'agit d'une valeur proportionnelle à la taille de la police). </p>
           <p>Exemple :  </p>
@@ -646,7 +649,8 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>font-family</h4>
+          <hr>
+          <h4 id="font6">font-family</h4>
           <p>Fonction : spécifie la police de caractère à afficher.</p>
           <p>Valeurs: noms des polices de caractères. <br>
             (Voir plus bas pour une discussion plus complète à ce propos.)  </p>
@@ -657,14 +661,15 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>font: une « super-propriété »</h4>
+          <hr>
+          <h4 id="font7">font: une « super-propriété&nbsp;»</h4>
           <p>Le terme <code>font</code> est un raccourci pour regrouper les propriétés qui précèdent. C'est ce qu'on appelle une « super-propriété ».</p>
           <p>Exemple  : </p>
 
           <div class="note">
             <p>Pour regrouper les propriétés de fonte, deux règles doivent être appliquées :</p>
-            <p><strong>Règle 1</strong>. Les valeurs pour <code>font-size</code> et<code> font-family</code> doivent <strong>toujours</strong> être déclarées pour  qu'une déclaration avec la super-propriété <code>font</code> soit valide. Les autres propriétés sont optionnelles.</p>
-            <p>Par exemple, cette déclaration comporte le minimum de valeurs pour être valide, soit font-size et font-family: </p>
+            <p><strong>Règle 1</strong>. Les valeurs pour <code>font-size</code> et <code>font-family</code> doivent <strong>toujours</strong> être déclarées pour  qu'une déclaration avec la super-propriété <code>font</code> soit valide. Les autres propriétés sont optionnelles.</p>
+            <p>Exemple : la déclaration suivante utilise uniquement les deux valeurs obligatoires — <code>font-size</code> et <code>font-family</code> : </p>
             <pre class="exemple-code">              p { 
               &nbsp;&nbsp;<span class="rose">font</span>: 0.8em Verdana; 
               }
@@ -694,9 +699,20 @@
             </pre>
             <p>Cette remarque vaut pour la plupart des super-propriétés.</p>
           </div>
+          <hr>
           <h3>Les propriétés du texte</h3>
-          <p>Les propriétés suivantes s'appliquent au texte.</p>
-          <h4>text-indent </h4>
+          <p>Les propriétés suivantes s'appliquent au texte&nbsp;:</p>
+          <ul>
+            <li><a href="#texte1">text-indent</a></li>
+            <li><a href="#texte2">letter-spacing</a></li>
+            <li><a href="#texte3">word-spacing</a></li>
+            <li><a href="#texte4">text-decoration</a></li>
+            <li><a href="#texte5">text-align</a></li>
+            <li><a href="#texte6">text-transform</a></li>
+            <li><a href="#texte7">vertical-align</a></li>
+          </ul>
+          <hr>
+          <h4 id="texte1">text-indent </h4>
           <p>Fonction : ajuste l'alinéa (le retrait de la première ligne d'un paragraphe).</p>
           <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
           <p>Exemple  : </p>
@@ -706,7 +722,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>letter-spacing</h4>
+          <hr>
+          <h4 id="texte2">letter-spacing</h4>
           <p>Fonction : ajuste la distance entre les lettres.</p>
           <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
           <p>Exemple : </p>
@@ -717,7 +734,8 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
           <p>Cette propriété peut être utilisée pour équilibrer un titre (éléments <code>h1</code>-<code>h6</code>), par exemple, ou encore pour ajuster une courte chaîne de caractères  transformée en majuscules ou en petites capitales. Ce sont communément les majuscules ou les polices compactes qui vont bénéficier de ce traitement.</p>
-          <h4>word-spacing</h4>
+          <hr>
+          <h4 id="texte3">word-spacing</h4>
           <p>Fonction : ajuste la distance entre les mots.</p>
           <p>Valeurs : unités de taille diverses, positives ou négatives.</p>
           <p>Exemple :</p>
@@ -728,7 +746,8 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
           <p>Cette propriété peut être utilisée pour équilibrer un titre (éléments <code>h1</code>-<code>h6</code>), par exemple.</p>
-          <h4>text-decoration</h4>
+          <hr>
+          <h4 id="texte4">text-decoration</h4>
           <p>Fonction : ajuste l'ornementation du texte.</p>
           <p>Valeurs: <code>underline</code>, <code>overline</code>, <code>line-through</code>, <code>none</code>.</p>
           <p>Exemple : </p>
@@ -738,7 +757,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>text-align </h4>
+          <hr>
+          <h4 id="texte5">text-align </h4>
           <p>Fonction : ajuste l'alignement du texte par rapport à son conteneur parent.</p>
           <p>Valeurs : <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>.</p>
           <p>Les valeurs <em>left</em>, <em>right</em>, <em>center</em> et <em>justify</em> sont illustrées dans l'ordre dans l'exemple suivant :</p>
@@ -748,8 +768,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>text-transform <br>
-          </h4>
+          <hr>
+          <h4 id="texte6">text-transform</h4>
           <p>Fonction : ajuste la casse du texte.</p>
           <p>Valeurs : <code>uppercase</code> (majuscules), <code>lowercase</code> (minuscules), <code>capitalize</code> (la première lettre chaque mot sera écrite en majuscule), <code>none</code>.</p>
           <p>Exemple  : </p>
@@ -759,7 +779,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4>vertical-align</h4>
+          <hr>          
+          <h4 id="texte7">vertical-align</h4>
           <p>Fonction : ajuste l'alignement vertical d'un élément de type <code>inline</code> ou <code>inline-block</code> par rapport à la hauteur de la ligne.</p>
           <p>Valeurs : toutes valeurs numériques (positives et négatives), pourcentage (<code>%</code>) et aussi les mots <code>baseline</code> (défaut),<code> sub</code>, <code>super</code>, <code>top</code>, <code>text-top</code>, <code>middle</code>, <code>bottom</code>, <code>text-bottom</code>.</p>
           <p>Exemple  : </p>
