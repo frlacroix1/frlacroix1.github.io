@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 6 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours05" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 6</div>
+                    <h1>Le modèle de boîte CSS et le&nbsp;texte</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Leçon 6</strong></a></p>
+                        <a href="#section01" class="list-group-item list-group-item-action">Le sélecteur de classe</a> 
+                      <a href="#section02" class="list-group-item list-group-item-action">Les boites flexibles : une intro</a> 
+                      <a href="#section03" class="list-group-item list-group-item-action">La propriété position</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</a>
+                      <a href="#section05" class="list-group-item list-group-item-action">Utiliser Google Fonts</a>
+                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+                 <section id="section01">
+          <h2>Le sélecteur de classe</h2>
+          <p>Le sélecteur de classe  permet de cibler un élément ou un bloc d'éléments sans passer par la hiérarchie de la structure des éléments HTML.</p>
+          
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">           &lt;p <span class="rose">class="note"</span>&gt;...&lt;⧸p&gt; 
+          </pre>   
+          <p>Dans l'exemple qui suit, la classe <code>note</code> permet de cibler le troisième paragraphe à l'aide du sélecteur <code>.note</code>, passant ainsi outre à la hiérarchie HTML.</p>
+          <div class="note">
+            <p><strong>Le sélecteur de classe débute toujours par un point</strong>. La classe de l'exemple précédent est donc ciblée par le sélecteur <code>.note</code> dans la feuille de style.</p>
+          </div>
+          <p class="resultat-etiquette">Exemple</p>
+
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="540" width="100%" name="cp_embed_1" scrolling="no" src="images/cours06/poberOP(1).html" style="width: 100%; overflow:hidden; display:block;" title="c06-selecteur_classe01" loading="lazy" id="cp_embed_poberOP"></iframe></div>
+            <script async="" src="images/cours06/ei.js"></script>
+          </div>
+          </section> <!-- fin section01 -->
+          <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section02">
+          
+          <h2>Le modèle de boite flexible (flexbox)&nbsp;: une intro</h2>
+                    <p>Flexbox offre un modèle de boite dont les règles et les fonctionnalités s'écartent de celles du modèle de boite traditionnel (display: block | inline | inline-block...). </p>
+                    <p>Les quatre possibilités du modèle de boite flexible sont&nbsp;:</p>
+                    <ul>
+                        <li>distribution des éléments&nbsp;: horizontale ou verticale avec passage à la ligne ou non&nbsp;;</li>
+                        <li>alignements et centrages horizontaux et verticaux, justifiés, répartis&nbsp;;</li>
+                        <li>réorganisation des éléments indépendamment de l'ordre du flux&nbsp;;</li>
+                        <li>gestion de l'espace disponible.</li>
+                    </ul>
+                    <h3>flex-container et flex-item</h3>
+                    <p>La structure de base de flexbox repose sur&nbsp;: </p>
+                    <ul>
+                        <li>un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs&nbsp;: les flex-item;</li>
+                        <li>des <strong>flex-item</strong> qui sont les enfants directs du flex-container.</li>
+                    </ul>
+                    <p>Un <strong>flex-container</strong> peut être n'importe quel éléments HTML affublé d'une déclaration <code>display:flex</code>.</p>
+                    <p>Ses enfants directs deviennent alors automatiquement des <strong>flex-item</strong> qui occupent initialement la taille minimale de leur contenu.</p>
+                    <h4>Utiliser une liste en tant que flex-container et <br>des éléments de liste en tant que flex-item</h4>
+                    <p>Prenons l'exemple de la liste d'éléments suivante: </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        &lt;ul&gt;
+                        &nbsp;&nbsp;&lt;li&gt;Clou&lt;/li&gt;
+                        &nbsp;&nbsp;&lt;li&gt;Vis&lt;/li&gt;
+                        &nbsp;&nbsp;&lt;li&gt;Écrou&lt;/li&gt;
+                        &nbsp;&nbsp;&lt;li&gt;Boulon&lt;/li&gt;
+                        &nbsp;&nbsp;&lt;li&gt;Oeillet&lt;/li&gt;
+                        &lt;/ul&gt; 
+                    </pre>
+                    <p>Voyons comment <code>flexbox</code> permet d'ajuster la disposition des éléments de liste.</p>
+                    <p>Les propriétés du modèle de boite flexible qui sont mises à profit dans les quatre exemples apparaissant plus bas sont les suivantes: </p>
+                    <ul>
+                        <li><code>display:flex</code> : appliquée sur le <strong>flex-container</strong> (soit <code>ul</code> dans cet exemple) afin d'activer le comportement flex-item chez ses enfants (soit les éléments <code>li</code> dans cet exemple).</li>
+                        <li><code>flex-direction</code> : appliquée sur le <strong>flex-container</strong>, elle dicte la direction des <strong>flex-item</strong>, soit <code>row</code> (rangée), soit <code>column</code> (colonne).<br>
+                          <p class="syntaxe-etiquette">Syntaxe</p>
+                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-direction:</span> row | row-reverse | column | column-reverse;</pre>
+                        </li>
+                        <li><code>flex-wrap</code> : appliquée sur le <strong>flex-container</strong>, cette propriété permet (<code>wrap</code>) ou empêche (<code>nowrap</code>) le retour à la ligne des <strong>flex-item</strong>.<br>
+                          <p class="syntaxe-etiquette">Syntaxe</p>
+                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-wrap:</span> no-wrap | wrap | wrap-reverse | column-reverse;</pre>
+                        </li>
+                        <li><code>justify-content</code> : appliquée sur le <strong>flex-container</strong>, cette propriété gère l'espace autour des <strong>flex-item</strong>.<br>
+                          <p class="syntaxe-etiquette">Syntaxe</p>
+                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">justify-content</span>: start | center | space-between | space-around | space-evenly;</pre>
+                        </li>
+                    </ul>
+                    <h4>flex-direction:row et justify-content</h4>
+                    <div class="note">
+                        <p><code>justify:content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe horizontal.</p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="700" width="100%" name="cp_embed_2" scrolling="no" src="images/cours06/JjjYQdB(1).html" style="width: 100%; overflow:hidden; display:block;" title="c08_intro-flexbox-01" loading="lazy" id="cp_embed_JjjYQdB"></iframe></div>
+                        <script async="" src="images/cours06/ei.js"></script>
+                    </div>
+                    <h4>flex-direction:column et justify-content</h4>
+                    <div class="note">
+                        <p><code>justify:content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe vertical.</p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="714" width="100%" name="cp_embed_3" scrolling="no" src="images/cours06/XWKxePe.html" style="width: 100%; overflow:hidden; display:block;" title="c08_intro-flexbox-02" loading="lazy" id="cp_embed_XWKxePe"></iframe></div>
+                        <script async="" src="images/cours06/ei.js"></script>
+                    </div>
+                    <h4>flex-direction:row et align-items</h4>
+                    <div class="note">
+                        <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe vertical.</p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="800" width="100%" name="cp_embed_4" scrolling="no" src="images/cours06/oNLaGaP.html" style="width: 100%; overflow:hidden; display:block;" title="c08_intro-flexbox-03" loading="lazy" id="cp_embed_oNLaGaP"></iframe></div>
+                        <script async="" src="images/cours06/ei.js"></script>
+                    </div>
+                    <h4>flex-direction:column et align-items</h4>
+                    <div class="note">
+                        <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe horizontal.</p>
+                    </div>
+                    <div class="bloc-codepen">
+                        <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="736" width="100%" name="cp_embed_5" scrolling="no" src="images/cours06/KKMGXJN.html" style="width: 100%; overflow:hidden; display:block;" title="c08_intro-flexbox-04" loading="lazy" id="cp_embed_KKMGXJN"></iframe></div>
+                        <script async="" src="images/cours06/ei.js"></script>
+                    </div>
+                    <h4>Exemple simple d'application des boites flexibles (flexbox) pour une liste de liens de navigation</h4>
+                    <p class="resultat-etiquette">Exemple</p>
+                    <div class="bloc-codepen">
+                    <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_6" scrolling="no" src="images/cours06/vYjROqg.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_vYjROqg"></iframe></div>
+                    <script async="" src="images/cours06/ei(1).js"></script>
+                    </div>
+        </section> <!-- fin section02 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section03">
+          
+          <h2>La propriété position</h2>
+          <h3>Rappel</h3>
+          <h4>Les éléments de type bloc et les éléments de type en-ligne</h4>
+          <ul>
+            <li>Les éléments de type bloc se placent toujours les uns sous les autres par défaut. Par exemple: une suite de paragraphes (<code>&lt;p&gt;</code>) ou les éléments d'une liste (<code>&lt;li&gt;</code>). </li>
+            <li>Un élément bloc occupe par défaut toute la largeur disponible dans son conteneur parent.</li>
+            <li>Les éléments de type en-ligne se placent toujours côte-à-côte afin de rester dans le texte. Par exemple : le renforcement d'une partie de texte à l'aide de la balise <code>&lt;strong&gt;</code>.</li>
+            <li>Les éléments de type en-ligne occupent  par défaut la place minimum nécessaire à leur contenu. C'est le cas des éléments <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;span&gt;</code>, etc.</li>
+          </ul>
+          <h4>Ancêtres, Parents, Enfants, Descendants, Frères</h4>
+          <p>Comprendre l'imbrication des éléments les uns dans les autres est primordial pour comprendre le positionnement.</p>
+          <p>Chaque document HTML est  composé de conteneurs qui peuvent être <em>ancêtres,</em>&nbsp;<em>parent</em>s, <em>enfants, descendants</em>&nbsp;ou&nbsp;<em>frères</em>. Ces  éléments forment une hiérarchie d'imbrications. </p>
+          <h4>Le flux</h4>
+          <p>Les éléments HTML sont placés les uns après les autres dans le code  de la page: c'est ce qu'on appelle le flux du contenu.</p>
+          <p>Cela signifie que chaque élément est dépendant des éléments frères qui l'entourent.</p>
+          <p>Par défaut, les éléments <strong>bloc</strong> et les éléments <strong>en-ligne</strong> ont un comportement différent dans le flux normal du contenu, comme on l'a vu.</p>
+          <h3>La propriété&nbsp;<code>position</code></h3>
+          <p>La propriété&nbsp;<code>position</code>&nbsp;est à considérer dès lors qu'il est nécessaire de passer outre le flux normal du contenu pour une mise en page particulière.</p>
+          <p>Valeurs possibles: <code>static</code> (par défaut), <code>relative</code>, <code>absolute</code>, <code>fixed</code>.</p>
+          <h4>La position statique: <code>position:static</code></h4>
+          <p>La valeur <code>statique</code> (<code>position:static</code>)  correspond  à la valeur par défaut de la propriété <code>position</code>, donc la valeur par défaut d'un élément du flux. Il n'y a que peu d'intérêt à la préciser dans le code, si ce n'est dans le but de rétablir dans le flux un élément en particulier parmi une série qui serait positionnée hors du flux.  </p>
+          <h4>La position relative: <code>position:relative</code></h4>
+          <p>La position relative (<code>position:relative</code>) permet de décaler un élément par rapport à une position de référence, soit celle qu'il avait dans le flux. </p>
+          <p>Les éléments qui le suivent et le précèdent ne sont pas influencés par ce décalage; ils font comme si   l'élément est toujours dans le flux, à sa position initiale. En pratique, ce comportement est rarement recherché bien qu'il puisse s'avérer utile dans certaines situations.</p>
+          <p>Attribuer à un élément une position relative peut par contre être pratique à certains égards, dont:</p>
+          <ul>
+            <li><strong>Servir de référence à un élément enfant ou descendant positionné en absolu. </strong><br>
+              (Voir plus bas pour le positionnement absolu.) ;</li>
+            <li><strong>Bénéficier de la possibilité d'utiliser la propriété&nbsp;<code>z-index</code>&nbsp;pour gérer des superpositions d'éléments</strong>. (Voir plus bas les détails à propos de z-index.)</li>
+          </ul>
+          <p>Dans l'exemple ci-dessous, l'élément <code>strong</code> est en position relative. On utilise les propriétés <code>top</code>, <code>right</code>, <code>bottom</code> ou <code>left</code> jumelées à des valeurs en <code>px</code> ou <code>%</code> pour le positionner:</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="265" width="100%" name="cp_embed_7" scrolling="no" src="images/cours06/NaENOe.html" style="width: 100%; overflow:hidden; display:block;" title="c08-pos-01" loading="lazy" id="cp_embed_NaENOe"></iframe></div>
+            <script async="" src="images/cours06/ei(2).js"></script>
+          </div>
+          <h4>La position absolue: <code>position:absolute</code></h4>
+          <p>La position absolue (<code>position:absolute</code>) <strong>permet de ne pas dépendre de l'ordre dans lequel les éléments HTML sont déclarés dans le code</strong>.</p>
+          <p>La position absolue s'affranchit définitivement du cordon liant jusqu'alors intimement contenu et présentation. <strong>L'élément étant totalement extrait du flux, il ne dépend plus du tout des éléments qui le côtoient.</strong> Il faut voir le positionnement absolu comme étant une méthode radicale - mais puissante - qui retire tout à fait un élément du flux: il n'existe pour ainsi dire plus aux yeux des éléments qui, eux, restent dans le flux.</p>
+          <div class="note">
+            <p>Rappelons un point important concernant ce mode de positionnement : <strong>un élément positionné en absolu se réfère  au premier ancêtre <em>positionné</em>&nbsp;qu'il rencontre</strong>. À défaut d'ancêtre positionné, la référence du positionnement est la fenêtre du navigateur.</p>
+          </div>
+          <p>N'étant plus dans le flux naturel, l'élément perd une de ses caractéristiques majeures qui est celle de recouvrir la totalité de la largeur disponible de l'élément parent.</p>
+          <p>Il est capital de noter qu'un élément bénéficiant d'une position absolue ne bougera pas de sa position initiale tant que l'une des propriétés&nbsp;<code>top</code>,&nbsp;<code>bottom</code>,&nbsp;<code>left</code>&nbsp;ou&nbsp;<code>right</code>&nbsp;n'a pas été précisée; il s'agit d'ailleurs là d'un comportement appliquable à toutes les positions :</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="500" width="100%" name="cp_embed_8" scrolling="no" src="images/cours06/veQGoR.html" style="width: 100%; overflow:hidden; display:block;" title="c08-pos-03" loading="lazy" id="cp_embed_veQGoR"></iframe></div>
+            <script async="" src="images/cours06/ei.js"></script>
+          </div>
+          <h4>La position fixe: <code>position:fixed</code></h4>
+          <p>Le positionnement fixe (<code>position:fixed</code>) est caractérisée par les points suivants:</p>
+          <ul>
+            <li>Lorsque le positionnement est précisé (top,&nbsp;bottom, left, right), l'élément est&nbsp;<strong>toujours</strong>&nbsp;positionné par rapport à la fenêtre du navigateur ;</li>
+            <li>L'élément est fixé à un endroit et ne pourra se mouvoir, même en présence d'une barre de défilement. En d'autres termes, la position intiale est fixée au chargement de la page; le fait qu'une éventuelle barre de défilement puisse être utilisée n'a aucune influence sur le positionnement de l'élément: il ne bouge plus de la position initialement définie. </li>
+          </ul>
+          <p>Dans l'exemple ci-dessous, faites défiler le contenu et vous noterez que le texte en jaune reste sur place (cliquez sur « CSS » ou « HTML » pour faire afficher le code et expérimenter) : </p>
+          <p class="resultat-etiquette">Exemple</p>
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="332" width="100%" name="cp_embed_9" scrolling="no" src="images/cours06/veQKZV.html" style="width: 100%; overflow:hidden; display:block;" title="c08-pos05" loading="lazy" id="cp_embed_veQKZV"></iframe></div>
+            <script async="" src="images/cours06/ei(2).js"></script>
+          </div>
+          <p>Cet autre exemple montre l'utilisation de la position fixe pour « fixer » un menu dans le haut de la page. Faites défiler le contenu : la barre de navigation reste en place.</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="374" width="100%" name="cp_embed_10" scrolling="no" src="images/cours06/BwGzzE.html" style="width: 100%; overflow:hidden; display:block;" title="c08-pos04" loading="lazy" id="cp_embed_BwGzzE"></iframe></div>
+            <script async="" src="images/cours06/ei(2).js"></script>
+          </div>
+          <h3>z-index</h3>
+          <p>La propriété <code>z-index</code> permet de changer la position naturelle des éléments dans l'axe z, c'est-à-dire en profondeur. Prenons l'exemple de trois éléments <code>div</code> placés l'un à la suite de l'autre dans le HTML et positionnés en absolu : le premier élément se trouvera en arrière-plan, et le dernier, au premier plan. Cet ordre ne sera évident dans le navigateur que si les éléments  se superposent au moins en partie.</p>
+          <p>Dans l'exemple ci-dessous, le HTML contient trois <code>div</code> positionnés en absolu qui se superposent partiellement en raison de leurs positions. Sans autre indication, l'ordre de superposition des div suit l'ordre du flux: DIV est arrière plan, DIV3 est au premier plan. </p>
+          <p>La valeur de <code>z-index</code> permet de modifier cet ordre naturel.</p>
+          <p>En faisant afficher le code, modifiez la valeur de <code>z-index</code> pour constater l'effet.</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <div class="bloc-codepen">
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="355" width="100%" name="cp_embed_11" scrolling="no" src="images/cours06/oGQLqM.html" style="width: 100%; overflow:hidden; display:block;" title="c08-pos06" loading="lazy" id="cp_embed_oGQLqM"></iframe></div>
+            <script async="" src="images/cours06/ei(2).js"></script>
+          </div>
+          <div class="tf">
+         <p class="tf-intitule">Propriété position</p>
+         <p>Créez la feuille de style de ce "pen" en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.):</p>
+         <ol>
+         <li>Ouvrez dans Codepen et faites-vous une copie.</li>
+         <li>Superposez le nom de l'item et son prix sur l'image en utlisant la propriété position. (Voir en classe pour les directives.) </li>
+         <li>Remarquez le lien qui enblobe à la fois l'image, le nom de l'item et le prix: effectuez sa mise en forme.</li>
+         <figure class="w20">
+            <figcaption>Résultat attendu</figcaption>
+            <img src="images/cours06/cours06_tf01.jpg" alt="Résultat tf1">
+         </figure>
+</ol>
+          <div class="bloc-codepen">
+          
+          <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="550" width="100%" name="cp_embed_12" scrolling="no" src="images/cours06/VwWOdpa.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_VwWOdpa"></iframe></div>
+<script async="" src="images/cours06/ei(1).js"></script>
+          </div>
+             
+          </div>
+        </section> <!-- fin section03 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section04">
+          
+          <h2>Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</h2>
+                    <p>L'approche <strong>Mobile d'abord</strong> (ou <i>Mobile first</i>) repose sur ces fondements :</p>
+                    <ul>
+                        <li>Un site web doit être construit en premier lieu pour les appareils les plus simples et les navigateurs les plus simples, et donc à partir des fonctionnalités les moins exigentes en terme de technologie. </li>
+                        <li>Afin de profiter des avantages pratiques et technologiques des appareils les plus sophistiqués, des «&nbsp;couches&nbsp;» de complexité sont ajoutées progressivement au site.</li> 
+                    </ul>
+                    <p>En conséquence : </p>
+                    <ul>
+                        <li>Selon cette approche, les règles de style de base s'adressent aux appareils à petits écrans comme les téléphones mobiles, d'ou l'expression 'mobile d'abord'.</li>
+                        <li>Des points de rupture, contrôlés par des <strong>requêtes médias</strong> (<i>media queries</i>), sont ajoutés afin d'augmenter progressivement le degré de complexité de l'interface pour des appareils dont l'écran est plus large.</li>
+                    </ul>
+                    <h3>Étude de cas</h3>
+                    <p>Jetons un coup d'oeil sur la maquette suivante qui montre un répertoire de professeurs.</p>
+                    <figure class="w100">
+                        <figcaption>Approche « mobile d'abord »</figcaption>
+                        <img src="images/cours06/cours07_maq05b.jpg" alt="Appoche Mobile first">
+                    </figure>
+                    <p>Selon la largeur de l'écran, la liste de profs se dispose sur une, deux ou trois colonnes.</p>
+                    <p>Comment y arriver sans dupliquer les contenus?</p>
+                    <h4>La requête media : <code>@media</code></h4>
+                    <p>On y arrive en ajoutant des règles de style conditionnelles.</p>
+                    <p>La condition dans cet exemple est fondée sur la largeur de l'écran.</p>
+                    <p>Ainsi, à partir d'une certaine largeur d'écran, la fonction @media permet de modifier la valeur d'une propriété (ou d'ajouter de nouvelles déclarations), comme ceci :</p>
+                    <p class="code-etiquette">Code
+                    </p><pre class="exemple-code">                      <span class="rose">.catalogue {</span>
+                      &nbsp;&nbsp;display: flex;
+                      &nbsp;&nbsp;flex-direction: column;
+                      <span class="rose">}</span>
+                      <span class="vert">@media (min-width:600px) {</span>
+                      &nbsp;&nbsp;<span class="rose">.catalogue {</span>
+                      &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;
+                      &nbsp;&nbsp;<span class="rose">}</span>
+                      <span class="vert">}</span>
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                      <img src="images/cours06/cours06_requete-media01.png" alt="exemple de requête média">
+                      </div>
+          <div class="tf">
+            <p class="tf-intitule">La requête media : <code>@media</code></p>
+            <p>Reprenez le Codepen précédent.</p>
+            <p>Complétez la feuille de style de ce "pen" en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.)</p>
+            <p>À l'aide de la fonction @media, rendez réactive la disposition des six items.</p>
+            <p>Les six items forment au départ une colonne.</p>
+            <p>À mesure que l'écran s'élargit, ces items doivent former des rangées de deux items, puis, enfin, des rangées de trois items.</p>
+            <figure class="w10">
+              <figcaption>Une colonne</figcaption>
+              <img src="images/cours06/cours06_tf02a.jpg" alt="Résultat tf2">
+            </figure>
+            <figure class="w20">
+              <figcaption>Deux colonnes</figcaption>
+              <img src="images/cours06/cours06_tf02b.jpg" alt="Résultat tf2">
+            </figure>
+            <figure class="w40">
+              <figcaption>Trois colonnes</figcaption>
+              <img src="images/cours06/cours06_tf02c.jpg" alt="Résultat tf2">
+            </figure>
+          </div>
+          </section> <!-- fin section04 -->
+          <div class="haut-de-page">
+              <a href="#">Haut de page</a>
+            </div>
+          <section id="section05">
+            
+            <h2>Utiliser Google Fonts pour intégrer des polices de caratères dans vos pages web</h2>
+            <div class="references-section">
+                            <ul>
+                                <li>
+                                    <a href="https://fonts.google.com/">Google Fonts <img class="icone" src="images/cours06/lien_ext_noir_16px.png"></a>
+                                </li>
+                            </ul>
+            </div>
+            <div class="bloc-codepen">
+              <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="620" width="100%" name="cp_embed_13" scrolling="no" src="images/cours06/rNoqyaE.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_rNoqyaE"></iframe></div>
+              <script async="" src="images/cours06/ei(1).js"></script>
+            </div>
+          </section> <!-- fin section05 -->
+          
+      <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <!-- ACTIVITÉS D'ÉVALUATION -->
+        <section id="sectionAE">
+          
+          <h2>Activités d'évaluation</h2>
+          
+          <h3>TP2</h3>
+          <p>Le TP2 a pour objectif d'expérimenter la propriété CSS position et le web réactif.</p>
+          <h4>Documents à remettre</h4>
+          <p>Un <strong>dossier </strong>rigoureusement nommé comme suit:</p>
+          <ul>
+            <li>groupe du vendredi 8h : <strong>gr2_nominitialeprenom_tp2</strong></li>
+            <li>groupes du vendredi 12h : <strong>gr1_nominitialeprenom_tp2 </strong></li>
+          </ul>
+          <div class="note">
+            <p>Structure de fichiers :</p>
+            <figure class="w50">
+              <figcaption>Structure de fichiers du tp1</figcaption>
+              <img class="bordure" src="images/cours06/cours06_tp2_arbo01.jpg">
+            </figure>
+          </div>
+          <h4>Matériel fourni</h4>
+            <p>Téléchargez le dossier archive <code>grx_nominitialeprenom_tp2.zip</code> à partir du Devoir publié dans Teams.</p>
+          <h4>Échéancier</h4>
+          <p>Remettez le dossier complet, zippé, sur Teams/Devoir, dans l'espace prévu à cette fin, au plus tard :</p>
+          <ul>
+            <li><strong>le mercredi suivant le cours, 9h le matin, groupe 2 (vendredi 8h).</strong></li>
+            <li><strong>le mercredi suivant le cours, midi, groupe 1 (vendredi 12h).</strong></li>
+          </ul>
+          <h4>TP2: Travail à faire</h4>
+            <h5>Créez une feuille de style pour le fichier <code>catalogue.html</code></h5>
+            <ol>
+              <li>Ouvrez le dossier de travail du tp2 dans Visual Studio Code.</li>
+              <li>Créez le dossier <code>css</code>.</li>
+              <li>Dans le dossier <code>css</code>, créez un nouveau fichier <code>styles.css</code>.</li>
+              <li>Liez la feuille de style au document html en insérant ce code dans la partie <code>head</code>: <br>
+                <pre class="exemple-code exemple-code--nowrap">                <p>&lt;link type="text/css" rel="stylesheet" href="css/styles.css"&gt; </p>
+                </pre>
+              </li>
+              <li>Ajoutez cette <code>meta</code> dans la partie <code>head</code> du document HTML afin que les fonctions <code>@media</code> soient interprétées correctement: <br>
+                <pre class="exemple-code exemple-code--nowrap">                  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </p>
+                </pre>
+              </li>
+              <li>Liez le favicon à la page.
+              </li>
+              <li>Ajoutez le code <code>@charset "UTF-8";</code> au tout début de la feuille de style.</li>
+              <li>À la suite de ce code, ajoutez le code <code>@import...</code> de Google Fonts afin d'importer la police de caractères de votre choix. (Voir en classe pour les détails.) </li>
+              <li>À la suite de <i>Google Fonts</i>, ajoutez les règles de style de réinitialisation habituelles :</li>
+              <figure class="w50">
+              <figcaption>Réinitialisation</figcaption>
+              <img class="bordure" src="images/cours06/cours06_tp2_reinit.jpg" alt=""> 
+            </figure>
+              <li>Effectuez la mise en forme du menu réactif de la page web à l'aide des directives données en classe.</li>
+              <li>Reproduisez la mise en forme du catalogue en observant les images de maquette affichées plus bas.
+                <ul>
+                  <li>Effectuez une mise en forme fluide, basée sur le principe du 'Mobile d'abord' ;</li>
+                  <li>Créez des requêtes media pour la version '2 colonnes' ;</li>
+                  <li>Créez une requête media pour la version 3 colonnes' ;</li>
+                  <li>Établissez une largeur maximale pour le catalogue.</li>
+            </ul>
+              </li>
+
+              <li>Créez les règles de style nécessaires en vous inspirant des travaux formatifs effectués durant le cours.</li>
+              <li><strong>N'utilisez que des sélecteurs de classe</strong> dans vos règles de style.</li>
+              <li>Mettez votre feuille de style en ordre.</li>
+              <li>Insérez des commentaires dans votre feuille de style afin de vous y retrouver plus facilement.</li>
+            </ol>
+            <figure class="w30">
+              <figcaption>Interface du tp2 sur une colonne</figcaption>
+              <img class="bordure" src="images/cours06/cours06_tp2_interface01.jpg" alt="Interface 1 colonne tp2"> 
+            </figure>
+            <figure class="w50">
+              <figcaption>Interface du tp2 sur des rangées de deux</figcaption>
+              <img class="bordure" src="images/cours06/cours06_tp2_interface02.jpg" alt=""> 
+            </figure>
+            <figure class="w80">
+              <figcaption>Interface du tp2 sur des rangées de trois</figcaption>
+              <img class="bordure" src="images/cours06/cours06_tp2_interface03.jpg" alt=""> 
+            </figure>
+          
+        </section>  <!-- fin sectionAE --> 
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            <br>Ce contenu a été tiré du site web de Sylvain Lamoureux<br>
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js?"></script>
+    </body>
+</html>
