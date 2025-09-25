@@ -434,28 +434,28 @@
         <section id="section04">
           
           <h2>Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</h2>
-                    <p>L'approche <strong>Mobile d'abord</strong> (ou <i>Mobile first</i>) repose sur ces fondements :</p>
+                    <p>Un site web doit s’adapter à la taille de l’écran de l’utilisateur. L'approche <strong>Mobile d'abord</strong> (ou&nbsp;<i>Mobile&nbsp;first</i>) repose sur ces fondements&nbsp;:</p>
                     <ul>
-                        <li>Un site web doit être construit en premier lieu pour les appareils les plus simples et les navigateurs les plus simples, et donc à partir des fonctionnalités les moins exigentes en terme de technologie. </li>
-                        <li>Afin de profiter des avantages pratiques et technologiques des appareils les plus sophistiqués, des «&nbsp;couches&nbsp;» de complexité sont ajoutées progressivement au site.</li> 
+                        <li>concevoir le site d’abord pour les appareils les plus simples (petits écrans, navigateurs limités) avec un code minimal et&nbsp;robuste; </li>
+                        <li>ajouter ensuite, couche par couche, des styles supplémentaires pour les appareils plus puissants et les écrans plus&nbsp;larges.</li> 
                     </ul>
-                    <p>En conséquence : </p>
+                    <p><strong>Conséquences pratiques</strong></p>
                     <ul>
-                        <li>Selon cette approche, les règles de style de base s'adressent aux appareils à petits écrans comme les téléphones mobiles, d'où l'expression <em>mobile d'abord</em>.</li>
-                        <li>Des points de rupture, contrôlés par des <strong>requêtes médias</strong> (<i>media queries</i>), sont ajoutés afin d'augmenter progressivement le degré de complexité de l'interface pour des appareils dont l'écran est plus large.</li>
+                        <li>Les styles de base ciblent en priorité les téléphones.</li>
+                        <li>À mesure que l’écran s’élargit, on introduit des ajustements avec des requêtes médias (<code>@media</code>).</li>
+                        <li>Chaque point de rupture (<em>breakpoint</em>) adapte la mise en page (par exemple&nbsp;: une&nbsp;colonne → deux&nbsp;colonnes → trois&nbsp;colonnes).</li>
                     </ul>
-                    <h3>Étude de cas</h3>
-                    <p>Jetons un coup d'oeil sur la maquette suivante qui montre un répertoire de professeurs.</p>
+                    <h3>Exemple d’application</h3>
+                    <p>Un répertoire de professeurs affiché sur une colonne sur mobile, puis sur deux colonnes en tablette, puis trois colonnes sur ordinateur de&nbsp;bureau.</p>
                     <figure class="w100">
                         <figcaption>Approche « mobile d'abord »</figcaption>
                         <img src="images/cours06/cours07_maq05b.jpg" alt="Appoche Mobile first">
                     </figure>
-                    <p>Selon la largeur de l'écran, la liste de profs se dispose sur une, deux ou trois colonnes.</p>
                     <p>Comment y arriver sans dupliquer les contenus?</p>
                     <h4>La requête media : <code>@media</code></h4>
                     <p>On y arrive en ajoutant des règles de style conditionnelles.</p>
                     <p>La condition dans cet exemple est fondée sur la largeur de l'écran.</p>
-                    <p>Ainsi, à partir d'une certaine largeur d'écran, la fonction @media permet de modifier la valeur d'une propriété (ou d'ajouter de nouvelles déclarations), comme ceci :</p>
+                    <p>Ainsi, à partir d'une certaine largeur d'écran, la fonction <code>@media</code> permet de modifier la valeur d'une propriété (ou d'ajouter de nouvelles déclarations), comme ceci :</p>
                     <p class="code-etiquette">Code
                     </p><pre class="exemple-code">                      <span class="rose">.catalogue {</span>
                       &nbsp;&nbsp;display: flex;
@@ -471,25 +471,41 @@
                     <div class="resultat">
                       <img src="images/cours06/cours06_requete-media01.png" alt="exemple de requête média">
                       </div>
+                      <div class="note">
+                        <p>Ajoutez cette <code>meta</code> dans la partie <code>head</code> du document HTML afin que les fonctions <code>@media</code> soient interprétées correctement: <br>
+                <pre class="exemple-code exemple-code--nowrap">                  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </p>
+                </pre></p></div>
           <div class="tf">
             <p class="tf-intitule">La requête media : <code>@media</code></p>
-            <p>Reprenez le Codepen précédent.</p>
-            <p>Complétez la feuille de style de ce "pen" en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.)</p>
-            <p>À l'aide de la fonction @media, rendez réactive la disposition des six items.</p>
-            <p>Les six items forment au départ une colonne.</p>
-            <p>À mesure que l'écran s'élargit, ces items doivent former des rangées de deux items, puis, enfin, des rangées de trois items.</p>
-            <figure class="w10">
+            <ol>
+              <li>Reprenez le Codepen précédent.</li>
+              <li>Complétez la feuille de style de ce <em>pen</em> en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.)</li>
+              <li>À l'aide de la fonction <code>@media</code>, rendez réactive la disposition des six items:
+                <ul style="padding-bottom:0;">
+                  <li>Les six items forment au départ une colonne.</li>
+                  <li>À mesure que l'écran s'élargit, ces items doivent former des rangées de deux items, puis, enfin, des rangées de trois items.</li>
+                </ul>
+              </li>
+              <li>N'oubliez pas de sauvegarder votre <em>pen</em> pour une utilisation ultérieure.</li>
+            </ol>
+            <div class="row">
+                <div class="col"> <figure class="w100">
               <figcaption>Une colonne</figcaption>
               <img src="images/cours06/cours06_tf02a.jpg" alt="Résultat tf2">
-            </figure>
-            <figure class="w20">
+            </figure></div>
+                <div class="col"><figure class="w100">
               <figcaption>Deux colonnes</figcaption>
               <img src="images/cours06/cours06_tf02b.jpg" alt="Résultat tf2">
-            </figure>
-            <figure class="w40">
+            </figure></div>
+                <div class="col"> <figure class="w100">
               <figcaption>Trois colonnes</figcaption>
               <img src="images/cours06/cours06_tf02c.jpg" alt="Résultat tf2">
-            </figure>
+            </figure></div>
+
+            </div>
+           
+            
+           
           </div>
           </section> <!-- fin section04 -->
           
@@ -520,22 +536,18 @@
                     <p><a href="materiel/TP2-Grille-de-correction.pdf" target="_blank">Consultez la grille de correction pour le travail&nbsp;<i class="bi bi-file-pdf"></i></a>. Référéz-vous à cette grille pour vérifier votre travail avant de le remettre sur&nbsp;LÉA.</p>
                     
           <h4>TP2: Travail à faire</h4>
-            <h5>Créez une feuille de style pour le fichier <code>catalogue.html</code></h5>
             <ol>
-              <li>Ouvrez le dossier de travail du tp2 dans Visual Studio Code.</li>
-              <li>Créez le dossier <code>css</code>.</li>
-              <li>Dans le dossier <code>css</code>, créez un nouveau fichier <code>styles.css</code>.</li>
-              <li>Liez la feuille de style au document html en insérant ce code dans la partie <code>head</code>: <br>
-                <pre class="exemple-code exemple-code--nowrap">                <p>&lt;link type="text/css" rel="stylesheet" href="css/styles.css"&gt; </p>
-                </pre>
+              <li><strong>Ouvrez le dossier de travail du tp2 dans Visual Studio Code.</strong></li>
+              <li><strong>Dans le document <code>catalogue.html</code>:</strong>
+                <ol>
+                  <li>Inscrivez votre nom dans la balise correspondante de la ligne&nbsp;11.</li>
+                  <li>Intégrez le favicon à la page: le fichier images se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon03.html#section06" target="_blank">Référez-vous à la leçon 3 pour l'intégrer correctement&nbsp;<i class="bi bi-file-pdf"></i></a>.
+                </li>
+              </ol>
               </li>
-              <li>Ajoutez cette <code>meta</code> dans la partie <code>head</code> du document HTML afin que les fonctions <code>@media</code> soient interprétées correctement: <br>
-                <pre class="exemple-code exemple-code--nowrap">                  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </p>
-                </pre>
-              </li>
-              <li>Liez le favicon à la page.
-              </li>
-              <li>Ajoutez le code <code>@charset "UTF-8";</code> au tout début de la feuille de style.</li>
+              <li><strong>Dans le document <code>styles.css</code>:</strong>
+                <ol>
+              <li>Au tout début de la feuille de style, ajoutez le code <code>@charset "UTF-8";</code>.</li>
               <li>À la suite de cette ligne, ajoutez les règles de style de réinitialisation habituelles :</li>
               <figure class="w50">
               <figcaption>Réinitialisation</figcaption>
@@ -545,9 +557,9 @@
               <li>Reproduisez la mise en forme du catalogue en observant les images de maquette affichées plus bas.
                 <ul>
                   <li>Effectuez une mise en forme fluide, basée sur le principe du 'Mobile d'abord' ;</li>
-                  <li>Créez des requêtes media pour la version '2 colonnes' ;</li>
-                  <li>Créez une requête media pour la version 3 colonnes' ;</li>
-                  <li>Établissez une largeur maximale pour le catalogue.</li>
+                  <li>Créez des requêtes media pour la version '2 colonnes' (> 380px) ;</li>
+                  <li>Créez une requête media pour la version 3 colonnes' (> 700px) ;</li>
+                  <li>Établissez une largeur maximale de 800px pour le catalogue.</li>
             </ul>
               </li>
 
@@ -555,17 +567,18 @@
               <li><strong>N'utilisez que des sélecteurs de classe</strong> dans vos règles de style.</li>
               <li>Mettez votre feuille de style en ordre.</li>
               <li>Insérez des commentaires dans votre feuille de style afin de vous y retrouver plus facilement.</li>
+              </ol></li>
             </ol>
             <figure class="w30">
-              <figcaption>Interface du tp2 sur une colonne</figcaption>
+              <figcaption>Interface du tp2 sur une colonne: taille d'écran par défaut.</figcaption>
               <img class="bordure" src="images/cours06/cours06_tp2_interface01.jpg" alt="Interface 1 colonne tp2"> 
             </figure>
             <figure class="w50">
-              <figcaption>Interface du tp2 sur des rangées de deux</figcaption>
+              <figcaption>Interface du tp2 sur des rangées de deux: largeur minimale de l'écran 380px</figcaption>
               <img class="bordure" src="images/cours06/cours06_tp2_interface02.jpg" alt=""> 
             </figure>
             <figure class="w80">
-              <figcaption>Interface du tp2 sur des rangées de trois</figcaption>
+              <figcaption>Interface du tp2 sur des rangées de trois: largeur minimale de l'écran 700px</figcaption>
               <img class="bordure" src="images/cours06/cours06_tp2_interface03.jpg" alt=""> 
             </figure>
           
