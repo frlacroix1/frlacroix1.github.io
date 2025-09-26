@@ -124,10 +124,35 @@
          
 
           <h4>2. Dimensions calculées</h4>
-          <p>La largeur totale d'une boîte se calcule ainsi <code>width + padding + border + margin</code>.</p>
-          <figure class="w50">
-            <img src="images/cours06/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
-          </figure>
+          <p>Valeur par défaut: </p>
+          <pre class="exemple-code"><span class="vert">box-sizing: content-box;</span></pre>
+          <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+              <h5><code>content-box</code></h5>
+              <figure class="w100">
+              <img src="images/cours06/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte content-box" class="sansBordure">
+              <p>La largeur totale d'une boîte se calcule ainsi <code>width + padding + border + margin</code>.</p>
+              
+          </figure></div></div>
+            <div class="card">
+              <div class="card-body">
+              <h5><code>border-box</code></h5>
+              <figure class="w100"><img src="images/cours06/cours06_boite03b.jpg" alt="Le calcul de la largeur d&#39;une boîte border-box" class="sansBordure"></figure>
+              <p>La largeur totale d'une boîte se calcule ainsi <code>width + margin</code>.</p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <p>L’utilisation de <code>border-box</code> est recommandée, car la valeur déclarée dans <code>width</code> inclut déjà le padding et la bordure. Cela simplifie grandement le calcul de la largeur d’une boîte. Nous prendrons donc l’habitude d’activer ce comportement dès l’initialisation de nos feuilles de style.</p>
+          <pre class="exemple-code">
+            <span class="rose">/* RÉINITIALISATION */
+            * {</span>
+          &nbsp;&nbsp;margin: 0; 
+          &nbsp;&nbsp;padding: 0; 
+          &nbsp;&nbsp;<span class="vert">box-sizing: border-box;</span>
+          <span class="rose">}</span>
+          </pre>
           <h4>3. Plusieurs types de boîte</h4>
           <ul style="padding-bottom:0;">
             <li><strong>Bloc (<code>display: block</code>) :</strong> <br>occupe toute la largeur, commence sur une nouvelle ligne (<code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>…).</li>
