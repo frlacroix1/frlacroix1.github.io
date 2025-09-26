@@ -124,7 +124,7 @@
          
 
           <h4>2. Dimensions calculées</h4>
-          <p>La largeur totale d'une boîte = <code>width + padding + border + margin</code>.</p>
+          <p>La largeur totale d'une boîte se calcule ainsi <code>width + padding + border + margin</code>.</p>
           <figure class="w50">
             <img src="images/cours06/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
           </figure>
@@ -222,18 +222,21 @@
             <img src="images/cours06/01-container.svg" alt="Conteneur" class="sansBordure">
           </figure><ul>
                         <li><code>display:flex</code> : convertit le conteneur en boîte flexible et ses enfants directs en <strong>flex-item</strong>.</li>
+                        <hr>
                         <li><code>flex-direction</code> : définit la direction des <strong>flex-item</strong>, soit <code>row</code> (rangée), soit <code>column</code> (colonne).<br>
                           <figure class="w50">
             <img src="images/cours06/flex-direction.svg" alt="flex-direction" class="sansBordure">
           </figure><p class="syntaxe-etiquette">Syntaxe</p>
                           <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-direction:</span> row | row-reverse | column | column-reverse;</pre>
                         </li>
+                        <hr>
                         <li><code>flex-wrap</code> : permet (<code>wrap</code>) ou empêche (<code>nowrap</code>) le retour à la ligne des <strong>flex-item</strong>.<br>
                           <figure class="w50">
             <img src="images/cours06/flex-wrap.svg" alt="flex-wrap" class="sansBordure">
           </figure><p class="syntaxe-etiquette">Syntaxe</p>
                           <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-wrap:</span> no-wrap | wrap | wrap-reverse | column-reverse;</pre>
                         </li>
+                        <hr>
                         <li><code>justify-content</code> : appliquée sur le <strong>flex-container</strong>, cette propriété gère l'espace autour des <strong>flex-item</strong>.<br>
                           <figure class="w50">
                           <img src="images/cours06/justify-content.svg" alt="flex-wrap" class="sansBordure">
@@ -241,8 +244,9 @@
                           <p class="syntaxe-etiquette">Syntaxe</p>
                           <pre class="exemple-code exemple-code--nowrap"><span class="rose">justify-content</span>: start | center | space-between | space-around | space-evenly;</pre>
                         </li>
+                        <hr>
                     </ul>
-                    <h4>flex-direction:row et justify-content</h4>
+                    <h4>flex-direction:<u>row</u> et <u>justify-content</u></h4>
                     <div class="note">
                         <p><code>justify-content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe horizontal.</p>
                     </div>
@@ -253,7 +257,7 @@
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
                     <hr>          
-<h4 id="pos4">flex-direction:column et justify-content</h4>
+<h4 id="pos4">flex-direction:<u>column</u> et <u>justify-content</u></h4>
                     <div class="note">
                         <p><code>justify-content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe vertical.</p>
                     </div>
@@ -263,7 +267,7 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex-direction:row et align-items</h4>
+                    <h4>flex-direction:<u>row</u> et <u>align-items</u></h4>
                     <div class="note">
                         <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe vertical.</p>
                     </div>
@@ -273,7 +277,8 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex-direction:column et align-items</h4>
+<hr>
+                    <h4>flex-direction:<u>column</u> et <u>align-items</u></h4>
                     <div class="note">
                         <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe horizontal.</p>
                     </div>
@@ -354,7 +359,7 @@
           
           <p>Il est capital de noter qu'un élément bénéficiant d'une position absolue ne bougera pas de sa position initiale tant que l'une des propriétés&nbsp;<code>top</code>,&nbsp;<code>bottom</code>,&nbsp;<code>left</code>&nbsp;ou&nbsp;<code>right</code>&nbsp;n'a pas été précisée; il s'agit d'ailleurs là d'un comportement appliquable à toutes les positions :</p>
           <p class="resultat-etiquette">Exemple</p>
-          <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="bNEGxGa" data-pen-title="c08-pos-03" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <p class="codepen" data-height="500" data-default-tab="css,result" data-slug-hash="bNEGxGa" data-pen-title="c08-pos-03" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNEGxGa">
   c08-pos-03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -369,7 +374,7 @@
           <p class="syntaxe-etiquette">Syntaxe</p>
           <pre class="exemple-code exemple-code--nowrap">position:<span class="rose">fixed</span>;</pre>
           <p class="resultat-etiquette">Exemple 1: le texte jaune reste fixe même lorsqu'on défile</p>
-          <p class="codepen" data-height="340" data-default-tab="html,result" data-slug-hash="KwVKxKB" data-pen-title="c08-pos05" data-editable="true" data-user="frlacroix" style="height: 340px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <p class="codepen" data-height="340" data-default-tab="css,result" data-slug-hash="KwVKxKB" data-pen-title="c08-pos05" data-editable="true" data-user="frlacroix" style="height: 340px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/KwVKxKB">
   c08-pos05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -377,7 +382,7 @@
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 <br>
           <p class="resultat-etiquette">Exemple 2: barre de navigation fixée</p>
-          <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="raxNZNR" data-pen-title="c08-pos04" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="raxNZNR" data-pen-title="c08-pos04" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxNZNR">
   c08-pos04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -426,9 +431,9 @@
             <img src="images/cours06/cours06_tf01.jpg" alt="Résultat tf1">
          </figure>
 </ol>
-          <p class="codepen" data-height="550" data-default-tab="html,result" data-slug-hash="LEGYJEV" data-pen-title="c06-position absolute + design réactif" data-editable="true" data-user="frlacroix" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/LEGYJEV">
-  c06-position absolute + design réactif</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+<p class="codepen" data-height="500" data-default-tab="css,result" data-slug-hash="qEbbqGq" data-pen-title="c06-1/3-position absolute+design réactif" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEbbqGq">
+  c06-1/3-position absolute+design réactif</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
@@ -450,7 +455,7 @@
                     <ul>
                         <li>Les styles de base ciblent en priorité les téléphones.</li>
                         <li>À mesure que l’écran s’élargit, on introduit des ajustements avec des requêtes médias (<code>@media</code>).</li>
-                        <li>Chaque point de rupture (<em>breakpoint</em>) adapte la mise en page (par exemple&nbsp;: une&nbsp;colonne → deux&nbsp;colonnes → trois&nbsp;colonnes).</li>
+                        <li>Chaque point de rupture (<em>breakpoint</em>) adapte la mise en page <br>(par exemple&nbsp;: une&nbsp;colonne → deux&nbsp;colonnes → trois&nbsp;colonnes).</li>
                     </ul>
                     <h3>Exemple d’application</h3>
                     <p>Un répertoire de professeurs affiché sur une colonne sur mobile, puis sur deux colonnes en tablette, puis trois colonnes sur ordinateur de&nbsp;bureau.</p>
@@ -549,7 +554,7 @@
               <li><strong>Dans le document <code>catalogue.html</code>:</strong>
                 <ol>
                   <li>Inscrivez votre nom dans la balise correspondante de la ligne&nbsp;11.</li>
-                  <li>Intégrez le favicon à la page: le fichier images se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon03.html#section06" target="_blank">Référez-vous à la leçon 3 pour l'intégrer correctement&nbsp;<i class="bi bi-file-pdf"></i></a>.
+                  <li>Intégrez le favicon à la page: le fichier images se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon03.html#section06" target="_blank">Référez-vous à la leçon 3 pour l'intégrer correctement&nbsp;<i class="bi bi-box-arrow-up-right"></i></a>.
                 </li>
               </ol>
               </li>
@@ -563,7 +568,7 @@
             </figure>
               <li>Effectuez la mise en forme du menu de navigation réactif de la page web à l'aide des directives données en classe.</li>
               <li>Reproduisez la mise en forme du catalogue en observant les images de maquette affichées plus bas.
-                <ul>
+                <ul style="margin:0; padding:0;">
                   <li>Effectuez une mise en forme fluide, basée sur le&nbsp;principe du 'Mobile d'abord';</li>
                   <li>Créez des requêtes media pour la version '2&nbsp;colonnes' (>&nbsp;380px);</li>
                   <li>Créez une requête media pour la version 3&nbsp;colonnes' (>&nbsp;700px);</li>
