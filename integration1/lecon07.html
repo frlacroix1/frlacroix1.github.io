@@ -178,8 +178,19 @@ ul#liste_ex1 li {
             <article>
               <section id="section01">
               <h2>Quelques propriétés CSS utiles</h2>
-              <p>Les <abbr title="Cascading Style Sheets" lang="en">CSS3</abbr> ont amené un cortège de nouvelles propriétés aujourd'hui très utilisées. La plupart de ses propriétés sont fonctionnelles dans les navigateurs les plus récents, mais il y a des exceptions.</p>
-            <h3>Coins arrondis : <code>border-radius</code></h3>
+              <ul>
+            <li><a href="#pos1">Coins arrondis : border-radius</a></li>
+            <li><a href="#pos2">Ombre projetée : box-shadow</a></li>
+            <li><a href="#pos3">Ombre projetée sous le texte : text-shadow</a></li>
+            <li><a href="#pos4">Transparence (d'un élément HTML) : opacity</a></li>
+            <li><a href="#pos5">Transparence (couleur d'arrière-plan): rgba, hsla</a></li>
+            <li><a href="#pos6">Box sizing</a></li>
+            <li><a href="#pos7">Transition</a></li>
+            <li><a href="#pos8">Transform</a></li>
+            <li><a href="#filter">Filter</a></li>
+          </ul>
+          <hr> 
+            <h3 id="pos1">Coins arrondis : <code>border-radius</code></h3>
             <p>Nom de la propriété standard: <code>border-radius</code>  </p>
             <p class="syntaxe-etiquette">Syntaxe</p>
             <pre class="exemple-code exemple-code--nowrap">border-radius: <i>1-4 length</i>|% / <i>1-4 length</i>|%|initial|inherit;</pre>
@@ -196,6 +207,7 @@ ul#liste_ex1 li {
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br>
             <p>La déclaration raccourcie <code>border-radius:32px</code> produit des coins arrondis avec un rayon de 32 pixels. Elle est l'équivalent de ces quatres déclarations longues : </p>
             <p class="code-etiquette">Code</p>
             <pre class="exemple-code">              border-top-left-radius: 32px;
@@ -225,7 +237,7 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Allons plus loin et précisons des arrondis diférents en X et en Y, comme ceci:</p>
+            <br><p>Allons plus loin et précisons des arrondis diférents en X et en Y, comme ceci:</p>
             <p class="code-etiquette">Code</p>
             <pre class="exemple-code">                border-top-left-radius: 20px 10px;
                 border-top-right-radius: 6px 20px;
@@ -244,19 +256,21 @@ ul#liste_ex1 li {
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Grâce à un choix judicieux de valeur pour <code>width</code>, <code>height</code> et <code>border-radius</code>, cette propriété permet de créer des formes personnalisées, comme, par exemple, un cercle :</p>
+            <br><p>Grâce à un choix judicieux de valeur pour <code>width</code>, <code>height</code> et <code>border-radius</code>, cette propriété permet de créer des formes personnalisées, comme, par exemple, un cercle :</p>
             <p class="codepen" data-height="310" data-default-tab="css,result" data-slug-hash="emJdWJG" data-pen-title="c08-css3-03" data-editable="true" data-user="frlacroix" style="height: 310px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/emJdWJG">
   c08-css3-03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br>
             <div class="references-section">
               <ul>
                 <li><a href="http://border-radius.com/" target="_blank">Générateur de code pour border-radius <i class="bi bi-box-arrow-up-right"></i></a></li>
               </ul>
             </div>
-            <h3>Ombre projetée : <code>box-shadow</code></h3>
+            <hr>
+            <h3 id="pos2">Ombre projetée : <code>box-shadow</code></h3>
             <p>Nom de la propriété : <code>box-shadow</code>  </p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-boxshadow" target="_blank">http://caniuse.com/#feat=css-boxshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -271,7 +285,7 @@ ul#liste_ex1 li {
               on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Les valeurs associées à la propriété <strong>box-shadow</strong> dans la déclaration <br><code><span class="rose">box-shadow:</span> 5px 5px 12px 3px #999<span class="rose">;</span></code><br> contrôlent respectivement les paramètres suivants de l'ombre: </p>
+            <br><p>Les valeurs associées à la propriété <strong>box-shadow</strong> dans la déclaration <br><code><span class="rose">box-shadow:</span> 5px 5px 12px 3px #999<span class="rose">;</span></code><br> contrôlent respectivement les paramètres suivants de l'ombre: </p>
             <ul>
               <li><code>5px</code> : décalage vers la droite (valeur négative vers la gauche)</li>
               <li><code>5px</code> : décalage vers le bas (valeur négative vers le haut)</li>
@@ -286,7 +300,7 @@ ul#liste_ex1 li {
               on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Où:</p>
+            <br><p><code><span class="rose">box-shadow:</span> 0 0 20px 5px #999<span class="rose">;</span></code> où:</p>
             <ul>
               <li><code>0</code> : décalage horizontal nul</li>
               <li><code>0</code> : décalage vertical nul</li>
@@ -301,7 +315,7 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Où:</p>
+            <br><p><code><span class="rose">box-shadow:</span> 0 0 20px 5px #bbb inset<span class="rose">;</span></code> où:</p>
             <ul>
               <li><code>0</code> : décalage horizontal nul</li>
               <li><code>0</code> : décalage vertical nul</li>
@@ -310,7 +324,8 @@ ul#liste_ex1 li {
               <li><code>#bbb</code> : couleur de l'ombre</li>
               <li><code>inset</code> : projection de l'ombre vers l'intérieur</li>
             </ul>
-            <h3>Ombre projetée sous le texte : <code>text-shadow</code></h3>
+            <hr>
+            <h3 id="pos3">Ombre projetée sous le texte : <code>text-shadow</code></h3>
             <p>Nom de la propriété standard : <code>text-shadow</code></p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-textshadow" target="_blank">http://caniuse.com/#feat=css-textshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -325,7 +340,8 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-              <p>Considérez les valeurs de cette déclaration&nbsp;:</p>
+<br>              
+<p>Considérez les valeurs de cette déclaration&nbsp;:</p>
               <p class="code-etiquette">Code</p>
               <pre class="exemple-code">                text-shadow: 2px 2px 2px #999; 
               </pre> 
@@ -343,8 +359,9 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>Notez bien que pour produire l'effet d'incrustation, un choix judicieux de valeurs pour les propriétés <code>color</code> (couleur des caractères) et <code>background-color</code> (couleur de l'arrière-plan) est important car la valeur "inset" n'existe pas pour text-shadow. </p>
-            <h3>Transparence (d'un élément HTML) : <code>opacity</code></h3>
+            <br><p>Notez bien que pour produire l'effet d'incrustation, un choix judicieux de valeurs pour les propriétés <code>color</code> (couleur des caractères) et <code>background-color</code> (couleur de l'arrière-plan) est important car la valeur "inset" n'existe pas pour text-shadow. </p>
+            <hr>
+            <h3 id="pos4">Transparence (d'un élément HTML) : <code>opacity</code></h3>
             <p>Nom de la propriété standard : <code>opacity</code></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
             <pre class="exemple-code exemple-code--nowrap">opacity: <i>nombre(0-1)</i>|intitial|inherit;</pre>
@@ -356,7 +373,8 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <h3>Transparence (couleur d'arrière-plan): <code>rgba</code>, <code>hsla</code></h3>
+<hr>            
+<h3 id="pos5">Transparence (couleur d'arrière-plan): <code>rgba</code>, <code>hsla</code></h3>
             <p>Le format de couleur <code>rgba</code> permet d'obtenir une couleur d'arrière-plan semi-transparente pour n'importe quel élément HTML. </p>
             <div class="note">
               <p>À la différence de la propriété 'opacity', ce n'est que la couleur d'arrière-plan qui est touchée dans l'exemple suivant. Le contenu demeure 100% opaque.</p>
@@ -384,7 +402,8 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>L'exemple suivant met en parallèle la propriété <code>opacity</code> et le conteneur <code>rgba</code>. Notez que la propriété <code>opacity</code> agit à la fois sur le contenu et l'arrière-plan alors que le conteneur <code>rgba</code> n'agit que sur l'arrière-plan&nbsp;:</p>
+<hr>            
+<p>L'exemple suivant met en parallèle la propriété <code>opacity</code> et le conteneur <code>rgba</code>. Notez que la propriété <code>opacity</code> agit à la fois sur le contenu et l'arrière-plan alors que le conteneur <code>rgba</code> n'agit que sur l'arrière-plan&nbsp;:</p>
             <p class="resultat-etiquette">Exemple
             </p><p class="codepen" data-height="390" data-default-tab="css,result" data-slug-hash="ByjLRKN" data-pen-title="c08-css3_opacity-vs-rgba" data-editable="true" data-user="frlacroix" style="height: 390px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ByjLRKN">
@@ -392,9 +411,9 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <h3>Box sizing</h3>
+<hr>            
+<h3 id="pos6">Box sizing</h3>
             <p>Propriété standard&nbsp;: <code>box-sizing</code></p>
-            <p>Supportée par : <a href="http://caniuse.com/#feat=css3-boxsizing" target="_blank">http://caniuse.com/#feat=css3-boxsizing <i class="bi bi-box-arrow-up-right"></i></a></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
             <pre class="exemple-code exemple-code--nowrap">box-sizing: content-box|border-box|initial|inherit;</pre>
             <p>Le modèle de boîte CSS par défaut est parfois frustrant pour le développeur. En effet, si on déclare une largeur de 200 pixels et une marge interne (<code>padding</code>) de 20 pixels, cet élément aura dans les faits une largeur totale de 240 pixels. Ce n'est pas un problème en soi jusqu'au moment où l'on doive changer la marge interne: il faut alors recalculer la largeur, et éventuellement les valeurs de marge externe et de bordure.</p>
@@ -407,12 +426,14 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br>
             <div class="references-section">
               <ul>
                 <li><a href="https://css-tricks.com/almanac/properties/b/box-sizing/" target="_blank">box-sizing sur CSS-Tricks <i class="bi bi-box-arrow-up-right"></i></a></li>
               </ul>
             </div>
-            <h3>Transition</h3>
+            <hr>
+            <h3 id="pos7">Transition</h3>
             <p>Nom de la propriété standard: <code>transition</code>  </p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-transitions" target="_blank">http://caniuse.com/#feat=css-transitions <i class="bi bi-box-arrow-up-right"></i></a></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -426,7 +447,7 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>La propriété <code>transition</code> permet, pour la propriété visée, de passer d'une valeur à une autre de manière graduelle et selon une vitesse définie. Le déclenchement de la transition peut se faire au chargement de la page ou encore à la suite d'une action comme le survol (<code>hover</code>) ou le clic (<code>target</code>) d'un élément. </p>
+            <br><p>La propriété <code>transition</code> permet, pour la propriété visée, de passer d'une valeur à une autre de manière graduelle et selon une vitesse définie. Le déclenchement de la transition peut se faire au chargement de la page ou encore à la suite d'une action comme le survol (<code>hover</code>) ou le clic (<code>target</code>) d'un élément. </p>
             <p>Les transitions sur les liens sont courantes. Voici un exemple de transition de couleur appliquée sur un lien&nbsp;:</p>
             <p class="resultat-etiquette">Exemple
             </p><p class="codepen" data-height="380" data-default-tab="css,result" data-slug-hash="pvgEPye" data-pen-title="c08-css3-10" data-editable="true" data-user="frlacroix" style="height: 380px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -435,7 +456,7 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-            <p>La propriété <code>transition</code> est en fait composée de quatre sous-propriétés&nbsp;: </p>
+            <br><p>La propriété <code>transition</code> est en fait composée de quatre sous-propriétés&nbsp;: </p>
             <ul>
               <li><code>transition-delay</code>&nbsp;: détermine le délai en secondes (<code>s</code>) avant le démarrage de la transition&nbsp;;</li>
             <li><code>transition-duration</code>&nbsp;: détermine la <strong>durée</strong> de la transtion en secondes (<code>s</code>) ou millisecondes (<code>ms</code>)&nbsp;;</li>
@@ -443,12 +464,13 @@ ul#liste_ex1 li {
             <li><code>transition-timing-function</code>&nbsp;: détermine la courbe de vitesse de l'animation (valeurs: <code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>, <code>cubic-bezier(n,n,n,n)</code>). </li>
             <li>le <strong>délai</strong>, non présent dans l'exemple (<code>s</code> ou <code>ms</code>).</li>
           </ul>
-          <div classs="references-section">
-            <ul>
-              <li>Voir aussi la page de W3School consacrée à cette propriété: <a href="http://www.w3schools.com/cssref/css3_pr_transition.asp" target="_blank">Transition CSS3 <i class="bi bi-box-arrow-up-right"></i></a></li>
-            </ul>
-          </div>
-          <h3>Transform</h3>
+            <div class="references-section">
+              <ul>
+                <li><a href="http://www.w3schools.com/cssref/css3_pr_transition.asp" target="_blank">Voir la page de W3School consacrée à la propriété <i>Transition</i> <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+          <hr>
+          <h3 id="pos8">Transform</h3>
           <p>Nom de la propriété standard&nbsp;: <code>transform</code>  </p>
           <p>Support par les navigateurs&nbsp;: <a href="http://caniuse.com/transforms2d" target="_blank">http://caniuse.com/transforms2d <i class="bi bi-box-arrow-up-right"></i></a></p> 
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -482,7 +504,8 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h4 id="filter">Filter</h4>
+<hr>          
+<h3 id="filter">Filter</h3>
           <p>Nom de la propriété standard&nbsp;: <code>filter</code></p>
           <p>Supportée par&nbsp;: <a href="https://caniuse.com/#feat=css-filters" target="_blank">https://caniuse.com/#feat=css-filters <i class="bi bi-box-arrow-up-right"></i></a></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -506,7 +529,18 @@ ul#liste_ex1 li {
           
           <h2>Propriétés de l'arrière-plan: <i>background</i></h2>
           <p>La propriété <code>background</code> permet de mettre en forme l'arrière-plan des éléments d'une page Web.</p>
-          <h3>Couleur d'arrière-plan: <code>background-color</code></h3>
+          <ul>
+            <li><a href="#bg1">Couleur d'arrière-plan: <code>background-color</code></a></li>
+            <li><a href="#bg2">Images d'arrière-plan: <code>background-image</code></a></li>
+            <li><a href="#bg3">Mosaïque d'arrière-plan: <code>background-repeat</code></a></li>
+            <li><a href="#bg4">Position d'arrière-plan: <code>background-position</code></a></li>
+            <li><a href="#bg5">Point d'attache de l'arrière-plan: <code>background-attachment</code></a></li>
+            <li><a href="#bg6">Super propriété de l'arrière-plan: <code>background</code></a></li>
+            <li><a href="#bg7">Ajuster la taille de l'arrière-plan: <code>background-size</code></a></li>
+            <li><a href="#bg8">Expérimentez les propriétés d'arrière-plan (<code>background</code>)</a></li>
+          </ul>
+          <hr> 
+          <h3 id="bg1">Couleur d'arrière-plan: <code>background-color</code></h3>
           <p>Valeurs:<code> transparent</code>, <code>inherit</code> ou un code de couleur</p>
           <p>Valeur initiale: <code>transparent</code></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -516,7 +550,8 @@ ul#liste_ex1 li {
           <p id="ex2"><code>{background-color: #0F0;}</code></p>
           <p id="ex3"><code>{background-color: rgb(200,88,5);}</code></p>
           <p id="ex4"><code>{background-color: rgb(0%,0%,0%);}</code></p>
-          <h3>Images d'arrière-plan: <code>background-image</code></h3>
+          <hr>
+          <h3 id="bg2">Images d'arrière-plan: <code>background-image</code></h3>
           <p>Valeurs: <code> url(adresse de l'image)</code>, <code>none</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>none</code></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -536,7 +571,8 @@ ul#liste_ex1 li {
             <li>Premier élément de liste</li>
             <li>Deuxième élément de liste</li>
           </ul>  
-          <h3>Mosaïque d'arrière-plan: <code>background-repeat</code></h3>
+          <hr> 
+          <h3 id="bg3">Mosaïque d'arrière-plan: <code>background-repeat</code></h3>
           <p>Valeurs: <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, <code>no-repeat</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>repeat</code></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -553,7 +589,8 @@ ul#liste_ex1 li {
           <h4>Utilisation de la valeur <code>repeat-y</code> :</h4>
           <p class="resultat-etiquette">Exemple</p>
           <p id="ex8" class="bordure">Ce paragraphe est tapissé d'image d'arrière-plan qui rendent la lecture hasardeuse, sinon impossible. Pourquoi en est-il ainsi, quand on pourrait faire autrement? Ce paragraphe est tapissé d'image d'arrière-plan qui rendent la lecture hasardeuse, sinon impossible. Pourquoi en est-il ainsi, quand on pourrait faire autrement? </p>
-          <h3>Position d'arrière-plan: <code>background-position</code></h3>
+          <hr> 
+          <h3 id="bg4">Position d'arrière-plan: <code>background-position</code></h3>
           <p>Valeurs: </p>
           <ul>
             <li><code>% </code>: pourcentage (en x et y, à partir du coin supérieur gauche du conteneur parent), </li>
@@ -580,7 +617,8 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <h3>Point d'attache de l'arrière-plan: <code>background-attachment</code></h3>
+          <hr> 
+          <h3 id="bg5">Point d'attache de l'arrière-plan: <code>background-attachment</code></h3>
           <p>Valeurs: <code>scroll</code>, <code>fixed</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>scroll</code></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
@@ -605,7 +643,8 @@ ul#liste_ex1 li {
             <br>
             <br>
             Lorsque la page défile, l'image reste en place, comme si le contenu défilait par dessus.</p>
-          <h3>Super propriété de l'arrière-plan: <code>background</code></h3>
+          <hr> 
+          <h3 id="bg6">Super propriété de l'arrière-plan: <code>background</code></h3>
           <p>Valeurs: <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-attachment</code>, <code>background-position</code></p>
           <p class="syntaxe-etiquette">Syntaxe</p>
           <pre class="exemple-code exemple-code--nowrap">background: <i>bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment</i> | initial | inherit;</pre>
@@ -620,7 +659,8 @@ ul#liste_ex1 li {
           <div class="note">
             <p>Puisqu'il s'agit d'une propriété abrégée, <strong>les valeurs omises seront réinitialisées aux valeurs par défaut</strong> des propriétés correspondantes. Par exemple, si on omet de citer les valeurs pour la propriété <code>background-position</code>, ce sont les valeurs <code>0 0</code> qui seront implicitement reconnues. </p>
           </div>
-          <h3>Ajuster la taille de l'arrière-plan : background-size</h3>
+          <hr> 
+          <h3 id="bg7">Ajuster la taille de l'arrière-plan:<br> <code>background-size</code></h3>
 
           <p>Valeurs : auto, [taille], cover, contain, initial, inherit</p>
           <p>Valeur initiale : auto</p>
@@ -630,7 +670,7 @@ ul#liste_ex1 li {
           <ul>
             <li>[taille] : %, px, etc. Ajuste la largeur et la hauteur de l'image d'arrière-plan. La premières valeur est la largeur, la deuxième, la hauteur. Si une seule valeur est donnée, la deuxième est réglée à "auto" par défaut.</li>
             <li><code>cover</code> : Redéfinit la taille de l'image afin de couvrir l'entièreté de l'arrière-plan du conteneur, même si cela signifie d'agrandir l'image au-delà de sa taille d'origine ou encore d'en couper une partie au besoin.</li>
-            <li><code>contain</code> : Red.finit la taille de l'image d'arrière-plan afin qu'elle soit affichée en entier, selon son ratio original.</li>
+            <li><code>contain</code> : Redéfinit la taille de l'image d'arrière-plan afin qu'elle soit affichée en entier, selon son ratio original.</li>
           </ul>
           <div class="references-section">
             <a href="https://www.w3schools.com/cssref/css3_pr_background-size.asp" target="_blank">Essayez-le sur w3schools <i class="bi bi-box-arrow-up-right"></i></a>
@@ -641,9 +681,12 @@ ul#liste_ex1 li {
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <div class="tf">
+
+          <hr>
+          <div class="tf" id="bg8">
           <p class="tf-intitule">Expérimentez les propriétés d'arrière-plan (<code>background</code>)</p>
-          <p>Complétez le code à l'aide de consignes données en classe. L'objectif est de faire afficher, au survol du lien correspondant, le logo de chaque navigateur, ainsi qu'une couleur d'arrière-plan et une couleur de texte personnalisées, comme le montre l'image suivante) : </p>
+          <p>Complétez le code à l'aide de consignes données en classe. </p><p>L'objectif est de faire afficher, au survol du lien correspondant, le logo de chaque navigateur, ainsi qu'une couleur d'arrière-plan et une couleur de texte personnalisées.</p>
+            <p>Exemple de résultat final: </p>
           <figure>
           <img class="bordure w30" src="images/cours07/cours07_tf_background.jpg">
           </figure>
@@ -663,6 +706,16 @@ ul#liste_ex1 li {
                 
                     <h2>L'annotation BEM : Bloc-Élément-Modificateur</h2>
                     <p>L'annotation BEM, ou <strong>Bloc-Élément-Modificateur</strong>, est une méthode qui sert à nommer les classes de manière signifiante.</p>
+                    <p>Le sélecteur de classe  permet de cibler un élément ou un bloc d'éléments sans passer par la hiérarchie de la structure des éléments HTML.</p>
+          <div class="row"><div class="col"><p class="code-etiquette">HTML</p>
+          <pre class="exemple-code">&lt;p <span class="rose">class="note"</span>&gt;...&lt;⧸p&gt; 
+          </pre> </div>
+          <div class="col"><p class="code-etiquette-css">CSS</p>
+          <pre class="exemple-code"><span class="rose">.note</span> { ... }
+          </pre></div>
+                </div>
+           
+           
                     <p>On peut donner n'importe quel nom aux classes, dans la mesure où celui-ci ne contient ni espaces, ni caractères spéciaux, ou encore, ne commence pas par un chiffre.</p>
                     <p>Cela dit, si on n'y prête pas attention, la variété des noms de classe peut devenir déroutante dans un site web qui prend une certaine ampleur.</p>
                     <p>C'est pourquoi il existe des approches qui consistent à mettre de l'ordre dans les noms de classes afin de les rendre signifiants.</p>
@@ -672,7 +725,7 @@ ul#liste_ex1 li {
                       <ul>
                         <li><a href="https://en.bem.info/" target="_blank">Le site officiel de la méthode BEM <i class="bi bi-box-arrow-up-right"></i></a></li>
       </ul>
-      </div>
+      </div><hr>
                     <h3>Bloc</h3>
                     <p><code>bloc</code></p>
                     <p>La première étape consiste à donner un nom signifiant aux blocs.</p>
@@ -684,9 +737,9 @@ ul#liste_ex1 li {
                       <p class="source">Source: <a href="https://en.bem.info/" target="_blank">https://en.bem.info <i class="bi bi-box-arrow-up-right"></i></a>
                     </p></figure>
                     
-                    <p>L'exemple suivant comporte les blocs <code class="orange">titrePrincipal</code>, <code class="orange">navigation</code> et <code class="orange">menu</code> :</p>
+                    <p>L'exemple suivant comporte les blocs <code class="orange">titre-principal</code>, <code class="orange">navigation</code> et <code class="orange">menu</code> :</p>
                     <p class="resultat-etiquette">Exemple</p>
-                    <pre class="exemple-code">                        &lt;h1 <span class="orange">class="titrePrincipal"</span>&gt;Restaurant Chez Rosario&lt;/h1&gt;
+                    <pre class="exemple-code">                        &lt;h1 <span class="orange">class="titre-principal"</span>&gt;Restaurant Chez Rosario&lt;/h1&gt;
                         &lt;nav <span class="orange">class="navigation"</span>&gt;
                         &nbsp;&nbsp;&lt;ul <span class="orange">class="menu"</span>&gt;
                         &nbsp;&nbsp;&nbsp;&nbsp;(...)
@@ -694,7 +747,8 @@ ul#liste_ex1 li {
                         &lt;/nav&gt;
                     </pre>
                     
-                    <p>Au besoin, le nom du bloc peut être composé de plus d'un mot. Dans ce cas, pour distinguer chaque mot, on utilise la majuscule intercalée (<i lang="en">Camel case</i>), comme par exemple  <code>titrePrincipal</code>. Il existe d'autres conventions de nomenclature (<i lang="en">Kebab case (titre-principal), Snake case (titre_principal)</i>...)&nbsp;: l'important est de choisir une méthode et de s'y tenir.</p>
+                    <p>Au besoin, le nom du bloc peut être composé de plus d'un mot. Dans ce cas, on utilise un trait-d'union pour séparer chaque mot (<i lang="en">Kebab case</i>), comme par exemple  <code>titre-principal</code>. </p><p>Il existe d'autres conventions de nomenclature (<i lang="en">Camel case</i> (titrePrincipal), <i lang="en">Snake case</i> (titre_principal), etc.)&nbsp;: l'important est de choisir une méthode et de s'y tenir.</p>
+                    <hr>
                     <h3>Élément</h3>
                     <p><code>bloc__element</code></p>
                     <p>La deuxième étape consiste à donner un nom signifiant aux éléments et aux sous-éléments du bloc (quand il y en a).</p>
@@ -704,12 +758,12 @@ ul#liste_ex1 li {
                       <img class="bordure" src="images/cours07/bem01.png" alt="L&#39;élément du système BEM">
                       <p class="source">Source: <a href="https://en.bem.info/" target="_blank">https://en.bem.info <i class="bi bi-box-arrow-up-right"></i></a>
                     </p></figure>
-                    <p>Le nom d'un élément est composé du nom du bloc, suivi de DEUX traits soulignés, puis terminé par le nom spécifique de l'élément (voir l'élément <code class="rose">menu__item</code> dans l'exemple suivant) ou du sous-élément (voir l'élément <code class="vert">menu__lien</code> dans l'exemple suivant).</p>
+                    <p>Le nom d'un élément est composé du nom du bloc, suivi de <strong><u>DEUX traits soulignés</u></strong>, puis terminé par le nom spécifique de l'élément (voir l'élément <code class="rose">menu__<strong>item</strong></code> dans l'exemple suivant) ou du sous-élément (voir l'élément <code class="vert">menu__<strong>lien</strong></code> dans l'exemple suivant).</p>
                     <div class="note">
                         <p>Si l'élément comporte lui-même un sous-élément, le nom de ce dernier est construit de la même manière, c'est-à-dire sans l'ajout d'un niveau de nomenclature supplémentaire.</p>
                     </div>
                     <p class="resultat-etiquette">Exemple</p>
-                    <pre class="exemple-code">                    &lt;h1 <span class="orange">class="titrePrincipal"</span>&gt;Restaurant Chez Rosario&lt;/h1&gt;
+                    <pre class="exemple-code">                    &lt;h1 <span class="orange">class="titre-principal"</span>&gt;Restaurant Chez Rosario&lt;/h1&gt;
                         &lt;nav <span class="orange">class="navigation"</span>&gt;
                         &nbsp;&nbsp;&lt;ul <span class="orange">class="menu"</span>&gt;
                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="rose">class="menu__item"</span>&gt;
@@ -728,13 +782,14 @@ ul#liste_ex1 li {
                     <p>Voici une autre application mettant en cause un formulaire&nbsp;:</p>
 
                     <p class="resultat-etiquette">Exemple</p>
-                    <pre class="exemple-code">                        &lt;form <span class="orange">class="formRecherche"</span>&gt;
-                        &nbsp;&nbsp;&lt;div <span class="orange">class="formRecherche__contenu"</span>&gt;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" <span class="orange">class="formRecherche__champ"</span>&gt;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="orange">class="formRecherche__bouton"</span>&gt;
+                    <pre class="exemple-code">                        &lt;form <span class="orange">class="formulaire"</span>&gt;
+                        &nbsp;&nbsp;&lt;div <span class="orange">class="formulaire__contenu"</span>&gt;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" <span class="orange">class="formulaire__champ"</span>&gt;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="orange">class="formulaire__bouton"</span>&gt;
                         &nbsp;&nbsp;&lt;/div&gt;
                         &lt;/form&gt;
                     </pre>
+                    <hr>
                     <h3>Modificateur</h3>
                     <p><code>bloc__element--modificateur</code></p>
                     <p>La troisième étape consiste à donner un nom signifiant aux modificateurs (quand il y en a) d'un bloc ou d'un élément.</p>
@@ -745,7 +800,7 @@ ul#liste_ex1 li {
                     </p></figure>
                     <p>Le modificateur indique un changement d'apparence, de comportement ou d'état d'une entité (bloc, élément, sous-élément).</p>
                     <p>Le modificateur ne peut être utilisé seul, sans l'entité qu'il modifie.</p>
-                    <p>Son nom s'ajoute à celui du bloc ou de l'élément en les séparant de <strong>deux</strong> traits d'union (voir <code>menu__lien--actif</code> en jaune dans l'exemple suivant).</p>
+                    <p>Son nom s'ajoute à celui du bloc ou de l'élément en les séparant de <strong><u>DEUX traits d'union</u></strong> (voir <code>menu__lien--actif</code> en jaune dans l'exemple suivant).</p>
                     
                     <p class="resultat-etiquette">Exemple: le modificateur</p>
                     <pre class="exemple-code">                        &lt;h1 class="titre-principal"&gt;Restaurant Chez Rosario&lt;/h1&gt;
@@ -781,46 +836,67 @@ ul#liste_ex1 li {
                     <h2>Le modèle de boite flexible (flexbox)&nbsp;: quelques propriétés des flex-items</h2>
                     <p>Rappelons que la structure de base de flexbox repose sur&nbsp;: </p>
                     <ul>
-                        <li>un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs ;</li>
-                        <li>des <strong>flex-items</strong> qui sont les enfants directs du flex-container.</li>
+                        <li>un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs ;<figure class="w50">
+            <img src="images/cours06/01-container.svg" alt="Conteneur" class="sansBordure">
+            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
+          </figure></li>
+                        <li>des <strong>flex-items</strong> qui sont les enfants directs du flex-container. <figure class="w50">
+            <img src="images/cours06/02-items.svg" alt="Enfants" class="sansBordure">
+            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
+          </figure></li>
                     </ul>
                     <p>Un flex-container peut être n'importe quel éléments HTML affublé d'une déclaration <code>display:flex</code>.</p>
                     <div class="note">
-                        <p>Rappel: nous avons vu les principales propriétés des flex-containers dans la leçon précédente: <a href="http://localhost:8888/html/cours/cours06.php#section02">Une intro aux boites flexibles</a>. </p>
+                        <p>Rappel: nous avons vu les principales propriétés des flex-containers dans la leçon précédente: <a href="https://frlacroix1.github.io/integration1/lecon06.html#section02" target="_blank">Une intro aux boites flexibles</a>. </p>
                     </div>
                     <p>Ses enfants directs deviennent alors automatiquement des <strong>flex-item</strong> qui occupent initialement la taille minimale de leur contenu.</p>
                     <p>Nous allons voir ici les principales propriétés des flex-items.</p>
-                    <h3>Les propriétés des flex-items </h3>
+                    <h3>Les propriétés des enfants (flex-items) </h3>
                     <p>Les propriétés suivantes s'appliquent aux flex-items, c'est-à-dire aux enfants des flex-containers.</p>
+                    <hr>
                     <h4>flex-grow</h4>
+                    <p>Détermine la capacité d’un élément flexible à <strong>grandir</strong> pour occuper l’espace disponible restant dans un conteneur.</p>
+                    <p>Valeur par défaut: <code>0</code> (ne grandit pas)</p>
+                    <figure class="w50">
+            <img src="images/cours07/flex-grow.svg" alt="Enfants" class="sansBordure">
+            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
+          </figure>
                     <p class="codepen" data-height="764" data-default-tab="result" data-slug-hash="OPMRmXP" data-pen-title="c08_intro-flexbox-06" data-editable="true" data-user="frlacroix" style="height: 764px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/OPMRmXP">
   c08_intro-flexbox-06</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex-shrink</h4>
+<hr>                    
+<h4>flex-shrink</h4>
+<p>Détermine la capacité à un flex-item de <strong>rétrécir</strong> quand l’espace disponible est insuffisant dans un&nbsp;conteneur.</p>
+<p>Valeur par défaut: <code>1</code> (l’élément peut rétrécir proportionnellement aux autres)</p>
                     <p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="QwyKvEK" data-pen-title="c08_intro-flexbox-07" data-editable="true" data-user="frlacroix" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/QwyKvEK">
   c08_intro-flexbox-07</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<script async src="https://public.codepenassets.com/embed/index.js"></script><hr>
                     <h4>flex-basis</h4>
+                    <p>Définit la taille de base d’un élément flexible avant application de <code>flex-grow</code> et <code>flex-shrink</code>.</p>
+                    <p>Valeur: <code>auto</code> (par défaut), <code>px</code>, <code>%</code>, <code>em</code>, etc.</p>
                     <p class="codepen" data-height="560" data-default-tab="result" data-slug-hash="pvgEPbe" data-pen-title="c08_intro-flexbox-08" data-editable="true" data-user="frlacroix" style="height: 560px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/pvgEPbe">
   c08_intro-flexbox-08</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex (flex-direction: row)</h4>
+                    <hr>
+                    <h4>flex</h4>
+                    <p>Raccourci des trois propriétés: <code>flex-grow</code>, <code>flex-shrink</code> et <code>flex-basis</code></p>
+                    <h5>Exemple avec <code>flex-direction: row</code></h5>
                     <p class="codepen" data-height="540" data-default-tab="result" data-slug-hash="ZYQpKOX" data-pen-title="c08_intro-flexbox-09" data-editable="true" data-user="frlacroix" style="height: 540px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ZYQpKOX">
   c08_intro-flexbox-09</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex (flex-direction: column)</h4>
+                    <h5>Exemple avec <code>flex-direction: column</code></h5>
                     <p class="codepen" data-height="800" data-default-tab="result" data-slug-hash="zxrKwBW" data-pen-title="c08_intro-flexbox-10" data-editable="true" data-user="frlacroix" style="height: 800px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/zxrKwBW">
   c08_intro-flexbox-10</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
