@@ -83,7 +83,7 @@
               <section id="section00">
             
             <h2>Utiliser Google Fonts</h2>
-            <p>Google Fonts est un service gratuit de Google offrant un répertoire de polices de caractères open source et libres de droits d'auteur, utilisables gratuitement pour des projets personnels et commerciaux sur le Web. Les développeurs et concepteurs peuvent facilement intégrer ces polices dans leurs projets web pour améliorer le design de leurs&nbsp;créations.</p>
+            <p>Google Fonts est un service gratuit de Google offrant un répertoire de polices de caractères open source et libres de droits d'auteur, utilisables gratuitement pour des projets Web.</p>
             <div class="references-section">
                             <ul>
                                 <li>
@@ -108,14 +108,14 @@
           <div class="references-section">
             <p class="references-intitule">Exemples</p>
             <ul>
-              <li><a href="https://onepagelove.com/">One Page Love: The ultimate showcase of One Page websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-              <li><a href="http://www.awwwards.com/websites/single-page/">Awwwards: single Page Websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="https://onepagelove.com/" target="_blank">One Page Love: The ultimate showcase of One Page websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="http://www.awwwards.com/websites/single-page/" target="_blank">Awwwards: single Page Websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
               
             </ul>
             <p class="references-intitule">Article à propos des sites monopages</p>
             <ul>
-              <li><a href="https://blog-fr.orson.io/creation-de-site-internet/creer-site-one-page">Créer un site one page, bonne ou mauvaise idée ?<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-              <li><a href="https://www.storydoc.com/blog/what-is-a-one-pager">Qu'est-ce qu'un site monopage? Types, avantages et cas d'utilisation  (anglais) <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="https://blog-fr.orson.io/creation-de-site-internet/creer-site-one-page" target="_blank">Créer un site one page, bonne ou mauvaise idée ?<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="https://www.storydoc.com/blog/what-is-a-one-pager" target="_blank">Qu'est-ce qu'un site monopage? Types, avantages et cas d'utilisation  (anglais) <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
             </ul>
           </div>  
         </section> <!-- #section01 --><div class="haut-de-page">
@@ -130,7 +130,7 @@
           <pre class="exemple-code">            &lt;a href=<span class="rose">"#biographie"</span>&gt;Lien vers mon ancre&lt;/a&gt;
           </pre>
           <p>La destination du lien est identifiée par un <code>id</code> inséré dans la balise ouvrante de l'élément HTML visé (souvent un élément de structure ou un titre). Comme ceci: </p>
-          <p class="code-etiquette">Exemple d'ancre</p>
+          <p class="code-etiquette">Exemple d'ancre (la destination)</p>
           <pre class="exemple-code">&lt;article id=<span class="rose">"biographie"</span>&gt;...&lt;/article&gt;</pre>
           <h3>Lien vers le haut de la page</h3>
           <p>Dans une longue page HTML, il est fréquent de trouver un ou des liens pointant  vers le haut de la page. L'adresse de celui-ci s'écrit simplement ainsi : <code>#</code>. Dans ce cas, il n'est pas nécessaire d'ajouter une ancre de destination dans le haut de la page. Le lien vers le haut de la page s'écrit ainsi :</p>
@@ -192,7 +192,7 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-          <p>À noter : </p>
+          <br><p><strong>À noter : </strong></p>
           <ul>
             <li>l'image affichée avant le démarrage de la vidéo de l'exemple précédent est l'mage désignée par l'attribut <code>poster</code>; en l'absence d'un  «poster», c'est la première image de la vidéo qui apparaît;</li>
             <li>il arrive que des formats supplémentaires (comme .ogg ou autres), en plus de <em>MP4</em> et <em>Webm, </em>soient offerts dans l'élément <code>&lt;video&gt;</code>;</li>
@@ -206,7 +206,7 @@
             <li>L'attribut&nbsp;<code>preload</code>&nbsp;permet de spécifier au navigateur de&nbsp;débuter le téléchargement&nbsp;de la vidéo dès le chargement la page HTML. Utilisez cette option seulement si la lecture de la vidéo est incontournable pour l'internaute (dans le cadre d'un cours en ligne par exemple).</li>
             <li>L'attribut&nbsp;<code>autoplay</code>&nbsp;permet de lancer la&nbsp;lecture automatiquement, dès le chargement de la page HTML. Dans la plupart des cas, il est préférable de laisser le choix de la lecture à l'utilisateur. L'utilisation d'une courte boucle vidéo dans une bannière, par exemple, peut justifier l'emploi de cet attribut. </li>
             <div class="note">
-              <p>À noter que dans Chrome, <code>autoplay</code> fonctionne seulement s'il est accompagné de l'attriut <code>muted</code> qui rend la vidéo muette.</p>
+              <p>À noter que dans la plupart des navigateurs, <code>autoplay</code> fonctionne seulement s'il est accompagné de l'attribut <code>muted</code> qui rend la vidéo muette.</p>
             </div>
             <li>L'attribut&nbsp;<code>poster="url de l'image"</code>&nbsp;permet d'indiquer une&nbsp;image à afficher par défaut&nbsp;dans l'espace réservé à la vidéo avant que la lecture de celle-ci ne soit lancée. Comme on l'a vu, par défaut, c'est la première image de la vidéo qui sera affichée. Le format de l'image peut être <code>jpg</code>, <code>png</code> ou <code>gif</code>.</li>
             <li>L'attribut&nbsp;<code>loop</code>&nbsp;indique que la lecture se fait&nbsp;<strong>en boucle</strong>. Il est utile  dans le cas d'une courte boucle vidéo insérée dans une bannière.</li>
@@ -218,7 +218,7 @@
           <p class="reg">Les navigateurs ne prennent pas en charge l'ensemble des formats vidéo, principalement en raison de problèmes de brevets. Il est possible de fournir plusieurs sources dans l'élément <code>&lt;video&gt;</code> grâce à des éléments <code>&lt;source&gt;</code>; le navigateur utilisera la première ressource dont il connaît le format.</p>
           <p class="reg">En offrant au moins les  formats suivants, vous couvrez l'essentiel des possibilités pour les navigateurs compatibles avec la norme HTML5 : </p>
           <ul>
-            <li><strong>H.264</strong> (codec vidéo  MP4 et codec audio AAC);</li>
+            <li><strong>H.264</strong> (codec vidéo MP4 et codec audio AAC);</li>
             <li><strong> VP8</strong> (codec vidéo WEBM et codec audio Vorbis).</li>
           </ul>
           <div class="note">
@@ -235,10 +235,10 @@
               <li>Rendez la vidéo muette;</li>
               <li>Faites jouer la vidéo en boucle;</li>
               <li>Placez le titre "Montagnes" au centre de la vidéo.</li>
-              <li>Dans la charte graphique, insérez la police de caractère citée dans le code de Google Fonts</li>
-              <li>Ajustez la taille du titre en utilisant l'unité "vw"</li>
-              <li>Ajustez la couleur du titre</li>
-              <li>Ajoutez une ombre projetée au titre</li>
+              <li>Dans la charte graphique, insérez la police de caractère Google Fonts qui s'appelle <i><a href="https://fonts.google.com/specimen/Island+Moments" target="_blank">Island Moments</a></i>;</li>
+              <li>Ajustez la taille du titre en utilisant l'unité "vw";</li>
+              <li>Ajustez la couleur du titre;</li>
+              <li>Ajoutez une ombre projetée au titre.</li>
             </ol>
             <figure class="w70 bordure">
               <figcaption>Résultat attendu : </figcaption>
