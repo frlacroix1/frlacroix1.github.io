@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 8 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours08" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 8</div>
+                    <h1>L'annotation BEM et <br>les boites flexibles (la&nbsp;suite)</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                      <p><a href="#" class="nav-link titre"><strong>Leçon 8</strong></a></p>
+                      <a href="#section00" class="list-group-item list-group-item-action">Utiliser Google Fonts</a>
+                      <a href="#section01" class="list-group-item list-group-item-action">Qu'est-ce qu'un site monopage?</a>
+                      <a href="#section02" class="list-group-item list-group-item-action">Les ancres HTML</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">Intégrer une vidéo avec la balise video</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Les images réactives</a>
+                      <a href="#section05" class="list-group-item list-group-item-action">Le menu réactif</a>
+                      <a href="#section06" class="list-group-item list-group-item-action">La mise en forme alternée</a>
+                      <a href="#section07" class="list-group-item list-group-item-action">Tester la réactivité dans Chrome</a>
+                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+              <section id="section00">
+            
+            <h2>Utiliser Google Fonts pour intégrer des polices de caratères dans vos pages web</h2>
+            <div class="references-section">
+                            <ul>
+                                <li>
+                                    <a href="https://fonts.google.com/">Google Fonts <img class="icone" src="images/cours06/lien_ext_noir_16px.png"></a>
+                                </li>
+                            </ul>
+            </div>
+            <p class="codepen" data-height="620" data-default-tab="html,result" data-slug-hash="PwZodwj" data-pen-title="c06-google-fonts" data-editable="true" data-user="frlacroix" style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZodwj">
+  c06-google-fonts</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </section> <!-- fin section05 -->
+              <section id="section01">
+          <h2>Qu'est-ce qu'un site monopage?</h2>
+          <p>Le site monopage est formée d'une seule page HTML. Cette vogue  est apparue il y a quelques années. Ce type de site est populaire pour présenter un produit, un artiste ou encore un portfolio professionnel.</p>
+          <p>En anglais, on l'appelle <em>one page website</em> ou <em>single page website</em>.</p>
+          <p>La navigation peut y être verticale ou horizontale. On y retrouve typiquement beaucoup d'éléments visuels. </p>
+          <p>Il n'est pas rare non plus d'y voir des effets divers, tel que le parallaxe ou des animations inventives. </p>
+          <h3>Références</h3>
+          <div class="references-section">
+            <p class="references-intitule">Exemples</p>
+            <ul>
+              <li><a href="https://onepagelove.com/">One Page Love: The ultimate showcase of One Page websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="http://www.awwwards.com/websites/single-page/">Awwwards: single Page Websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              
+            </ul>
+            <p class="references-intitule">Article à propos des sites monopages</p>
+            <ul>
+              <li><a href="https://blog-fr.orson.io/creation-de-site-internet/creer-site-one-page">Créer un site one page, bonne ou mauvaise idée ?<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+              <li><a href="https://www.storydoc.com/blog/what-is-a-one-pager">Qu'est-ce qu'un site monopage? Types, avantages et cas d'utilisation  (anglais) <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
+            </ul>
+          </div>  
+        </section> <!-- #section01 --><div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section02">
+        
+          <h2>Les ancres HTML pour naviguer dans un site monopage</h2>
+          <p>Contrairement aux hyperliens courants - qui permettent de naviger d'une page à l'autre -, les ancres HTML sont des liens qui permettent de naviguer à l'intérieur même d'une page HTML. Ils sont particulièrement utiles dans le cas d'une longue page HTML  ou encore dans le cas d'un site monopage, c'est-à-dire un site formé d'une seule page mais comportant plusieurs sections.</p>
+          <p>L'adresse du lien cliquable s'écrit ainsi (remarquez le <code class="rose">#</code> qui débute le nom de l'ancre)&nbsp;: </p>
+          <p class="code-etiquette">Exemple de lien vers une ancre</p>
+          <pre class="exemple-code">            &lt;a href=<span class="rose">"#biographie"</span>&gt;Lien vers mon ancre&lt;/a&gt;
+          </pre>
+          <p>La destination du lien est identifiée par un <code>id</code> inséré dans la balise ouvrante de l'élément HTML visé (souvent un élément de structure ou un titre). Comme ceci: </p>
+          <p class="code-etiquette">Exemple d'ancre</p>
+          <pre class="exemple-code">&lt;article id=<span class="rose">"biographie"</span>&gt;...&lt;/article&gt;</pre>
+          <h3>Lien vers le haut de la page</h3>
+          <p>Dans une longue page HTML, il est fréquent de trouver un ou des liens pointant  vers le haut de la page. L'adresse de celui-ci s'écrit simplement ainsi : <code>#</code>. Dans ce cas, il n'est pas nécessaire d'ajouter une ancre de destination dans le haut de la page. Le lien vers le haut de la page s'écrit ainsi :</p>
+          <p class="code-etiquette">Exemple de lien vers le haut de la page</p>
+          <pre class="exemple-code">&lt;a href=<span class="rose">"#"</span>&gt;Lien vers le haut de la page&lt;/a&gt;</pre>
+          <p>Voyez maintenant un exemple complet d'un menu de trois liens menant vers des ancres plus loin dans la page. Cliquez sur l'un des liens pour constater&nbsp;:</p>
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JoGNRrP" data-pen-title="ancres HTML et retour en haut de page" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/frlacroix/pen/JoGNRrP">
+          ancres HTML et retour en haut de page</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>  
+        </section> <!-- section02 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section03">
+        
+          <h2>Intégrer une vidéo avec les balises video et source</h2>
+          <p>La balise <code>&lt;video&gt;</code> permet de faire afficher une vidéo hébergée localement dans votre site web.</p>
+          <p>Afin d'assurer une compatibilité plus grande pour l'ensemble des navigateurs web, il est de mise de proposer plusieurs formats de vidéo à l'aide de la balise <code>&lt;source&gt;</code>.</p>
+          <p>Le code suivant assure  une compatibilité avec tous les navigateurs qui reconnaissent la balise <code>&lt;video&gt;</code>. Notez que l'image affichée avant le démarrage de la vidéo est la première image de la vidéo: </p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">          &lt;video controls&gt;
+          &nbsp;&nbsp;<span class="rose">&lt;source src="video.mp4" type="video/mp4"&gt;
+          &nbsp;&nbsp;&lt;source src="video.webm" type="video/webm"&gt;</span>    
+          &nbsp;&nbsp;Votre navigateur ne peut lire cette video. 
+          &nbsp;&nbsp;Vous pouvez la visionner en suivant ce lien: 
+          &nbsp;&nbsp;&lt;a href="adresse"&gt;Titre de la vidéo&lt;/a&gt;.
+          &lt;/video&gt;</pre>
+          <p>
+            <video width="100%" controls="">
+              <source src="videos/html5.mp4" type="video/mp4">
+              <source src="videos/html5.webm" type="video/webm">
+              <source src="videos/html5.ogv" type="video/ogg">
+                Texte alternatif pour la vidéo: un lien de téléchargement, un message, etc. 
+            </video>
+          </p>
+          <p>L'ajout d'un attribut <code>poster</code> permet d'afficher une image de votre choix avant le démarrage de la vidéo: </p>
+          <pre class="exemple-code">          &lt;video controls <span class="rose">poster="images/poster.jpg"</span>&gt;
+          &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;
+          &nbsp;&nbsp;&lt;source src="video.webm" type="video/webm"&gt;    
+          &nbsp;&nbsp;Votre navigateur ne peut lire cette video. 
+          &nbsp;&nbsp;Vous pouvez la visionner en suivant ce lien: 
+          &nbsp;&nbsp;&lt;a href="adresse"&gt;Titre de la vidéo&lt;/a&gt;.
+          &lt;/video&gt;
+          </pre>
+          <p>
+            <video width="100%" controls="" poster="images/cours08/poster_html5.jpg">
+              <source src="videos/html5.mp4" type="video/mp4">
+              <source src="videos/html5.webm" type="video/webm">
+              <source src="videos/html5.ogv" type="video/ogg">
+                Texte alternatif pour la vidéo: un lien de téléchargement, un message, etc. 
+            </video>
+          </p>
+          <p class="codepen" data-height="540" data-default-tab="html,result" data-slug-hash="raxmMGP" data-pen-title="balise video et attribut poster" data-editable="true" data-user="frlacroix" style="height: 540px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxmMGP">
+  balise video et attribut poster</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <p>À noter : </p>
+          <ul>
+            <li>l'image affichée avant le démarrage de la vidéo de l'exemple précédent est l'mage désignée par l'attribut <code>poster</code>; en l'absence d'un  «poster», c'est la première image de la vidéo qui apparaît;</li>
+            <li>il arrive que des formats supplémentaires (comme .ogg ou autres), en plus de <em>MP4</em> et <em>Webm, </em>soient offerts dans l'élément <code>&lt;video&gt;</code>;</li>
+            <li>Le texte alternatif contenu entre les balises <code>&lt;video&gt;</code> s'affiche dans la page HTML  dans la situation où le navigateur n'est pas compatible avec le lecteur vidéo HTML5;</li>
+            <li>l'élément <code>&lt;video&gt;</code> est une balise « en ligne »;</li>
+          </ul>
+          <h4>Attributs</h4>
+          <ul>
+            <li>L'attribut&nbsp;<code>controls</code>&nbsp;donne accès aux contrôles de lecture (boutons lecture et pause, volume, barre de progression, mode plein écran). Ces contrôles sont des éléments natifs des navigateurs; leur apparence varie donc légèrement d'un navigateur à l'autre. Il est possible d'uniformiser l'apparence des contrôles en utilisant un lecteur vidéo HTML5 maison ou en utilisant celui d'un tiers parti.
+            </li>
+            <li>L'attribut&nbsp;<code>preload</code>&nbsp;permet de spécifier au navigateur de&nbsp;débuter le téléchargement&nbsp;de la vidéo dès le chargement la page HTML. Utilisez cette option seulement si la lecture de la vidéo est incontournable pour l'internaute (dans le cadre d'un cours en ligne par exemple).</li>
+            <li>L'attribut&nbsp;<code>autoplay</code>&nbsp;permet de lancer la&nbsp;lecture automatiquement, dès le chargement de la page HTML. Dans la plupart des cas, il est préférable de laisser le choix de la lecture à l'utilisateur. L'utilisation d'une courte boucle vidéo dans une bannière, par exemple, peut justifier l'emploi de cet attribut. </li>
+            <div class="note">
+              <p>À noter que dans Chrome, <code>autoplay</code> fonctionne seulement s'il est accompagné de l'attriut <code>muted</code> qui rend la vidéo muette.</p>
+            </div>
+            <li>L'attribut&nbsp;<code>poster="url de l'image"</code>&nbsp;permet d'indiquer une&nbsp;image à afficher par défaut&nbsp;dans l'espace réservé à la vidéo avant que la lecture de celle-ci ne soit lancée. Comme on l'a vu, par défaut, c'est la première image de la vidéo qui sera affichée. Le format de l'image peut être <code>jpg</code>, <code>png</code> ou <code>gif</code>.</li>
+            <li>L'attribut&nbsp;<code>loop</code>&nbsp;indique que la lecture se fait&nbsp;<strong>en boucle</strong>. Il est utile  dans le cas d'une courte boucle vidéo insérée dans une bannière.</li>
+            <li>L'attribut&nbsp;<code>muted</code>&nbsp;permet de bloquer la diffusion du son de la vidéo.</li>
+            <li>L'attribut <code>type="video/format"</code> indique le <strong>type MIME</strong> du format de la vidéo. Sans cet attribut,  le navigateur télécharge un extrait de la vidéo pour en vérifier la prise en charge, ce qui ajoute un délai au démarrage de la lecture. Les types MIME les plus courants pour notre usage sont: video/mp4, video/webm, video/ogg.</li>
+            <li>Les attributs <code>width</code> et <code>height</code> permettent de préciser en pixels la taille de la vidéo affichée au chargement. Puisque le lecteur vidéo HTML5 permet la lecture en plein écran, il peut être justifié que les fichiers sources demeurent par exemple au format 1280 x 720 même si la taille de l'affichage au chargement est de 640 x 360. Au final, la taille des fichiers sources est toujours fonction des appareils cibles à privilégier. </li>
+          </ul>
+          <h4>Formats</h4>
+          <p class="reg">Les navigateurs ne prennent pas en charge l'ensemble des formats vidéo, principalement en raison de problèmes de brevets. Il est possible de fournir plusieurs sources dans l'élément <code>&lt;video&gt;</code> grâce à des éléments <code>&lt;source&gt;</code>; le navigateur utilisera la première ressource dont il connaît le format.</p>
+          <p class="reg">En offrant au moins les  formats suivants, vous couvrez l'essentiel des possibilités pour les navigateurs compatibles avec la norme HTML5 : </p>
+          <ul>
+            <li><strong>H.264</strong> (codec vidéo  MP4 et codec audio AAC);</li>
+            <li><strong> VP8</strong> (codec vidéo WEBM et codec audio Vorbis).</li>
+          </ul>
+          <div class="note">
+            <p>Voir cette page pour un tableau complet des compatibilités des formats vidéos:<br>
+            <a href="https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats" target="_blank">https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats</a></p>
+          </div>
+          <div class="tf">
+            <p class="tf-intitule">Étude de cas: utiliser une boucle vidéo d'entête</p>
+            <p>À partir du codepen suivant:</p>
+            <ol>
+              <li>Faites en sorte que la taille de la vidéo est fluide et occupe 100% de la largeur de la fenêtre du navigateur, quelque soit cette largeur;</li>
+              <li>Faites disparaître la barre de contrôle de la vidéo;</li>
+              <li>Faites jouer la vidéo automatiquement;</li>
+              <li>Rendez la vidéo muette;</li>
+              <li>Faites jouer la vidéo en boucle;</li>
+              <li>Placez le titre "Montagnes" au centre de la vidéo.</li>
+              <li>Dans la charte graphique, insérez la police de caractère citée dans le code de Google Fonts</li>
+              <li>Ajustez la taille du titre en utilisant l'unité "vw"</li>
+              <li>Ajustez la couleur du titre</li>
+              <li>Ajoutez une ombre projetée au titre</li>
+            </ol>
+            <figure class="w70 bordure">
+              <figcaption>Résultat attendu : </figcaption>
+              <img src="images/cours08/cours08_tf01_resultat.jpg" alt="tp8">
+            </figure>
+          <p class="codepen" data-height="430" data-default-tab="html,result" data-slug-hash="LEGyROE" data-pen-title="c08_video-titre-superposé" data-editable="true" data-user="frlacroix" style="height: 430px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/LEGyROE">
+  c08_video-titre-superposé</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            </div>
+        </section> <!-- #section04 --> <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section04">
+       
+          <h2>Les images réactives avec les balises picture et source</h2>
+          <p>La balise <code>picture</code> est un conteneur permettant de servir plusieurs sources d'images, grâce à la balise <code>source</code>, en fonction d'une condition introduite par l'attribut <code>media</code></p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">            <span class="rose">&lt;picture&gt;</span>
+            <span class="vert">&nbsp;&nbsp;&lt;source srcset="agile_w600.jpg" media="(max-width:600px)"&gt;
+            &nbsp;&nbsp;&lt;source srcset="agile_w1200.jpg" media="(min-width:601px)"&gt;</span>  
+            &nbsp;&nbsp;&lt;img src="agile_w1200.jpg" alt="Agile"&gt;
+            <span class="rose">&lt;/picture&gt;</span>
+          </pre>
+          <p class="codepen" data-height="660" data-default-tab="html,result" data-slug-hash="PwZmGOm" data-pen-title="picture-images-réactives-de-tailles-différentes" data-editable="true" data-user="frlacroix" style="height: 660px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZmGOm">
+  picture-images-réactives-de-tailles-différentes</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section> <!-- #section05 --><div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section05">
+        
+          <h2>Le menu réactif</h2>
+          <p>Voici un exemple de menu réactif. En mode écran étroit, le premier lien du menu - qui est aussi le titre du site - prend toute la largeur. En mode écran large, ce lien côtoie les autres. Faites varier la largeur de la fenêtre pour constater la transformation. </p>
+          <p class="codepen" data-height="270" data-default-tab="html,result" data-slug-hash="WbrjGXM" data-pen-title="c08-menu01" data-editable="true" data-user="frlacroix" style="height: 270px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/WbrjGXM">
+  c08-menu01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section><!-- fin section06 --> <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section06">
+       
+          <h2>La mise en forme alternée</h2>
+          <p>Pour mettre en forme de manière alternative une suite d'éléments (paragraphes, articles, lignes de tableau, etc.) on peut utiliser le pseudo-élément <code>nth-of-type</code> ou <code>nth-child</code> avec les modificateurs spécialisés '<code>odd</code>' (impair) et '<code>even</code>' (pair). </p>
+          <p class="codepen" data-height="430" data-default-tab="html,result" data-slug-hash="jEWmMax" data-pen-title="c09-nth-child" data-editable="true" data-user="frlacroix" style="height: 430px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/jEWmMax">
+  c09-nth-child</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section><!-- fin section 07 --><div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section07">
+        
+          <h2>Tester la réactivité dans Chrome</h2>
+          <p>Les outils de développement de <em>Chrome</em> permettent de tester la réactivité de votre page en spécifiant des dimensions précises d'appareils. </p>
+          <ol>
+            <li>Ouvrez la page à tester dans <em>Chrome</em>.</li>
+            <li>Faites afficher les outils de développement comme suit: <br>
+              <em>Afficher &gt; Options pour les développeurs &gt; Outils de développement</em> (ou encore cliquez-droit sur la page et choisissez <em>Inspecter</em>.</li>
+
+            <li>Repérer l'icone en forme de petite tablette <img class="bordure" src="images/cours08/cours08_chrome_dev_tab.jpg" width="20" height="20" alt=""> (1) vers le coin supérieur gauche de la fenêtre de développement et cliquez dessus. </li>
+            <div class="note">
+              <p>ATTENTION: en mode « Appareils mobiles », les effets au survol (:hover) ne sont pas fonctionnels puisque qu'il s'agit d'une simulation d'écran tactile.</p>
+            </div>
+            <li>Ajustez la zone d'affichage de la page à la taille voulue, soit en faisant glisser la bordure droite de la zone d'affichage (2), soit en indiquant une taille précise en pixels (3), soit en choisissant un appareil type dans le menu déroulant <em>Responsive </em>(4).</li>
+            <li>Rechargez la page (<em>⌘+R</em>) afin de raffraîchir l'affichage.</li>
+          </ol>
+          <div class="note">
+            <p><strong>IMPORTANT</strong> : pour que vos requêtes média fonctionnent lorsque vous simulez les modèles de téléphones intelligents, le <code>meta</code> suivant doit absolument être inséré dans l'élément <code>&lt;head&gt;</code> de toutes vos pages HTML : <br>
+            <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></p>
+          </div>
+          <figure class="w90">
+            <figcaption>Exemple d'utilisation des outils de développement de Chrome</figcaption>
+            <img class="bordure" src="images/cours08/cours08_chrome_dev.jpg" alt="Exemple d&#39;utilisation des outils de développement de Chrome.">
+          </figure>
+          <p>Vous pouvez faire afficher les requêtes médias en cliquant sur les trois points verticaux et en choisissant <em>Afficher les requêtes médias</em> : </p>
+          <figure class="w50"><img class="bordure" src="images/cours08/cours08_chrome_dev02.jpg" alt=""></figure>
+          <p>Puis, dans le menu <em>Responsive</em>, vous choisissez un appareil, par exemple <em>iPhone 6</em> : </p>
+          <figure class="w60"><img class="bordure" src="images/cours08/cours08_chrome_dev03.jpg" alt=""></figure>
+          <p>Le format du iPhone d'affiche : </p>
+          <figure class="w50"><img class="bordure" src="images/cours08/cours08_chrome_dev04.jpg" alt=""></figure>
+          <p>En cliquant sur l'icone <img class="bordure" src="images/cours08/cours08_chrome_dev06.jpg" width="22" height="21" alt="">, vous alternez entre le mode d'affichage vertical et le mode d'affichage horizontal (paysage) : </p>
+          <figure class="w80"><img class="bordure" src="images/cours08/cours08_chrome_dev05.jpg" alt=""></figure>
+          <div class="note">
+            <p>Un outil comparable existe dans <em>Firefox</em>: vous pouvez y accéder par le menu <em>Outils / Développement Web / Vue adaptative</em>.</p>
+          </div>
+        </section><!-- fin section 08 -->
+        <!-- ACTIVITÉS D'ÉVALUATION --><div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="sectionAE">
+        
+          <h2>Activités d'évaluation</h2>
+          <h3>Travail pratique 3 (10%) - Le&nbsp;site&nbsp;monopage</h3>
+          <p>Le TP3 a pour objectif de vous familiariser avec les principes d'un site monopage. Il aborde notamment les aspects suivants: la navigation par ancres et le positionnement fixe. </p>
+          <h3>Documents à remettre</h3>
+          <p>Un <strong>dossier </strong>rigoureusement nommé comme suit:</p>
+          <ul>
+              <li>groupe du vendredi 8h : <strong>gr2_nominitialeprenom_tp3</strong></li>
+              <li>groupes du vendredi 12h : <strong>gr1_nominitialeprenom_tp3 </strong></li>
+          </ul>
+          <div class="note">
+            <p>Structure de fichiers : </p>
+            <figure class="w50">
+              <figcaption>Arborescence de fichiers du tp3</figcaption>
+              <img class="bordure" src="images/cours08/cours08_tp3_arbo_a23a.jpg" alt="Arborescence de fichiers pour le tp3."><br>ou<br>
+              <img class="bordure" src="images/cours08/cours08_tp3_arbo_a23b.jpg" alt="Arborescence de fichiers pour le tp3.">
+            </figure>
+          </div>
+          <h3>Échéancier</h3>
+          <p>Remettez le dossier complet, zippé, sur Teams/Devoir, dans l'espace prévu à cette fin, au plus tard :</p>
+          <ul>
+            <li><strong>le mercredi suivant le cours, 9h le matin, groupe 2 (vendredi 8h).</strong></li>
+            <li><strong>le mercredi suivant le cours, midi, groupe 1 (vendredi 12h).</strong></li>
+          </ul>
+          <h3>Travail à faire</h3>
+          <p>Créez votre dossier de travail et ouvrez-le dans <em>Visual Studio Code</em>.</p>
+          <p>Le travail consiste à créer un site monopage à partir des fichiers sources. </p>
+          <p>Le résultat final doit ressembler à ceci (voir en classe pour la version interactive): </p>
+
+          <figure class="w40">
+              <figcaption>Résultat final du tp3 : écran étroit</figcaption>
+            <img class="bordure" src="images/cours08/cours08_tp3_montage-etroit.jpg" alt="Maquette TP3">
+          </figure>
+          
+          <figure class="w80">
+              <figcaption>Résultat final du tp3 : écran large</figcaption>
+            <img class="bordure" src="images/cours08/cours08_tp3_montage-large.jpg" alt="Maquette TP3">
+          </figure>
+          <h3>&gt;&gt;&gt; RÉDIGEZ LE CODE HTML</h3>
+          <ol>
+              <li>Créez un fichier nommé <code>index.html</code> et rédigez la structure de base de la page :
+                <ul>
+                  <li>Doctype</li>
+                  <li>Balises <code>html</code>, <code>head</code>, <code>body</code></li>
+                </ul>
+              </li>
+              <li>Dans l'élément <code>head</code>, ajoutez les éléments :
+                  <ul>
+                    <li><code>meta</code> pour le jeu de caractère (charset)</li>
+                    <li><code>title</code>, avec le contenu "Ta collection - Crée. Finance. Réalise."</li>
+                    <li><code>meta</code> pour réinitaliser le zoom du <em>viewport</em></li>
+                    <li><code>meta</code> pour la description</li>
+                    <li><code>meta</code> pour les mots clés</li>
+                    <li><code>meta</code> pour l'auteur</li>
+                    <li><code>link</code> pour lier la feuille de style</li>
+                    <li><code>link</code> pour lier le favicon <code>favicon.gif</code></li>
+                  </ul>
+                </li>
+              
+            
+            <li>Dans l'élément <code>body</code>, insérez les éléments indiqués dans la schématisation suivante, en incluant les classes et les identifiants: 
+                  <figure>
+                      <figcaption>Schématisation des conteneurs inclus dans l'élément body</figcaption>
+                      <img class="bordure" src="images/cours08/cours08_tp8_schema_a21.jpg" alt="schématisation">
+                      </figure>
+                  
+            </li>
+            <li>Rédigez le code HTML de la navigation principale en vous inspirant de l'image précédente : 
+                <ul>
+                    <li>Les adresses des liens de la navigation principale doivent cibler les cinq ancres de la page, soit: le haut de la page, section01, section02, section03 et footer. (Cette partie des notes de cours montre comment fonctionne un lien vers une ancre HTML: <a href="#section02">Ancres HTML</a></li>
+              </ul>
+            </li>
+            <li>Rédigez le code HTML des sections de la page en vous inspirant de l'image précédente :
+              <ul>
+                <li>Dans l'image précédente, remarquez les <code>id</code> des éléments <code>section</code>. Ces <code>id</code> doivent figurer dans la balise d'ouverture des quatre éléments <code>&lt;section&gt;</code>. Ils transforment chaque élément <code>section</code> en ancre HTML.<br>
+                --&gt; 
+                Comme ceci pour la section01 (à répéter pour les deux autres sections et le footer) : <pre class="exemple-code">&lt;section <span class="rose">class="section"</span> <span class="vert">id="section01"</span>&gt;</pre></li>
+              </ul>
+            </li>
+              <li>Rédigez le code HTML du contenu des trois sections en vous inspirant des maquettes des pages affichées plus haut et de la schématisation des conteneurs :
+              <ul>
+                  <li>Créez le titre de chaque section</li>
+                  <li>Utiliser du texte "lorem Ipsum" pour le paragraphe de chaque section (<a href="https://loremipsum.io/fr/">Générateur de Lorem Ipsum <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a>). Il suffit de générer le texte, de le copier et de l'insérer dans le document HTML, tout en ajoutant les balises habituelles. Réduisez la taille des paragraphes au besoin.</li>
+              </ul>
+            </li>
+          </ol>
+          <h3>&gt;&gt;&gt; RÉDIGEZ LA FEUILLE DE STYLE</h3>
+          <ol>
+            <li>Créez un dossier « css », et ajoutez-y un nouveau fichier <code>styles.css</code>.
+            </li>
+            <li>Organisez la feuille de style :
+              <ul>
+                <li>Le contenu de la feuille de style doit être rigoureux, logique :
+                  <ul>
+                    <li>REGROUPEZ les règles de style par affinité ;</li>
+                    <li>Rédigez de brefs COMMENTAIRES pour identifier les groupes de règles de style apparentées: <em>Polices importées, Réinitialisation</em>,<em> Charte graphique</em>, <em>Navigation principale</em>, <em>Titre principal</em>, <em>Vidéo</em><em>Sections</em>, <em>Footer</em>etc.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Rédigez la feuille de style
+              <ul>
+                <li><code>@charset "UTF-8";</code><br>
+                La feuille de style doit <strong>débuter</strong> par cette fonction (ne rien inscrire avant, ni même de commentaires);</li>
+              </ul>
+            </li>
+          </ol>
+          <p class="vert"><strong>/* POLICES LIÉES */</strong>
+          </p><ul>  
+            <li>Vous devez lier deux polices de votre choix à partir de <a href="https://fonts.google.com/">Google Fonts <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a>. </li>
+            <li>Assurez-vous que les deux polices choisies s'harmonisent bien et contiennent les caractères dont vous avez besoin (accents, caractères spéciaux, etc.).</li>
+              
+          </ul>
+          <p class="vert"><strong>/* RÉINITIALISATION */</strong>
+          </p><p>À la suite de l'importation des polices de caractères, insérez la règle de style de réinitilisation habituelle:</p>
+          <pre class="exemple-code">            * {
+            &nbsp;&nbsp;margin: 0;
+            &nbsp;&nbsp;padding: 0;
+            &nbsp;&nbsp;box-sizing: border-box;
+            }
+          </pre>
+          <p class="vert"><strong>/* CHARTE GRAPHIQUE */</strong></p>
+          <p>Rédigez la charte graphique de base sous le sélecteur <code>:root</code>.</p>
+          <p>Elle doit comprendre au minimum :    </p>
+          <ul>
+            <li>la police de caractère principale, soit celle qui sert pour le texte courant (il s'agit de l'une des polices choisies dans Google Fonts), en plus des polices alternatives et de la collection (sans-serif ou serif, selon votre choix);</li>
+            <li>la taille de caractère de base en "em";</li>
+            <li>la couleur de caractère la plus courante; </li>
+            <li>la hauteur de ligne la plus courante (sans unité).</li>
+        </ul>
+        <div class="note">
+          <p>Toutes les tailles de caractères subséquentes dans la feuille de style doivent être indiquées à l'aide de l'unité <code>em</code>.</p>
+        </div>
+        <p class="vert"><strong>/* NAVIGATION */</strong></p>
+        <p>Définissez la mise en forme de la navigation : </p>
+        <ol>
+          <li>À l'aide du sélecteur <code>.menu</code>, créez une règle de style pour placez le menu en position fixe et lui donnez quelques caractéristiques, comme ceci :
+            <ul>
+             <li>Ajoutez <code>position:fixed</code> à la règle de style</li>
+                <li>Établissez sa position à <code>top:0</code> et <code>left:0</code></li>
+                <li>Forcer son affichage au premier plan en utilisant <code>z-index:100</code></li>
+              <li>Ajoutez une propriété pour que la largeur soit de 100%</li>
+              <li>Ajouter une hauteur de votre choix</li>  
+              <li>Ajoutez une couleur d'arrière-plan</li>
+            </ul>
+          </li>
+          <li>Placez les liens à l'horizontal :
+            <ul>
+                <li>Inspirez-vous du Codepen vu plus tôt dans le cours pour disposer le menu correctement</li>
+                <li>Assurez-vous qu'en version étroite, le premier lien occupe toute la largeur par dessus les quatre autres liens</li>
+                <li>Assurez-vous qu'en verison écran large, les cinq liens se côtoient sur une même ligne.</li>   
+            </ul>
+          </li>
+          <li>Effectuez la mise en forme des liens et leurs états <code>:link</code>, <code>:visited</code>, <code>:hover</code> et <code>:active</code>.
+          </li>
+          
+        </ol>
+        <p class="vert"><strong>/* BLOC TITRE ET VIDÉO */</strong></p>
+        <p>Effectuez la mise en forme du bloc titre et de la vidéo :</p>
+        <ol>
+            <li>Inspirez-vous du Codepen vu plus tôt</li>
+            <li>Assurez-vous que la vidéo ait une largeur fluide</li>
+            <li>Faites en sorte que le titre soit superposé à la vidéo, et que sa position demeure stable, quelle que soit la largeur de l'écran et la taille de la vidéo.</li>  
+            
+          </ol>
+        <p class="vert"><strong>/* SECTIONS */</strong></p>
+        <p>Effectuez la mise en forme des sections :</p>
+        <ol>
+            <li>Créez une règle de style pour le sélecteur <code>.section</code></li>
+            <li>Chaque section doit occuper <strong>au moins</strong> la hauteur de la fenêtre du navigateur, quelque soit cette hauteur. Pour ce faire, utilisez <code>min-height:100vh</code>. En sachant que 1vh = un centième de la hauteur de la fenêtre, 100vh représente donc la hauteur totale de la fenêtre du navigateur.</li>
+            <li>Ajoutez <code>display:flex</code> pour définir le conteneur 'section' en tant que conteneur flex.</li>
+            <li>Ajoutez <code>flex-direction:column</code> pour définir l'axe principal (vertical).</li>
+            <li>Ajoutez <code>justify-content</code> et <code>align-items</code> pour centrer le contenu respectivement dans l'axe principal (vertical) et l'axe secondaire (horizontal).</li>  
+            <li>Faites la mise en forme du contenu :
+              <ul>
+                <li>En vous inspirant de la maquette, déterminez une largeur des éléments <code>picture</code> et des éléments <code>p</code> de manière à ce que la lecture demeure agréable.</li>
+                <li>Précisez la police de caractère pour le titre et pour les paragraphes en utilisant les deux polices liées à partir de Google Fonts.</li>
+                <li>Précisez la taille de la police.</li>
+                <li>Précisez tout autre élément de mise en forme de votre choix: couleur, casse, etc..</li>
+              </ul>
+            </li>
+                
+            
+          </ol>
+          <p class="vert"><strong>/* ARRIÈRE-PLAN DES SECTIONS */</strong></p>
+        <p>Afin de bien distinguer les sections, vous allez ajoutez deux couleurs d'arrière-plan qui vont alterner (voir la maquette).</p>
+        
+        <p class="vert"><strong>/* PIED DE PAGE */</strong></p>
+        <p>Le pied de page comprend trois éléments: une liste de menu, un paragraphe avec l'adresse de courriel et un paragraphe avec le copyright.</p>
+        <ol>
+            <li>Avec <code>.footer</code>, transformez le footer en flex-container pour alignements ces trois élément.</li>
+            <li>La liste du menu comprend elle aussi trois éléments. Transformez le menu en <i>flex-container</i> afin d'aligner ces trois éléments. Ils doivent être d'abord alignés en colonne pour les écrans étroits, et alignés en rangée pour les écrans large à partir d'une certaine largeur.</li>
+        </ol>
+        
+        <h3>&gt;&gt;&gt; DÉFILEMENT DE LA PAGE</h3>
+            <p>Vous avez sans doute remarqué qu'avec l'utilisation des ancres, on a parfois l'impression de quitter une page pour une autre en raison de l'instantanéïté du mouvement.</p>
+            <p>Vous devez adoucir le défilement de la page au clic d'un lien en utilisant la propriété <code>scroll-behaviour</code> avec la valeur <code>smooth</code></p>
+            <p>Cette propriété est transmise vers les descendants, de telle sorte que pour l'appliquer au document en entier, il s'agit d'ajouter la déclaration <code>scroll-behavior:smooth</code> sous le sélecteur <code>:root</code> qui est déjà en place au début de la feuille de style.</p>
+        </section>  <!-- #sectionAE --> 
+                <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            <br>Ce contenu a été tiré du site web de Sylvain Lamoureux<br>
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js?"></script>
+    </body>
+</html>
