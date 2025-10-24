@@ -86,20 +86,29 @@
           <p>Afin de résoudre ce problème, il faut adapter les <strong>chemins relatifs</strong> vers les documents en fonction du fichier de départ.</p>
           <p>Voyons la différence entre les <strong>chemins relatifs</strong> et les <strong>chemins absolus</strong>.</p>
           <h3>Chemin relatif</h3>
-          <dl>
-          <dt><code>page.html</code></dt>
-            <dd>La cible (<code>page.html</code>) est recherchée par le navigateur au même niveau que le document html où se trouve l'hyperlien.</dd><br>  
-          <dt><code>dossier/page.html</code></dt>
-            <dd>La cible (<code>page.html</code>) est recherchée par le navigateur dans le sous-répertoire <i>dossier</i>, à partir du document html où se trouve l'hyperlien.</dd><br>
-            <dt><code>../dossier/page.html</code></dt>
-            <dd>Où "<code>../</code>" signifie que la page est recherchée à partir du répertoire parent (on remonte d'un niveau).</dd><br>
-            <dt><code>../../dossier/page.html</code></dt>
-            <dd>Où "<code>../../</code>" signifie que la page est recherchée à partir du répertoire ancêtre (on remonte de deux niveaux).</dd><br>
-            <dd>Il est tout à fait possible de remonter de plus de deux niveaux de répertoires. Pour cela il faudra cumuler les <code>../</code> comme dans cet exemple où on remonte de trois niveaux : <code>../../../dossier/page.html</code>.</dd>
-          </dl>
+          <div class="row">
+            <div class="col-lg-7">
+              <dl>
+                        <dt><code>page.html</code></dt>
+                          <dd>La cible (<code>page.html</code>) est recherchée par le navigateur au même niveau que le document html où se trouve l'hyperlien.</dd><br>  
+                        <dt><code>dossier/page.html</code></dt>
+                          <dd>La cible (<code>page.html</code>) est recherchée par le navigateur dans le sous-répertoire <i>dossier</i>, à partir du document html où se trouve l'hyperlien.</dd><br>
+                          <dt><code>../dossier/page.html</code></dt>
+                          <dd>Où "<code>../</code>" signifie que la page est recherchée à partir du répertoire parent (on remonte d'un niveau).</dd><br>
+                          <dt><code>../../dossier/page.html</code></dt>
+                          <dd>Où "<code>../../</code>" signifie que la page est recherchée à partir du répertoire ancêtre (on remonte de deux niveaux).</dd><br>
+                          <dd>Il est tout à fait possible de remonter de plus de deux niveaux de répertoires. Pour cela il faudra cumuler les <code>../</code> comme dans cet exemple où on remonte de trois niveaux : <code>../../../dossier/page.html</code>.</dd>
+                        </dl>
+                      </div>
+                      <div class="col-lg-5">
+                        <figure class="w100">
+            <img class="bordure" src="images/cours09/cours09_structure_dossiers.jpg"></figure></div>
+          </div>
+          
 
           <h3>Chemin absolu</h3>
-          <p><strong><code>https://www.mondomaine.com/dossier/page.html</code></strong> (complète)</p>
+          <p><strong><code>https://www.mondomaine.com/dossier/page.html</code></strong></p>
+          <p><strong><code>https://frlacroix1.github.io/images/poster_html5.jpg</code></strong></p>
           <p>Montre le chemin complet d'un document sur le web. Ne fonctionne que lorsque le site est hébergé en ligne, avec un nom de domaine enregistré et actif.</p>
           <p>Cette forme est incontournable pour pointer vers une ressource externe, mais elle fonctionne également pour pointer une ressource interne.</p>
           
@@ -138,8 +147,8 @@
           <h3>Collections</h3>
           <p>Vous pouvez ajouter des « pens » de votre choix dans vos collections. Il suffit de de cliquer sur l'icone des trois points et de choisir <em>+Add to collection</em>. Vous choisissez ensuite la collection voulue, ou encore, vous en créez une nouvelle.</p>
           <div class="row">
-            <div class="col"><img class="bordure" src="images/cours09/cours09_codepen04a.jpg" alt="Codepen Add to collection"></div>
-            <div class="col"><img class="bordure" src="images/cours09/collection.gif" alt="Codepen Add to collection"></div>
+            <div class="col"><figure class="w100"><img class="bordure" src="images/cours09/cours09_codepen04a.jpg" alt="Codepen Add to collection"></figure></div>
+            <div class="col"><figure class="w100"><img class="bordure" src="images/cours09/collection.gif" alt="Codepen Add to collection"></figure></div>
           </div>
           <h3>Fork</h3>
           <p>Vous pouvez modifier le code de n'importe quel pen. Mais pour sauvegarder vos modifications, voici ce qu'il faut faire: </p>
@@ -186,8 +195,8 @@
                 <li><em>Fork</em> (en bas à droite) pour sauvegarder le pen dans votre compte;</li>
                 <li><em>Add to collection</em> pour l'ajouter à votre collection <i>Défis CodePen</i>.<br><img class="bordure" src="images/cours09/collection.gif" alt="Codepen Add to collection" width="300"></li>
               </ol></li>
-            <li>Réalisez les 6 défi en classe.</li>
-              <li>Transmettez le lien de votre collection à votre enseignant <strong>avant la fin du cours</strong> par l'intermédiaire de Teams (dans une discussion privée).</li>
+            <li>Réalisez les 6 défis ci-dessous en classe.</li>
+              <li>Transmettez le lien de votre collection (<a href="https://codepen.io/collection/gPwJBM" target="_blank">exemple de lien <i class="bi bi-box-arrow-up-right"></i></a>) à votre enseignant <strong>avant la fin du cours</strong> par l'intermédiaire de Teams (dans une discussion privée).</li>
 </ol>
           <hr>
           <h3 id="defi-1">DÉFI 1 / Navigation principale fluide + premier lien à largeur fixe</h3>
@@ -369,7 +378,7 @@
           </figure>
           <hr>
           <h4>Échéancier</h4>
-          <p>Le travail doit être terminé avant la fin du cours. Transmettez le lien de votre collection à votre enseignant <strong>avant la fin du cours</strong> par l'intermédiaire de Teams (dans une discussion privée).</p>        
+          <p>Le travail doit être terminé avant la fin du cours.</p><p>Transmettez le lien de votre collection (<a href="https://codepen.io/collection/gPwJBM" target="_blank">exemple de lien <i class="bi bi-box-arrow-up-right"></i></a>) à votre enseignant <strong>avant la fin du cours</strong> par l'intermédiaire de Teams (dans une discussion privée).</p>        
         </section>  <!-- #sectionAE --> 
             </article>
             </div>
