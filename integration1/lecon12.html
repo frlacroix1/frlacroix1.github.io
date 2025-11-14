@@ -255,20 +255,19 @@
         <section class="section" id="section08">
           
           <h2>TP long: rédiger la feuille de style</h2>
-          <p>La réalisation d'un site web comprenant plusieurs pages exige une bonne rigueur sur le plan de la composition de la feuille de style. </p>
-          <p>Pour composer la feuille de style efficacement, il faut effectuer un premier inventaire du travail à produire. Après avoir parcouru l'énoncé de travail, vous devriez être en mesure de : </p>
+          <p>La mise en forme d’un site multipage exige une structure CSS cohérente et déterminée à l’avance.</p>
+          <p>Avant d’écrire la moindre règle, établissez l’inventaire des besoins. Après avoir parcouru l'énoncé de travail, vous devriez être en mesure de : </p>
           <ol>
-            <li>Déterminer le nombre de modèles ou de dérivés de modèles de page à produire;</li>
-            <li>Identifier les zones communes à toutes les pages.</li>
+            <li>Définir les modèles de pages nécessaires et leurs variantes.</li>
+            <li>Repérer les zones communes à l’ensemble du site.</li>
           </ol>
-          <h3>Modèle de page et nomenclature BEM pour les classes</h3>
-          <p>Le site web à produire compte neuf pages. Mais ces neuf pages ne sont pas toutes différentes sur le plan de la structure et de la mise en forme. On peut supposer que l'accueil possède ses particularités, que les autres pages ont une structure commune et que la page contact possède des particularités dans sa zone de contenu en raison de son long formulaire. </p>
-          
+          <h3>Modèles de pages et nomenclature BEM</h3>
+          <p>Le site web à produire compte neuf pages. <strong>Mais ces neuf pages ne sont pas toutes différentes sur le plan de la structure et de la mise en forme.</strong> On peut supposer que l'accueil possède ses particularités, que les autres pages ont une structure commune et que la page contact possède des particularités dans sa zone de contenu en raison de son long formulaire. </p>
           <p>L'usage systématique des classes selon <a href="lecon07.html#section03" target="_blank">la méthode BEM <i class="bi bi-box-arrow-up-right"></i></a> vous permettra d'effectuer la mise en forme de manière rationnelle et sans confusion.</p>
           
           <h3>Feuille de style</h3>
           <p>À partir des considérations précédentes, voici comment pourrait être structurée votre feuille de style : </p>
-          <p><code>@charset "utf-8";</code><br>
+          <p class="border p-3"><code>@charset "utf-8";</code><br>
             <span class="vert">/* GOOGLE FONTS */</span><br>
             <br><br>
             <span class="vert">/* RÉINITIALISATION */    </span><br>
@@ -292,8 +291,7 @@
             
             <span class="vert">/* Images */</span><br>
             
-            </p>
-          <p>
+          
           <br>
             <br>
             <span class="vert">/* 
@@ -314,19 +312,15 @@
               PAGE ACCUEIL
          
               */</span><br><br>
-            
-          </p>
-          <p><span class="vert">/* 
-        PAGES TEXTE
+            <span class="vert">/* 
+        PAGES TEXTE (articles)
          */</span><br>
             
         <br><br>
         <span class="vert">/* 
         PAGE CONTACT 
          */  </span><br><br>
-        
-          </p>
-          <p><span class="vert">/* 
+        <span class="vert">/* 
         PIED DE PAGE COMMUN
          */</span><br>
         </p>
@@ -337,12 +331,14 @@
         <section class="section" id="section09">
           
           <h2>TP long: le référencement</h2>
-          <p>Si nous créons des pages web, c'est que nous voulons qu'elles soient lues. </p>
-          <p>Pour qu'elles soient lues, elles doivent être trouvées. C'est ici que le référencement prend toute sa place.</p>
-          <p>Pour la finalisation de vos pages, vous êtes invité·e·s à tenir compte des remarques suivantes afin de favoriser le référencement de vos pages sur les moteurs de recherche principaux. </p>
+          <p>Si nous produisons des pages Web, c’est pour qu’elles soient lues. <br>
+Pour qu’elles soient lues, elles doivent être trouvées. Le référencement intervient ici comme condition préalable à toute visibilité.</p>
+<p>Pour finaliser vos pages, tenez compte des exigences suivantes afin de renforcer l’indexation par les moteurs de recherche.</p>
+<figure class="w70">
+            <img class="bordure" src="images/cours12/cours12_seo00.jpg" alt="Exemple de title et de description">
+          </figure>
           <h3>Élément <code>&lt;title&gt;...&lt;/title&gt;</code></h3>
-          <p>Le contenu de l'élément <em>title</em> est l'un des critères les plus importants pour le référencement par les moteurs de recherche. </p>
-          <p>Google signale que la portion du contenu de l'élément <em>title</em> visible dans les résultats de recherche est de 600 pixels, soit environ 65-70 caractères (on dit «environ», car cela dépend de la place qu'occupe chacun des caractères: un «i» prend moins de place qu'un «b» par exemple). Il va de soit que la partie signifiante du contenu de <em>title</em> devrait se trouver dans cette portion.</p>
+          <p>Le contenu de <code>&lt;title&gt;</code> demeure l’un des signaux majeurs utilisés par les moteurs. Google n’affiche qu’environ 600 px, soit 65-70 caractères. La portion utile doit se situer dans cet espace.</p>
           <div class="references-section">
             <ul>
               <li>Source: <a href="https://www.yateo.com/blog/longueur-optimale-balise-title" target="_blank">Quelle est la longueur idéale d'une balise title parfaitement optimisée&nbsp;? <i class="bi bi-box-arrow-up-right"></i></a></li>
@@ -351,9 +347,9 @@
           <p></p>
           <p>À retenir : </p>
           <ol>
-            <li>Le contenu de <em>title </em><strong>doit être signifiant</strong>, c'est-à-dire refléter fidèlement le contenu de la page (le contraire peut entraîner un déclassement de votre page); </li>
-            <li>Le contenu de <em>title</em><strong> doit être spécifique à chaque page</strong> au moins en partie (un contenu identique dans toutes les pages   occasionne un déclassement de ces pages dans les résultats de recherche);</li>
-            <li>Le contenu qui doit être vu par les utilisateurs dans les résultats de recherche devrait figurer dans les premiers 65-70 caractères. Un contenu plus long entraine une coupure dans le titre affiché dans la liste des résultats de Google. Et si le contenu est beaucoup plus long, il peut aussi vous faire passer pour un <em>spammer</em>...</li>
+            <li>Le contenu de <code>&lt;title&gt;</code> doit refléter fidèlement le contenu réel de la page. </li>
+            <li>Le contenu de <code>&lt;title&gt;</code> doit être distinct d’une page à l’autre.</li>
+            <li>Les 65-70 premiers caractères doivent contenir l’information essentielle. Un titre trop long sera tronqué et peut être interprété comme du <i>spam</i>.</li>
           </ol>
           <h3>Élément <code>&lt;meta name="description" ... &gt;</code></h3>
           <p>Pour ce qui du contenu de la balise <code>&lt;meta name="description" ...&gt;</code>, Google en affiche autour de 160 à 165 caractères (incluant les espaces), soit environ une ligne et demie. Mais cette taille peut augmenter considérablement (240-300 caractères) lorsque la requête contient plus de trois mots clés correspondant au contenu de votre page. </p>
@@ -388,6 +384,7 @@
             <li>utiliser un h1 unique ; </li>
             <li>utiliser les autres niveaux de titres dans l'ordre (le désordre dans les titres entraine un déclassement de vos pages).</li>
           </ol>
+          <hr>
           <h3>Cas d'affichages de résultats de recherche</h3>
           <p>Exemple d'affichage du résultat de recherche d'une page Wikipédia :</p>
           <figure class="w80">
