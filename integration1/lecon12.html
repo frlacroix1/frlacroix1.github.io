@@ -334,7 +334,7 @@
           <p>Si nous produisons des pages Web, c’est pour qu’elles soient lues. <br>
 Pour qu’elles soient lues, elles doivent être trouvées. Le référencement intervient ici comme condition préalable à toute visibilité.</p>
 <p>Pour finaliser vos pages, tenez compte des exigences suivantes afin de renforcer l’indexation par les moteurs de recherche.</p>
-<figure class="w70">
+<figure class="">
             <img class="bordure" src="images/cours12/cours12_seo00.jpg" alt="Exemple de title et de description">
           </figure>
           <h3>Élément <code>&lt;title&gt;...&lt;/title&gt;</code></h3>
@@ -352,55 +352,33 @@ Pour qu’elles soient lues, elles doivent être trouvées. Le référencement i
             <li>Les 65-70 premiers caractères doivent contenir l’information essentielle. Un titre trop long sera tronqué et peut être interprété comme du <i>spam</i>.</li>
           </ol>
           <h3>Élément <code>&lt;meta name="description" ... &gt;</code></h3>
-          <p>Pour ce qui du contenu de la balise <code>&lt;meta name="description" ...&gt;</code>, Google en affiche autour de 160 à 165 caractères (incluant les espaces), soit environ une ligne et demie. Mais cette taille peut augmenter considérablement (240-300 caractères) lorsque la requête contient plus de trois mots clés correspondant au contenu de votre page. </p>
-          <div class="references-section">
-            <ul>
-              <li><a href="https://support.google.com/webmasters/answer/35624?hl=fr" target="_blank">Créer des titres et des extraits de qualité dans les résultats de recherche (par Google) <i class="bi bi-box-arrow-up-right"></i></a></li>
-              <li><a href="http://www.abondance.com/actualites/20090325-9863-google-continue-a-semantiser-ses-resultats-et-augmente-la-taille-de-ses-snippets.html" target="_blank">Google continue à "sémantiser" ses résultats et augmente la taille de ses "snippets" <i class="bi bi-box-arrow-up-right"></i></a></li>
-            </ul>
-          </div>
-          <p>Par ailleurs, si la description est absente de vos pages, ce seront les premiers mots du contenu  de ces pages qui seront retenus lors de l'affichage des résultats de recherche. Pour éviter ce résultat aléatoire, il est impératif de rédiger une description bien construite, sous forme de phrase complète. </p>
-          <p>Dans le HTML, <em>title</em> devrait idéalement précéder la description, comme le montre cet exemple :</p>
+          <p>Google affiche en moyenne 160-165 caractères (espaces compris), parfois davantage lorsque la requête comporte plusieurs mots clés.</p>
+          <p>Sans <code>description</code>, Google extrait arbitrairement les premiers mots de la page : résultat imprécis. Rédigez une phrase complète, informative, cohérente avec le contenu. </p>
+          <p><strong>À retenir :</strong> </p>
+          <ol>
+            <li>Description fidèle au contenu réel.</li>
+            <li>Description unique pour chaque page.</li>
+            <li>Phrase complète plutôt qu’un empilement de mots clés.</li>
+            <li>Texte orienté vers l’utilisateur autant que vers le moteur.</li>
+          </ol>
+          <h3>Position recommandée dans le HTML</h3>
+          <p><code>&lt;title&gt;</code> devrait précéder <code>&lt;meta name="description"&gt;</code>.</p>
           <figure class="w70">
             <img class="bordure" src="images/cours12/cours12_seo03.jpg" alt="Exemple de title et de description">
           </figure>
-          <p>À retenir : </p>
+          <h3>Titres HTML : h1 à h6</h3>
+          <p>Les titres structurent le contenu et hiérarchisent l’information. Google accorde plus de poids aux mots contenus dans les titres qu’au texte courant.</p>
+          <p>Pour optimiser :</p>
           <ol>
-            <li>Le contenu de la description <strong>doit être signifiant</strong>, c'est-à-dire refléter fidèlement le contenu de la page (le contraire peut entraîner un déclassement de votre page); </li>
-            <li>Le contenu de la description <strong> doit être spécifique à chaque page</strong> (un contenu unique dans toutes les pages   occasionne un déclassement de ces pages dans les résultats de recherche) ;</li>
-            <li>Le contenu de la description <strong>doit être une phrase complète avec des verbes</strong>, et non une suite de mots clés qui pourrait vous faire passer pour un <em>spammer</em> ;</li>
-            <li>La description ne doit pas être destinée exclusivement aux moteurs de recherche mais également aux utilisateurs afin de les inciter à visiter votre page.</li>
-          </ol>
-          <h3>Éléments de titrage et sous-titrage: h1, h2, h3, h4, h5 et h6</h3>
-          <p>Les éléments de titres et sous-titres dans le HTML ont deux fonctions principales :</p>
-          <ul>
-            <li>structurer le contenu logiquement pour le rendre plus compréhensible;</li>
-            <li>indiquer aux moteurs de recherche les informations les plus importantes que comportent votre page (l'algorithme de Google accorde plus de points aux mots clés et aux expressions que contiennent les titres qu'au reste du contenu).</li>
-          </ul>
-          <p>Pour favoriser le référencement, vous devez : </p>
-          <ol>
-            <li>utiliser  des mots signifiants liés au contenu ;</li>
-            <li>faire en sorte que le titre h1  représente le contenu de la page courante ;  </li>
-            <li>utiliser un h1 unique ; </li>
-            <li>utiliser les autres niveaux de titres dans l'ordre (le désordre dans les titres entraine un déclassement de vos pages).</li>
+            <li>Employer des mots précis liés au sujet.</li>
+            <li>Utiliser un h1 unique, représentant le contenu réel de la page.</li>
+            <li>Respecter la hiérarchie h1 → h2 → h3, sans sauts arbitraires.</li>
           </ol>
           <hr>
           <h3>Cas d'affichages de résultats de recherche</h3>
           <p>Exemple d'affichage du résultat de recherche d'une page Wikipédia :</p>
           <figure class="w80">
             <img src="images/cours12/cours12_seo04.png" alt="Exemple de title affiché">
-          </figure>
-          <p>Exemple de liste de résultats de recherche avec DEUX mots clés :</p>
-          <figure class="w80">
-            <img class="bordure" src="images/cours12/cours12_seo01.jpg" alt="Exemple de résultats de recherche avec title et description.">
-          </figure>
-          <p>Exemple de liste de résultats de recherche avec plus de TROIS mots clés :</p>
-          <div class="note">
-            <p>Lorsque tout les mots de la requête correspondent au contenu d'une page, le résultat est affiché avec une description plus longue.</p>
-          </div>
-          <figure class="w80">
-            <figcaption>Exemple de résultats de recherche avec plus de trois mots clés</figcaption>
-            <img class="bordure" src="images/cours12/cours12_seo02.jpg" alt="Exemple de résultats de recherche avec title et description.">
           </figure>
         </section><!-- fin #section09-->
         <div class="haut-de-page">
