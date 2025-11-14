@@ -69,7 +69,7 @@
                       <p><a href="#" class="nav-link titre"><strong>Leçon 12</strong></a></p>
                        <a href="#section01" class="list-group-item list-group-item-action">Validation du code</a>
                       <a href="#section02" class="list-group-item list-group-item-action">Utilisez des classes et des sélecteurs de classe</a>
-                      <a href="#section03" class="list-group-item list-group-item-action">Codes HTML des caractères spéciaux et des symboles</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">Codes HTML pour les caractères spéciaux</a>
                       <a href="#section04" class="list-group-item list-group-item-action">Banques d'images</a>
                       <a href="#section05" class="list-group-item list-group-item-action">Palette de couleurs</a>
                       <a href="#section06" class="list-group-item list-group-item-action">La balise audio</a>
@@ -101,14 +101,15 @@
             <li><em><strong>Validate by Direct Input</strong></em>, permet de copier-coller directement le balisage pour la validation locale.</li>
           </ol>
           <div class="row">
-            <div class="col-4"><figure class="">
+            <div class="col-md-4"><figure class="">
+              <figcaption>Validation du balisage en ligne par URI</figcaption>
             <img class="bordure" src="images/cours12/cours11_validation_html01.jpg" alt="Validate by URI">
           </figure></div>
-            <div class="col-4"><figure class="">
+            <div class="col-md-4"><figure class="">
             <figcaption>Validation du balisage local par chargement d'un fichier html (File Upload)</figcaption>
             <img class="bordure" src="images/cours12/cours11_validation_html02.jpg" alt="Validate by File Upload">
           </figure></div>
-            <div class="col-4"><figure class="">
+            <div class="col-md-4"><figure class="">
             <figcaption>Validation du balisage local par saisie directe du code (Direct Input)</figcaption>
             <img class="bordure" src="images/cours12/cours11_validation_html03.jpg" alt="Validate by Direct Input">
           </figure></div>
@@ -136,24 +137,30 @@
           </div>
         <section id="section02">
           <h2>Utilisez des classes et des sélecteurs de classe</h2>
-          <p>Tous les éléments html doivent avoir des classes.</p>
+          <p><strong><u>Tous</u></strong> les éléments html doivent avoir des classes.</p>
           <p>Révisez les règles de <a href="lecon07.html#section03" target="_blank">l'annotation BEM <i class="bi bi-box-arrow-up-right"></i></a> pour déterminer les noms de classes.</p>
           <figure class="w80">
               <img src="images/cours12/cours13_html-classe.jpg" alt="Sélecteur de classe">
           </figure>
-          <p>Tous les sélecteurs css doivent être des sélecteurs de classe, sauf quelques exceptions.</p>
+          <!-- <p>Tous les sélecteurs css doivent être des sélecteurs de classe, sauf quelques exceptions.</p>
           <figure class="w80">
               <img src="images/cours12/cours13_selecteur-classe.jpg" alt="Sélecteur de classe">
-          </figure>
+          </figure> -->
         </section> <!-- section02 -->
 <div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
         <section id="section03">
         
-          <h2>Codes HTML des caractères spéciaux et des symboles</h2>
-          <p>Pour utiliser des symboles divers dans vos textes, il est nécessaires de retranscrire leur code HTML. Par exemple, vous ne pouvez utiliser directement des chevrons dans vos textes, car ceux-ci seraient confondus avec du code. Par exemple, pour utiliser un chevron dans le texte, on doit inscrire le code <code>&amp;lt;</code> pour le chevron ouvrant "&lt;", et <code>&amp;gt;</code> pour le chevron fermant "&gt;".</p>
-          
+          <h2>Codes HTML pour les caractères spéciaux</h2>
+          <p>Certains signes ne peuvent pas être tapés directement dans le texte, car le navigateur les interpréterait comme du code. Les chevrons en sont l’exemple classique. Pour afficher un chevron ouvrant « &lt; », on écrit <code>&amp;lt;</code>. Pour afficher un chevron fermant « &gt; », on écrit <code>&amp;gt;</code>.</p>
+         <h3>Quelques codes HTML:</h3>
+         <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="YPqwLJV" data-pen-title="Caractères spéciaux en HTML" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/YPqwLJV">
+  Caractères spéciaux en HTML</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p><br>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
           <div class="references-section">
             <p class="references-intitule">Liste des codes HTML des caractères spéciaux et des symboles</p>
             <ul>
