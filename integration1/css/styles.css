@@ -44,7 +44,8 @@ textarea,
 input,
 object,
 embed,
-video {
+video,
+img {
   max-width: 100% !important;
 }
 
