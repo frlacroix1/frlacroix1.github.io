@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Chasse aux épigraphes</title>
+<style>
+body { font-family: sans-serif; padding: 2rem; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+th { background: #f5f5f5; }
+.reponse { background: #eef6ee; }
+</style>
+</head>
+<body>
+<p>Composition d’une énigme : Un personnage VERBE un objet ADVERBE un lieu</p>
+<table>
+  <thead>
+    <tr>
+      <th width="10%">Indice</th>
+      <th width="30%">Personnage</th>
+      <th width="30%">Objet</th>
+      <th width="30%">Lieu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Indices -->
+    <tr>
+      <td>Énigme</td>
+      <td id="p_indice"></td>
+      <td id="o_indice"></td>
+      <td id="l_indice"></td>
+    </tr>
+
+    <!-- Réponses -->
+    <tr class="reponse">
+      <td>Réponse</td>
+      <td id="p_reponse"></td>
+      <td id="o_reponse"></td>
+      <td id="l_reponse"></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+// Données conformes au document (indice → nom d’épigraphe)
+const epigraphes = [
+  {
+    personnage: { indice: "L’Anguille", reponse: "Camille Henry" },
+    objet: { indice: "a lu le roman « Les Anciens Canadiens »", reponse: "Philippe-Joseph Aubert de Gaspé" },
+    lieu: { indice: "à la maison Kerhulu", reponse: "Robert Blatter" }
+  },
+  {
+    personnage: { indice: "Une militante d’origine française", reponse: "Marthe Caillaud-Simard" },
+    objet: { indice: "a bu une bouteille de bière", reponse: "Joseph Knight Boswell" },
+    lieu: { indice: "dans l’atelier du sculpteur", reponse: "Louis Jobin" }
+  },
+  {
+    personnage: { indice: "Un artiste peintre avant-gardiste", reponse: "Edmund Alleyn" },
+    objet: { indice: "a porté une robe extravagante", reponse: "Henriette Belley" },
+    lieu: { indice: "dans un pavillon de l’Université Laval", reponse: "Maurice Pollack" }
+  },
+  {
+    personnage: { indice: "Un ingénieur", reponse: "Sigismund Mohr" },
+    objet: { indice: "a réalisé une peinture surréaliste", reponse: "Alfred Pellan" },
+    lieu: { indice: "au 630 rue Boisseau", reponse: "Johnny Farago" }
+  }
+];
+
+function pick(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function generer() {
+  const e = pick(epigraphes);
+
+  document.getElementById("p_indice").textContent = e.personnage.indice;
+  document.getElementById("o_indice").textContent = e.objet.indice;
+  document.getElementById("l_indice").textContent = e.lieu.indice;
+
+  document.getElementById("p_reponse").textContent = e.personnage.reponse;
+  document.getElementById("o_reponse").textContent = e.objet.reponse;
+  document.getElementById("l_reponse").textContent = e.lieu.reponse;
+}
+
+generer();
+</script>
+
+</body>
+</html>
