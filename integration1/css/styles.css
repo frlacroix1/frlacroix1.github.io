@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* 
 RÉINITIALISATION
 */
@@ -129,7 +130,7 @@ PARAGRAPHES
 */
 p {
   font-size: 1.3em;
-  }
+}
 
 /* 
 TYPO 
@@ -362,6 +363,7 @@ NAVIGATION PRINCIPALE
 .sous-menu-cours {
   list-style: none !important;
 }
+
 .menu-cours {
   text-align: center !important;
   width: 100% !important;
@@ -479,6 +481,7 @@ ol h5,
 ul h5 {
   margin-left: -20px;
 }
+
 /* ANCRES */
 .ancres-section {
   text-align: center;
@@ -518,6 +521,7 @@ code {
 .orange {
   color: orange;
 }
+
 .rouge {
   color: red;
 }
@@ -539,8 +543,8 @@ code {
 .references-section ul {
   list-style: none;
   padding: 0.5em;
-  padding-bottom:0;
-  margin-bottom:0;
+  padding-bottom: 0;
+  margin-bottom: 0;
   font-size: 1.1rem;
 }
 
@@ -548,12 +552,14 @@ code {
 .references-section li:last-child {
   margin: 0;
 }
+
 .source {
   font-family: Quicksand, sans-serif;
   font-size: .85em;
   padding-top: .2em;
   text-align: left;
 }
+
 /* NOTES ET TRAVAUX FORMATIFS */
 .note,
 .tf {
@@ -668,6 +674,7 @@ code {
   color: #fff;
   padding: 3px;
 }
+
 .code-etiquette-css {
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -678,6 +685,7 @@ code {
   color: #fff;
   padding: 3px;
 }
+
 .resultat-etiquette {
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -688,6 +696,7 @@ code {
   color: #fff;
   padding: 3px;
 }
+
 .syntaxe-etiquette {
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -741,7 +750,7 @@ td p {
 }
 
 /* LIEN HAUTE DE PAGE */
-article + a {
+article+a {
   margin: 1em;
 }
 
@@ -751,66 +760,92 @@ PIED DE PAGE COMMUN
 footer.footer-commun {
   margin-top: 2em;
   text-align: center;
-  color:#FFF;
+  color: #FFF;
 }
-footer.footer-commun a{color:#FFF;}
+
+footer.footer-commun a {
+  color: #FFF;
+}
 
 /* -----------------
 ADAPTATION FRED
 -------------------- */
-body{
-  background-color:#15131f;
+body {
+  background-color: #050b21;
 }
-main header{
-  padding-left:0;
-  padding-right:0;
-  color:#9d69ca;
+
+main header {
+  padding-left: 0;
+  padding-right: 0;
+  color: #00B0A1;
 }
-header.navbar{
-  font-size:0.8em;
-  text-transform:uppercase;
+
+header.navbar {
+  font-size: 0.8em;
 }
-header.navbar, #sidebar-nav a.titre{
-  color:#e98a58;
+header.navbar .dropdown-item{
+ padding-left:10px;
+} 
+header.navbar,
+#sidebar-nav a.titre {
+  color: #9a9cc2;
 }
-.dropdown-menu.lecons{z-index:9999;}
-section{
-  padding:20px;
-  background-color:#FFF;
+
+.dropdown-menu.lecons {
+  z-index: 9999;
+}
+
+section {
+  padding: 20px;
+  background-color: #FFF;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  border:1px solid #9d69ca;
-  margin-bottom:30px;
+  border: 1px solid #758ED3;
+  margin-bottom: 30px;
 }
 
 a.list-group-item {
-    z-index: 2;
-    color: #FFF;
-    background-color: transparent !important;
-    border-color: transparent !important;
+  z-index: 2;
+  color: #FFF;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
+
 a.list-group-item:hover {
-    z-index: 2;
-    color: #9d69ca !important;
+  z-index: 2;
+  color: #758ED3 !important;
 }
 
 
-.list-group-item.active, .list-group-item:focus, .list-group-item.active:hover {
-    z-index: 2;
-    color: #e98a58 !important;
-    background-color: transparent !important;
-    border-color: transparent !important;
+.list-group-item.active,
+.list-group-item:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color: #00B0A1 !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
-.table-des-matieres > nav{padding-top:10px; padding-bottom:26px;}
-
-.haut-de-page{margin-bottom:30px;}
-.haut-de-page > a{color:#FFF;}
-
-.liste-h3 h3{
-  border-top:1px #000 solid;
-  margin-top:0;
-  padding-top:1.2em;
+.table-des-matieres>nav {
+  padding-top: 10px;
+  padding-bottom: 26px;
 }
-a.btn-primary{color:#FFF;}
+
+.haut-de-page {
+  margin-bottom: 30px;
+}
+
+.haut-de-page>a {
+  color: #FFF;
+}
+
+.liste-h3 h3 {
+  border-top: 1px #000 solid;
+  margin-top: 0;
+  padding-top: 1.2em;
+}
+
+a.btn-primary {
+  color: #FFF;
+}
