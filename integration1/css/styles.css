@@ -330,6 +330,20 @@ video {
   margin-bottom: 2em;
 }
 
+.video-enveloppe {
+  position: relative; /* Devient la référence pour le positionnement de iframe */
+  padding-bottom: 56.25%; /* Produit un ratio de 16:9 par rapport à la largeur */
+  height: 0; /* Assure que la hauteur de l'élément = padding-bottom seulement */
+}
+
+.video-enveloppe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 100% du parent dont la hauteur = padding-bottom */
+}
+
 /* -----------------
 ENTÊTE
 -------------------- */
