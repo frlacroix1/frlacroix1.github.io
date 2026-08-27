@@ -863,3 +863,7 @@ a.list-group-item:hover {
 a.btn-primary {
   color: #FFF;
 }
+ul ul,
+ol ol, 
+ol ul, 
+ul ol{margin-bottom:0 !important; padding-bottom:0 !important;}
