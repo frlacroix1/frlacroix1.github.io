@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @charset "UTF-8";
 
 /* 
@@ -158,4 +159,66 @@ img {
   opacity:0;
 }
 
+.navbar .list-group .nav-item:nth-child(1) span .bi.complete{color:#9c5076;}
+.navbar .list-group .nav-item:nth-child(2) span .bi.complete{color:#d0516c;}
+.navbar .list-group .nav-item:nth-child(3) span .bi.complete{color:#e77e6d;}
+.navbar .list-group .nav-item:nth-child(4) span .bi.complete{color:#e7b575;}
+.navbar .list-group .nav-item:nth-child(5) span .bi.complete{color:#94bb88;}
+.navbar .list-group .nav-item:nth-child(6) span .bi.complete{color:#57baa1;}
+.navbar .list-group .nav-item:nth-child(7) span .bi.complete{color:#3a7e9b;}
+
+
+.navbar{
+  background-color:#0c2652;
+}
+h1, h2{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h2{font-weight:400;}
 #bienvenue{margin-top:-200px;padding-top:200px;}
+
+section > .container{
+  background-color:#0c2652;
+  color:#FFF;
+}
+main{
+background: repeating-linear-gradient(
+    to bottom,
+
+    #9c5076 0px 40px,
+    #ad5073 40px 80px,
+    #bf5170 80px 120px,
+    #d0516c 120px 160px,
+    #e1536a 160px 200px,
+    #e85c69 200px 240px,
+    #e76c6b 240px 280px,
+    #e77e6d 280px 320px,
+    #e78f6f 320px 360px,
+    #e7a272 360px 400px,
+    #e7b575 400px 440px,
+    #d4bc7a 440px 480px,
+    #b4bb81 480px 520px,
+    #94bb88 520px 560px,
+    #79ba90 560px 600px,
+    #64b998 600px 640px,
+    #57baa1 640px 680px,
+    #51b0a3 680px 720px,
+    #499fa0 720px 760px,
+    #418e9e 760px 800px,
+    #3a7e9b 800px 840px,
+    #336c98 840px 880px,
+    #2d5c95 880px 920px,
+    #305492 920px 960px,
+    #3d538f 960px 1000px,
+    #4b528a 1000px 1040px,
+    #5a5186 1040px 1080px,
+    #6a5083 1080px 1120px,
+    #7b507f 1120px 1160px,
+    #8b507b 1160px 1200px
+);
+}
