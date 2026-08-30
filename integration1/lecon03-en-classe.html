@@ -78,70 +78,8 @@
                 </div>
             <div class="col-lg-9 order-lg-1">
             <article>
-                <section id="section03">
-                    
-                    <h2>Le formulaire HTML: un survol</h2>
-                    <p>Les formulaires HTML sont caratérisés par des éléments qui permettent de collecter des informations auprès des utilisateurs.</p>
-                    
-                    <p>Le formulaire le plus connu est sans doute le champ de recherche de Google&nbsp;: </p>
-                    <figure class="w80">
-                        <figcaption>Formulaire de recherche de Google</figcaption>
-                        <img class="bordure" src="images/cours03_form01.jpg" alt="Formulaire de recherche du site de Google.">
-                    </figure>
-                    <h3>Exemples d'utilisations de formulaire sur des sites:</h3>
-                    <ul>
-                        <li><strong>Social:</strong> communiquer, s'inscrire à une infolettre, répondre à un sondage, participer, partager.</li>
-                        <li><strong>Commercial:</strong> passer une commande, acheter un billet, réserver une chambre, faire un don.</li>
-                        <li><strong>Productivité:</strong> réaliser une tâche, mettre à jour ses coordonnées après un déménagement.</li>
-                        </ul>
-                   <h3>Fonctionnement d'un formulaire</h3>
-                    <p>L'utilisateur remplit le formulaire et appuie sur un bouton pour soumettre les informations au&nbsp;serveur:</p>
-                    <figure class="w80">
-                        <figcaption>Processus d'envoi d'un formulaire</figcaption>
-                        <img class="bordure" src="images/cours03_form02.jpg" alt="Processus d&#39;envoi d&#39;un formulaire.">
-                    </figure>
-                    <p>Un formulaire peut comprendre plusieurs contrôles, chacun récoltant des informations différentes. </p>
-                    <p>Le serveur doit pouvoir mettre en correspondance les données saisies et les éléments du formulaire.</p>
-                    <p>C'est ici que le nom (l'attribut <code>name</code>) entre en jeu: il sert à nommer le contrôle et à identifier la valeur entrée par l'utilisateur. Lors de l'envoi du formulaire, il se forme ainsi des couples <strong>nom / valeur</strong> qui sont traités par le programme: 
-                   </p>
-                    <pre class="exemple-code">&lt;input type="text" name="username"&gt;</pre>
-                    <figure class="w80">
-                        <figcaption>Couple nom/valeur</figcaption>
-                        <img class="bordure" src="images/cours03_form03.jpg" alt="Couple nom-valeur">
-                    </figure>
-                    <h2>Structure d'un formulaire &lt;form&gt;</h2>
-                    <p>Quelques caractéristiques :</p>
-                    <ul>
-                        <li>Les éléments d'un formulaire (c'est-à-dire un groupe de contrôles utilisés pour recueillir des informations) sont obligatoirement inclus dans les balises <code>&lt;form&gt;&lt;/form&gt;</code>.</li>
-                        <li>Tout contenu web (texte <code>&lt;p&gt;</code>, image <code>&lt;img&gt;</code>, tableau <code>&lt;table&gt;</code>, etc.) peut être ajouté dans un élément <code>form</code>, mais son rôle principal est de servir de conteneur à des <strong>contrôles</strong> (cases à cocher, champs de saisie, boutons, etc.) permettant de saisir des informations.</li>
-                        <li>Le formulaire possède les attributs nécessaires pour interagir avec son programme de traitement.</li>
-                        <li>Un même document HTML peut contenir plusieurs formulaires, mais <strong>il est strictement interdit d'insérer un formulaire dans un autre formulaire</strong>, car cela crée un comportement inconsistant dont le rendu final dépendra du navigateur.</li>
-                        <li>Quand l'utilisateur a fini de remplir son formulaire et appuie sur le bouton <em>Envoyer</em>, le navigateur prend les informations, les organise sous forme de paires <em>nom/valeur</em>, les encode pour leur transfert et les envoie au serveur.</li>
-                    </ul>
-                    <h3>Syntaxe</h3>
-                    <p>Les éléments qui composent un formulaire sont inclus entre les balises <code>&lt;form&gt;</code> et <code>&lt;/form&gt;</code> dont la syntaxe minimale est la suivante : </p>
-                    <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
-
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="username"&gt;
-                        &nbsp;&nbsp;&nbsp;&nbsp;(...)
-
-                        &lt;/form&gt;
-                    </pre>
-                    <p>où:</p>
-                    <ul>
-                        <li><code>action</code> (obligatoire) a pour valeur l'URL du programme qui traite les données recueillies par le formulaire. <br>
-                        </li>
-                        <li><code>method</code> (obligatoire) est la méthode de transmission des données du formulaire: 
-                            <ul>
-                                <li>Valeur <code>"get"</code> : transmet les données en clair dans l'adresse URL; la taille des données ne peut dépasser 256 octets. Utile pour les formulaires courts, comme un champ de recherche, où la sécurité n'est pas un enjeu. On ne doit pas envoyer de mots de passe ou autres données sensibles par cette méthode ;</li>
-                                <li>Valeur <code>"post" </code>: transmet les données dans le corps de la requête; la taille des données n'est pas limitée. Cette méthode est souvent préférée à la première pour les formulaires longs ou qui nécessitent un bon degré de sécurité, car elle n'affiche pas en clair les données saisies dans le formulaire et permet leur encryptage.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section> <!-- #section03 -->
-                <div class="haut-de-page">
-                        <a href="#">Haut de page</a>
-                    </div>
+                
+                
                 <section id="section04" class="liste-h3">
                     
                     <h2>Éléments de formulaire courants</h2>

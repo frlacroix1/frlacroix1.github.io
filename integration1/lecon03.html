@@ -177,46 +177,45 @@
                         <p>Choissez l'onglet <em>Validate by File Upload</em> et choisissez le fichier html de votre exercice&nbsp;1</p>
                         <img class="w70 bordure" src="images/cours02_tf_validator01.jpg" alt="L&#39;onglet Validate by File Upload">
                     </div>
-                    <h3>2. Utiliser un balisage sémantique pour donner du sens au contenu</h3>
-                    <p>Le balisage sémantique consiste à utiliser les balises pour <strong>donner du sens</strong> au contenu d'une page web.</p>
-                    <p class="phrase-cle">&gt;&gt;&gt; Les éléments du document web doivent être sémantiques...</p>
-                    <p>... c'est-à-dire, signifiants et descriptifs.</p>
-                    <p class="phrase-cle">&gt;&gt;&gt; Le balisage sémantique met l'accent...</p>
-                    <p>... sur le choix d'éléments décrivant le contenu de manière adéquate et non sur leur présentation dans le navigateur : </p>
-                    <ul>
-                        <li>Par exemple, l'utilisation  d'un élément <code>i</code> dans le seul but de créer de l'italique est à proscrire. Il ne doit être utilisé que pour baliser un mot ou une expression en langue étrangère ou du jargon technique ;</li>
-                        <li>L'usage d'un élément pour autre chose que ce qu'il signifie apauvrit le sens donné au contenu et rend l'interprétation du document aléatoire.</li>
-                    </ul>
-                    <p class="phrase-cle">&gt;&gt;&gt; Le balisage sémantique n'est pas qu'une simple conformité aux standards...</p>
-                    <p>...car un document peut être considéré valide quant aux standards de l'écriture, mais déficient sur le plan de la <em>signification</em> du contenu.</p>
-                    <div class="note">
-                        <p>Par exemple, si vous utilisez un élément de paragraphe générique tel que <code>p</code> plutôt qu'un élément <code>h1</code> ou <code>h2</code> pour baliser un titre, votre document sera <em>valide</em>, mais pauvre en <em>sens</em>.</p>
+                    <div class="video-enveloppe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KohbLYs9I14?si=EWGoRua74I7_g81p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <p class="phrase-cle">&gt;&gt;&gt; Un balisage sémantique garantit une compatibilité... </p>
-                    <p>...avec un grand nombre d'environnements de navigation. </p>
-                    <p class="phrase-cle">&gt;&gt;&gt; Un balisage sémantique permet aux agents utilisateurs non humains...</p>
-                    <p>...d'analyser correctement le contenu et de décider comment le traiter (exemple : la fonction d'indexation d'un moteur de recherche ou la lecture vocale du contenu à l'écran).</p>
+                    <h3>2. Utiliser un balisage sémantique pour donner du sens au contenu</h3>
+                    <p>Le balisage sémantique consiste à utiliser les éléments HTML pour <strong>donner du sens au contenu</strong> d'une page web.</p>
+                    <p>Les éléments doivent donc être choisis en fonction de ce qu'ils représentent, et non de leur apparence dans le navigateur.</p>
+                    <div class="note">
+                        <p>Par exemple, l'élément <code>i</code> ne doit pas être utilisé simplement pour mettre du texte en italique. Il doit être utilisé lorsqu'il apporte une signification particulière au contenu, par exemple pour une expression en langue étrangère ou un terme technique.</p>
+                    </div>
+                    <p>Utiliser un élément pour une fonction qui ne correspond pas à sa signification <strong>appauvrit le sens du document</strong> et peut rendre son interprétation plus difficile.</p>
+                    <h4>Validité et sémantique</h4>
+                    <p>Un document peut être valide tout en étant pauvre sur le plan sémantique.</p>
+                    <div class="note">
+                        <p>Par exemple, utiliser <code>p</code> pour baliser un titre peut produire un document HTML valide, mais <code>h1</code> ou <code>h2</code> serait plus approprié, puisque ces éléments indiquent qu'il s'agit d'un titre.</p>
+                    </div>
+                    <p>Le balisage sémantique permet ainsi aux différents agents utilisateurs, comme les moteurs de recherche et les technologies d'assistance, de <strong>mieux comprendre et traiter le contenu</strong>.</p>
                     <div class="note">
                         <h3>Un web sémantique</h3>
-                        <p>Le web sémantique est une notion importante. C'est ce qui permet aux différents programmes de <strong>comprendre le sens des informations</strong> qu'ils traitent.</p>
-                        <p>Qu'il s'agisse d'un moteur de recherche ou d'une technologie d'assistance, ces programmes ont besoin de pouvoir identifier la nature des données qu'ils parcourent, que ce soit pour les référencer ou pour les restituer correctement. </p>
-                        <p>C'est Tim Berners-Lee, l'inventeur du <i>World Wide Web</i> qui, le premier, évoqua le web sémantique: </p>
-                        <blockquote cite="http://www.ingeoclouds.com/ingeoclouds/index.php/fr/presentation/web-semantique">
-                            <p>«&nbsp;J'ai fait un rêve pour le Web [dans lequel les ordinateurs] deviennent capables d'analyser toutes les données sur le Web — le contenu, les liens, et les transactions entre les personnes et les ordinateurs. Un «&nbsp;Web Sémantique&nbsp;», qui devrait rendre cela possible, n'a pas encore émergé, mais quand ce sera fait, les mécanismes d'échange au jour le jour, de bureaucratie et de nos vies quotidiennes seront traités par des machines dialoguant avec d'autres machines. Les «&nbsp;agents intelligents&nbsp;» qu'on nous promet depuis longtemps vont enfin se concrétiser.&nbsp;»</p>
-                            <p>—&nbsp;Tim Berners-Lee, <i>Weaving the Web</i></p>
-                        </blockquote>
+                        <p>Le Web sémantique vise à permettre aux programmes de comprendre le sens des informations présentes sur le Web.</p>
+                        <p>Un moteur de recherche ou une technologie d'assistance doit pouvoir identifier la nature des contenus pour les référencer, les analyser ou les restituer correctement.</p>
+                        <p>Cette vision du Web a notamment été formulée par Tim Berners-Lee, l'inventeur du World Wide Web.</p>
+                    </div>
+                    <div class="video-enveloppe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S6HLI0jLjMA?si=tjOmu_0LORSUwwk1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h3>3. Structurer logiquement les documents</h3>
-                    <p class="phrase-cle">&gt;&gt;&gt; La lecture de la source du document devrait être logique</p>
-                    <p>Le contenu doit être ordonné et hiérarchisé. Les titres et les sous-titres doivent suivre une hiérarchie claire et signifiante.</p>
-                    <p class="phrase-cle">&gt;&gt;&gt; La structure logique ne doit pas être subordonnée à la structure graphique </p>
-                    <p>On ne doit pas sacrifier le <strong>sens</strong> et la <strong>structure</strong> du contenu balisé pour des considérations graphiques.</p>
-                    <p>Ce qui ne veut pas dire à l'inverse de sacrifier la qualité de la présentation graphique : des règles de style bien conçues s'occupent de l'aspect graphique.</p>
+                    <p>Le contenu d’un document HTML doit être <strong>ordonné et hiérarchisé de façon logique</strong>.</p>
+                    <p>Les titres et les sous-titres doivent suivre une hiérarchie claire qui reflète l’organisation réelle du contenu : <code>h1</code> pour le titre principal, <code>h2</code> pour les grandes sections, <code>h3</code> pour les sous-sections, et ainsi de suite.</p>
+                    <p><code>h1 (un seul titre principal par page Web) <br>│ ├── h2 <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── h3  <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── p <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── h3  <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── p <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── h3 <br>│ ├── h2 <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── h3 <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── h3 <br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── p </code></p>
+                    <p>La structure du document doit être déterminée par le sens et les relations entre les contenus, et non par leur apparence.</p>
+                    <p>La présentation graphique sera ensuite définie avec les CSS. Il est donc possible de modifier complètement l’apparence d’une page sans modifier sa structure HTML.</p>
+                    <div class="video-enveloppe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6SmyA2Be0TE?si=wv2yxgWux2YWGPgv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                     <h3>4. Séparer la présentation de la structure</h3>
                     <p>Un bon balisage consiste à utiliser des balises dont la sémantique est adéquate tout en les liant à des règles de style répertoriées dans une feuille de style distincte du HTML.</p>
                     <div class="tf">
                         <h3>Travail formatif</h3>
-                        <p>Voici le balisage et le texte d'une recette tirée d'un site de cuisine :</p>
+                        <p>Voici le balisage et le texte d'une recette tirée d'un site de cuisine&nbsp;:</p>
                         <div class="bloc-codepen">
                             <p class="codepen" data-height="578" data-default-tab="html,result" data-slug-hash="EaVoYxy" data-pen-title="c02-balisage sémantique" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/frlacroix/pen/EaVoYxy">
@@ -230,6 +229,9 @@
                             <li>Corrigez le balisage en fonction des bonnes pratiques énoncées au début du cours et du balisage sémantique;</li>
                             <li>Ajoutez de l'indentation au balisage afin de mettre en évidence l'imbrication du code et afin qu'il soit plus lisible.</li>
                         </ol>
+                    </div>
+                    <div class="video-enveloppe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N4I_Nrgppm0?si=euJ_aEXSj1Nq49Ie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </section> <!-- #section01 -->
                 <div class="haut-de-page">
@@ -282,6 +284,116 @@
                     <p>Le corps du document délimité avec <code>&lt;body&gt;&lt;/body&gt;</code> contient tout le contenu du document, soit la partie affichée dans la fenêtre d'un navigateur graphique ou encore dictée par un lecteur d'écran.</p>
 
                 </section> <!-- section02 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section03">
+                    
+                    <h2>Le formulaire HTML: un survol</h2>
+                    <p>Les formulaires HTML sont caratérisés par des éléments qui permettent de collecter des informations auprès des utilisateurs.</p>
+                    
+                    <p>Le formulaire le plus connu est sans doute le champ de recherche de Google&nbsp;: </p>
+                    <figure class="w80">
+                        <figcaption>Formulaire de recherche de Google</figcaption>
+                        <img class="bordure" src="images/cours03_form01.jpg" alt="Formulaire de recherche du site de Google.">
+                    </figure>
+                    <h3>Exemples d'utilisations de formulaire sur des sites:</h3>
+                    <ul>
+                        <li><strong>Social:</strong> communiquer, s'inscrire à une infolettre, répondre à un sondage, participer, partager.</li>
+                        <li><strong>Commercial:</strong> passer une commande, acheter un billet, réserver une chambre, faire un don.</li>
+                        <li><strong>Productivité:</strong> réaliser une tâche, mettre à jour ses coordonnées après un déménagement.</li>
+                        </ul>
+                   <h3>Fonctionnement d'un formulaire</h3>
+                   <div class="w-50">
+                    <p class="resultat-etiquette">Aperçu d'un formulaire</p>
+                    <div class="resultat">
+                        <form action="#" method="post">
+
+  <p><strong>Votez pour votre film préféré</strong></p>
+
+
+  <p><label for="nom">Votre nom :</label>
+  <input type="text" name="nom" id="nom"></p>
+    <div class="row">
+    <div class="col">
+        <p>Je vote pour :</p>
+    </div>
+    <div class="col">
+       <label>
+    <input type="radio" name="film" value="casablanca">
+    Casablanca
+  </label><br>
+
+  <label>
+    <input type="radio" name="film" value="birdman">
+    Birdman
+  </label><br>
+
+  <label>
+    <input type="radio" name="film" value="tombouctou">
+    Tombouctou
+  </label><br>
+
+  <label>
+    <input type="radio" name="film" value="les-dangereux">
+    Les dangereux
+  </label>
+    </div>
+  </div>
+
+
+
+
+  <p class="text-right"><input type="submit" value="Envoyer"></p>
+
+</form>
+                    </div>
+                    </div>
+                   
+                    <p>L'utilisateur remplit le formulaire et appuie sur un bouton pour soumettre les informations au&nbsp;serveur:</p>
+                    <figure class="w80">
+                        <figcaption>Processus d'envoi d'un formulaire</figcaption>
+                        <img class="bordure" src="images/cours03_form02.jpg" alt="Processus d&#39;envoi d&#39;un formulaire.">
+                    </figure>
+                    <p>Un formulaire peut comprendre plusieurs contrôles, chacun récoltant des informations différentes. </p>
+                    <p>Le serveur doit pouvoir mettre en correspondance les données saisies et les éléments du formulaire.</p>
+                    <p>C'est ici que le nom (l'attribut <code>name</code>) entre en jeu: il sert à nommer le contrôle et à identifier la valeur entrée par l'utilisateur. Lors de l'envoi du formulaire, il se forme ainsi des couples <strong>nom / valeur</strong> qui sont traités par le programme: 
+                   </p>
+                    <pre class="exemple-code">&lt;input type="text" name="username"&gt;</pre>
+                    <figure class="w80">
+                        <figcaption>Couple nom/valeur</figcaption>
+                        <img class="bordure" src="images/cours03_form03.jpg" alt="Couple nom-valeur">
+                    </figure>
+                    <h2>Structure d'un formulaire &lt;form&gt;</h2>
+                    <p>Quelques caractéristiques :</p>
+                    <ul>
+                        <li>Les éléments d'un formulaire (c'est-à-dire un groupe de contrôles utilisés pour recueillir des informations) sont obligatoirement inclus dans les balises <code>&lt;form&gt;&lt;/form&gt;</code>.</li>
+                        <li>Tout contenu web (texte <code>&lt;p&gt;</code>, image <code>&lt;img&gt;</code>, tableau <code>&lt;table&gt;</code>, etc.) peut être ajouté dans un élément <code>form</code>, mais son rôle principal est de servir de conteneur à des <strong>contrôles</strong> (cases à cocher, champs de saisie, boutons, etc.) permettant de saisir des informations.</li>
+                        <li>Le formulaire possède les attributs nécessaires pour interagir avec son programme de traitement.</li>
+                        <li>Un même document HTML peut contenir plusieurs formulaires, mais <strong>il est strictement interdit d'insérer un formulaire dans un autre formulaire</strong>, car cela crée un comportement inconsistant dont le rendu final dépendra du navigateur.</li>
+                        <li>Quand l'utilisateur a fini de remplir son formulaire et appuie sur le bouton <em>Envoyer</em>, le navigateur prend les informations, les organise sous forme de paires <em>nom/valeur</em>, les encode pour leur transfert et les envoie au serveur.</li>
+                    </ul>
+                    <h3>Syntaxe</h3>
+                    <p>Les éléments qui composent un formulaire sont inclus entre les balises <code>&lt;form&gt;</code> et <code>&lt;/form&gt;</code> dont la syntaxe minimale est la suivante : </p>
+                    <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="username"&gt;
+                        &nbsp;&nbsp;&nbsp;&nbsp;(...)
+
+                        &lt;/form&gt;
+                    </pre>
+                    <p>où:</p>
+                    <ul>
+                        <li><code>action</code> (obligatoire) a pour valeur l'URL du programme qui traite les données recueillies par le formulaire. <br>
+                        </li>
+                        <li><code>method</code> (obligatoire) est la méthode de transmission des données du formulaire: 
+                            <ul>
+                                <li>Valeur <code>"get"</code> : transmet les données en clair dans l'adresse URL; la taille des données ne peut dépasser 256 octets. Utile pour les formulaires courts, comme un champ de recherche, où la sécurité n'est pas un enjeu. On ne doit pas envoyer de mots de passe ou autres données sensibles par cette méthode ;</li>
+                                <li>Valeur <code>"post" </code>: transmet les données dans le corps de la requête; la taille des données n'est pas limitée. Cette méthode est souvent préférée à la première pour les formulaires longs ou qui nécessitent un bon degré de sécurité, car elle n'affiche pas en clair les données saisies dans le formulaire et permet leur encryptage.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section> <!-- #section03 -->
                 <div class="tf" role="alert">
                         <p class="tf-intitule">Votre lecture se termine ici.</p><p>Avant le prochain cours, <strong>assurez-vous d’avoir réalisé les travaux formatifs</strong> et notez les questions qui vous sont venues pendant votre lecture.</p>
                     </div>
