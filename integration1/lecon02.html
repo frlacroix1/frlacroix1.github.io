@@ -325,7 +325,275 @@
                     <div class="haut-de-page">
                         <a href="#">Haut de page</a>
                     </div>
+                    <section id="section05">
                     
+                    <h2>La structure des éléments</h2>
+                    <p>Les éléments ne se comportent pas tous de la même façon dans le flux du contenu. Deux grands types d'éléments se distinguent à cet égard.
+                    </p><h3>Deux grands types d'éléments</h3>
+                    <p>Les éléments <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> se distinguent en deux grands types:</p>
+                    <ol>
+                        <li>les éléments de type<strong> bloc;</strong></li>
+                        <li>les éléments de type <strong>en ligne</strong> (ou «au fil du texte»).</li>
+                    </ol>
+                    <p>Les éléments de type <strong>bloc</strong> délimitent des blocs entiers comme des titres, des paragraphes, des listes, des citations, etc.</p>
+                    <p>Les éléments de type <strong>en ligne</strong> sont prévus pour enrichir localement des portions de texte : hyperliens, renforcement, etc.).</p>
+                    <p>Il en découle des spécificités d'affichage.</p>
+                    <h4>Exemple</h4>
+                    <p>Des éléments de type bloc écrits côte à côte dans le code HTML seront tout de même placés par défaut l'un sous l'autre par le navigateur graphique.</p>
+                    <p>Par exemple, les deux éléments <code>&lt;p&gt;</code> écrits comme suit en HTML : </p>
+                    <p class="code-etiquette">Code</p>
+                    <pre class="exemple-code">                        <span class="rose">&lt;p&gt;</span>Premier paragraphe<span class="rose">&lt;/p&gt;&lt;p&gt;</span>Deuxième paragraphe<span class="rose">&lt;/p&gt;</span> 
+                    </pre>
+                    <p class="resultat-etiquette">Résultat dans un navigateur</p>
+                    <div class="resultat">
+                    <p>Premier paragraphe</p>
+                    <p>Deuxième paragraphe</p>
+                    </div>
+                    <p>Les <strong>éléments en ligne</strong> s'appliquent généralement à des portions de texte, tel que des groupes de mots dans une phrase. Par exemple : le renforcement d'une partie de texte avec la balise <code>strong</code> ou encore le balisage d'un acronyme ou d'une abbréviation avec <code>abbr</code>. La plupart des éléments en ligne ont des particularités d'affichage dans les navigateurs graphiques: par exemple, <code>strong</code> est affiché en gras, <code>em</code> est affiché en italique et <code>code</code> est affiché avec une police mono-espace. Mais d'autres éléments en ligne ne montrent aucune particularité à l'affichage.</p>
+                    <h3>Contenus autorisés selon les types de balises</h3>
+                    <ul>
+                        <li>Un élément de type bloc peut contenir un ou plusieurs éléments de type bloc;</li>
+                        <li> Un élément de type bloc peut contenir un ou plusieurs éléments en ligne; </li>
+                        <li>Par contre, <strong>certains éléments de type bloc</strong>, comme les éléments  <em>paragraphe</em> (<code>p</code>) et  <em>titre</em> (<code>h1</code>, <code>h2</code>,...) <strong>ne peuvent inclure</strong> que des éléments en ligne;</li>
+                        <li>Un élément en ligne  peut parfois renfermer  d'autres éléments en ligne, et peut aussi dans certains cas renfermer un élément de type bloc. </li>
+                    </ul>
+                    <div class="note">
+                        <p>La distinction bloc vs en ligne est fondamentale lors de l'étape de la mise en forme du document à l'aide de CSS. Nous y reviendrons.</p>
+                    </div>
+                    <div class="tf" id="f4">
+                        <p class="tf-intitule">Travail formatif 4</p> 
+                        <ol>
+                            <li>Dans votre explorateur de fichiers (MacOS ou Windows), aller dans votre dossier <strong>tim > session1 > integration1</strong>;</li>
+                            <li>Y créer un dossier pour la leçon en cours <strong>lecon02</strong>;</li>
+                            <li>À l'intérieur de ce nouveau dossier, en créer un autre selon la nomenclature suivante: <br><strong>&nbsp;&nbsp;&nbsp;[le numéro de votre groupe]</strong> (ex. <em>gr1</em>) <br>&nbsp;&nbsp;&nbsp;<code>+</code> <strong>_</strong> <code>+</code> <strong>[votre nom de famille]</strong> (ex. <em>_lacroix</em>)<br>&nbsp;&nbsp;&nbsp;<code>+</code> <strong>[l'initiale de votre prénom]</strong> (ex. <em>f</em>) <br>&nbsp;&nbsp;&nbsp;<code>+</code> <strong>_</strong> <code>+</code> <strong>[l'identification du travail en cours]</strong> (ex. <em>_ex1</em>);</li>
+                            <li>Vous devriez maintenant avoir une structure de dossiers qui ressemble à ceci:<br><img src="images/lecon02/lecon02_dossier_gr1_lacroixf_ex1.png" alt="Nomenclature"></li>
+                            <li>Ouvrez le logiciel <i>VSC</i> ;</li>
+                            <li>À partir du menu <em>Fichier</em> (<em>File</em>), choisissez <em>Ouvrir...</em> (<em>Open...</em>);</li>
+                            <li>Atteignez le dossier que vous venez de créer et ouvrez-le ;</li>
+                            <li>À Partir du menu <em>Fichier</em>, choisissez maintenant <em>Nouveau fichier</em> (<em>New file...</em>) afin de créez un nouveau fichier HTML.</li>
+                            <li>Sélectionnez le menu <em>Fichier > Enregistrer...</em> et nommez le fichier <strong>monarticle.html</strong> ; ce fichier sera inséré automatiquement dans le dossier précédemment créé ; </li>
+                            <li>Assurez-vous que le fichier <strong>monarticle.html</strong> est sélectionné dans la colonne de gauche de VSC ;</li>
+                            <li>Inscrivez du texte dans la fenêtre, à droite, sur la ligne numéroté «1».</li>
+                            <li>Visualisez le résultat dans le navigateur <em>Chrome</em>: pour cela, il suffit de retrouver le fichier <strong>monarticle.html</strong> sur votre ordinateur, faire un clic droit dessus et sélectionner <em>Ouvrir avec > Google Chrome</em> ;<br><img src="images/lecon02/lecon02_ouvrir_dans_chrome.png" alt="Google Chrome"></li>
+                            <li>Dans le navigateur Chrome, vous devriez voir le texte que vous avez écrit dans VSC. </li>
+                            <li>Bravo! Vous venez de créer votre première page HTML et la consulter dans un navigateur. </li>
+                        </ul> 
+                    </div>
+                </section> <!-- section05 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section06">
+                    
+                    <h2>Quelques balises pour commencer</h2>
+                    <p>Avant de découvrir quelques balises HTML courantes, il faut comprendre qu’elles ne servent pas uniquement à structurer visuellement une page. Chaque balise possède une valeur sémantique : elle indique au navigateur, aux moteurs de recherche et aux technologies d’assistance ce que représente le contenu qu’elle contient.</p>
+
+<p>Par exemple, la balise <code>&lt;h1&gt;</code> indique qu’un texte constitue le titre principal d’une page, tandis que <code>&lt;p&gt;</code> indique qu’il s’agit d’un paragraphe. Le choix d’une balise doit donc se faire en fonction du sens du contenu, et non simplement de son apparence.</p>
+                    <h3>Tableau 1.1 Quelques balises en ligne</h3>
+                    <table>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Élément</th>
+                            <th width="75%" scope="col">Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;</code></td>
+                            <td>Désigne un lien hypertexte. S'accompagne de l'attribut <code>href</code> qui contient la cible du lien.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_a.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;b&gt;</code></td>
+                            <td>Identifie du texte stylistiquement particulier, mais sans emphase particulière: la liste de mots clés d'un résumé d'article, le nom d'un produit, etc. Peut être utilisé aussi pour le nom d'une personne dans une suite de noms de personnalités connues par exemple. À utiliser en dernier recours, quand aucun autre élément plus signifiant peut être utilisé.<br><a href="http://www.w3schools.com/tags/tag_b.asp" target="_blank">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;cite&gt;</code></td>
+                            <td>Indique le titre d'une oeuvre (livre, film, chanson, poème, peinture, etc.).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_cite.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;em&gt;</code></td>
+                            <td>Indique du texte à prononcer avec une certaine emphase.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_em.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;i&gt;</code></td>
+                            <td>Indique des expressions de langue étrangère, du jargon technique, des noms latins de plantes ou d'animaux (généralement affiché en italique dans le navigateur). S'accompagne parfois d'un attribut <code>class</code> pour plus de précision ou encore l'attribut <code>lang</code> pour désigner la langue d'origine de l'expression.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_i.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;</code></td>
+                            <td>Inclut une image dans le document. S'accompagne  de l'attribut <code>src</code> qui indique l'adresse de l'image. <strong>S'accompagne obligatoirement de l'attribut</strong> <code>alt</code> (texte alternatif pour mal-voyants, pour navigateurs graphiques en mode texte, pour navigateurs audio ou encore lorsque l'image ne s'affiche pas).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_img.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;q&gt;</code></td>
+                            <td>Délimite une citation courte. Parfois affiché avec des apostrophes doubles dans le navigateur.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_q.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;small&gt;</code></td>
+                            <td>Indique un court texte de référence (les « petits caractères »). La source d'un texte, le copyright, la licence d'utilisation, etc. Ne peut être utiliser pour un texte long, comportant plusieurs paragraphes comme le contrat d'utilisation d'un logiciel.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_small.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;mark&gt;</code></td>
+                            <td>Indique un bout de texte sur lequel on souhaite attirer l'attention ou qui est à retenir pour le lecteur (généralement affiché en surlignage jaune dans le navigateur).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_mark.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;strong&gt;</code></td>
+                            <td>Indique un texte important. L'importance relative d'un contenu peut être signalée par l'imbrication d'éléments <code>strong</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_strong.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figcaption&gt;</code></td>
+                            <td>Utilisé pour affiché la légende d'une image. L'élément <code>figcaption</code> est généralement utilisé avec l'élément <code>img</code>, à l'intérieur d'un élément <code>figure</code> (voir plus bas, dans les éléments de type bloc). <code>strong</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_figcaption.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;time&gt;</code></td>
+                            <td>Utilisé pour baliser un indicateur de temps (années, mois, jour, heure). Il est utilisé avec l'attribut <code>datetime</code> dont la valeur.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_time.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                    </tbody></table>
+                    <h3>Tableau 1.2 Quelques balises de type bloc</h3>
+                    <table>
+                        <tbody><tr>
+                            <th width="25%" scope="col">Balise</th>
+                            <th width="75%" scope="col">Commentaires</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;blockquote&gt;</code></td>
+                            <td>Introduit des citations longues. Lorsque la citation comporte plusieurs paragraphes, il est préférable d'insérer des éléments  <code>p</code> à l'intérieur d'un <code>blockquote</code>plutôt qu'une succession d'éléments <code>blockquote</code>.
+                                <br><a target="_blank" href="http://www.w3schools.com/tags/tag_blockquote.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="24"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></td>
+                            <td>HTML prévoit six niveaux de titres, placés en hiérarchie à partir du titre principal, <code>&lt;h1&gt;</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_hn.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td height="88"><code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code></td>
+                            <td>Les balises &lt;ol&gt; et &lt;ul&gt; désignent respectivement des listes ordonnées et des listes à puces simples. Elles contiennent exclusivement les éléments d'objet de liste (&lt;li&gt;).<br><a target="_blank" href="http://www.w3schools.com/tags/tag_ul.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Désigne un paragraphe de texte. Tout comme les titres, cet élément bloc ne peut contenir d'autres éléments blocs.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_p.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figure&gt;</code></td>
+                            <td>L'élément figure est utilisé pour présenter une image à l'aide de l'élément <code>img</code>, et sa légende à l'aide de l'élément <code>figcaption</code>.<br><a target="_blank" href="http://www.w3schools.com/tags/tag_figure.asp">Essayez-le! <i class="bi bi-box-arrow-up-right"></i></a></td>
+                        </tr>
+                    </tbody></table>
+                </section> <!-- section06 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="sectionAE">
+                    
+                    <h2>Activité d'évaluation</h2>
+                    
+                    <h3>Ex1 - Introduction au langage HTML</h3>
+                    <p>L'exercice 1 est une introduction à l'utilisation du langage HTML pour structurer une page web.</p>
+                    <h4>Document à remettre</h4>
+                    <ol>
+                        <li>Votre dossier nommé : <i>gr1_nominitialeprenom_ex1</i></li>
+                        <li>Ce dossier contiendra : <ul><li>un document html nommé <strong>monarticle.html</strong></li><li>un sous-dossier nommé <strong>images</strong></li> 
+                        </ul></li>
+                        <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur LÉA.</li>
+                    </ol>
+                    <div class="note">
+                        <p class="note-intitule">Les dossiers et les fichiers de l'exercice 1</p>
+                        <figure class="w50">
+                            <figcaption>Arborescence de fichiers de l'exercice 1.</figcaption>
+                            <img class="bordure" src="images/lecon02/lecon02_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="88">
+                        </figure>
+                    </div>
+                    <h4>Échéancier</h4>
+                    <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le jeudi suivant à&nbsp;8h</strong>. </p>
+                    <!-- <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <ul>
+                        <li>groupe 1 : <strong>au plus tard le jeudi suivant à 8h</strong></li>
+                        <li>groupe 2 : <strong>au plus tard le mercredi suivant à 12h</strong></li>
+                    </ul> -->
+                    <h4>Travail à faire</h4>
+                    <p>Dans le cadre de l'Ex1, vous devez composer la structure d'une page HTML à l'aide de l'éditeur de code <em>VSCodium</em> (VSC). </p>
+                     
+                    <figure class="w90">
+                        <figcaption class="legende" id="apercu"><strong>Le résultat attendu dans Google Chrome</strong> <br>L’image ci-dessous illustre le résultat attendu dans Google Chrome (code de base présenté plus haut + votre ajout). Servez-vous-en pour déduire les éléments HTML nécessaires à la réalisation du travail.</figcaption>
+                        <img class="bordure" src="images/lecon02/lecon02_tp1_02.jpg" alt="Affichage dans Chrome de l&#39;exemple du tp1">
+                    </figure>
+                    <h4>Spécifications pour l'Ex1</h4>
+                    <p><strong>I. Préparez le travail : </strong></p>
+                    <ol>
+                       <li>Téléchargez et décompressez l'archive <a href="materiel/Ex1.zip" class="btn btn-primary" role="button">Ex1.zip <i class="bi bi-download"></i></a>. </li>
+                       <li>L'archive <strong>Ex1.zip</strong> contient :
+                        <ul>
+                            <li>le fichier <strong>ex1_texte.txt</strong>: les textes originaux de l'article de blogue; </li>
+                            <li>le sous-dossier <strong>/images</strong>: les images de l'article de blogue. Déplacez ce sous-dossier dans votre dossier de travail (<em>gr1_lacroixf_ex1</em>). <br>
+                            <img class="bordure" src="images/lecon02/lecon02_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="225"></li>
+                            </ul>
+                        </li>
+                        <li>Ouvrez l'éditeur de code <i>VSC</i>. </li>
+                        <li>Dans le  menu <em>Fichier</em>, choisissez <em>Ouvrir un dossier</em>;</li>
+                        <li>Si ce n'est déjà fait, ouvrez le dossier précédemment créé dans <a href="#f4">le travail formatif 4</a> (<em>gr1_lacroixf_ex1</em>) ;</li>
+                        <li>Dans <i>VSC</i>, identifiez le fichier <code>monarticle.html</code> dans la colonne de gauche et cliquez dessus une fois pour l'activer dans la fenêtre d'édition.</li>
+                        <li>Recopiez le code ci-dessous dans votre document HTML. Il s'agit de la structure de base du document HTML. <br><img class="bordure" src="images/lecon02/lecon02_tp1_01.jpg" alt="Code de EX1"></li>
+                        <li>Votre document HTML contient maintenant <strong>les balises de base d'une page web</strong>:
+                    <ul>
+                                <li><code>html</code> </li>
+                                <li><code>head</code></li>
+                                <li><code>meta</code></li>
+                                <li><code>title</code></li>
+                                <li><code>body</code></li>
+                            </ul></li>
+                    </ol>
+                    
+                    <p><strong>II. Réalisez le travail</strong></p>
+                    <ol>
+                        <li>Une fois le code de base inscrit dans le document, placez le contenu du document <strong>ex1_texte.txt</strong> à l’intérieur de l’élément <code>&lt;body&gt;</code>, à la place de <code>&lt;!-- Insérer le contenu ici --&gt;</code>.</li>
+                        <li><strong>Structurez le contenu à l’aide des balises HTML appropriées</strong>. Pour chaque élément de contenu, choisissez la balise qui correspond à son rôle et à sa valeur sémantique. Ne choisissez pas une balise uniquement en fonction de son apparence dans le navigateur.</li>
+                        <li>Utilisez les éléments suivants pour structurer le contenu :
+                            <ul>
+                        <li><strong>Éléments de type bloc</strong>
+                            <ul>
+                                <li><code>h1</code>, <code>h2</code> (deux niveaux de titres)</li>
+                                <li><code>p</code> (chaque paragraphe doit être balisé avec cet élément)</li>
+                                <li><code>figure</code> (contient une image avec une légende)</li>
+                                <li><code>ul</code> (liste simple pour les médias sociaux tout en bas de la page)</li>
+                                <li><code>li</code> (éléments de la liste)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Éléments de type en ligne</strong>
+                            <ul>
+                                <li><code>img</code> (pour afficher une image; cette balise contient les attributs <code>src</code> et <code>alt</code>)</li>
+                                <li><code>figcaption</code> (pour baliser la légende sous une image, à l'intérieur d'un élément <code>figure</code>)</li>
+                                <li><code>small</code> (pour baliser le copyright)</li>
+                                <li><code>a</code> (hyperlien; cette balise contient l'attribut <code>href</code> dont la valeur est l'adresse de destination du lien)
+                            </li></ul>
+                        </li>
+                    </ul></li>
+                    </ol>
+                    
+                    <p><strong>III. Valider le travail</strong></p>
+                    <ol>
+                        <li>Au fur et à mesure de votre progression, vérifiez le résultat final de votre travail en ouvrant le fichier <code>monarticle.html</code> dans le navigateur <em>Chrome</em>. Assurez-vous que l'affichage est satisfaisant sur ce navigateur.</li>  
+                        <li>Comparez votre résultat avec <a href="#apercu">l’aperçu présenté plus haut</a>. L’affichage de votre page devrait s’en rapprocher le plus possible, tant dans la structure du contenu que dans la disposition des différents éléments.</li>
+                        <li>Votre document HTML doit présenter une <strong>indentation</strong>, c'est-à-dire un retrait pour chaque niveau d'imbrication.</li>  
+                        <li>Votre document doit présenter des changements de ligne après chaque élément de type bloc pour que sa lecture soit claire.</li>
+                    </ol>
+                    <p><strong>IV. Remettez le travail</strong></p>
+                     <ol>
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez à son dossier par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/lecon02/lecon02_ex1_arbo_2.jpg" alt="Nomenclature du dossier de remise" width="225">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;. <br>
+                            <img class="bordure" src="images/lecon02/lecon02_ex1_compresser.jpg" alt="Compresser le dossier" width="458">
+                        </li>
+                        <li>Cela créera une archive ZIP. <br><img class="bordure" src="images/lecon02/lecon02_ex1_zip.jpg" alt="Remettre l'archive ZIP sur LÉA" width="240"></li>
+                        <li>Connectez-vous à votre compte Omnivox dans un navigateur, accédez à LÉA et <strong>déposez cette archive ZIP</strong> à l'endroit prévu dans le cours <em>Intégration 1</em>.
+                            
+                        </li>
+                    </ol>
+                </section>
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>Finaliser l’exercice 1 et le <u>remettre sur LÉA</u> au plus tard jeudi à 8h</strong>.</li>
+                            <li><strong>Lire la documentation de <a href="lecon03.html">la leçon 3</a>.</strong> </li>
+                            <li>Réaliser les travaux formatifs de la leçon 3. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
                 
             </article>
             </div> 
