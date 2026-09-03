@@ -867,3 +867,13 @@ ul ul,
 ol ol, 
 ol ul, 
 ul ol{margin-bottom:0 !important; padding-bottom:0 !important;}
+
+.card{
+  border-width:3px;
+  margin-bottom:1em;
+  border-color:#9a9cc2;
+}
+.liste-h3 .card h3{
+  border-top: none;
+  padding-top:inherit;
+}
