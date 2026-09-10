@@ -83,6 +83,15 @@
                 <section id="section04" class="liste-h3">
                     
                     <h2>Éléments de formulaire courants</h2>
+                    <p>Un formulaire HTML est délimité par les balises <code>&lt;form&gt;</code> et <code>&lt;/form&gt;</code>. À l’intérieur de ces balises, on place les différents éléments qui permettent à l’utilisateur de saisir ou de sélectionner des informations.</p>
+                    <pre class="exemple-code">                        &lt;form action=<span class="rose">"traitement.php"</span> method=<span class="rose">"post</span><span class="rose">"</span>&gt;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- les éléments présentés plus bas seront insérés ici) --&gt;
+
+                        &lt;/form&gt;
+                    </pre>
+
+<p>Dans cette section, nous découvrirons les principaux éléments utilisés pour construire un formulaire.</p>
                     <ul>
                         <li><a href="#f01">Champ de texte</a></li>
                         <li><a href="#f02">Saisie d'un mot de passe</a></li>
@@ -616,6 +625,10 @@
                     <p>Ce type d'élément crée dans certains navigateurs un champ comparable à un champ de saisie suivi d'un bouton <em>Parcourir</em>; d'autres navigateurs afficheront plutôt un bouton <em>Choisir le fichier</em>, suivi du texte « aucun fichier sélectionné » ou du nom du fichier sélectionné. Lorsque l'utilisateur clique sur le bouton, une fenêtre apparaît afin qu'il puisse sélectionner sur son ordinateur le fichier à envoyer. L'aspect de cette fenêtre dépend du système d'exploitation utilisé.</p>
                     <p><code>accept</code></p>
                     <p>L'attribut <em>accept</em> permet en principe de préciser le type de fichier à télécharger (mp3, pdf, jpg, etc.). Les navigateurs ne prennent cependant pas en charge cet attribut. Il est  conseiller pour le moment de valider le type de fichiers par des scripts serveur.</p>
+                    
+                    </div></div>
+                    <div class="card">
+                        <div class="card-body">
                     <h3 id="f13">Bouton d'envoi: <code>&lt;input type=<span class="rose">"submit"</span> ... &gt;</code></h3>
                     <p class="code-etiquette">Code</p>
                     <pre class="exemple-code">                        &lt;p&gt;Abonnez-vous à notre liste de diffusion :&lt;/p&gt;
@@ -742,11 +755,11 @@
                     <p>L'exercice 2 consiste à créer une page Web comportant un formulaire. Cette page s'ajoute à celle que vous avez créée la semaine dernière dans le cadre de l'exercice 1.</p>
                     <h4>Documents à remettre</h4>
                     <ol>
-                        <li>Un dossier nommé <i>grX_nomInitialeprenom_ex2</i> (remplacez X par votre numéro de groupe)</li>
-                        <li>Ce dossier contiendra les documents html nommés <strong>monarticle.html</strong>, <strong>monformulaire.html</strong> et le sous-dossier nommé <strong>images</strong>.</li>
-                        <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur&nbsp;LÉA.</li>
+                        <li>Votre dossier nommé : <i>gr1_nominitialeprenom_ex2</i></li>
+                        <li>Ce dossier contiendra : <ul><li>un document html nommé <strong>monarticle.html</strong></li><li>un document html nommé <strong>monformulaire.html</strong></li><li>un sous-dossier nommé <strong>images</strong></li> 
+                        </ul></li>
+                        <li>Votre dossier devra être compressé en archive zip. C'est cette archive zip que vous remettrez sur LÉA.</li>
                     </ol>
-                    <p>contenant les fichiers <code>monarticle.html</code>, <code>monformulaire.html</code> et un dossier <code>images</code> contenant les quatre images de la semaine dernière en plus de l'image fournie cette semaine.</p>
                     <div class="note">
                         <p>Structure de fichiers : </p>
                         <figure class="w40">
@@ -755,19 +768,23 @@
                         </figure>
                     </div>
                     <h4>Échéancier</h4>
-                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le vendredi suivant en fin de journée</strong>. </p>
+                    <!--<p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
                     <ul>
                         <li><strong>groupe 1 :</strong> au plus tard le <strong>samedi 6 septembre en fin de journée</strong></li>
                         <li><strong>groupe 2 :</strong> au plus tard le <strong>mercredi 3 septembre à 12h</strong></li>
-                        </ul>
+                        </ul>-->
                     <h4>Travail à faire</h4>
                     <p>Vous devez créer la page <code>monformulaire.html</code> du site « Blogue plein air » (voir Ex1).</p>
                     <p>Pour cela, suivez cette procédure :</p>
+                    <p><strong>I. Préparez le travail : </strong></p>
                     <ol>
-                        <li>Téléchargez et décompressez l'archive <a href="materiel/Ex2.zip" class="btn btn-primary" role="button">Ex2.zip <i class="bi bi-download"></i></a>. <br>Ce dossier contient une page HTML et toutes les images nécessaires pour l'exercice.</li>
-                        <li>Renommez le dossier <strong>grX_nomInitialprenom_ex2</strong> selon votre numéro de groupe et votre nom. Déplacez-le dans votre dossier du cours <strong>Intégration 1</strong> selon votre organisation de travail.</li>
-                        <li>Dans VSCodium (VSC), ouvrez votre dossier de travail (Menu <em>Fichier > Ouvrir un dossier</em>)</li>
-                        <li>Faites afficher le fichier <code>monarticle.html</code> dans la fenêtre d'édition de VSC.</li>
+                        <li>Téléchargez et décompressez l'archive <a href="materiel/Ex2.zip" class="btn btn-primary" role="button">Ex2.zip <i class="bi bi-download"></i></a>. <br>Ce dossier contient une page HTML (le corrigé de l'exercice 1) et toutes les images nécessaires pour l'exercice 2.</li>
+                        <li>Renommez le dossier <strong>gr1_nomInitialprenom_ex2</strong> selon votre numéro de groupe et votre nom. Déplacez-le dans votre dossier <strong>tim > session1 > integration1 > lecon03</strong>.</li>
+                        <li>Ouvrez ce dossier dans VSCodium (VSC > Menu <em>Fichier > Ouvrir un dossier</em>).</li>
+                        <li>Créez un nouveau fichier et nommez-le monformulaire.html (menu <em>Fichier > Nouveau fichier</em>, ensuite menu <em>Fichier > Enregistrer...</em> et nommez le fichier <strong>mon<u>formulaire</u>.html</strong>.</li>
+                            
+                        <li>Faites afficher le fichier <code>mon<u>article</u>.html</code> dans la fenêtre d'édition de VSC.</li>
                         <li>Dans le fichier <strong>monarticle.html</strong>, effectuez d'abord ces corrections:
                             <ol>
                                 <li>À la suite de l'élément <code>title</code> déjà en place dans la partie <code>&lt;head&gt;</code> de votre page, ajoutez les éléments <code>meta</code> suivants pour rendre la page plus efficace :<br>
@@ -775,22 +792,24 @@
                         &lt;meta name="keywords" content="<span class="rose">plein air, ski, randonnée, Gaspésie, Chic-chocs, FQME</span>"&gt; 
                         &lt;meta name="author" content="<span class="rose">Inscrire votre nom ici</span>"&gt;
                         </pre></li>
-                        <li>Dans la section <code>body</code>, juste après le nom du blogue (Blogue plein air), insérez une liste non&nbsp;ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong>.
+                        <li>Dans la section <code>body</code>, juste après le nom du blogue (<em>Blogue plein air</em>), insérez une liste non&nbsp;ordonnée de deux liens: <strong>Mon article</strong> et <strong>Mon formulaire</strong>.
                             <br>
                             <img class="bordure" src="images/cours02_deux_liens.jpg" alt="Les deux liens à ajouter" width="159">
                         </li>
+                        <li>Assurez-vous que chaque lien dirige vers la page respective de votre dossier.</li>
                             </ol>
                         </li>
-                        <li>Une fois ces modifications faites, créez le document <code>monformulaire.html</code>.</li>
-                        <li>Copiez le code de <code>monarticle.html</code> et collez-le dans le document monformulaire.html nouvellement&nbsp;créé.</li>
-                        <li>Faites afficher le fichier monformulaire.html dans VSC.</p>
+                        <li>Copiez le code de <code>mon<u>article</u>.html</code> et collez-le dans le document <code>mon<u>formulaire</u>.html</code> nouvellement&nbsp;créé.</li>
+                        </ol>
+                        <p><strong>II. Réalisez le travail dans <code>monformulaire.html</code></strong></p>
+                        <ol>
                         <li>Modifiez le contenu de <code>&lt;title&gt;</code> de manière appropriée, comme ceci : <em>Contactez-nous ! - Blogue plein air</em></li>
                         <li>Modifiez la section <code>body</code> de la façon suivante :
                         <ol>
                             <li>Changez le contenu du titre de la page <code>h1</code> par « Contactez-nous ! » afin de refléter le contenu de cette nouvelle page ; </li>
                             <li>Remplacez le texte « Par Raphaël Charron » par « Contribuez à notre blogue ! »</li>
                             <li>Retirez tout le texte de l'article <strong>sauf</strong> la section « Nos médias sociaux » et le copyright ;</li>
-                            <li>À la place du texte retiré, ajoutez un formulaire comme celui affiché dans l'exemple présenté plus bas. <br>
+                            <li>À la place du texte retiré, <strong>ajoutez un formulaire</strong> comme celui affiché dans l'exemple présenté plus bas. <br>
                                 Au final, la nouvelle page <strong>monformulaire.html</strong> prendra cette allure :<br><figure>
                         <figcaption>Exemple du résultat attendu pour l'exercice 2</figcaption>
                         <img class="bordure" src="images/cours02_tp2_resultat.jpg" alt="Exemple pour l&#39;exercice 2.">  
@@ -804,7 +823,7 @@
                     
                     <div class="note">
                         <p>
-                            Inspirez-vous des exemples de contrôles de formulaire décrits dans les notes de la Leçon 2 pour créer le formulaire de la page monformulaire.html.
+                            Inspirez-vous des exemples de contrôles de formulaire décrits dans les notes de la Leçon 3 pour créer le formulaire de la page monformulaire.html.
                         </p>
                         <p>
                             N'oubliez pas que les éléments <code>form</code>, <code>input</code> et autres comportent des règles d'utilisation que vous devez appliquer (par exemple, des éléments et des attributs obligatoires comme <code>action</code>, <code>method</code>, <code>name</code>, <code>id</code>, etc.). Voir les notes de cours à ce sujet.
@@ -821,12 +840,22 @@
                         <li>Lorsque vous êtes prêts à remettre votre travail, accédez à son dossier par le Finder (ou l'explorateur de fichier sur PC). <br>
                             <img class="bordure" src="images/cours02_ex2b_arbo.jpg" alt="arborescence de ex2">
                         </li>
-                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;. <br>
+                            <img class="bordure" src="images/lecon03/lecon03_ex2_compresser.jpg" alt="Compresser le dossier" width="458">
                         </li>
-                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.
+                        <li>Connectez-vous à votre compte Omnivox dans un navigateur, accédez à LÉA et <strong>déposez cette archive ZIP</strong> à l'endroit prévu dans le cours <em>Intégration 1</em>.
+                            
                         </li>
                     </ol>
                 </section>  <!-- #sectionAE -->
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li>Finaliser l’exercice 2 et le remettre sur LÉA <strong>au plus tard vendredi en fin de journée</strong>.</li>
+                            <li>Lire la documentation, visionner les vidéos et réaliser les travaux formatifs de <a href="lecon04.html">la&nbsp;leçon&nbsp;4</a>. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
                 <footer>
                     <div class="haut-de-page">
                         <a href="#">Retour en haut de la page</a>
