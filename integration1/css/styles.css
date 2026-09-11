@@ -877,3 +877,32 @@ ul ol{margin-bottom:0 !important; padding-bottom:0 !important;}
   border-top: none;
   padding-top:inherit;
 }
+
+.video-enveloppe{
+  margin-top:80px;
+  margin-bottom:40px;
+}
+.video-enveloppe:before{
+  content: "Vidéo à visionner";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.video-enveloppe:before{
+  background-color:#9a9cc2;
+  border:4px #9a9cc2 solid;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.video-enveloppe iframe{
+  border:4px #9a9cc2 solid;
+}

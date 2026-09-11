@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 5 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="cours cours05" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 5</div>
+                    <h1>Introduction au langage CSS</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                        <p><a href="#" class="nav-link titre"><strong>Leçon 5</strong></a></p>
+
+                        <a href="#section01" class="list-group-item list-group-item-action">CSS</a>
+                        <a href="#section02" class="list-group-item list-group-item-action">Le flux internet</a>
+                        <a href="#section03" class="list-group-item list-group-item-action">Rédiger des CSS</a>
+                        <a href="#section04" class="list-group-item list-group-item-action">Composantes d'une feuille de style</a>
+                        <a href="#section04-exemple" class="list-group-item list-group-item-action">Exemple de sélecteur : h1</a>
+                        <a href="#section05" class="list-group-item list-group-item-action">Les sélecteurs du DOM</a>
+                        <a href="#t01" class="list-group-item list-group-item-action">Créer une feuille de style interne</a>
+                        <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+                
+                <section id="section05">
+                    
+                    <h2>Les sélecteurs du DOM</h2>
+                    <p>Un <strong>sélecteur CSS</strong> sert à cibler un ou plusieurs éléments du document HTML afin d’appliquer un style.</p>
+                    <p>Il existe différents types de sélecteurs, chacun adapté à une situation particulière&nbsp;:</p>
+                    <ul>
+                        <li><a href="#s01">Sélecteurs de base</a></li>
+                        <li><a href="#s02">Sélecteurs combinés</a></li>
+                        <li><a href="#s03">Sélecteurs d’attributs</a></li>
+                        <li><a href="#s04">Sélecteurs pseudo-classes</a></li>
+
+                    </ul>
+
+                    <h3 id="s01">Sélecteurs de base</h3>
+                    <table class="table table-striped">
+                        
+                    <thead>
+                        <tr>
+                        <th>Sélecteur</th>
+                        <th>Description</th>
+                        <th>Exemple d’utilisation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Type (balise)</td>
+                        <td>Cible tous les éléments d’un type donné.</td>
+                        <td><code>h2 {}</code><br> Sélectionne tous les éléments &lt;h2&gt;</td>
+                        </tr>
+                        <tr>
+                        <td>Classe (.nom)</td>
+                        <td>Cible les éléments ayant un attribut <code>class</code>.</td>
+                        <td><code>.important { font-weight: bold; }</code></td>
+                        </tr>
+                        <tr>
+                        <td>Identifiant (#id)</td>
+                        <td>Cible un élément unique avec un attribut <code>id</code>.</td>
+                        <td><code>#header { background: gray; }</code></td>
+                        </tr>
+                        <tr>
+                        <td>Universel (*)</td>
+                        <td>Cible tous les éléments du document.</td>
+                        <td><code>* { margin: 0; }</code></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <h3 id="s02">Sélecteurs combinés</h3>
+                    <table class="table table-striped">
+                        
+                        <thead>
+                            <tr>
+                            <th>Sélecteur</th>
+                            <th>Description</th>
+                            <th>Exemple d’utilisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Descendant (E&nbsp;F)</td>
+                            <td>Cible un élément contenu dans un autre.</td>
+                            <td><code>li a {}</code><br> Sélectionne tous les élément &lt;a&gt; descendants de &lt;li&gt;.</td>
+                            </tr>
+                            <tr>
+                            <td>Enfant direct (E&nbsp;&gt;&nbsp;F)</td>
+                            <td>Cible uniquement les enfants immédiats.</td>
+                            <td><code>li &gt; a {}</code><br> Sélectionne tous les élément &lt;a&gt; qui sont des enfants d'un éléments &lt;li&gt;, mais sans les autres éléments &lt;a&gt; de la page</td>
+                            </tr>
+                            <tr>
+                            <td>Frère adjacent (E&nbsp;+&nbsp;F)</td>
+                            <td>Cible l’élément immédiatement suivant.</td>
+                            <td><code>h1 + p {}</code><br> Sélectionne chaque élément &lt;p&gt; qui vient immédiatement après un élément frère &lt;h1&gt;, sans les éléments &lt;p&gt; suivants</td>
+                            </tr>
+                            <tr>
+                            <td>Frères généraux (E&nbsp;~&nbsp;F)</td>
+                            <td>Cible tous les frères suivants.</td>
+                            <td><code>h1 ~ p {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont précédés d'un élément frère &lt;h1&gt;</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                        <h3 id="s03">Sélecteurs d’attributs</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                <th>Sélecteur</th>
+                                <th>Description</th>
+                                <th>Exemple d’utilisation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>[attr]</td>
+                                <td>Cible les éléments possédant un attribut.</td>
+                                <td><code>[title] { text-decoration: underline; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr="valeur"]</td>
+                                <td>Cible un attribut ayant une valeur précise.</td>
+                                <td><code>input[type="text"] { border: 1px solid #ccc; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr^="val"]</td>
+                                <td>Valeur commençant par…</td>
+                                <td><code>a[href^="https"] { color: green; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr$="val"]</td>
+                                <td>Valeur finissant par…</td>
+                                <td><code>a[href$=".pdf"] { color: red; }</code></td>
+                                </tr>
+                                <tr>
+                                <td>[attr*="val"]</td>
+                                <td>Valeur contenant…</td>
+                                <td><code>a[href*="exemple"] { color: orange; }</code></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                    <h3 id="s04">Sélecteurs pseudo-classes</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th>Sélecteur</th>
+                            <th>Description</th>
+                            <th>Exemple d’utilisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>:hover</td>
+                            <td>État au survol.</td>
+                            <td><code>a:hover { text-decoration: underline; }</code></td>
+                            </tr>
+                            <tr>
+                            <td>:first-child</td>
+                            <td>Cible le premier enfant.</td>
+                            <td><code>p:first-child {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont des premiers enfants de leur parent</td>
+                            </tr>
+                            <tr>
+                            <td>:last-child</td>
+                            <td>Cible le dernier enfant.</td>
+                            <td><code>p:last-child {}</code><br>Sélectionne tous les éléments &lt;p&gt; qui sont des derniers enfants de leur parent</td>
+                            </tr>
+                            <tr>
+                            <td>:nth-child(n)</td>
+                            <td>Cible l’enfant à une position donnée.</td>
+                            <td><code>p:nth-child(3) {}</code><br> Sélectionne tous les éléments &lt;p&gt; qui sont des troisièmes enfants de leur parent</td>
+                            </tr>
+                            <tr>
+                            <td>:not()</td>
+                            <td>Exclut un sélecteur.</td>
+                            <td><code>p:not(.important) { color: gray; }</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>::first-letter</code></td>
+                                <td>Sélecteur de la première lettre d'un élément</td>
+                                <td><code>p::first-letter {}</code><br> Sélectionne la première lettre de l'élément &lt;p&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>::first-line</code></td>
+                                <td>Sélecteur de la première ligne d'un élément</td>
+                                <td><code>p::first-line {}</code><br> Sélectionne la première ligne de l'élément &lt;p&gt;</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                    <div class="tf" id="t01">
+                        <p class="tf-intitule">Créer une feuille de style interne</p>
+                        <ol>
+                            <li>Téléchargez les documents source <a href="materiel/tf_cours04_victoire-de-mtl.zip" class="btn btn-primary" role="button">tf_cours04_victoire-de-mtl.zip <i class="bi bi-download"></i></a></li>
+                            <li>Décompressez le dossier et ouvrez ce dossier dans VSC.</li>
+                            <li>Voir les instructions données en classe pour la suite.</li>
+                        </ol>  
+                    </div>
+                </section><!-- fin section 05 -->
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <!-- ACTIVITÉS D'ÉVALUATION -->
+                <section id="sectionAE">
+                    <h2>Activités d'évaluation</h2>
+                    
+                    <h3>Exercice 3 - Intro au langage CSS</h3>
+                    <p>L'exercice 3 est une initiation à l'incorporation de règles de style dans un document CSS. </p>
+                    <h4>Sources</h4>
+                    <p>Pour ce travail, vous pouvez : .</p>
+                    <ul>
+                        <li>utiliser vos fichiers du tp1 comme point de départ: dupliquez le dossier de votre <strong>TP1</strong> et renommez-le grX_nonmprenom_ex3</li>
+                        <li>ou encore utiliser les fichiers fournis (surtout si vos propres fichiers sont incomplets): <a href="materiel/Ex3.zip" class="btn btn-primary" role="button">Ex3.zip <i class="bi bi-download"></i></a></li>
+                    </ul>
+                    <h4>Documents à remettre</h4>
+                    <p>Un <strong>dossier </strong>rigoureusement nommé <em>grX_nomInitialeprenom_ex3</em> (remplacez X par votre numéro de groupe) contenant les fichiers suivants: </p>
+                    
+                        <figure class="w50">
+                            <figcaption>Structure de fichiers de l'exercice 3</figcaption>
+                            <img class="bordure" src="images/cours04/cours04_ex3_00a.jpg" alt="Arborescence de fichiers pour l&#39;exercice 3.">
+                        </figure>
+                    <h4>Échéancier</h4>
+                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <ul>
+                        <li>groupe 1 : <strong>au plus tard le jeudi suivant à 8h</strong></li>
+                        <li>groupe 2 : <strong>au plus tard le mercredi suivant à 12h</strong></li>
+                    </ul>
+                    <h4>Travail à faire</h4>
+                    <p>Les règles de style que vous allez soit copier, soit rédiger, dans les étapes qui suivent, <strong>doivent  être mises en forme comme le montre l'exemple suivant</strong>, c'est-à-dire: </p>
+                    <ul style="margin:0; padding-bottom: 0;;">
+                            <li>chaque ligne indentée (avec la touche TAB <i class="bi bi-indent"></i>)</li>
+                            <li>une déclaration par ligne</li>
+                        </ul>
+                    <figure class="w50">
+                        <figcaption>Exemple de mise en forme d'une règle de style.</figcaption>
+                        <img class="bordure" src="images/cours04/css01.png" alt="Règle d&#39;écriture d&#39;une règle CSS.">
+                    </figure>
+                    <p><strong>1. Démarrez VSC</strong></p>
+                    <p>Dans la colonne de gauche de VSC, <strong>ouvrez le dossier</strong> <em>grX_nomInitialeprenom_ex3</em> grâce à l'option<strong> Ouvrir...</strong>; vous aurez ainsi accès à tous les fichiers et dossiers s'y trouvant ;</p>
+                    <figure class="w40">
+                        <img class="bordure" src="images/cours04/cours04_tp4_01.jpg" alt="">
+                    </figure>
+                    <p><strong>2. Complétez votre structure de dossiers </strong></p>
+                    <p>Dans la colonne de gauche de VSC, créez un nouveau dossier (en cliquant sur l'icône 'Nouveau dossier') et nommez-le «<code>css</code>».</p>
+                    <figure class="w50">
+                        <img class="bordure" src="images/cours04/cours04_tp4_03.jpg" alt="">
+                    </figure>
+                    <p><strong>3. Créez le fichier <code>styles.css</code> dans le dossier css</strong></p>
+                    <p>Dans votre dossier de travail, repérez le dossier <code>css</code> et cliquez-droit sur ce dossier: choisissez <strong>Nouveau fichier</strong> et nommez ce fichier <code>styles.css</code>.</p>
+                    <figure class="w50">
+                        <img class="bordure" src="images/cours04/cours04_tp4_05.jpg" alt="">
+                    </figure>
+                    <p>Assurez-vous que le fichier <code>styles.css</code> est bien dans le dossier css, sinon, faites-le glisser dans ce dossier.
+                    </p><p><strong>4. Liez la feuille de style aux documents HTML</strong></p>
+                    <p>Afin de lier ce fichier <code>.css</code> au document HTML, faites d'abord afficher le document <code>monarticle.html</code> en cliquant dessus, et insérez la ligne de code suivante à la suite de <code>&lt;title&gt;</code> à l'intérieur de l'élément <code>&lt;head&gt;</code> : </p>
+                    
+                    <figure class="w90">
+                        <figcaption>Insérez dans le 'head' la ligne de code surlignée en bleu</figcaption>
+                        <img class="bordure" src="images/cours04/cours04_tp4_06.jpg" alt="">
+                    </figure>
+                    <div class="note"><p>Répétez cette opération dans les fichiers <code>monformulaire.html</code> et <code>montableau.html</code></p></div>
+                    <p>Pour le moment, votre page web ressemble à ceci dans Chrome : </p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_11.jpg" alt="">
+                    </figure>
+                    <p><strong>5. Insérez les éléments de structure HTML pour compléter la structure de vos pages </strong></p>
+                    <p>Insérez les conteneurs <code>header</code>, <code>nav</code>, <code>main</code> et <code>footer</code> <strong>dans vos trois pages HTML</strong> comme le montre l'image suivante.</p>
+                    <p>Cette étape est cruciale avant d'entamer la rédaction des règles de style, car les règles de style y font référence. </p>
+                    <figure class="w90">
+                        <figcaption>Insertion d'éléments de structure dans le code HTML</figcaption>
+                        <img class="bordure" src="images/cours04/cours04_tp4_08.jpg" alt="Ajout des éléments de structure du HTML">
+                    </figure>
+                    <p><strong>6. Insérez une première règle de style pour la réinitialisation de certaines propriétés</strong></p>
+                    <p>Dans votre feuille de style, sous l'encodage de caractères, <strong>insérez le code suivant</strong> (y compris le commentaire CSS se trouvant au début de la règle) :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css01.jpg" alt="EX3">
+                    </figure>
+                    <div class="note">
+                        <p>Les commentaires CSS sont délimités ainsi: <code class="vert">/* Commentaire css */</code></p>
+                    </div>
+                    <ul>
+                        <li>Il s'agit des règles de style chargées de réinitialiser les valeurs de marges internes et externes de tous les éléments HTML.</li>
+                        <li>Actualisez l'affichage de votre navigateur et constatez le résultat: les marges en bordure du document, ainsi qu'entre les titres et les paragraphes ont disparu :</li>
+                    </ul>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_12.jpg" alt="">
+                    </figure>
+                    <p>Insérez des valeurs à <code>margin</code> et <code>padding</code> (par exemple: <code>50px</code>) pour en voir l'effet, puis remettez le tout à zéro.</p>
+                    <p><strong>7. Charte typographique</strong></p>
+                    <p>Dans votre feuille de style, à la suite du code s'y trouvant, insérez le code suivant : </p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css02.jpg" alt="EX3">
+                    </figure>
+                    <p>Notez le changement obtenu : la police de caractères a été modifiée :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu01.jpg" alt="EX3">
+                    </figure>
+                    <p><strong>8. Mise en forme des éléments de structure</strong></p>
+                    <p>Insérez les règles suivantes qui définissent la mise en forme des éléments de structure ajoutés à vos documents :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css03.jpg" alt="EX3">
+                    </figure>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu02.jpg" alt="EX3">
+                    </figure>
+                    <p>La propriété <code>width</code> limite la largeur des lignes de texte pour rendre la lecture plus agréable.</p>
+                    <p>Les marges automatiques (margin: 0 auto) à gauche et à droite permettent de centrer le corps de l'article sur la page: </p>
+                    <p><strong>9. Mise en forme des hyperliens</strong></p>
+                    <p>Insérez les règles suivantes qui définissent la mise en forme des hyperliens de tout le document :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css04.jpg" alt="EX3">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css05.jpg" alt="EX3">
+                    </figure>
+                    <p>Ce code façonne les états des hyperliens; survolez les liens pour noter l'état au survol :</p>
+                    <figure class="w50">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu03.jpg" alt="">
+                    </figure>
+                    <p><strong>10. Mise en forme générale des paragraphes</strong></p>
+                    <p>Définissez maintenant l'allure générale des paragraphes en insérant le code suivant dans votre feuille de style : </p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css06.jpg" alt="EX3">
+                    </figure>
+                    <p>Notez la moficiation de l'espace entre les paragraphes :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu04.jpg" alt="EX3">
+                    </figure>
+                    <p><strong>11. Mise en forme des titres</strong></p>
+                    <p>Insérez le code suivant dans votre feuille de style pour mettre en forme les titres et sous-titres :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css07.jpg" alt="EX3">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css08.jpg" alt="EX3">
+                    </figure>
+                    <p>Notez que la taille des caractères, l'alignement du texte et ses marges ont changé : 
+                    </p><figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu05.jpg" alt="EX3">
+                    </figure>
+                    <p>N'hésitez pas à modifier la taille et la couleur pour expérimenter.</p>
+                    <p><strong>12. Mise en forme des images et de la vidéo</strong></p>
+                    <p>Ajoutez ce code pour mettre en forme les images et la vidéo :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css09.jpg" alt="EX3">
+                    </figure>
+                    <p>Remarquez comment les marges et l'alignement de l'image et du figcaption s'ajustent :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu06.jpg" alt="EX3">
+                    </figure>
+                    <p><strong>13. Mise en forme du contenu de 'header'</strong></p>
+                    <p>Inscrivez ce code pour mettre en forme le contenu de 'header' :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css10.jpg" alt="EX3">
+                    </figure>
+                    <p>D'entrée de jeu, le texte est centré.</p>
+                    <p>Ensuite, pour sélectionner le nom du site, on utilise un sélecteur composé (<code>header p</code>) qui vise le paragraphe inclus dans header : </p>
+                    <p>Le type, la casse et la taille de la police sont ajustés, et vous noterez l'ajout de bordures en haut et en bas :</p>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu08.jpg" alt="EX3">
+                    </figure>
+
+                    <p><strong>14. Mise en forme de la navigation principale</strong></p>
+                    <p>Écrivez la règle suivante pour raffiner la mise en forme de la navigation principale :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css11.jpg" alt="EX3">
+                    </figure>
+                    <p>Le sélecteur de type <code>nav</code> permet d'ajouter de l'espacement dans le haut et le bas du menu.</p>
+                    <p>Le sélecteur <code>ul</code> de son côté présente la déclaration <code>list-style-type:none</code> qui élimine les boulets de la liste, et la déclaration <code>display:inline-block</code> qui place les éléments de liste côte-à-côte tout en permettant d'attributer une largeur fixe : </p>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu09.jpg" alt="EX3">
+                    </figure>
+                    
+                    <p><strong>15. Mise en forme la section principale 'main'</strong></p>
+                    <p>Rédigez cette règle à la suite des autres :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css12.jpg" alt="EX3">
+                    </figure>
+                    <p>Les sélecteurs p:first-of-type et p:nth-of-type(2) permettent de sélectionner les premier (date) et deuxième (source) éléments de type 'p' à l'intérieur du conteneur 'main' :
+                    </p><figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu10.jpg" alt="EX3">
+                    </figure>
+
+                    <p><strong>16. Mise en forme du formulaire</strong></p>
+                    <p>La mise en forme du formulaire nécessite un peu de balisage supplémentaire pour effectuer un travail satisfaisant.</p>
+                    <p>Insérez les éléments 'div' suivants afin d'améliorer la structure des couples label+input :</p>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_div.jpg" alt="EX3">
+                    </figure>
+                    <p>Afin de structurer les groupes de boutons radio et de cases à cocher, insérez les éléments 'ul' et 'li' suivants :</p>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_ul-li.jpg" alt="EX3">
+                    </figure>
+                    <p>Écrivez cette règle pour mettre en forme le formulaire à l'aide des sélecteurs qui permettent de pointer les éléments spécifiques de celui-ci : </p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css13.jpg" alt="EX3">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css14.jpg" alt="EX3">
+                    </figure>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu11.jpg" alt="EX3">
+                    </figure>
+                    <p><strong>17. Mise en forme du tableau</strong></p>
+                    <p>Ajoutez les règles suivantes pour mettre en forme le tableau de la page montableau.html :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css15.jpg" alt="EX3">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css16.jpg" alt="EX3">
+                    </figure>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu12.jpg" alt="EX3">
+                    </figure>
+                    
+                    <p><strong>18. Mise en forme du pied de page 'footer'</strong></p>
+                    <p>Ajoutez la règle suivante pour mettre en forme le pied de page :</p>
+                    <figure class="w70">
+                        <img class="bordure" src="images/cours04/cours04_tp4_css17.jpg" alt="EX3">
+                    </figure>
+                    <figure class="w80">
+                        <img class="bordure" src="images/cours04/cours04_tp4_rendu13.jpg" alt="EX3">
+                    </figure>
+                
+                    <p>À ce stade, le résultat devrait ressembler à ceci :</p> 
+                    <figure class="w90">
+                        <img class="bordure" src="images/cours04/cours04_ex3_rendu-final.jpg" alt="EX3">
+                    </figure>
+                    
+                    <p><strong>19. Défi #1 : Personnalisez la couleur des liens de la navigation principale</strong></p>
+                    <p>Analysez les règles de style utilisées pour mettre en forme les hyperliens.</p>
+                    <p>Modifiez la couleur des liens de la navigation principale (ceux qui se trouvent dans l'élément <code>nav</code>), sans affecter les autres liens du document.</p>
+                    <p><strong>20. Défi #2 : Ajoutez une lettrine</strong></p>
+                    <p>L'ajout d'une lettrine donnerait un chic fou à votre article.</p>
+                    <p>En vous inspirant de l'exemple Codepen plus bas, relevez le défi d'ajouter une lettrine au premier paragraphe de texte du contenu principal.</p>
+                    <figure class="w60">
+                        <figcaption>Exemple de lettrine dansla page monarticle.html. Elle s'affichera également dans les deux autres pages.</figcaption>
+                        <img class="bordure" src="images/cours04/cours04_ex3_lettrine.jpg" alt="EX3">
+                    </figure>
+                    <div class="note">
+                        <p><strong>Attention:</strong> la lettrine ne doit s'appliquer qu'au premier paragraphe de chaque page !</p>
+                    </div>
+                    <p>Modifiez ensuite les déclarations suivantes afin d'ajuster la lettrine à vos documents :</p>
+                    <ul>
+                        <li>la police de caractère,</li> 
+                        <li>la couleur du texte,</li> 
+                        <li>la hauteur de ligne</li> 
+                        <li>et les autres propriétés au besoin.</li>
+                    <figure>
+                        <figcaption>CODEPEN / Ajoutez une lettrine à un paragraphe</figcaption>
+                        <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="empapxd" data-pen-title="c04-lettrine01" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/frlacroix/pen/empapxd">
+                        c04-lettrine01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </figure>
+                </ul>
+            <h4>Prêt à remettre le travail?</h4>
+                     <ol>
+                        <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.</li>
+                        <li>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfaisant sur ce navigateur).</li>
+                        <li>Lorsque vous êtes prêts à remettre votre travail, accédez au dossier <em>grX_nomInitialeprenom_ex3</em> par le Finder (ou l'explorateur de fichier sur PC). <br>
+                            <img class="bordure" src="images/cours04/cours04_ex3_00a.jpg" alt="arborescence de Ex3" width="300">
+                        </li>
+                        <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
+                        </li>
+                        <li>Cela créera une archive zip. Remettez cette archive zip sur LÉA à l'endroit prévu.</li>
+                    </ol>
+            
+            </section>  <!-- #sectionAE --> 
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>  
+                
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js?"></script>
+    </body>
+</html>

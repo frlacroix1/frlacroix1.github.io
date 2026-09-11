@@ -72,6 +72,7 @@
                       <a href="#section02" class="list-group-item list-group-item-action">Les boites flexibles : une intro</a> 
                       <a href="#section03" class="list-group-item list-group-item-action">La propriété position</a>
                       <a href="#section04" class="list-group-item list-group-item-action">Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</a>
+                      <a href="#section05" class="list-group-item list-group-item-action">Utiliser Google Fonts</a>
                       <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
                     </nav>
                 </div>
@@ -79,29 +80,6 @@
             <article>
               <section id="rappel">
           <h2><small>Rappels : </small>HTML, CSS et modèle de boîte&nbsp;CSS</h2>
-          <h3 style="margin-bottom:0;">HTML vs CSS</h3>
-          <div class="row">
-            <div class="col">
-              <h4>HTML = la structure</h4>
-              <figure class="w100 bordure">
-                <figcaption><strong>Le HTML définit la structure et le sens des éléments.</strong> Ceci est un paragraphe, ceci est une image, ceci est un titre, etc. </figcaption>
-            <img src="images/cours06/cours06_maison_html.png" alt="Le HTML permet de créer la structure">
-          </figure>
-          <p class="code-etiquette">HTML</p>
-          <pre class="exemple-code">&lt;p&gt;Je suis un paragraphe&lt;⧸p&gt;</pre>
-              </div>
-              <div class="col"><h4>CSS = la décoration</h4>
-              <figure class="w100 bordure">
-                <figcaption><strong>Le CSS permet de personnaliser la décoration</strong>, sans modifier le sens des éléments.</figcaption>
-            <img src="images/cours06/cours06_maison_css.png" alt="Le CSS permet de créer la structure">
-          </figure>
-        <p class="code-etiquette-css">CSS</p>
-          <pre class="exemple-code">p {
-          &nbsp;&nbsp;color: red;  
-          }
-          </pre>
-        <p><small><small><small><em>Merci à ChatGPT pour la génération de cette image</em></small></small></small></p></div>
-              </div>
               <h3>Imbrications HTML: Ancêtres, Parents, Enfants, Descendants, Frères</h3>
           <p>Chaque document HTML est  composé de conteneurs qui peuvent être <em>ancêtres,</em>&nbsp;<em>parent</em>s, <em>enfants, descendants</em>&nbsp;ou&nbsp;<em>frères</em>. Ces  éléments forment une hiérarchie d'imbrications. </p>
               <h3>Le modèle de boîte&nbsp;CSS</h3>
@@ -557,6 +535,26 @@
       <div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
+          <section id="section05">
+            
+            <h2>Utiliser Google Fonts pour intégrer des polices de caratères dans vos pages web</h2>
+            <div class="references-section">
+                            <ul>
+                                <li>
+                                    <a href="https://fonts.google.com/">Google Fonts <img class="icone" src="images/cours06/lien_ext_noir_16px.png"></a>
+                                </li>
+                            </ul>
+            </div>
+            <p class="codepen" data-height="620" data-default-tab="html,result" data-slug-hash="PwZodwj" data-pen-title="c06-google-fonts" data-editable="true" data-user="frlacroix" style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZodwj">
+  c06-google-fonts</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          </section> <!-- fin section05 -->
+      <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
         <!-- ACTIVITÉS D'ÉVALUATION -->
         <section id="sectionAE">
           
@@ -594,6 +592,7 @@
               <li><strong>Dans le document <code>styles.css</code>:</strong>
                 <ol>
               <li>Au tout début de la feuille de style, ajoutez le code <code>@charset "UTF-8";</code>.</li>
+              <li>À la suite de ce code, ajoutez le code <code>@import...</code> de Google Fonts afin d'importer la police de caractères de votre choix. (Voir en classe pour les détails.) </li>
               <li>À la suite de cette ligne, ajoutez les règles de style de réinitialisation habituelles&nbsp;:</li>
               <figure class="w80">
               <figcaption>Réinitialisation</figcaption>
