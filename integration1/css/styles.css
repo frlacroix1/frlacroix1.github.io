@@ -866,7 +866,11 @@ a.btn-primary {
 ul ul,
 ol ol, 
 ol ul, 
-ul ol{margin-bottom:0 !important; padding-bottom:0 !important;}
+ul ol,
+ul ul li:last-child,
+ol ol li:last-child, 
+ol ul li:last-child, 
+ul ol li:last-child{margin-bottom:0 !important; padding-bottom:0 !important;}
 
 .card{
   border-width:3px;
@@ -905,4 +909,7 @@ ul ol{margin-bottom:0 !important; padding-bottom:0 !important;}
 }
 .video-enveloppe iframe{
   border:4px #9a9cc2 solid;
+}
+table caption {
+  caption-side: top;
 }
