@@ -2,6 +2,16 @@ jQuery(document).ready(function() {
     
     jQuery('.theme').matchHeight();
     jQuery('.equal').matchHeight();
+
+    if ( jQuery("#mise-en-place").length ) {
+         jQuery(window).scroll(function() {
+            if ( jQuery(window).scrollTop() <= 800 ) {
+                jQuery("body").removeClass("afficher-nav");
+            }else{
+                jQuery("body").addClass("afficher-nav");
+            }
+        });
+    }
 }); // fin de ready
 
 /*
