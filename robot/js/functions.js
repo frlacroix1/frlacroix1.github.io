@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
     
-    jQuery('.theme').matchHeight();
+    jQuery('.theme span').matchHeight();
     jQuery('.equal').matchHeight();
 
     if ( jQuery("#mise-en-place").length ) {
