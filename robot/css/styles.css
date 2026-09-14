@@ -53,7 +53,7 @@ img {
 }
     /* Mise en page autonome : aucune dépendance à Internet. */
     body { background:#fff; }
-    .page-header { border-bottom:1px solid #ddd; padding:1.25rem 1.5%; }
+    .page-header { border-bottom:1px solid #ddd; padding:1.25rem 0; }
     .page-header .college { font-size:1rem; }
     .conteneur { max-width:1100px; margin:0 auto; }
     .intro { padding-top:2.2rem; }
