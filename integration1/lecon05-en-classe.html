@@ -80,7 +80,174 @@
                 </div>
             <div class="col-lg-9 order-lg-1">
             <article>
-                
+                <div class="haut-de-page">
+                        <a href="#">Haut de page</a>
+                    </div>
+                <section id="section04">
+                    <h2>Les composantes d'une feuille de style</h2>
+                    <p>Une règle CSS est composée de deux parties principales&nbsp;:</p>
+                    <ol style="margin-bottom:0; padding-bottom:0;">
+                        <li><strong>Le sélecteur</strong>
+                            <ul style="margin-bottom:0; padding-bottom:0;">
+                                <li>Indique quel élément HTML sera stylisé.</li>
+                                <li>Exemple : <code>p</code> cible tous les paragraphes.</li>
+                            </ul>
+                        </li>
+                        <li><strong>La déclaration</strong>
+                            <ul style="margin-bottom:0; padding-bottom:0;">
+                                <li>Définie entre <code>{ }</code>.</li>
+                                <li>Contient une ou plusieurs propriétés et valeurs.</li>
+                                <li>Exemple :<pre class="exemple-code">p <span class="rose">{
+                                &nbsp;&nbsp;color: red;</span>     /* propriété: color, valeur: red */
+                                &nbsp;&nbsp;<span class="rose">font-size: 1.4em;</span> /* propriété: font-size, valeur: 1.4em */
+                                <span class="rose">}</span>
+                                </pre></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ol>
+                    <p class="code-etiquette">Résumé visuel</p>
+                    <pre class="exemple-code">
+                    sélecteur {
+                    &nbsp;&nbsp;propriété: valeur;
+                    &nbsp;&nbsp;propriété: valeur;
+                    }
+                    </pre>
+                    
+                    <h3 id="regle_de_style">Bonnes pratiques pour les règles de style</h3>
+                    <p><strong>La méthode à utiliser pour bien organiser le code et faciliter sa consultation&nbsp;:</strong> </p>
+                        <ul style="margin:0; padding-bottom: 0;;">
+                            <li>indenter chaque ligne (avec la touche TAB <i class="bi bi-indent"></i>)</li>
+                            <li>faire un saut de ligne après chaque déclaration</li>
+                        </ul>
+                    <p class="code-etiquette"><i class="bi bi-check"></i> Exemple d'un code lisible et bien organisé</p>
+                    <pre class="exemple-code">                    <span class="rose">h1 {</span>
+                    &nbsp;&nbsp;font-family: Georgia, "Times New Roman", serif;
+                    &nbsp;&nbsp;font-size: 1.4em;
+                    &nbsp;&nbsp;color: #0033cc;
+                    <span class="rose">}</span>
+                    </pre>
+                    <p class="code-etiquette"><i class="bi bi-x-octagon-fill"></i> Règle de style écrite sans retour à la ligne: moins facile à&nbsp;lire.</p>
+                    <pre class="exemple-code exemple-code--nowrap">                        <span class="rose">h1 {</span>font-family:Georgia, "Times New Roman", serif;font-size:1.4em;color:#0033cc;<span class="rose">}</span>
+                    </pre>
+                    <h3>Sélecteur</h3>
+                    <p>Sélecteur = le ou les éléments HTML auxquels une règle CSS s'applique.</p>
+                    <p>Le sélecteur de l'exemple précédent est <code class="rose">h1</code>. Il s'agit, dans ce cas, d'un élément HTML simple.  </p>
+                    <ul>
+                        <li>Il est écrit <em>avant</em> la première accolade (<code>{</code>). </li>
+                        <li>Notez qu'il est écrit sans les chevrons (<code>&lt;&gt;</code>) qui encadrent la balise correspondante dans le document HTML.  </li>
+                    </ul>
+                    <div class="tf" id="section04-exemple">
+                        <p class="tf-intitule">Exemple de sélecteur : h1</p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OPyYyrq" data-pen-title="c04-regle-de-style01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/frlacroix/pen/OPyYyrq">
+                        c04-regle-de-style01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                        <br>
+                        <ol>
+                            <li>Cliquez sur «&nbsp;Edit/Fork on Codepen&nbsp;» (en haut à droite).</li>
+                            <li>Dans l'onglet CSS, entrez des valeurs pour les trois propriétés de l'exemple suivant et cliquez sur «&nbsp;Result&nbsp;» pour voir le résultat.</li>
+                        </ol>
+                        
+                    </div>
+                    <h4>Sélecteur groupé</h4>
+                    <p>Un <strong>sélecteur groupé</strong> applique la même règle à plusieurs éléments, séparés par des virgules.</p>
+                    <pre class="exemple-code exemple-xode--nowrap"><span class="rose">h1, h2, h3 {</span> ...</pre>
+                    <p>Dans l'exemple ci-dessus, la règle de style va s'appliquer à toutes les balises <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> et <code>&lt;h3&gt;</code>.</p>
+                    <h4>Sélecteur composé</h4>
+                    <p>Un <strong>sélecteur composé</strong> cible des éléments en relation hiérarchique (séparés par des espaces, sans virgules).</p>
+                    
+                    <pre class="exemple-code exemple-xode--nowrap"><span class="rose">ul li a {</span> ...</pre>
+                        <p>Dans l'exemple ci-dessus, la règle s’appliquera uniquement aux <code>&lt;a&gt;</code> contenus dans un <code>&lt;li&gt;</code> placé dans un <code>&lt;ul&gt;</code>.</p>
+                    <h3>Déclaration</h3>
+                    <p>Les <em>déclarations</em> sont placées entre les accolades pour les isoler des <em>sélecteurs</em>. Chaque déclaration est composée d'une <em>propriété</em> et d'une <em>valeur</em> CSS séparées par un deux-points (<code>:</code>), le tout se terminant par un point-virgule (<code>;</code>)</p>
+                    <pre class="exemple-code">
+                    sélecteur {
+                    <span class="rose">&nbsp;&nbsp;propriété: valeur;
+                    &nbsp;&nbsp;propriété: valeur;</span>
+                    }
+                    </pre>
+                    <h3>Propriété</h3>
+                    <p>Une <strong>propriété CSS</strong> décrit un aspect visuel d’un élément HTML (ex. couleur, taille, police).</p>
+                    <p>Il existe plus de 300 propriétés en CSS3, et ce nombre augmente avec les évolutions du langage.</p>
+                    <p>Chaque propriété est suivie d’une <strong>valeur</strong>, séparée par un <strong>deux-points</strong> (<code>:</code>).</p>
+                    <p>Exemples de propriété&nbsp;:</p>
+                    <ul>
+                        <li><code>font-family</code>&nbsp;: police de caractère</li>
+                        <li><code>font-size</code>&nbsp;: taille de la police</li>
+                        <li><code>color</code>&nbsp;: couleur du texte</li>
+                    </ul>
+                    <p class="references-section"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference" target="_blank">Liste non exhaustive de propriétés CSS <i class="bi bi-box-arrow-up-right"></i></a></p>
+                    <h3>Valeur</h3>
+                    <p>Une <strong>valeur</strong> précise l’apparence d’une propriété CSS.</p>
+                    <p>Elle peut être : nom de couleur, code de couleur, unité de longueur, pourcentage, nombre, etc.</p>
+                    <p>Exemples de valeur&nbsp;:</p>
+                    <ul>
+                        <li><code>Georgia, "Times New Roman", serif</code></li>
+                        <li><code>1.4em</code></li>
+                        <li><code>#0033cc</code></li>
+                    </ul>
+                    <h3><a name="couleur">Notes sur la couleur en CSS</a></h3>
+                    <p>La couleur est un aspect fondamental de la présentation visuelle : elle affecte tant le texte que les fonds, bordures et autres éléments graphiques. En CSS, on dispose de plusieurs façons de définir une couleur, chacune adaptée à des besoins différents (précision, compatibilité, effets de transparence…).</p>
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                        <th>Exemple d’utilisation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Notation hexadécimale longue</td>
+                        <td>Code commençant par <code>#</code>, suivi de 6 chiffres hexadécimaux (RR, GG, BB).</td>
+                        <td><code>color: #0a4dee</code></td>
+                        </tr>
+                        <tr>
+                        <td>Notation hexadécimale courte</td>
+                        <td>Un seul chiffre par composante, dupliqué implicitement.</td>
+                        <td><code>color: #f06;</code></td>
+                        </tr>
+                        <tr>
+                        <td>RGB</td>
+                        <td>Fonction <code>rgb(r, g, b)</code> avec valeurs 0–255.</td>
+                        <td><code>color: rgb(50, 10, 204);</code></td>
+                        </tr>
+                        <tr>
+                        <td>RGBA</td>
+                        <td>Comme RGB mais avec canal alpha (opacité 0–1).</td>
+                        <td><code>color: rgba(50, 10, 204, 0.4);</code></td>
+                        </tr>
+                        <tr>
+                        <td>HSL</td>
+                        <td>Fonction <code>hsl(h, s%, l%)</code> : teinte 0–360°, saturation %, luminosité %.</td>
+                        <td><code>color: hsl(100, 50%, 28%);</code></td>
+                        </tr>
+                        <tr>
+                        <td>HSLA</td>
+                        <td>HSL avec canal alpha.</td>
+                        <td><code>color: hsla(24, 0%, 98%, 0.6);</code></td>
+                        </tr>
+                        <tr>
+                        <td>Couleurs nommées</td>
+                        <td>Mots-clés prédéfinis (≈140 en CSS).</td>
+                        <td><code>color: olive;</code></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div class="references-section">
+                        <h5>Références et informations supplémentaires</h5> 
+                        <ul>
+                            <li><a href="http://fr.wikipedia.org/wiki/Couleurs_du_Web" target="_blank">Les couleurs du web (Wikipedia) <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank">CSS Legal Color Values <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a href="http://htmlcolorcodes.com/color-names/" target="_blank">Liste complète des noms de couleurs du HTML/CSS (140) <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3School color picker <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a href="https://www.google.ca/search?q=color+picker&amp;oq=color+picker&amp;aqs=chrome.0.69i59j0j69i60j0l3.2831j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank">Google color picker <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        </ul>
+                </div></section><!-- fin section 04 -->
                 <section id="section05">
                     
                     <h2>Les sélecteurs du DOM</h2>
