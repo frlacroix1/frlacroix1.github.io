@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-        var lecon_en_cours = 4;
+        var lecon_en_cours = 5;
         jQuery("header ul.lecons li").each(function(index, element) {
             index ++;
             console.log("List Item " + index + ": " + $(this).text());
