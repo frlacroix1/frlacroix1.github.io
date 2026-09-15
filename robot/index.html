@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body id="haut"data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" >
   <nav class="navbar navbar-expand-md navbar-dark sticky-top text-center">
@@ -280,40 +281,66 @@
 
         <section class="section-principale" id="html">
           <h2>C. HTML</h2>
-          <p class="section-intro">Structurer l’information dans l'éditeur de code VSCodium (VSC).</p>
+          <div class="d-flex">
+            <img class="me-3" src="images/vscodium.svg" alt="Adobe Illustrator" width="80">
+            <div>
+              <p class="section-intro">Structurer l’information avec l'éditeur de code VSCodium (VSC).</p>
+            </div>
+          </div>
 
           <section class="etape" id="etape-4">
             <span class="etape-numero">Étape 4 - Ouvrir un projet dans VSC</span>
-            <p>Dans cette section, tu vas intégrer ton avatar dans le robot conversationnel.</p>
-            <ol class="procedures">
-              <li>Ouvre VSC.</li>
-              <li>Va dans <strong>Fichier &gt; Ouvrir le dossier…</strong> (<em>File > Open Folder...</em>).</li>
-              <li>Sélectionne le dossier <code>Exercice</code>.</li>
-              <li>Clique sur <strong>Ouvrir</strong> (<em>Open</em>).</li>
-            </ol>
-            <div class="image-row">
-              <figure class="figure"><img src="images/image34.png" alt="Fenêtre permettant de sélectionner le dossier Exercice dans VSC"></figure>
-              <figure class="figure"><img src="images/image35.png" alt="Explorateur de fichiers de VSC montrant index.html"></figure>
+            <div class="row">
+              <div class="col"><p>Dans cette section, tu vas intégrer ton avatar dans le robot conversationnel.</p>
+              <ol class="procedures">
+                <li>Ouvre VSC.</li>
+                <li>Va dans <strong>Fichier &gt; Ouvrir le dossier…</strong> (<em>File > Open Folder...</em>).</li>
+                <li>Sélectionne le dossier <code>Exercice</code>.</li>
+                <li>Clique sur <strong>Ouvrir</strong> (<em>Open</em>).</li>
+              </ol>
             </div>
+            <div class="col">
+              <figure class="figure">
+                <img src="images/image34.png" alt="Fenêtre permettant de sélectionner le dossier Exercice dans VSC">
+                <figcaption>Sélectionne le dossier <code>Exercice</code> dans VSC</figcaption>
+              </figure>
+            </div>
+
+            </div>
+            
             <div class="question"><p><strong>Pourquoi utiliser un IDE (Integrated Development Environment) comme VSC plutôt que le bon vieux Notepad ?</strong></p><p>L’architecture d’un site Web peut être complexe. Un IDE permet de naviguer plus rapidement entre les fichiers du projet, d’utiliser des extensions et de profiter d’outils qui facilitent la programmation.</p></div>
           </section>
 
           <section class="etape" id="etape-5">
             <span class="etape-numero">Étape 5 - Personnaliser le nom et le sous-titre</span>
-    
-            <p>Retourne rapidement dans ton navigateur pour observer l’entête du robot conversationnel : nous allons y personnaliser l’avatar, le titre et le sous-titre.</p>
-            <p>Dans VSC, ouvre le fichier <code>index.html</code> à partir de l’explorateur. C’est dans ce fichier que se trouvent les éléments HTML qui s’affichent sur le site Web : texte, structure, images, etc.</p>
-            <p>Enregistre régulièrement ton travail dans VSC avec <strong>Ctrl+S</strong>, puis clique sur le bouton <strong>Rafraîchir</strong> dans ton navigateur pour voir le résultat.</p>
-            <p>Dans le code HTML, remarque les différentes balises utilisées pour structurer l’information : <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;img&gt;</code>, etc. Chaque balise a une signification différente.</p>
+            <div class="row">
+              <div class="col">
+                <p>Retourne rapidement dans ton navigateur pour observer l’entête du robot conversationnel : nous allons y personnaliser l’avatar, le titre et le sous-titre.</p>
+                <p>Dans VSC, ouvre le fichier <code>index.html</code> à partir de l’explorateur. C’est dans ce fichier que se trouvent les éléments HTML qui s’affichent sur le site Web : texte, structure, images, etc.</p>
+                <p>Enregistre régulièrement ton travail dans VSC avec <strong>Ctrl+S</strong>, puis clique sur le bouton <strong>Rafraîchir</strong> (<i class="bi bi-arrow-clockwise"></i>) dans ton navigateur pour voir le résultat.</p>
+                <p>Dans le code HTML, remarque les différentes balises utilisées pour structurer l’information : <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;img&gt;</code>, etc. Chaque balise a une signification différente.</p>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img src="images/image10.png" alt="Aperçu de l’entête que nous allons personnaliser">
+                  <figcaption>Aperçu de l’entête que nous allons personnaliser</figcaption>
+                </figure>
+                <figure class="figure">
+                <img src="images/image35.png" alt="Ouvre le fichier index.html à partir de l'explorateur dans VSC">
+                  <figcaption>Ouvre le fichier <code>index.html</code> à partir de l'explorateur dans VSC</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            
             <h4>Personnaliser le nom et le sous-titre</h4>
             <ol class="procedures">
               <li>Repère les balises <code>&lt;h1&gt;</code> et <code>&lt;h2&gt;</code> situées dans l’entête. Elles contiennent respectivement le nom et le sous-titre actuels du robot.</li>
               <li>Remplace le texte entre <code>&lt;h1&gt;</code> et <code>&lt;/h1&gt;</code> par le nom que tu as choisi pour ton robot. Sois créatif.</li>
               <li>Remplace le texte entre <code>&lt;h2&gt;</code> et <code>&lt;/h2&gt;</code> par ton propre sous-titre.</li>
-              <li>Enregistre tes modifications, puis rafraîchis la page dans ton navigateur.</li>
+              <li>Enregistre tes modifications, puis rafraîchis (<i class="bi bi-arrow-clockwise"></i>) la page dans ton navigateur.</li>
             </ol>
             <div class="resultat"><strong>Résultat attendu</strong><br>Le nouveau nom et le nouveau sous-titre de ton robot conversationnel devraient apparaître dans l’entête.</div>
-            <figure class="figure"><img src="images/image45.png" alt="Aperçu de l’entête du robot conversationnel personnalisé"></figure>
             <div class="question"><p><strong>Le langage HTML</strong></p><p>Le HTML ne possède aucune capacité de programmation. Son rôle est de structurer l’information : titres, paragraphes, images, boutons, etc.</p><p>Cette structure est ensuite stylisée grâce au CSS, puis animée et rendue interactive grâce au JavaScript. Ces trois technologies sont indispensables pour créer un site moderne.</p></div>
           </section>
 
@@ -331,24 +358,32 @@
           <section class="etape" id="etape-7">
             <span class="etape-numero">Étape 7 - Améliorer l’accessibilité</span>
   
-            <div class="question"><p><strong>En quoi le texte alternatif est-il utile si je ne le vois jamais ?</strong></p><p>Il est indispensable pour rendre Internet accessible à tous. Une personne ayant un trouble de la vue peut utiliser un lecteur d’écran pour naviguer sur le Web. Quand le lecteur rencontre une image, il se fie au texte alternatif pour la décrire à voix haute. Ainsi, la personne sait ce que représente l’image.</p></div>
             <p>As-tu remarqué le deuxième attribut de la balise <code>&lt;img&gt;</code> : <code>alt</code> ? Il s’agit d’un texte alternatif qui décrit l’image pour les personnes qui utilisent un lecteur d’écran, ou lorsque l’image ne peut pas s’afficher.</p>
-            <ol>
+            <ol class="procedures">
               <li>Repère l’attribut <code>alt</code> dans la balise <code>&lt;img&gt;</code> de ton avatar.</li>
               <li>Modifie le texte pour qu’il décrive fidèlement ton image. Par exemple : <code>Avatar d’un astronaute avec des lunettes soleil</code>.</li>
               <li>Enregistre ta modification, puis rafraîchis la page dans ton navigateur.</li>
             </ol>
+            <div class="question"><p><strong>En quoi le texte alternatif est-il utile si je ne le vois jamais ?</strong></p><p>Il est indispensable pour rendre Internet accessible à tous. Une personne ayant un trouble de la vue peut utiliser un lecteur d’écran pour naviguer sur le Web. Quand le lecteur rencontre une image, il se fie au texte alternatif pour la décrire à voix haute. Ainsi, la personne sait ce que représente l’image.</p></div>
           </section>
         </section>
 
         <section class="section-principale" id="css">
           <h2>D. CSS</h2>
-          <p class="section-intro">Styliser la page.</p>
+
+          <div class="d-flex">
+            <img class="me-3" src="images/vscodium.svg" alt="Adobe Illustrator" width="80">
+            <img class="me-3" src="images/illustrator.svg" alt="Adobe Illustrator" width="80">
+            <div>
+              <p class="section-intro">Styliser la page.</p>
+            </div>
+          </div>
 
           <section class="etape" id="etape-8">
             <span class="etape-numero">Étape 8 - Ajuster les couleurs</span>
-      
-            <p>Pour les prochaines étapes, réfère-toi à la section <strong>4. Interface</strong> du fichier Illustrator de ta thématique. Cette section contient les informations visuelles et interactives de l’interface :</p>
+      <div class="row">
+        <div class="col">
+          <p>Pour les prochaines étapes, réfère-toi à la section <strong>3. Interface</strong> du fichier Illustrator de ta thématique. Cette section contient les informations visuelles et interactives de l’interface&nbsp;:</p>
             <ul>
               <li>les couleurs du bouton pour soumettre le message;</li>
               <li>les couleurs générales et celles des bulles de conversation;</li>
@@ -356,72 +391,104 @@
               <li>un aperçu visuel du résultat attendu;</li>
               <li>le son à émettre lors de la réception d’une réponse.</li>
             </ul>
-            <p>Chaque couleur est identifiée par un code hexadécimal qui débute par <code>#</code>. Par exemple, <code>#000000</code> correspond au noir et <code>#FFFFFF</code> au blanc.</p>
-            <div class="palette">
-              <img src="images/image24.png" alt="Palette de couleurs d’une thématique">
-              <img src="images/image25.png" alt="Palette de couleurs d’une thématique">
-              <img src="images/image26.png" alt="Palette de couleurs d’une thématique">
-              <img src="images/image27.png" alt="Palette de couleurs d’une thématique">
-              <img src="images/image28.png" alt="Palette de couleurs d’une thématique">
-              <img src="images/image29.png" alt="Palette de couleurs d’une thématique">
-            </div>
+            <p>Chaque couleur est identifiée par un code hexadécimal qui débute par&nbsp;<code>#</code>. Par exemple, <code>#000000</code> correspond au noir et <code>#FFFFFF</code> au blanc.</p>
+          </div>
+        <div class="col">
+          <figure class="figure">
+            <img src="images/3-interface.png" alt="Palette de couleurs d’une thématique">
+            <figcaption>Palette de couleurs d’une thématique</figcaption>
+          </figure></div>
+      </div>
+            
             <h4>Ajuster les couleurs</h4>
-            <ol class="procedures">
+            <div class="row">
+<div class="col"><ol class="procedures">
               <li>Dans VSC, ouvre le fichier <code>css/style.css</code> à partir de l’explorateur.</li>
               <li>Repère le conteneur <code>:root</code>. Des règles de style sont déjà prévues pour accueillir les couleurs de ta thématique.</li>
               <li>En te fiant au fichier Illustrator, copie-colle les codes hexadécimaux aux bons endroits.</li>
               <li>Enregistre la modification et rafraîchis la page dans ton navigateur.</li>
-            </ol>
+            </ol></div>
+<div class="col">
+  <figure class="figure">
+    <img src="images/image40.png" alt="Exemple de variables de couleurs dans le fichier CSS">
+  </figure>
+          </div>
+
+            </div>
+            
             <div class="resultat"><strong>Résultat attendu</strong><br>Les couleurs de ton robot devraient maintenant ressembler à l’exemple présenté dans Illustrator.</div>
             <div class="attention"><strong>Note importante</strong><br>Chaque code hexadécimal doit commencer par <code>#</code> (exemple : <code>#FF5733</code>) et chaque ligne de code doit se terminer par un point-virgule <code>;</code>.</div>
-            <figure class="figure"><img src="images/image40.png" alt="Exemple de variables de couleurs dans le fichier CSS"></figure>
-          </section>
+            </section>
 
           <section class="etape" id="etape-9">
             <span class="etape-numero">Étape 9 - Modifier la police de caractères</span>
-   
-            <p>Le robot utilise actuellement Arial. Nous allons la remplacer par la police prévue pour ta thématique. Dans l’exemple présenté dans l’activité, il s’agit de Fredoka.</p>
-            <h4>Identifier la police</h4>
-            <ol class="procedures">
-              <li>Consulte la section <strong>4. Interface</strong> du fichier Illustrator.</li>
+  
+            <div class="row">
+              <div class="col">
+                <p>Le robot utilise actuellement la police de caractères <em>Arial</em>. Nous allons la remplacer par la police prévue pour ta thématique. Dans l’exemple présenté dans l’activité, il s’agit de <em>Fredoka</em>.</p>
+                <h4>Identifier la police</h4>
+                <ol class="procedures">
+              <li>Consulte la section <strong>3. Interface</strong> du fichier Illustrator.</li>
               <li>Repère la police indiquée pour le titre et le sous-titre.</li>
-            </ol>
+            </ol></div>
+              <div class="col">
+                <figure class="figure">
+            <img src="images/3-interface-fredoka.png" alt="Police de caractères">
+            <figcaption>Palette de couleurs d’une thématique</figcaption>
+          </figure>
+        </div>
+
+            </div>
+            
             <h4>Obtenir le code de la police</h4>
             <ol class="procedures">
-              <li>Ouvre Google Fonts dans ton navigateur et recherche la police indiquée dans ton kit.</li>
+              <li>Ouvre <a href="https://fonts.google.com/" target="_blank">Google Fonts <i class="bi bi-box-arrow-up-right"></i></a> dans ton navigateur et recherche la police indiquée dans ton kit (<em>Fredoka</em>).</li>
               <li>Sélectionne la police.</li>
-              <li>Clique sur <strong>Get font</strong>, puis sur <strong>Get embed code</strong>.</li>
-              <li>Dans l’onglet <strong>Web</strong>, sélectionne <strong>@import</strong>.</li>
+              <li>Clique sur <strong>Get font</strong>, puis sur <strong>Get embed code</strong>. <br>
+              <img src="images/image43.png" alt="Bouton Get font de Google Fonts"> <i class="bi bi-arrow-right"></i> <img src="images/image42.png" alt="Bouton Get embed code de Google Fonts"></li>
+              <li>Dans l’onglet <strong>Web</strong>, sélectionne <strong>@import</strong>. <br>
+              <img src="images/google-font-onglet-web.png" alt="Onglet Web" width="300"></li>
             </ol>
-            <div class="image-row">
-              <figure class="figure"><img src="images/image43.png" alt="Bouton Get font de Google Fonts"></figure>
-              <figure class="figure"><img src="images/image42.png" alt="Bouton Get embed code de Google Fonts"></figure>
-            </div>
             <h4>Intégrer la police</h4>
-            <ol class="procedures">
+            <div class="row">
+<div class="col">
+  <ol class="procedures">
               <li>Copie seulement la ligne <code>@import</code> et colle-la tout en haut du fichier <code>style.css</code> dans VSC.</li>
               <li>Copie seulement la ligne <code>font-family</code> et remplace la ligne correspondante dans le fichier CSS.</li>
               <li>Enregistre la modification et rafraîchis la page dans ton navigateur.</li>
             </ol>
+</div>
+<div class="col">
+  <img src="images/image49.png" alt="Lignes à copier">
+</div>
+
+            </div>
+            
             <div class="resultat"><strong>Résultat attendu</strong><br>La police du titre et du sous-titre devrait maintenant correspondre à celle présentée dans Illustrator.</div>
             <div class="attention">Pour que cette activité fonctionne sans accès à Internet, la consultation de Google Fonts est nécessaire uniquement pour obtenir le code demandé dans l’exercice. Le projet remis à l’apprenti contient les fichiers de travail localement.</div>
-            <figure class="figure"><img src="images/image44.png" alt="Exemple de règle font-family dans le CSS"></figure>
           </section>
 
           <section class="etape" id="etape-10">
             <span class="etape-numero">Étape 10 - Modifier le mini-avatar des bulles</span>
       
             <p>La bulle de discussion est présentement accompagnée d’un mini-avatar générique.</p>
-            <p>La section <strong>4. Interface</strong> du kit Illustrator prévoit une icône du robot selon ta thématique. Les icônes sont déjà disponibles dans <code>/images/mini-avatar</code>.</p>
+            <p>La section <strong>3. Interface</strong> du kit Illustrator prévoit une icône du robot selon ta thématique. Les icônes sont déjà disponibles dans <code>/images/mini-avatar</code>.</p>
             <div class="astuce"><strong>À retenir</strong> — Contrairement à l’avatar principal, qui est modifié en HTML, le mini-avatar se modifie dans le fichier CSS.</div>
-            <ol class="procedures">
+            <div class="row">
+<div class="col"><ol class="procedures">
               <li>Ouvre le fichier <code>css/style.css</code> dans VSC.</li>
               <li>Repère la règle qui définit l’image de fond du mini-avatar.</li>
               <li>Remplace le nom du fichier par celui de l’icône correspondant à ta thématique.</li>
               <li>Enregistre ta modification, puis rafraîchis la page dans ton navigateur.</li>
-            </ol>
+            </ol></div>
+<div class="col"><figure class="figure">
+  <img src="images/image46.png" alt="Exemple de chemin d’image dans une règle CSS">
+</figure></div>
+
+            </div>
+            
             <div class="resultat"><strong>Résultat attendu</strong><br>Le mini-avatar devrait maintenant apparaître à côté des réponses du robot conversationnel, dans les bulles de discussion.</div>
-            <figure class="figure"><img src="images/image46.png" alt="Exemple de chemin d’image dans une règle CSS"></figure>
+            
           </section>
         </section>
 
