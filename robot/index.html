@@ -115,8 +115,8 @@
                       <li>Le dossier <code>Matériel</code> contient le visuel des six thématiques disponibles.</li>
                     </ul>
                   </li>
-                  <li>Ouvre le prototype : dans le dossier <code>Exercice</code>, <strong>double-clique sur le fichier <code>index.html</code></strong> pour l'ouvrir dans un navigateur.</li>
-                  <li><strong>Écris un message au robot</strong> dans le champ prévu à cet effet et celui-ci te répondra avec une phrase aléatoire.</li>
+                  <li>Ouvre le prototype de départ: dans le dossier <code>Exercice</code>, <strong>double-clique sur le fichier <code>index.html</code></strong> pour l'ouvrir dans un navigateur.</li>
+                  <li><strong>Écris un message</strong> au robot conversationnel dans le champ prévu à cet effet et celui-ci te répondra avec une phrase aléatoire.</li>
                 </ol>
               </div>
               <div class="col">
@@ -131,7 +131,7 @@
             <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="resultat">
-                  <p><strong>Ce que tu devrais voir dans ton navigateur&nbsp;<i class="bi bi-arrow-down"></i></strong><br>Le prototype de base du robot conversationnel s’affiche. </p>
+                  <p><strong>Ce que tu devrais voir dans ton navigateur&nbsp;<i class="bi bi-arrow-down"></i></strong><br>Le prototype de départ du robot conversationnel s’affiche. </p>
                       <img src="images/navigateur-exemple.png" alt="Aperçu du robot conversationnel de départ">
                 </div>
               </div>
@@ -342,7 +342,7 @@
             <span class="etape-numero">Étape 5 - Personnaliser le nom et le sous-titre</span>
             <div class="row">
               <div class="col">
-                <p>Retourne rapidement dans ton navigateur pour observer l’entête du robot conversationnel : nous allons y personnaliser l’avatar, le titre et le sous-titre.</p>
+                <p>Retourne rapidement dans ton navigateur pour observer l’en-tête du robot conversationnel : nous allons y personnaliser l’avatar, le titre et le sous-titre.</p>
                  <ol class="procedures">
                   <li>Dans VSC, ouvre le fichier <code>index.html</code> à partir de l’explorateur. C’est dans ce fichier que se trouvent les éléments HTML qui s’affichent sur le site Web : texte, structure, images, etc.</li>
                   <li>Dans le code HTML, remarque les différentes balises utilisées pour structurer l’information : <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;img&gt;</code>, etc. Chaque balise a une signification différente.</li>
@@ -351,8 +351,8 @@
               </div>
                 <div class="col">
                   <figure class="figure">
-                  <img src="images/image10.png" alt="Aperçu de l’entête que nous allons personnaliser">
-                  <figcaption>Aperçu de l’entête que nous allons personnaliser</figcaption>
+                  <img src="images/image10.png" alt="Aperçu de l’en-tête que nous allons personnaliser">
+                  <figcaption>Aperçu de l’en-tête que nous allons personnaliser</figcaption>
                 </figure>
                  <figure class="figure">
                 <img src="images/interface-vsc-index.png" alt="Ouvre le fichier index.html à partir de l'explorateur dans VSC">
@@ -365,12 +365,12 @@
             
             <h4>Personnaliser le nom et le sous-titre</h4>
             <ol class="procedures">
-              <li>Repère les balises <code>&lt;h1&gt;</code> et <code>&lt;h2&gt;</code> situées dans l’entête. Elles contiennent respectivement le nom et le sous-titre actuels du robot.</li>
-              <li>Remplace le texte entre <code>&lt;h1&gt;</code> et <code>&lt;/h1&gt;</code> par le nom que tu as choisi pour ton robot. Sois créatif.</li>
+              <li>Repère les balises <code>&lt;h1&gt;</code> et <code>&lt;h2&gt;</code> situées dans l’en-tête. Elles contiennent respectivement le nom et le sous-titre actuels du robot conversationnel.</li>
+              <li>Remplace le texte entre <code>&lt;h1&gt;</code> et <code>&lt;/h1&gt;</code> par le nom que tu as choisi pour ton robot conversationnel. Sois créatif.</li>
               <li>Remplace le texte entre <code>&lt;h2&gt;</code> et <code>&lt;/h2&gt;</code> par ton propre sous-titre.</li>
               <li>Enregistre tes modifications, puis rafraîchis (<i class="bi bi-arrow-clockwise"></i>) la page dans ton navigateur.</li>
             </ol>
-            <div class="resultat"><strong>Résultat attendu</strong><br>Le nouveau nom et le nouveau sous-titre de ton robot conversationnel devraient apparaître dans l’entête.</div>
+            <div class="resultat"><strong>Résultat attendu</strong><br>Le nouveau nom et le nouveau sous-titre de ton robot conversationnel devraient apparaître dans l’en-tête.</div>
             <div class="question"><p><strong>Le langage HTML</strong></p><p>Le HTML ne possède aucune capacité de programmation. Son rôle est de structurer l’information : titres, paragraphes, images, boutons, etc.</p><p>Cette structure est ensuite stylisée grâce au CSS, puis animée et rendue interactive grâce au JavaScript. Ces trois technologies sont indispensables pour créer un site moderne.</p></div>
           </section>
 
@@ -398,7 +398,7 @@
             <p>As-tu remarqué le deuxième attribut de la balise <code>&lt;img&gt;</code> : <code>alt</code> ? Il s’agit d’un texte alternatif qui décrit l’image pour les personnes qui utilisent un lecteur d’écran, ou lorsque l’image ne peut pas s’afficher.</p>
             <ol class="procedures">
               <li>Repère l’attribut <code>alt</code> dans la balise <code>&lt;img&gt;</code> de ton avatar.</li>
-              <li>Modifie le texte pour qu’il décrive fidèlement ton image. Par exemple : <code>Avatar d’un astronaute avec des lunettes soleil</code>.</li>
+              <li>Modifie le texte pour qu’il décrive fidèlement ton image. Par exemple : <code>Avatar d’un astronaute avec des lunettes de soleil</code>.</li>
               <li>Enregistre ta modification, puis rafraîchis (<i class="bi bi-arrow-clockwise"></i>) la page dans ton navigateur.</li>
             </ol>
             <div class="question"><p><strong>En quoi le texte alternatif est-il utile si je ne le vois jamais ?</strong></p><p>Il est indispensable pour rendre Internet accessible à tous. Une personne ayant un trouble de la vue peut utiliser un lecteur d’écran pour naviguer sur le Web. Quand le lecteur rencontre une image, il se fie au texte alternatif pour la décrire à voix haute. Ainsi, la personne sait ce que représente l’image.</p></div>
@@ -421,7 +421,7 @@
             <span class="etape-numero">Étape 8 - Ajuster les couleurs</span>
       <div class="row">
         <div class="col">
-          <p>Pour les prochaines étapes, réfère-toi à la section <strong>3. Interface</strong> du fichier Illustrator de ta thématique. Cette section contient les informations visuelles et interactives de l’interface&nbsp;:</p>
+          <p>Pour les prochaines étapes, consulte la section <strong>3. Interface</strong> du fichier Illustrator de ta thématique. Cette section contient les informations visuelles et interactives de l’interface&nbsp;:</p>
             <ul>
               <li>les couleurs du bouton pour soumettre le message;</li>
               <li>les couleurs générales et celles des bulles de conversation;</li>
@@ -454,7 +454,7 @@
 
             </div>
             
-            <div class="resultat"><strong>Résultat attendu</strong><br>Les couleurs de ton robot devraient maintenant ressembler à l’exemple présenté dans Illustrator.</div>
+            <div class="resultat"><strong>Résultat attendu</strong><br>Les couleurs de ton robot conversationnel devraient maintenant ressembler à l’exemple présenté dans Illustrator.</div>
             <div class="attention"><strong>Note importante</strong><br>Chaque code hexadécimal doit commencer par <code>#</code> (exemple : <code>#FF5733</code>) et chaque ligne de code doit se terminer par un point-virgule <code>;</code>.</div>
             </section>
 
@@ -463,7 +463,7 @@
   
             <div class="row">
               <div class="col">
-                <p>Le robot utilise actuellement la police de caractères <em>Arial</em>. Nous allons la remplacer par la police prévue pour ta thématique: il s’agit de <em>Fredoka</em>.</p>
+                <p>Le robot conversationnel utilise actuellement la police de caractères <em>Arial</em>. Nous allons la remplacer par la police prévue pour ta thématique: il&nbsp;s’agit de <em>Fredoka</em>.</p>
                 <h4>Identifier la police</h4>
                 <ol class="procedures">
               <li>Consulte la section <strong>3. Interface</strong> du fichier Illustrator.</li>
@@ -472,7 +472,7 @@
               <div class="col">
                 <figure class="figure">
             <img src="images/3-interface-fredoka.png" alt="Police de caractères">
-            <figcaption>Palette de couleurs d’une thématique</figcaption>
+            <figcaption>La police de caractères prévue s'appelle <em>Fredoka</em></figcaption>
           </figure>
         </div>
 
@@ -503,7 +503,6 @@
             </div>
             
             <div class="resultat"><strong>Résultat attendu</strong><br>La police du titre et du sous-titre devrait maintenant correspondre à celle présentée dans Illustrator.</div>
-            <div class="attention">Pour que cette activité fonctionne sans accès à Internet, la consultation de Google Fonts est nécessaire uniquement pour obtenir le code demandé dans l’exercice. Le projet remis à l’apprenti contient les fichiers de travail localement.</div>
           </section>
 
           <section class="etape" id="etape-10">
@@ -512,7 +511,7 @@
             <div class="row">
               <div class="col">
                 <p>La bulle de discussion est présentement accompagnée d’un mini-avatar par défaut.</p>
-                <p>La section <strong>3. Interface</strong> du kit Illustrator prévoit une icône du robot selon ta thématique.</p>
+                <p>La section <strong>3. Interface</strong> du kit Illustrator prévoit une icône du robot conversationnel selon ta thématique.</p>
               </div>
                 <div class="col">
                   <figure class="figure">
@@ -525,7 +524,7 @@
               <div class="row">
               <div class="col">
                
-             <p>Pour cette étape de l'activié, nous avons déjà exporté les icônes des mini-avatars dans le dossier <code>exercice/images/mini-avatar</code>.</p>
+             <p>Pour cette étape de l’activité, les icônes des mini-avatars ont déjà été exportées dans le dossier <code>exercice/images/mini-avatar</code>.</p>
               </div>
                 <div class="col">
                   <figure class="figure">
@@ -590,7 +589,7 @@
             <span class="etape-numero">Étape 12 - Modifier les réponses automatiques</span>
             <div class="row">
               <div class="col">
-<p>Chaque fois que tu écris un message, le robot choisit une réponse au hasard dans une liste enregistrée dans le fichier <code>script.js</code>.</p>
+<p>Chaque fois que tu écris un message, le robot conversationnel choisit une réponse au hasard dans une liste enregistrée dans le fichier <code>script.js</code>.</p>
             <ol class="procedures">
               <li>Repère la liste qui commence par <code>const phrases = [</code>.</li>
               <li>Remplace les phrases entre guillemets par tes propres réponses.</li>
@@ -604,7 +603,7 @@
               <div class="col"><figure class="figure"><img src="images/image48.png" alt="Exemple de liste de phrases dans JavaScript"></figure></div>
             </div>
             
-            <div class="resultat"><strong>Résultat attendu</strong><br>Le robot devrait maintenant répondre avec les phrases que tu as écrites.</div>
+            <div class="resultat"><strong>Résultat attendu</strong><br>Le robot conversationnel devrait maintenant répondre avec les phrases que tu as écrites.</div>
             
           </section>
         </section>

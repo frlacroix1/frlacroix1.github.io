@@ -192,7 +192,7 @@ img {
 .navbar .list-group .nav-item:nth-child(6) span .bi.complete{color:#57baa1;}
 .navbar .list-group .nav-item:nth-child(7) span .bi.complete{color:#3a7e9b;}
 
-
+a{color:#336c98;}
 .navbar.sticky-top{
   background-color:#336c98;
   top:-200px;
@@ -313,7 +313,7 @@ ol.procedures > li:after {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color:#d0516c;
+  background-color:#C54B65;
   z-index: 1;
 }
 ol.procedures {
@@ -334,3 +334,7 @@ footer:after{
   z-index: 1;
 }
 footer .container{position:relative; z-index: 10;}
+
+.list-group-item.active{
+  background-color:#C54B65;
+}
