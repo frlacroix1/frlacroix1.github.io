@@ -721,7 +721,9 @@ code {
   color: #fff;
   padding: 3px;
 }
-
+.code-etiquette.avertissement {
+  background-color:#842029;
+}
 
 /* CODEPEN */
 .bloc-codepen {

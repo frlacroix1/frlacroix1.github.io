@@ -74,7 +74,7 @@
                         <a href="#section04" class="list-group-item list-group-item-action">Composantes d'une feuille de style</a>
                         <a href="#section04-exemple" class="list-group-item list-group-item-action">Exemple de sélecteur : h1</a>
                         <a href="#section05" class="list-group-item list-group-item-action">Les sélecteurs du DOM</a>
-                        <a href="#t01" class="list-group-item list-group-item-action">Créer une feuille de style interne</a>
+                        <a href="#t01" class="list-group-item list-group-item-action">Créer une feuille de style externe</a>
                         <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
                     </nav>
                 </div>
@@ -118,16 +118,16 @@
                     <p><strong>La méthode à utiliser pour bien organiser le code et faciliter sa consultation&nbsp;:</strong> </p>
                         <ul style="margin:0; padding-bottom: 0;;">
                             <li>indenter chaque ligne (avec la touche TAB <i class="bi bi-indent"></i>)</li>
-                            <li>faire un saut de ligne après chaque déclaration</li>
+                            <li>faire un saut de ligne après chaque déclaration <i class="bi bi-arrow-return-left"></i></li>
                         </ul>
-                    <p class="code-etiquette"><i class="bi bi-check"></i> Exemple d'un code lisible et bien organisé</p>
+                    <p class="code-etiquette"><i class="bi bi-check"></i> Exemple de CSS lisible et bien organisé</p>
                     <pre class="exemple-code">                    <span class="rose">h1 {</span>
                     &nbsp;&nbsp;font-family: Georgia, "Times New Roman", serif;
                     &nbsp;&nbsp;font-size: 1.4em;
                     &nbsp;&nbsp;color: #0033cc;
                     <span class="rose">}</span>
                     </pre>
-                    <p class="code-etiquette"><i class="bi bi-x-octagon-fill"></i> Règle de style écrite sans retour à la ligne: moins facile à&nbsp;lire.</p>
+                    <p class="code-etiquette avertissement"><i class="bi bi-x-octagon-fill"></i> Le même CSS écrit sans retour à la ligne: moins facile à&nbsp;lire.</p>
                     <pre class="exemple-code exemple-code--nowrap">                        <span class="rose">h1 {</span>font-family:Georgia, "Times New Roman", serif;font-size:1.4em;color:#0033cc;<span class="rose">}</span>
                     </pre>
                     <h3>Sélecteur</h3>
@@ -203,37 +203,37 @@
                         <tr>
                         <td>Notation hexadécimale longue</td>
                         <td>Code commençant par <code>#</code>, suivi de 6 chiffres hexadécimaux (RR, GG, BB).</td>
-                        <td><code>color: #0a4dee</code></td>
+                        <td><code style="color: #0a4dee">color: #0a4dee</code></td>
                         </tr>
                         <tr>
                         <td>Notation hexadécimale courte</td>
                         <td>Un seul chiffre par composante, dupliqué implicitement.</td>
-                        <td><code>color: #f06;</code></td>
+                        <td><code style="color: #f06">color: #f06;</code></td>
                         </tr>
                         <tr>
                         <td>RGB</td>
                         <td>Fonction <code>rgb(r, g, b)</code> avec valeurs 0–255.</td>
-                        <td><code>color: rgb(50, 10, 204);</code></td>
+                        <td><code style="color: rgb(50, 10, 204)">color: rgb(50, 10, 204);</code></td>
                         </tr>
                         <tr>
                         <td>RGBA</td>
                         <td>Comme RGB mais avec canal alpha (opacité 0–1).</td>
-                        <td><code>color: rgba(50, 10, 204, 0.4);</code></td>
+                        <td><code style="color: rgba(50, 10, 204, 0.4)">color: rgba(50, 10, 204, 0.4);</code></td>
                         </tr>
                         <tr>
                         <td>HSL</td>
                         <td>Fonction <code>hsl(h, s%, l%)</code> : teinte 0–360°, saturation %, luminosité %.</td>
-                        <td><code>color: hsl(100, 50%, 28%);</code></td>
+                        <td><code style="color: hsl(100, 50%, 28%)">color: hsl(100, 50%, 28%);</code></td>
                         </tr>
                         <tr>
                         <td>HSLA</td>
                         <td>HSL avec canal alpha.</td>
-                        <td><code>color: hsla(24, 0%, 98%, 0.6);</code></td>
+                        <td><code style="color: hsla(100, 50%, 28%, 0.6)">color: hsla(24, 0%, 98%, 0.6);</code></td>
                         </tr>
                         <tr>
                         <td>Couleurs nommées</td>
                         <td>Mots-clés prédéfinis (≈140 en CSS).</td>
-                        <td><code>color: olive;</code></td>
+                        <td><code style="color: olive">color: olive;</code></td>
                         </tr>
                     </tbody>
                     </table>
@@ -416,9 +416,9 @@
                         </table>
 
                     <div class="tf" id="t01">
-                        <p class="tf-intitule">Créer une feuille de style interne</p>
+                        <p class="tf-intitule">Créer une feuille de style externe</p>
                         <ol>
-                            <li>Téléchargez les documents source <a href="materiel/tf_cours04_victoire-de-mtl.zip" class="btn btn-primary" role="button">tf_cours04_victoire-de-mtl.zip <i class="bi bi-download"></i></a></li>
+                            <li>Téléchargez les documents source <a href="materiel/Lecon05_victoire-de-mtl.zip" class="btn btn-primary" role="button">Lecon05_victoire-de-mtl.zip <i class="bi bi-download"></i></a></li>
                             <li>Décompressez le dossier et ouvrez ce dossier dans VSC.</li>
                             <li>Voir les instructions données en classe pour la suite.</li>
                         </ol>  
@@ -688,11 +688,20 @@
                     </ol>
             
             </section>  <!-- #sectionAE --> 
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>>Finaliser l’exercice 3</strong et le remettre sur LÉA <strong>au plus tard jeudi 8h</strong>.</li>
+                            <li>Lire la documentation, visionner les vidéos et réaliser les travaux formatifs de <a href="lecon06.html">la&nbsp;leçon&nbsp;6</a>. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
+                
                 <footer>
                     <div class="haut-de-page">
                         <a href="#">Retour en haut de la page</a>
                     </div>
-                </footer>  
+                </footer> 
                 
             </article>
             </div>
