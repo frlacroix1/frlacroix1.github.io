@@ -433,25 +433,20 @@
                     
                     <h3>Exercice 3 - Intro au langage CSS</h3>
                     <p>L'exercice 3 est une initiation à l'incorporation de règles de style dans un document CSS. </p>
-                    <h4>Sources</h4>
-                    <p>Pour ce travail, vous pouvez : .</p>
-                    <ul>
-                        <li>utiliser vos fichiers du tp1 comme point de départ: dupliquez le dossier de votre <strong>TP1</strong> et renommez-le grX_nonmprenom_ex3</li>
-                        <li>ou encore utiliser les fichiers fournis (surtout si vos propres fichiers sont incomplets): <a href="materiel/Ex3.zip" class="btn btn-primary" role="button">Ex3.zip <i class="bi bi-download"></i></a></li>
-                    </ul>
+                    
                     <h4>Documents à remettre</h4>
                     <p>Un <strong>dossier </strong>rigoureusement nommé <em>grX_nomInitialeprenom_ex3</em> (remplacez X par votre numéro de groupe) contenant les fichiers suivants: </p>
                     
                         <figure class="w50">
                             <figcaption>Structure de fichiers de l'exercice 3</figcaption>
-                            <img class="bordure" src="images/cours04/cours04_ex3_00a.jpg" alt="Arborescence de fichiers pour l&#39;exercice 3.">
+                            <img class="bordure" src="images/lecon05/cours04_ex3_00a.jpg" alt="Arborescence de fichiers pour l&#39;exercice 3.">
                         </figure>
                     <h4>Échéancier</h4>
-                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
-                    <ul>
+                    <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le jeudi suivant à&nbsp;8h</strong>. </p>
+                    <!-- <ul>
                         <li>groupe 1 : <strong>au plus tard le jeudi suivant à 8h</strong></li>
                         <li>groupe 2 : <strong>au plus tard le mercredi suivant à 12h</strong></li>
-                    </ul>
+                    </ul> -->
                     <h4>Travail à faire</h4>
                     <p>Les règles de style que vous allez soit copier, soit rédiger, dans les étapes qui suivent, <strong>doivent  être mises en forme comme le montre l'exemple suivant</strong>, c'est-à-dire: </p>
                     <ul style="margin:0; padding-bottom: 0;;">
@@ -459,202 +454,211 @@
                             <li>une déclaration par ligne</li>
                         </ul>
                     <figure class="w50">
-                        <figcaption>Exemple de mise en forme d'une règle de style.</figcaption>
-                        <img class="bordure" src="images/cours04/css01.png" alt="Règle d&#39;écriture d&#39;une règle CSS.">
+                        <!-- <figcaption>Exemple de mise en forme d'une règle de style dans le document styles.css.</figcaption> -->
+                        <img class="bordure" src="images/lecon05/css01.png" alt="Règle d&#39;écriture d&#39;une règle CSS.">
                     </figure>
-                    <p><strong>1. Démarrez VSC</strong></p>
-                    <p>Dans la colonne de gauche de VSC, <strong>ouvrez le dossier</strong> <em>grX_nomInitialeprenom_ex3</em> grâce à l'option<strong> Ouvrir...</strong>; vous aurez ainsi accès à tous les fichiers et dossiers s'y trouvant ;</p>
-                    <figure class="w40">
-                        <img class="bordure" src="images/cours04/cours04_tp4_01.jpg" alt="">
-                    </figure>
-                    <p><strong>2. Complétez votre structure de dossiers </strong></p>
-                    <p>Dans la colonne de gauche de VSC, créez un nouveau dossier (en cliquant sur l'icône 'Nouveau dossier') et nommez-le «<code>css</code>».</p>
+                    <p><strong>A. Préparer votre dossier de travail</strong></p>
+                    <ol><li>Téléchargez et décompressez l'archive <a href="materiel/Ex3.zip" class="btn btn-primary" role="button">Ex3.zip <i class="bi bi-download"></i></a>. Renommez ce dossier selon la nomenclature habituel <em>grX_nomprenom_ex3</em>.</li>
+                        <li>Dans la colonne de gauche de VSC, <strong>ouvrez le dossier</strong> <em>grX_nomInitialeprenom_ex3</em> grâce à l'option<strong> Ouvrir...</strong>; vous aurez ainsi accès à tous les fichiers et dossiers s'y trouvant.<br><figure class="w40">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_01.jpg" alt="">
+                    </figure></li>
+                    <li><strong>Complétez votre structure de dossiers </strong></br>
+                    Dans la colonne de gauche de VSC, créez un <strong>nouveau dossier</strong> (<em>New folder...</em>) en cliquant sur l'icône <i class="bi bi-folder-plus"></i> et nommez-le «<code>css</code>».<br>
                     <figure class="w50">
-                        <img class="bordure" src="images/cours04/cours04_tp4_03.jpg" alt="">
-                    </figure>
-                    <p><strong>3. Créez le fichier <code>styles.css</code> dans le dossier css</strong></p>
-                    <p>Dans votre dossier de travail, repérez le dossier <code>css</code> et cliquez-droit sur ce dossier: choisissez <strong>Nouveau fichier</strong> et nommez ce fichier <code>styles.css</code>.</p>
+                        <img class="bordure" src="images/lecon05/cours04_tp4_03.jpg" alt="">
+                    </figure></li>
+                <li><strong>Créez le fichier <code>styles.css</code> à l'intérieur du dossier css</strong><br>Dans votre dossier de travail, repérez le dossier <code>css</code> et cliquez-droit sur ce dossier: choisissez <strong>Nouveau fichier</strong> (<em>New file...</em>) et nommez ce fichier <code>styles.css</code>.<br>
                     <figure class="w50">
-                        <img class="bordure" src="images/cours04/cours04_tp4_05.jpg" alt="">
-                    </figure>
-                    <p>Assurez-vous que le fichier <code>styles.css</code> est bien dans le dossier css, sinon, faites-le glisser dans ce dossier.
-                    </p><p><strong>4. Liez la feuille de style aux documents HTML</strong></p>
-                    <p>Afin de lier ce fichier <code>.css</code> au document HTML, faites d'abord afficher le document <code>monarticle.html</code> en cliquant dessus, et insérez la ligne de code suivante à la suite de <code>&lt;title&gt;</code> à l'intérieur de l'élément <code>&lt;head&gt;</code> : </p>
-                    
-                    <figure class="w90">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_05.jpg" alt="">
+                    </figure></li>
+                    <li>Assurez-vous que le fichier <code>styles.css</code> est bien à l'intérieur du dossier <code>css</code>, sinon, faites-le glisser dans ce dossier.</li>
+                    <li><strong>Liez la feuille de style aux documents HTML</strong><br>
+                        Afin de lier ce fichier <code>.css</code> au document HTML, faites d'abord afficher le document <code>monarticle.html</code> en cliquant dessus, et insérez la ligne de code suivante à la suite de <code>&lt;title&gt;</code> à l'intérieur de l'élément <code>&lt;head&gt;</code> : 
+                        <figure class="w90">
                         <figcaption>Insérez dans le 'head' la ligne de code surlignée en bleu</figcaption>
-                        <img class="bordure" src="images/cours04/cours04_tp4_06.jpg" alt="">
-                    </figure>
-                    <div class="note"><p>Répétez cette opération dans les fichiers <code>monformulaire.html</code> et <code>montableau.html</code></p></div>
-                    <p>Pour le moment, votre page web ressemble à ceci dans Chrome : </p>
-                    <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_11.jpg" alt="">
-                    </figure>
-                    <p><strong>5. Insérez les éléments de structure HTML pour compléter la structure de vos pages </strong></p>
-                    <p>Insérez les conteneurs <code>header</code>, <code>nav</code>, <code>main</code> et <code>footer</code> <strong>dans vos trois pages HTML</strong> comme le montre l'image suivante.</p>
-                    <p>Cette étape est cruciale avant d'entamer la rédaction des règles de style, car les règles de style y font référence. </p>
-                    <figure class="w90">
-                        <figcaption>Insertion d'éléments de structure dans le code HTML</figcaption>
-                        <img class="bordure" src="images/cours04/cours04_tp4_08.jpg" alt="Ajout des éléments de structure du HTML">
-                    </figure>
-                    <p><strong>6. Insérez une première règle de style pour la réinitialisation de certaines propriétés</strong></p>
-                    <p>Dans votre feuille de style, sous l'encodage de caractères, <strong>insérez le code suivant</strong> (y compris le commentaire CSS se trouvant au début de la règle) :</p>
-                    <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css01.jpg" alt="EX3">
-                    </figure>
-                    <div class="note">
-                        <p>Les commentaires CSS sont délimités ainsi: <code class="vert">/* Commentaire css */</code></p>
-                    </div>
+                        <img class="bordure" src="images/lecon05/cours04_tp4_06.jpg" alt="">
+                    </figure></li>
+                    <li>Répétez cette opération dans les fichiers <code>monformulaire.html</code> et <code>montableau.html</code>.</li>
+                    <li>Ouvrez le document <code>monarticle.html</code> dans le navigateur <strong>Google Chrome</strong>. Remarquez que son apparence est identique au travail réalisé dans les dernières leçons. <br><figure class="w70">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_11.jpg" alt="">
+                    </figure></li>
+                </ol>
+                <p><strong>B. Réinitialisation des styles et rédaction de la charte typographique</strong></p>
+                <p>Nous allons maintenant rédiger nos premières règles de styles pour personnaliser l'apparence de nos documents.</p>
+                <ol>
+                    <li>Dans VSC, ouvrez le document <code>styles.css</code>. Ce document est actuellement vide. </li>
+                    <li>Insérez-y l'entièreté du code suivant: <br><figure class="w70">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css01.jpg" alt="EX3">
+                    </figure><div class="note"><p><strong>À retenir</strong></p>
                     <ul>
-                        <li>Il s'agit des règles de style chargées de réinitialiser les valeurs de marges internes et externes de tous les éléments HTML.</li>
-                        <li>Actualisez l'affichage de votre navigateur et constatez le résultat: les marges en bordure du document, ainsi qu'entre les titres et les paragraphes ont disparu :</li>
-                    </ul>
+                        <li>Il est essentiel que la première ligne d'un document CSS débute avec la déclaration du codage: <code>@charset&nbsp;"utf-8";</code>.</li>
+                        <li>Les lignes 3 à 8 correspondent aux règles de style pour réinitialiser les valeurs de marges internes et externes de tous les éléments HTML.</li>
+                        <li>Les commentaires CSS sont délimités ainsi: <code class="vert">/* Commentaire css */</code></li>
+                    </ul></div> 
+                </li>
+                <li>Actualisez l'affichage de votre navigateur et constatez le résultat: les marges en bordure du document, ainsi qu'entre les titres et les paragraphes ont disparu :<figure class="w70">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_12.jpg" alt="">
+                    </figure></li>
+                    <li>Insérez des valeurs à <code>margin</code> et <code>padding</code> (par exemple: <code>50px</code>) pour en voir l'effet, puis remettez le tout à zéro.</li>
+                    <li><strong>Charte typographique:</strong> Dans votre feuille de style, à la suite du code s'y trouvant, insérez le code suivant : 
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_12.jpg" alt="">
-                    </figure>
-                    <p>Insérez des valeurs à <code>margin</code> et <code>padding</code> (par exemple: <code>50px</code>) pour en voir l'effet, puis remettez le tout à zéro.</p>
-                    <p><strong>7. Charte typographique</strong></p>
-                    <p>Dans votre feuille de style, à la suite du code s'y trouvant, insérez le code suivant : </p>
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css02.jpg" alt="EX3">
+                    </figure></li>
+                    <li>Notez le changement obtenu dans le navigateur: la police de caractères a été modifiée :<br>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css02.jpg" alt="EX3">
-                    </figure>
-                    <p>Notez le changement obtenu : la police de caractères a été modifiée :</p>
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu01.jpg" alt="EX3">
+                    </figure></li>
+                </ol>
+        <div class="note"><p>Votre document styles.css contient maintenant <strong>les trois éléments essentiels de base d'une feuille de style CSS</strong>. Ces éléments seront mis en place dans tous les prochains travaux de la session.</p>
+                    <ol>
+                        <li>La déclaration du codage: <code>@charset&nbsp;"utf-8";</code>.</li>
+                        <li>La réinitialisation des styles</li>
+                        <li>La charte typographique</li>
+                    </ol></div>             
+        
+                    
+                    <p><strong>C. Personnalisation des styles visuels des pages </strong></p>
+            
+                    <ol>
+                    <li>Dans les trois documents HTML (<code>monarticle.html</code>, <code>monformulaire.html</code> et <code>montableau.html</code>), <strong>insérez les conteneurs</strong> <code>header</code>, <code>nav</code>, <code>main</code> et <code>footer</code> comme le montre l'image suivante. Cette étape est cruciale avant de continuer la rédaction des règles de style, car les règles de style y font référence. <figure class="w90">
+                        <figcaption>Insertion d'éléments de structure dans le code HTML</figcaption>
+                        <img class="bordure" src="images/lecon05/cours04_tp4_08.jpg" alt="Ajout des éléments de structure du HTML">
+                    </figure></li>
+                    <li><strong>Mise en forme des éléments de structure</strong><br>Dans le fichier <code>styles.css</code>, insérez les règles suivantes qui définissent la mise en forme des éléments de structure ajoutés à vos documents.
+                        <figure class="w70">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css03.jpg" alt="EX3">
+                    </figure><ul> <li>La propriété <code>width</code> limite la largeur des lignes de texte pour rendre la lecture plus agréable.</li>
+                    <li>Les marges automatiques (<code>margin: 0 auto</code>) à gauche et à droite permettent de centrer le corps de l'article sur la page: </li></ul>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu01.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu02.jpg" alt="EX3">
                     </figure>
-                    <p><strong>8. Mise en forme des éléments de structure</strong></p>
-                    <p>Insérez les règles suivantes qui définissent la mise en forme des éléments de structure ajoutés à vos documents :</p>
-                    <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css03.jpg" alt="EX3">
+                    
+                    </li>
+                    <li><strong>Mise en forme des hyperliens</strong> <br>Insérez les règles suivantes qui définissent la mise en forme des <strong>hyperliens</strong> de tout le document :
+                        <figure class="w70">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css04.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css05.jpg" alt="EX3">
                     </figure>
-                    <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu02.jpg" alt="EX3">
-                    </figure>
-                    <p>La propriété <code>width</code> limite la largeur des lignes de texte pour rendre la lecture plus agréable.</p>
-                    <p>Les marges automatiques (margin: 0 auto) à gauche et à droite permettent de centrer le corps de l'article sur la page: </p>
-                    <p><strong>9. Mise en forme des hyperliens</strong></p>
-                    <p>Insérez les règles suivantes qui définissent la mise en forme des hyperliens de tout le document :</p>
-                    <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css04.jpg" alt="EX3">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css05.jpg" alt="EX3">
-                    </figure>
-                    <p>Ce code façonne les états des hyperliens; survolez les liens pour noter l'état au survol :</p>
+                    Ce code façonne les états des hyperliens; survolez les liens pour noter l'état au survol :
                     <figure class="w50">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu03.jpg" alt="">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu03.jpg" alt="">
                     </figure>
-                    <p><strong>10. Mise en forme générale des paragraphes</strong></p>
+                    </ol>
+                   
+                   
+                    <p><strong>4. Mise en forme générale des paragraphes</strong></p>
                     <p>Définissez maintenant l'allure générale des paragraphes en insérant le code suivant dans votre feuille de style : </p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css06.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css06.jpg" alt="EX3">
                     </figure>
                     <p>Notez la moficiation de l'espace entre les paragraphes :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu04.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu04.jpg" alt="EX3">
                     </figure>
-                    <p><strong>11. Mise en forme des titres</strong></p>
+                    <p><strong>5. Mise en forme des titres</strong></p>
                     <p>Insérez le code suivant dans votre feuille de style pour mettre en forme les titres et sous-titres :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css07.jpg" alt="EX3">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css08.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css07.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css08.jpg" alt="EX3">
                     </figure>
                     <p>Notez que la taille des caractères, l'alignement du texte et ses marges ont changé : 
                     </p><figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu05.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu05.jpg" alt="EX3">
                     </figure>
                     <p>N'hésitez pas à modifier la taille et la couleur pour expérimenter.</p>
-                    <p><strong>12. Mise en forme des images et de la vidéo</strong></p>
+                    <p><strong>6. Mise en forme des images et de la vidéo</strong></p>
                     <p>Ajoutez ce code pour mettre en forme les images et la vidéo :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css09.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css09.jpg" alt="EX3">
                     </figure>
                     <p>Remarquez comment les marges et l'alignement de l'image et du figcaption s'ajustent :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu06.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu06.jpg" alt="EX3">
                     </figure>
-                    <p><strong>13. Mise en forme du contenu de 'header'</strong></p>
+                    <p><strong>7. Mise en forme du contenu de 'header'</strong></p>
                     <p>Inscrivez ce code pour mettre en forme le contenu de 'header' :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css10.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css10.jpg" alt="EX3">
                     </figure>
                     <p>D'entrée de jeu, le texte est centré.</p>
                     <p>Ensuite, pour sélectionner le nom du site, on utilise un sélecteur composé (<code>header p</code>) qui vise le paragraphe inclus dans header : </p>
                     <p>Le type, la casse et la taille de la police sont ajustés, et vous noterez l'ajout de bordures en haut et en bas :</p>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu08.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu08.jpg" alt="EX3">
                     </figure>
 
-                    <p><strong>14. Mise en forme de la navigation principale</strong></p>
+                    <p><strong>8. Mise en forme de la navigation principale</strong></p>
                     <p>Écrivez la règle suivante pour raffiner la mise en forme de la navigation principale :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css11.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css11.jpg" alt="EX3">
                     </figure>
                     <p>Le sélecteur de type <code>nav</code> permet d'ajouter de l'espacement dans le haut et le bas du menu.</p>
                     <p>Le sélecteur <code>ul</code> de son côté présente la déclaration <code>list-style-type:none</code> qui élimine les boulets de la liste, et la déclaration <code>display:inline-block</code> qui place les éléments de liste côte-à-côte tout en permettant d'attributer une largeur fixe : </p>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu09.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu09.jpg" alt="EX3">
                     </figure>
                     
-                    <p><strong>15. Mise en forme la section principale 'main'</strong></p>
+                    <p><strong>9. Mise en forme la section principale 'main'</strong></p>
                     <p>Rédigez cette règle à la suite des autres :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css12.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css12.jpg" alt="EX3">
                     </figure>
                     <p>Les sélecteurs p:first-of-type et p:nth-of-type(2) permettent de sélectionner les premier (date) et deuxième (source) éléments de type 'p' à l'intérieur du conteneur 'main' :
                     </p><figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu10.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu10.jpg" alt="EX3">
                     </figure>
 
-                    <p><strong>16. Mise en forme du formulaire</strong></p>
+                    <p><strong>10. Mise en forme du formulaire</strong></p>
                     <p>La mise en forme du formulaire nécessite un peu de balisage supplémentaire pour effectuer un travail satisfaisant.</p>
                     <p>Insérez les éléments 'div' suivants afin d'améliorer la structure des couples label+input :</p>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_div.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_div.jpg" alt="EX3">
                     </figure>
                     <p>Afin de structurer les groupes de boutons radio et de cases à cocher, insérez les éléments 'ul' et 'li' suivants :</p>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_ul-li.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_ul-li.jpg" alt="EX3">
                     </figure>
                     <p>Écrivez cette règle pour mettre en forme le formulaire à l'aide des sélecteurs qui permettent de pointer les éléments spécifiques de celui-ci : </p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css13.jpg" alt="EX3">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css14.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css13.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css14.jpg" alt="EX3">
                     </figure>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu11.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu11.jpg" alt="EX3">
                     </figure>
-                    <p><strong>17. Mise en forme du tableau</strong></p>
+                    <p><strong>11. Mise en forme du tableau</strong></p>
                     <p>Ajoutez les règles suivantes pour mettre en forme le tableau de la page montableau.html :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css15.jpg" alt="EX3">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css16.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css15.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css16.jpg" alt="EX3">
                     </figure>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu12.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu12.jpg" alt="EX3">
                     </figure>
                     
-                    <p><strong>18. Mise en forme du pied de page 'footer'</strong></p>
+                    <p><strong>12. Mise en forme du pied de page 'footer'</strong></p>
                     <p>Ajoutez la règle suivante pour mettre en forme le pied de page :</p>
                     <figure class="w70">
-                        <img class="bordure" src="images/cours04/cours04_tp4_css17.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_css17.jpg" alt="EX3">
                     </figure>
                     <figure class="w80">
-                        <img class="bordure" src="images/cours04/cours04_tp4_rendu13.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_tp4_rendu13.jpg" alt="EX3">
                     </figure>
                 
                     <p>À ce stade, le résultat devrait ressembler à ceci :</p> 
                     <figure class="w90">
-                        <img class="bordure" src="images/cours04/cours04_ex3_rendu-final.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_ex3_rendu-final.jpg" alt="EX3">
                     </figure>
                     
-                    <p><strong>19. Défi #1 : Personnalisez la couleur des liens de la navigation principale</strong></p>
+                    <p><strong>13. Défi #1 : Personnalisez la couleur des liens de la navigation principale</strong></p>
                     <p>Analysez les règles de style utilisées pour mettre en forme les hyperliens.</p>
                     <p>Modifiez la couleur des liens de la navigation principale (ceux qui se trouvent dans l'élément <code>nav</code>), sans affecter les autres liens du document.</p>
-                    <p><strong>20. Défi #2 : Ajoutez une lettrine</strong></p>
+                    <p><strong>14. Défi #2 : Ajoutez une lettrine</strong></p>
                     <p>L'ajout d'une lettrine donnerait un chic fou à votre article.</p>
                     <p>En vous inspirant de l'exemple Codepen plus bas, relevez le défi d'ajouter une lettrine au premier paragraphe de texte du contenu principal.</p>
                     <figure class="w60">
                         <figcaption>Exemple de lettrine dansla page monarticle.html. Elle s'affichera également dans les deux autres pages.</figcaption>
-                        <img class="bordure" src="images/cours04/cours04_ex3_lettrine.jpg" alt="EX3">
+                        <img class="bordure" src="images/lecon05/cours04_ex3_lettrine.jpg" alt="EX3">
                     </figure>
                     <div class="note">
                         <p><strong>Attention:</strong> la lettrine ne doit s'appliquer qu'au premier paragraphe de chaque page !</p>
@@ -680,7 +684,7 @@
                         <li>Vérifiez que vous avez bien intégré tous les éléments demandés dans votre nouvelle page.</li>
                         <li>Votre travail doit être validé à l'aide du navigateur <em>Google Chrome</em> (c'est-à-dire que l'affichage doit être satisfaisant sur ce navigateur).</li>
                         <li>Lorsque vous êtes prêts à remettre votre travail, accédez au dossier <em>grX_nomInitialeprenom_ex3</em> par le Finder (ou l'explorateur de fichier sur PC). <br>
-                            <img class="bordure" src="images/cours04/cours04_ex3_00a.jpg" alt="arborescence de Ex3" width="300">
+                            <img class="bordure" src="images/lecon05/cours04_ex3_00a.jpg" alt="arborescence de Ex3" width="300">
                         </li>
                         <li>Cliquez-droit sur le dossier et sélectionnez &laquo;&nbsp;Compresser&nbsp;&raquo;.
                         </li>
@@ -691,7 +695,7 @@
                 <div class="tf" role="alert">
                         <p class="tf-intitule">À faire avant la prochaine leçon</p>
                         <ul>
-                            <li><strong>>Finaliser l’exercice 3</strong et le remettre sur LÉA <strong>au plus tard jeudi 8h</strong>.</li>
+                            <li><strong>Finaliser l’exercice 3</strong> et le remettre sur LÉA <strong>au plus tard jeudi 8h</strong>.</li>
                             <li>Lire la documentation, visionner les vidéos et réaliser les travaux formatifs de <a href="lecon06.html">la&nbsp;leçon&nbsp;6</a>. </li>
                             <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
                         </ul>
