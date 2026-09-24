@@ -87,12 +87,9 @@
           <figure class="w80">
             <img src="images/cours05/cours06_boite01.jpg" alt="Le modèle de boîte décomposé">
           </figure>
-          <p><code>padding</code> (marge interne) est transparent : il s'agit de l'espace adjacent au contenu  et laisse voir  la couleur d'arrière-plan ou l'image d'arrière-plan de l'élément auquel il appartient.</p>
+          <p><code>padding</code> (marge interne / remplissage / espacement) est transparent : il s'agit de l'espace adjacent au contenu  et laisse voir  la couleur d'arrière-plan ou l'image d'arrière-plan de l'élément auquel il appartient.</p>
           <p><code>margin</code> (marge externe) est transparent : il laisse voir la couleur d'arrière-plan ou l'image d'arrière-plan de l'élément parent sous-jacent, et non pas de l'élément auquel il appartient.</p>
           <p><code>border</code> (bordure) se situe entre le <code>padding</code> et le <code>margin</code>. </p>
-          <div class="note">
-            <p>En français, <code>padding</code> est traduit indifféremment par «&nbsp;remplissage&nbsp;», «&nbsp;espacement&nbsp;» ou «&nbsp;marge interne&nbsp;», alors que <code>margin</code> est traduit par «&nbsp;marge&nbsp;» ou  «&nbsp;marge externe&nbsp;».</p>
-          </div>
           <figure class="w70">
             <img src="images/cours05/cours06_boite01b.jpg" alt="Le modèle de boîte tel qu&#39;il apparaît à l&#39;écran">
           </figure>
@@ -108,39 +105,82 @@
           </div>
 
           <h3>Comment calculer la largeur d'un élément?</h3>
-          <p>Par exemple, considérons les valeurs suivantes pour width, padding, border et margin&nbsp;:</p>
-          <p class="code-etiquette">Code</p>
-          <pre class="exemple-code">          <span class="rose">div {</span>
-          &nbsp;&nbsp;width: 130px; 
-          &nbsp;&nbsp;padding: 10px;
-          &nbsp;&nbsp;border: 10px solid #000;
-          &nbsp;&nbsp;margin: 10px;
-          &nbsp;&nbsp;<span class="vert">box-sizing: content-box;</span>
-          <span class="rose">}</span>
-          </pre>
-          <p>Et voyons le résultat&nbsp;:</p>
-          <p class="resultat-etiquette">Résultat</p>
-          <figure class="w100">
-            <img src="images/cours05/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
-          </figure>
-          <p><strong>La largeur totale affichée est donc de 10+10+10+130+10+10+10 = 190 px</strong></p>
-          <p>Lorsque la valeur de <code>box-sizing</code> passe à <code>border-box</code>, les mêmes valeurs donnent une largeur différente&nbsp;:</p>
-          <p class="code-etiquette">Code</p>
-          <pre class="exemple-code">          <span class="rose">div {</span>
-          &nbsp;&nbsp;width: 130px; 
-          &nbsp;&nbsp;padding: 10px;
-          &nbsp;&nbsp;border: 10px solid #000;
-          &nbsp;&nbsp;margin: 10px;
-          &nbsp;&nbsp;<span class="vert">box-sizing: border-box;</span>
-          <span class="rose">}</span>
-          </pre>
-          <p class="resultat-etiquette">Résultat</p>
-          <figure class="w100">
-            
-            <img src="images/cours05/cours06_boite03b.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
-          </figure>
-          <p><strong>La largeur totale affichée est donc de 10+130+10 = 150 px</strong></p>
-          <p>C'est-à-dire que la valeur donnée à <code>width</code> inclut maintenant les valeurs de <code>padding</code> et de <code>border</code>.</p>
+
+          <p>La propriété CSS <code>box-sizing</code> sert à définir comment la largeur (<em>width</em>) et la hauteur (<em>height</em>) d'un élément sont calculées dans le modèle de boîte.
+            La valeur par défaut de cette propriété est <code>content-box</code>, mais nous utiliserons <code>border-box</code> pour faciliter notre travail.</p>
+          <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><code>content-box</code></h5>
+                    <p>Avec <code>content-box</code>, la valeur de <code>width</code> correspond <strong>uniquement à la largeur du contenu</strong>. Le <code>padding</code> et la <code>border</code> sont ajoutés à cette largeur.</p>
+                    <div class="row">
+              <div class="col">
+                
+                <p class="code-etiquette">Code</p>
+                  <pre class="exemple-code">          <span class="rose">div {</span>
+                  &nbsp;&nbsp;width: 130px; 
+                  &nbsp;&nbsp;padding: 10px;
+                  &nbsp;&nbsp;border: 10px solid #000;
+                  &nbsp;&nbsp;margin: 10px;
+                  &nbsp;&nbsp;<span class="vert">box-sizing: content-box;</span>
+                  <span class="rose">}</span>
+                  </pre>
+
+              </div>
+              <div class="col">
+<p class="resultat-etiquette">Résultat</p>
+                  <figure class="w100">
+                    <img src="images/cours06/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
+                  </figure>
+              </div>
+          </div>
+          <p>La largeur se calcule ainsi&nbsp;: <br>
+
+          <strong>margin + border + padding + width + padding + border + margin</strong><br>
+
+          <strong>10 + 10 + 10 + 130 + 10 + 10 + 10 = 190 px</strong></p>
+
+          <p>L'élément occupe donc 190 px de largeur au total.</p>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><code>border-box</code></h5>
+                    <p>Avec <code>border-box</code>, la valeur de <code>width</code> correspond <strong>à la largeur totale de l'élément, incluant le <code>padding</code> et la <code>border</code></strong>.</p>
+                      <p>Avec les mêmes valeurs&nbsp;:</p>
+                      <div class="row">
+                        <div class="col">
+                            <p class="code-etiquette">Code</p>
+                            <pre class="exemple-code">          <span class="rose">div {</span>
+                            &nbsp;&nbsp;width: 130px; 
+                            &nbsp;&nbsp;padding: 10px;
+                            &nbsp;&nbsp;border: 10px solid #000;
+                            &nbsp;&nbsp;margin: 10px;
+                            &nbsp;&nbsp;<span class="vert">box-sizing: border-box;</span>
+                            <span class="rose">}</span>
+                            </pre>
+                        </div>
+
+                        <div class="col">
+                          <p class="resultat-etiquette">Résultat</p>
+                      <figure class="w100">
+                        
+                        <img src="images/cours06/cours06_boite03b.jpg" alt="Le calcul de la largeur d&#39;une boîte" class="sansBordure">
+                      </figure>
+                      
+                        </div>
+
+
+                      </div>
+                      <p>La largeur de l'élément se limite maintenant à la valeur définie par <code>width&nbsp;:&nbsp;130&nbsp;px;</code>. Le <code>padding</code> et la <code>border</code> sont compris à l'intérieur de ces 130&nbsp;px. La marge (<code>margin</code>), quant à elle, reste à l'extérieur de l'élément :</p>
+                      <p><strong>10 + 130 + 10 = 150&nbsp;px</strong></p>
+                      <p>L'élément occupe donc 150 px d'espace au total, mais sa largeur (<code>width</code>) demeure 130 px.</p>
+
+                      
+                  </div>
+                </div>
+                
+                
           <div class="note">
             <p class="note-intitule">Notez <code>padding</code>, <code>border</code> et <code>margin</code> sont des propriétés dites « raccourcies » </p>
             <ul>
@@ -383,7 +423,7 @@
           <p>L'exercice 4 a pour objectif de vous familiariser avec les proprétés CSS parmi les plus courantes. <strong>Plus spécifiquement, vous effectuerez la mise en forme d'une page en rédigeant vous-mêmes les règles de style</strong>.</p>
           <h4>Sources</h4>
           <p>Téléchargez le dossier <a href="materiel/Ex4.zip" class="btn btn-primary" role="button">Ex4.zip</a>.</p>
-          <p>Référez-vous au tableau de sélecteurs pour faire votre travail: <a href="https://frlacroix1.github.io/integration1/lecon04.html#section05" target="_blank">Sélecteurs du DOM <i class="bi bi-box-arrow-up-right"></i></a>
+          <p>Référez-vous au tableau de sélecteurs pour faire votre travail: <a href="https://frlacroix1.github.io/integration1/lecon05.html#section05" target="_blank">Sélecteurs du DOM <i class="bi bi-box-arrow-up-right"></i></a>
           </p>
           
           <h4>Documents à remettre</h4>
@@ -393,11 +433,12 @@
               <img class="bordure" src="images/cours05/cours05_ex4_arbo1.jpg" alt="Arborescence de fichiers pour l&#39;exercice 4.">
           </figure>
           <h4>Échéancier</h4>
-                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
-                    <ul>
-                        <li>groupe 1 : <strong>au plus tard le vendredi suivant à 8h</strong></li>
-                        <li>groupe 2 : <strong>au plus tard le mercredi suivant à 16h</strong></li>
-                    </ul>
+          <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le jeudi suivant à&nbsp;8h</strong>. </p>
+          <!--<p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+          <ul>
+              <li>groupe 1 : <strong>au plus tard le vendredi suivant à 8h</strong></li>
+              <li>groupe 2 : <strong>au plus tard le mercredi suivant à 16h</strong></li>
+          </ul>-->
           <h4>Travail à faire</h4>
             <p>Vous devez mettre en forme la page <code>index.html</code>.</p>
             <p>Toutes les règles de style doivent être rédigées dans la feuille de style externe, c'est-à-dire dans le document <code>styles.css</code>.</p>
@@ -434,6 +475,11 @@
 
             
         </section>  <!-- fin sectionAE --> 
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">Exceptionnellement, la documentation en lien avec la leçon&nbsp;7 vous sera distribuée lundi le&nbsp;5&nbsp;octobre.</p>
+                        <p>Un MIO vous sera envoyé pour vous informer de sa disponibilité.</p>
+                    </div>
+                
                 <footer>
                     <div class="haut-de-page">
                         <a href="#">Retour en haut de la page</a>
