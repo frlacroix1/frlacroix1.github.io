@@ -89,6 +89,9 @@ img {
         margin-left: -22px;
         margin-bottom: 1.5rem;   
     }
+   .etape-numero small{
+          font-weight: normal;
+        }
     .question { background:#f2f2f2; border:1px solid #336c98; border-left:5px solid #336c98; padding:.9rem 1rem; margin:1.25rem 0; }
     .question p { margin:0; }
     .attention { background:#fff6d8; border:1px solid #d69e00; border-left:5px solid #d69e00; padding:.9rem 1rem; margin:1.25rem 0; }
@@ -331,7 +334,12 @@ ol.procedures > li:after {
 ol.procedures {
   list-style: none;
 }
-
+ol.procedures li a{
+  color:#FFF;
+}
+ol.procedures li a:hover{
+  color:rgba(255,255,255,0.6);
+}
 footer{color:#FFF; position: relative;}
 footer:after{
   display: block;
@@ -349,4 +357,8 @@ footer .container{position:relative; z-index: 10;}
 
 .list-group-item.active{
   background-color:#C54B65;
+}
+
+.dotted{
+  border-bottom: 2px dotted #FFF;
 }

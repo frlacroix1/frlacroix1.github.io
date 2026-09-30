@@ -3,6 +3,8 @@ jQuery(document).ready(function() {
     jQuery('.theme span').matchHeight();
     jQuery('.equal').matchHeight();
 
+    jQuery('[data-toggle="tooltip"]').tooltip();
+
     if ( jQuery("#mise-en-place").length ) {
          jQuery(window).scroll(function() {
             if ( jQuery(window).scrollTop() <= 800 ) {
