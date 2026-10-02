@@ -67,276 +67,18 @@
            <div class="col-lg-3 order-lg-2 table-des-matieres">
                     <nav id="sidebar-nav" class="list-group sticky-top ">
                       <p><a href="#" class="nav-link titre"><strong>Leçon 7</strong></a></p>
-                      <a href="#rappel" class="list-group-item list-group-item-action">Rappels : HTML, CSS et modèle de boîte&nbsp;CSS</a> 
+                      <a href="#rappel" class="list-group-item list-group-item-action">Rappels&nbsp;: HTML, CSS et modèle de boîte&nbsp;CSS</a> 
                       <a href="#section01" class="list-group-item list-group-item-action">Le sélecteur de classe</a> 
                       <a href="#section05" class="list-group-item list-group-item-action">Utiliser Google Fonts</a>
-                      <a href="#section02" class="list-group-item list-group-item-action">Les boites flexibles : une intro</a> 
+                      <a href="#section02" class="list-group-item list-group-item-action">Les boites flexibles&nbsp;: une&nbsp;intro</a> 
                       <a href="#section03" class="list-group-item list-group-item-action">La propriété position</a>
                       <a href="#section04" class="list-group-item list-group-item-action">Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</a>
-                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation</a>
+                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activité d'évaluation (TP2)</a>
                     </nav>
                 </div>
             <div class="col-lg-9 order-lg-1">
             <article>
-              <section id="rappel">
-          <h2><small>Rappels : </small>HTML, CSS et modèle de boîte&nbsp;CSS</h2>
-              <h3>Imbrications HTML: Ancêtres, Parents, Enfants, Descendants, Frères</h3>
-          <p>Chaque document HTML est  composé de conteneurs qui peuvent être <em>ancêtres,</em>&nbsp;<em>parent</em>s, <em>enfants, descendants</em>&nbsp;ou&nbsp;<em>frères</em>. Ces  éléments forment une hiérarchie d'imbrications. </p>
-              <h3>Le modèle de boîte&nbsp;CSS</h3>
-          <div class="row">
-            <div class="col"><h4>1. Tout est boîte</h4><p>Tout élément est rendu comme une boîte. Chaque boîte possède :</p>
-          <ul>
-            <li>contenu (texte, image, enfant)</li>
-            <li>padding (marge intérieure)</li>
-            <li>border (bordure)</li>
-            <li>margin (marge extérieure)</li>
-          </ul></div>
-            <div class="col">
-              <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="MYKaZwv" data-pen-title="c05-modele_de_boite" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/MYKaZwv">
-  c05-modele_de_boite</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script></div>   
-         </div>
-         
-
-          <h4>2. Dimensions calculées</h4>
-          <p>Valeur par défaut: </p>
-          <pre class="exemple-code"><span class="vert">box-sizing: content-box;</span></pre>
-          <div class="card-group">
-  <div class="card">
-    <div class="card-body">
-              <h5><code>content-box</code></h5>
-              <figure class="w100">
-              <img src="images/cours06/cours06_boite03.jpg" alt="Le calcul de la largeur d&#39;une boîte content-box" class="sansBordure">
-              <p>La largeur totale d'une boîte se calcule ainsi <code>width + padding + border + margin</code>.</p>
               
-          </figure></div></div>
-            <div class="card">
-              <div class="card-body">
-              <h5><code>border-box</code></h5>
-              <figure class="w100"><img src="images/cours06/cours06_boite03b.jpg" alt="Le calcul de la largeur d&#39;une boîte border-box" class="sansBordure"></figure>
-              <p>La largeur totale d'une boîte se calcule ainsi <code>width + margin</code>.</p>
-              </div>
-            </div>
-          </div>
-          <br>
-          <p>L’utilisation de <code>border-box</code> est recommandée, car la valeur déclarée dans <code>width</code> inclut déjà le padding et la bordure. Cela simplifie grandement le calcul de la largeur d’une boîte. Nous prendrons donc l’habitude d’activer ce comportement dès l’initialisation de nos feuilles de style.</p>
-          <pre class="exemple-code">
-            <span class="rose">/* RÉINITIALISATION */
-            * {</span>
-          &nbsp;&nbsp;margin: 0; 
-          &nbsp;&nbsp;padding: 0; 
-          &nbsp;&nbsp;<span class="vert">box-sizing: border-box;</span>
-          <span class="rose">}</span>
-          </pre>
-          <h4>3. Plusieurs types de boîte</h4>
-          <ul style="padding-bottom:0;">
-            <li><strong>Bloc (<code>display: block</code>) :</strong> <br>occupe toute la largeur, commence sur une nouvelle ligne (<code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>…).</li>
-<li><strong>En ligne (<code>display: inline</code>) :</strong> <br>s’écoule dans le texte sans forcer de retour à la ligne (<code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>…).</li>
-<li>Autres types spécifiques :
-  <ul style="padding-bottom:0;">
-    <li><code>list-item</code> pour <code>&lt;li&gt;</code></li>
-    <li><code>table</code> pour <code>&lt;table&gt;</code></li>
-  <li><code>flex</code> ou <code>grid</code> uniquement si activé via CSS.</li></ul></li>
-          </ul>
-          <h4>4. Conséquence</h4>
-          <p>Comprendre le modèle de boîte, c’est à la fois :</p>
-          <ul>
-            <li>savoir additionner marges, bordures et paddings,</li>
-            <li>savoir quel est le comportement de placement implicite dicté par <code>display</code>.</li>
-          </ul>
-          
-          </section>
-          <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
-                 <section id="section01">
-          <h2>Le sélecteur de classe</h2>
-          <p>Le sélecteur de classe  permet de cibler un élément ou un bloc d'éléments sans passer par la hiérarchie de la structure des éléments HTML.</p>
-          
-          <p class="code-etiquette">HTML</p>
-          <pre class="exemple-code">&lt;p <span class="rose">class="note"</span>&gt;balise avec une classe&lt;⧸p&gt; 
-            <br>&lt;p <span class="rose">class="note important"</span>&gt;une balise peut avoir plusieurs classes&lt;⧸p&gt; 
-          </pre>  
-          <p class="code-etiquette-css">CSS</p>
-          <pre class="exemple-code"><span class="rose">.note</span> {
-          &nbsp;&nbsp;color: red;  
-          }
-          </pre>  
-          <p>Dans l'exemple qui suit, la classe <code>note</code> permet de cibler le troisième paragraphe à l'aide du sélecteur <code>.note</code>, passant ainsi outre à la hiérarchie HTML.</p>
-          
-          <p class="resultat-etiquette">Exemple</p>
-
-          <p class="codepen" data-height="540" data-default-tab="html,result" data-slug-hash="bNEGxbY" data-pen-title="c06-selecteur_classe01" data-editable="true" data-user="frlacroix" style="height: 540px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNEGxbY">
-  c06-selecteur_classe01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-<br>
-<div class="note">
-            <p><strong>En CSS, le sélecteur de classe débute toujours par un point</strong>. La&nbsp;classe de l'exemple précédent est donc ciblée par le sélecteur <code>.note</code> dans la feuille de style.</p>
-          </div>
-          </section> <!-- fin section01 -->
-          
-          <div class="haut-de-page">  
-            <a href="#">Haut de page</a>
-          </div>
-        <section id="section05">
-            
-            <h2>Utiliser Google Fonts pour intégrer des polices de caratères dans vos pages web</h2>
-            <div class="references-section">
-                            <ul>
-                                <li>
-                                    <a href="https://fonts.google.com/">Google Fonts <img class="icone" src="images/cours06/lien_ext_noir_16px.png"></a>
-                                </li>
-                            </ul>
-            </div>
-            <p class="codepen" data-height="620" data-default-tab="html,result" data-slug-hash="PwZodwj" data-pen-title="c06-google-fonts" data-editable="true" data-user="frlacroix" style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZodwj">
-  c06-google-fonts</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-          </section> <!-- fin section05 -->
-      <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
-        <section id="section02">
-          
-          <h2>Le modèle de boîte flexible (<em>Flexbox</em>)&nbsp;: une&nbsp;intro</h2>
-          <figure class="w50">
-            <img src="images/cours06/00-flexbox.svg" alt="Flexbox" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure>          
-          <p>Flexbox facilite la mise en page à une dimension&nbsp;: organiser des éléments en ligne ou en colonne avec un contrôle sur leur taille, alignement et répartition de&nbsp;l’espace.</p>
-                    <h3>flex-container et flex-item</h3>
-                    <p>La structure de base de flexbox repose sur&nbsp;: </p>
-                    <ul>
-                        <li>un conteneur parent (<strong><code>flex-container</code></strong>) qui génère le contexte d'affichage pour ses enfants directs&nbsp;: les flex-item;
-                        <figure class="w50">
-            <img src="images/cours06/01-container.svg" alt="Conteneur" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure> </li>
-                        <li>des enfants (<strong><code>flex-item</code></strong>) qui sont les enfants directs du flex-container.<figure class="w50">
-            <img src="images/cours06/02-items.svg" alt="Enfants" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure></li>
-                    </ul>
-                    <h3>Activation</h3>
-                    <p>N'importe quel élément HTML devient un conteneur lorsqu'il est assigné à la propriété <code>display:flex</code>. Tous ces enfants deviennent automatiquement des <strong>flex items</strong>.</p>
-                    <p>Par exemple, utilisons une liste (<code>&lt;ul&gt;</code>) en tant que flex-container et <br>des éléments de liste (<code>&lt;li&gt;</code>) en tant que flex-item: </p>
-                    <p class="code-etiquette">Code</p>
-                    <pre class="exemple-code">                        &lt;ul&gt;
-                        &nbsp;&nbsp;&lt;li&gt;Clou&lt;/li&gt;
-                        &nbsp;&nbsp;&lt;li&gt;Vis&lt;/li&gt;
-                        &nbsp;&nbsp;&lt;li&gt;Écrou&lt;/li&gt;
-                        &nbsp;&nbsp;&lt;li&gt;Boulon&lt;/li&gt;
-                        &nbsp;&nbsp;&lt;li&gt;Oeillet&lt;/li&gt;
-                        &lt;/ul&gt; 
-                    </pre>
-                    <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="MYKaPLg" data-pen-title="c08_intro-flexbox-00" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/MYKaPLg">
-  c08_intro-flexbox-00</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-<h3>Les propriétés pour le parent (conteneur)</h3>
-<figure class="w50">
-            <img src="images/cours06/01-container.svg" alt="Conteneur" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure><ul>
-                        <li><code>display:flex</code> : convertit le conteneur en boîte flexible et ses enfants directs en <strong>flex-item</strong>.</li>
-                        <hr>
-                        <li><code>flex-direction</code> : définit la direction des <strong>flex-item</strong>, soit <code>row</code> (rangée), soit <code>column</code> (colonne).<br>
-                          <figure class="w50">
-            <img src="images/cours06/flex-direction.svg" alt="flex-direction" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure><p class="syntaxe-etiquette">Syntaxe</p>
-                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-direction:</span> row | row-reverse | column | column-reverse;</pre>
-                        </li>
-                        <hr>
-                        <li><code>flex-wrap</code> : permet (<code>wrap</code>) ou empêche (<code>nowrap</code>) le retour à la ligne des <strong>flex-item</strong>.<br>
-                          <figure class="w50">
-            <img src="images/cours06/flex-wrap.svg" alt="flex-wrap" class="sansBordure">
-            <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure><p class="syntaxe-etiquette">Syntaxe</p>
-                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">flex-wrap:</span> no-wrap | wrap | wrap-reverse | column-reverse;</pre>
-                        </li>
-                        <hr>
-                        <li><code>justify-content</code> : appliquée sur le <strong>flex-container</strong>, cette propriété gère l'espace autour des <strong>flex-item</strong>.<br>
-                          <figure class="w50">
-                          <img src="images/cours06/justify-content.svg" alt="flex-wrap" class="sansBordure">
-                          <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-                        </figure>
-                          <p class="syntaxe-etiquette">Syntaxe</p>
-                          <pre class="exemple-code exemple-code--nowrap"><span class="rose">justify-content</span>: start | center | space-between | space-around | space-evenly;</pre>
-                        </li>
-                        <hr>
-                    </ul>
-                    <h4>flex-direction:<u>row</u> et <u>justify-content</u></h4>
-                    <div class="note">
-                        <p><code>justify-content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe horizontal.</p>
-                    </div>
-                    <p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="MYKWqgP" data-pen-title="c08_intro-flexbox-01" data-editable="true" data-user="frlacroix" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/MYKWqgP">
-  c08_intro-flexbox-01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <hr>          
-<h4 id="pos4">flex-direction:<u>column</u> et <u>justify-content</u></h4>
-                    <div class="note">
-                        <p><code>justify-content</code> gère l'alignement le long de l'axe principal qui est, dans ce cas-ci, l'axe vertical.</p>
-                    </div>
-                   <p class="codepen" data-height="714" data-default-tab="html,result" data-slug-hash="emJYLOx" data-pen-title="c08_intro-flexbox-02" data-editable="true" data-user="frlacroix" style="height: 714px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/emJYLOx">
-  c08_intro-flexbox-02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>flex-direction:<u>row</u> et <u>align-items</u></h4>
-                    <div class="note">
-                        <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe vertical.</p>
-                    </div>
-                    <p class="codepen" data-height="800" data-default-tab="html,result" data-slug-hash="EaPxeYB" data-pen-title="c08_intro-flexbox-03" data-editable="true" data-user="frlacroix" style="height: 800px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/EaPxeYB">
-  c08_intro-flexbox-03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-<hr>
-                    <h4>flex-direction:<u>column</u> et <u>align-items</u></h4>
-                    <div class="note">
-                        <p><code>align-items</code> gère l'alignement le long de l'axe secondaire qui est, dans ce cas-ci, l'axe horizontal.</p>
-                    </div>
-                    <p class="codepen" data-height="730" data-default-tab="html,result" data-slug-hash="YPwzOzW" data-pen-title="c08_intro-flexbox-04" data-editable="true" data-user="frlacroix" style="height: 730px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/YPwzOzW">
-  c08_intro-flexbox-04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-                    <h4>Exemple simple d'application des boites flexibles (flexbox) pour une liste de liens de navigation</h4>
-                    <p class="resultat-etiquette">Exemple</p>
-                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GgoRXRW" data-pen-title="c06_exemple-menu-flexbox" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/GgoRXRW">
-  c06_exemple-menu-flexbox</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script><br>
-<aside>
-            <div class="references-section">
-              <ul>
-                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></li>
-              </ul>
-            </div>
-          </aside>
-        </section> <!-- fin section02 -->
-        <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
         <section id="section03">
           
           <h2>La propriété&nbsp;<code>position</code></h2>
@@ -458,7 +200,7 @@
          <li>Remarquez le lien qui enblobe à la fois l'image, le nom de l'item et le prix: effectuez sa mise en forme.</li>
          <figure class="w20">
             <figcaption>Résultat attendu</figcaption>
-            <img src="images/cours06/cours06_tf01.jpg" alt="Résultat tf1">
+            <img src="images/lecon07/cours06_tf01.jpg" alt="Résultat tf1">
          </figure>
 </ol>
 <p class="codepen" data-height="500" data-default-tab="css,result" data-slug-hash="qEbbqGq" data-pen-title="c06-1/3-position absolute+design réactif" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -478,8 +220,8 @@
           <h2>Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</h2>
                     <p>Un site web doit s’adapter à la taille de l’écran de l’utilisateur. L'approche <strong>Mobile d'abord</strong> (ou&nbsp;<i>Mobile&nbsp;first</i>) repose sur ces fondements&nbsp;:</p>
                     <ul>
-                        <li>concevoir le site d’abord pour les appareils les plus simples (petits écrans, navigateurs limités) avec un code minimal et&nbsp;robuste; </li>
-                        <li>ajouter ensuite, couche par couche, des styles supplémentaires pour les appareils plus puissants et les écrans plus&nbsp;larges.</li> 
+                        <li><strong>concevoir le site d’abord pour les appareils les plus simples</strong> (petits écrans, navigateurs limités) avec un code minimal et&nbsp;robuste; </li>
+                        <li><strong>ajouter ensuite, couche par couche, des styles supplémentaires pour les écrans plus larges</strong> et les appareils plus puissants.</li> 
                     </ul>
                     <p><strong>Conséquences pratiques</strong></p>
                     <ul>
@@ -488,10 +230,16 @@
                         <li>Chaque point de rupture (<em>breakpoint</em>) adapte la mise en page <br>(par exemple&nbsp;: une&nbsp;colonne → deux&nbsp;colonnes → trois&nbsp;colonnes).</li>
                     </ul>
                     <h3>Exemple d’application</h3>
-                    <p>Un répertoire de professeurs affiché sur une colonne sur mobile, puis sur deux colonnes en tablette, puis trois colonnes sur ordinateur de&nbsp;bureau.</p>
+                    <p>Un répertoire de photos dont l'affichage s'adapte selon la taille de&nbsp;l'écran: 
+                      </p>
+                      <ul>
+                      <li><strong>sur mobile, par défaut</strong> (écran de largeur étroite): une&nbsp;colonne;</li>
+                      <li><strong>sur tablette</strong> (écran de largeur moyenne): deux&nbsp;colonnes;</li>
+                      <li><strong>sur ordinateur</strong> de table (écran large): trois&nbsp;colonnes.</li>
+                    </ul>
                     <figure class="w100">
                         <figcaption>Approche « mobile d'abord »</figcaption>
-                        <img src="images/cours06/cours07_maq05b.jpg" alt="Appoche Mobile first">
+                        <img src="images/lecon07/cours07_maq05b.jpg" alt="Appoche Mobile first">
                     </figure>
                     <p>Comment y arriver sans dupliquer les contenus?</p>
                     <h4>La requête media : <code>@media</code></h4>
@@ -503,7 +251,7 @@
                       &nbsp;&nbsp;display: flex;
                       &nbsp;&nbsp;flex-direction: column;
                       <span class="rose">}</span>
-                      <span class="vert">@media (min-width:600px) {</span>
+                      <span class="vert">@media (min-width:700px) {</span>
                       &nbsp;&nbsp;<span class="rose">.catalogue {</span>
                       &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;
                       &nbsp;&nbsp;<span class="rose">}</span>
@@ -511,11 +259,11 @@
                     </pre>
                     <p class="resultat-etiquette">Résultat</p>
                     <div class="resultat">
-                      <img src="images/cours06/cours06_requete-media01.png" alt="exemple de requête média">
+                      <img src="images/lecon07/cours06_requete-media01.png" alt="exemple de requête média">
                       </div>
                       <div class="note">
                         <p>Ajoutez cette <code>meta</code> dans la partie <code>head</code> du document HTML afin que les fonctions <code>@media</code> soient interprétées correctement: <br>
-                <pre class="exemple-code exemple-code--nowrap">                  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </p>
+                <pre class="exemple-code exemple-code--nowrap">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
                 </pre></p></div>
           <div class="tf">
             <p class="tf-intitule">La requête media : <code>@media</code></p>
@@ -532,16 +280,16 @@
             </ol>
             <div class="row">
                 <div class="col"> <figure class="w100">
-              <figcaption>Une colonne</figcaption>
-              <img src="images/cours06/cours06_tf02a.jpg" alt="Résultat tf2">
+              <figcaption>Une colonne <br>(par défaut)</figcaption>
+              <img src="images/lecon07/cours06_tf02a.jpg" alt="Résultat tf2">
             </figure></div>
                 <div class="col"><figure class="w100">
-              <figcaption>Deux colonnes</figcaption>
-              <img src="images/cours06/cours06_tf02b.jpg" alt="Résultat tf2">
+              <figcaption>Deux colonnes <br>(largeur > 380 px)</figcaption>
+              <img src="images/lecon07/cours06_tf02b.jpg" alt="Résultat tf2">
             </figure></div>
                 <div class="col"> <figure class="w100">
-              <figcaption>Trois colonnes</figcaption>
-              <img src="images/cours06/cours06_tf02c.jpg" alt="Résultat tf2">
+              <figcaption>Trois colonnes <br>(largeur > 700 px)</figcaption>
+              <img src="images/lecon07/cours06_tf02c.jpg" alt="Résultat tf2">
             </figure></div>
 
             </div>
@@ -567,14 +315,15 @@
           <p>Décompressez ce dossier sur votre poste et renommez-le adéquatement avec votre numéro de groupe et votre nom.</p>
           <figure class="w50">
               <figcaption>Structure de fichiers du tp2</figcaption>
-              <img class="bordure" src="images/cours06/cours06_tp2_arbo01.jpg" alt="Arborescence de fichiers du TP2.">
+              <img class="bordure" src="images/lecon07/cours06_tp2_arbo01.jpg" alt="Arborescence de fichiers du TP2.">
           </figure>
           <h4>Échéancier</h4>
-                    <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+          <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le lundi 19&nbsp;octobre à&nbsp;8h</strong>. </p>
+                    <!-- <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
                     <ul>
                         <li>groupe 1 : <strong>au plus tard mercredi 8 octobre à 8h</strong></li>
                         <li>groupe 2 : <strong>au plus tard lundi 6 octobre à 8h</strong></li>
-                    </ul>
+                    </ul> -->
                     <h4>Grille de correction</h4>
                     <p><a href="materiel/TP2-Grille-de-correction.pdf" target="_blank">Consultez la grille de correction pour le travail&nbsp;<i class="bi bi-file-pdf"></i></a>. Référéz-vous à cette grille pour vérifier votre travail avant de le remettre sur&nbsp;LÉA.</p>
                     
@@ -584,26 +333,27 @@
               <li><strong>Ouvrez le dossier de travail du tp2 dans VSC.</strong></li>
               <li><strong>Dans le document <code>catalogue.html</code>:</strong>
                 <ol>
-                  <li>Inscrivez votre nom dans la balise correspondante de la ligne&nbsp;11.</li>
-                  <li>Intégrez le favicon à la page: le fichier images se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon03.html#section06" target="_blank">Référez-vous à la leçon 3 pour l'intégrer correctement&nbsp;<i class="bi bi-box-arrow-up-right"></i></a>.
+                  <li><strong>Inscrivez votre nom</strong> dans la balise correspondante de la ligne&nbsp;11.</li>
+                  <li><strong>Intégrez le favicon dans la page</strong>: le fichier image se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon04.html#section06" target="_blank">Référez-vous à la leçon 4 pour l'intégrer correctement&nbsp;<i class="bi bi-box-arrow-up-right"></i></a>.
                 </li>
               </ol>
               </li>
               <li><strong>Dans le document <code>styles.css</code>:</strong>
                 <ol>
               <li>Au tout début de la feuille de style, ajoutez le code <code>@charset "UTF-8";</code>.</li>
-              <li>À la suite de ce code, ajoutez le code <code>@import...</code> de Google Fonts afin d'importer la police de caractères de votre choix. (Voir en classe pour les détails.) </li>
-              <li>À la suite de cette ligne, ajoutez les règles de style de réinitialisation habituelles&nbsp;:</li>
+              <li>À la suite de ce code, ajoutez le code <code>@import...</code> de <a href="https://fonts.google.com/" target="_blank">Google Fonts <i class="bi bi-box-arrow-up-right"></i></a> afin d'importer la police de caractères qui se nomme "Arimo".</li>
+              <li>Ensuite, ajoutez les règles de style de réinitialisation habituelles&nbsp;: </li>
               <figure class="w80">
               <figcaption>Réinitialisation</figcaption>
-              <img class="bordure" src="images/cours06/cours06_tp2_reinit.jpg" alt=""> 
+              <img class="bordure" src="images/lecon07/cours06_tp2_reinit.jpg" alt=""> 
             </figure>
+            <li>Assurez-vous que la propriété <code>font-family</code> correspond à la Google Font.</li>
               <li>Effectuez la mise en forme du menu de navigation réactif de la page web à l'aide des directives données en classe.</li>
               <li>Reproduisez la mise en forme du catalogue en observant les images de maquette affichées plus bas.
-                <ul style="margin:0; padding:0;">
-                  <li>Effectuez une mise en forme fluide, basée sur le&nbsp;principe du 'Mobile d'abord';</li>
+                <ul style="margin:0;">
+                  <li>Effectuez une mise en forme fluide, basée sur le&nbsp;principe du 'Mobile&nbsp;d'abord';</li>
                   <li>Créez des requêtes media pour la version '2&nbsp;colonnes' (>&nbsp;380px);</li>
-                  <li>Créez une requête media pour la version 3&nbsp;colonnes' (>&nbsp;700px);</li>
+                  <li>Créez une requête media pour la version '3&nbsp;colonnes' (>&nbsp;700px);</li>
                   <li>Établissez une largeur maximale de 800px pour le catalogue.</li>
                   <li>Créez un pied de page flexible.</li>
             </ul>
@@ -617,18 +367,33 @@
             </ol>
             <figure class="w30">
               <figcaption>Interface du tp2 sur une colonne: taille d'écran par défaut.</figcaption>
-              <img class="bordure" src="images/cours06/cours06_tp2_interface01.jpg" alt="Interface 1 colonne tp2"> 
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface01.jpg" alt="Interface 1 colonne tp2"> 
             </figure>
             <figure class="w50">
               <figcaption>Interface du tp2 sur des rangées de deux: largeur minimale de l'écran 380px</figcaption>
-              <img class="bordure" src="images/cours06/cours06_tp2_interface02.jpg" alt=""> 
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface02.jpg" alt=""> 
             </figure>
             <figure class="w80">
               <figcaption>Interface du tp2 sur des rangées de trois: largeur minimale de l'écran 700px</figcaption>
-              <img class="bordure" src="images/cours06/cours06_tp2_interface03.jpg" alt=""> 
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface03.jpg" alt=""> 
             </figure>
           
         </section>  <!-- fin sectionAE --> 
+
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>Finaliser le TP</strong> et le remettre sur LÉA <strong>au plus tard vendredi 8h</strong>.</li>
+                            <li>Lire la documentation et réaliser les travaux formatifs de <a href="lecon08.html">la&nbsp;leçon&nbsp;8</a>. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
+                
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>  
             </article>
             </div>
             
