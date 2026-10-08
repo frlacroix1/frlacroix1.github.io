@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="fr-ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Leçon 8 | Intégration I | 582-104-SF</title>  
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
+        <link rel="manifest" href="images/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <style>
+p#ex1 {
+	background-color: #FD3401;
+}
+p#ex2 {
+	background-color: #0F0;
+}
+p#ex3 {
+	background-color: rgb(200,88,5);
+}
+p#ex4 {
+	background-color: rgb(0%, 0%, 0%);
+}
+p#ex5 {
+	background-image: url(images/cours07/cours06_pique.gif);
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex6 {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-repeat: no-repeat;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex7 {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-repeat: repeat-x;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex8 {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-repeat: repeat-y;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex9 {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-position: 10% 25%;
+	background-repeat: no-repeat;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex9b {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-position: 10px 25px;
+	background-repeat: no-repeat;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex9c {
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-position: center 50px;
+	background-repeat: no-repeat;
+	font: italic 1em "Times New Roman";
+	color: red;
+	max-width: 400px;
+}
+p#ex10 {
+	color: #fff;
+  font-weight: bold;
+  padding: 10px;
+	background-image: url(images/chrome.png);
+  background-size: 100px 100px;
+  background-repeat: repeat-y;
+  background-color: green;
+	background-attachment: scroll;
+  background-position: 50%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+p#ex11 {
+	color: #fff;
+  font-weight: bold;
+  padding: 10px;
+	background-image: url(images/chrome.png);
+  background-size: 100px 100px;
+  background-repeat: repeat-y;
+  background-color: pink;
+  background-attachment: fixed;
+  border-radius: 8px;
+  background-position: 50%;
+}
+ul#liste_ex1 {
+  margin-top: 1em;
+}
+ul#liste_ex1 li {
+	list-style-type: none;
+	padding-left: 22px;
+	background-image: url(images/cours07/cours06_pique.gif);
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+}
+    </style>
+    </head>
+    <body class="cours cours08" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
+        <header class="navbar navbar-expand-lg bd-navbar">
+            <nav class="container navbar navbar-expand-lg">
+                <div>Cégep de Sainte-Foy <br><strong>Techniques d'intégration multimédia 582-104-SF Intégration 1</strong></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liste des leçons</button>
+                    <ul class="dropdown-menu lecons">
+                        <li><a class="dropdown-item" href="lecon01.html">Leçon 1</a></li>
+                        <li><a class="dropdown-item" href="lecon02.html">Leçon 2</a></li>
+                        <li><a class="dropdown-item" href="lecon03.html">Leçon 3</a></li>
+                        <li><a class="dropdown-item" href="lecon04.html">Leçon 4</a></li>
+                        <li><a class="dropdown-item" href="lecon05.html">Leçon 5</a></li>
+                        <li><a class="dropdown-item" href="lecon06.html">Leçon 6</a></li>
+                        <li><a class="dropdown-item" href="lecon07.html">Leçon 7</a></li>
+                        <li><a class="dropdown-item" href="lecon08.html">Leçon 8</a></li>
+                        <li><a class="dropdown-item" href="lecon09.html">Leçon 9</a></li>
+                        <li><a class="dropdown-item" href="lecon10.html">Leçon 10</a></li>
+                        <li><a class="dropdown-item" href="lecon11.html">Leçon 11</a></li>
+                        <li><a class="dropdown-item" href="lecon12.html">Leçon 12</a></li>
+                        <li><a class="dropdown-item" href="lecon13.html">Leçon 13</a></li>
+                        <li><a class="dropdown-item" href="lecon14.html">Leçon 14</a></li>
+                        <li><a class="dropdown-item" href="lecon15.html">Leçon 15</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="container">
+             <header>
+                    <div class="cours-numero">Leçon 8</div>
+                    <h1>La nomemclature BEM et <br>les boites flexibles (la&nbsp;suite)</h1>
+                </header>
+            <div class="row">
+              
+           <div class="col-lg-3 order-lg-2 table-des-matieres">
+                    <nav id="sidebar-nav" class="list-group sticky-top ">
+                      <p><a href="#" class="nav-link titre"><strong>Leçon 8</strong></a></p>
+                      <a href="#section01" class="list-group-item list-group-item-action">Quelques propriétés CSS3 utiles</a>
+                      <span class="list-group-item list-group-item-action">
+                        <a href="#pos1">border&#8209;radius</a> | 
+                        <a href="#pos2">box&#8209;shadow</a> | 
+                        <a href="#pos3">text&#8209;shadow</a> | 
+                        <a href="#pos4">opacity</a> | 
+                        <a href="#pos5">rgba,&nbsp;hsla</a> | 
+                        <a href="#pos6">Box sizing</a> | 
+                        <a href="#pos7">Transition</a> | 
+                        <a href="#pos8">Transform</a> | 
+                        <a href="#filter">Filter</a>
+                      </span>
+                      <a href="#section02" class="list-group-item list-group-item-action">Les propriétés d'arrière-plan&nbsp;: background</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">La nomemclature BEM</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Les boites flexibles (suite)</a>
+                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                    </nav>
+                </div>
+            <div class="col-lg-9 order-lg-1">
+            <article>
+              <section id="section01">
+              <h2>Quelques propriétés CSS utiles</h2>
+              <ul>
+            <li><a href="#pos1">Coins arrondis : border-radius</a> <span class="small">(00m37s)</span></li>
+            <li><a href="#pos2">Ombre projetée : box-shadow</a> <span class="small">(06m20s)</span></li>
+            <li><a href="#pos3">Ombre projetée sous le texte : text-shadow</a> <span class="small">(10m28s)</span></li>
+            <li><a href="#pos4">Transparence (d'un élément HTML) : opacity</a> <span class="small">(12m20s)</span></li>
+            <li><a href="#pos5">Transparence (couleur d'arrière-plan): rgba, hsla</a> <span class="small">(13m45s)</span></li>
+            <li><a href="#pos6">Box sizing</a> <span class="small">(16m52s)</span></li>
+            <li><a href="#pos7">Transition</a> <span class="small">(18m32s)</span></li>
+            <li><a href="#pos8">Transform</a> <span class="small">(23m24s)</span></li>
+            <li><a href="#filter">Filter</a> <span class="small">(25m50s)</span></li>
+          </ul>
+          <div class="video-enveloppe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0blskGU-hxs?si=aG_bOZjSJWRUbcfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <hr> 
+          <div class="card">
+                        <div class="card-body">
+            <h3 id="pos1">Coins arrondis : <code>border-radius</code></h3>
+            <p>Nom de la propriété standard: <code>border-radius</code>  </p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">border-radius: <i>1-4 length</i>|% / <i>1-4 length</i>|%|initial|inherit;</pre>
+            
+            <p>Prenons l'exemple d'un paragraphe : la mise est forme des coins ronds est exécutée par la règle de style suivante&nbsp;:</p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">              p {
+              &nbsp;&nbsp;<span class="rose">border-radius: 32px;</span> 
+              } 
+            </pre>
+            <p class="codepen" data-height="354" data-default-tab="css,result" data-slug-hash="yyeaMRJ" data-pen-title="c08-css3-01" data-editable="true" data-user="frlacroix" style="height: 354px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/yyeaMRJ">
+            c08-css3-01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br>
+            <p>La déclaration raccourcie <code>border-radius:32px</code> produit des coins arrondis avec un rayon de 32 pixels. Elle est l'équivalent de ces quatres déclarations longues : </p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">              border-top-left-radius: 32px;
+              border-top-right-radius: 32px;
+              border-bottom-left-radius: 32px;
+              border-bottom-right-radius: 32px;
+            </pre>
+            <p>Ainsi, il est possible de personnaliser le rayon de chacun des coins, comme le montre cet exemple :  </p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">                border-top-left-radius: 0px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 50px;
+            </pre>
+            <p>En syntaxe raccourcie, cela donne :</p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">              border-radius: 0px 5px 20px 50px;
+            </pre>
+            <div class="note">
+              <p>Les quatre valeurs de rayon sont données dans l'ordre <i>top-left, top-right, bottom-right, bottom-left</i>.</p>
+            </div>
+            <p>Au rendu, on obtient : </p>
+            <p class="resultat-etiquette">Résultat</p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="jEWMmWV" data-pen-title="c07-css3-01b" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/jEWMmWV">
+  c07-css3-01b</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>Allons plus loin et précisons des arrondis diférents en X et en Y, comme ceci:</p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">                border-top-left-radius: 20px 10px;
+                border-top-right-radius: 6px 20px;
+                border-bottom-left-radius: 10px 25px;
+                border-bottom-right-radius: 14px 50px;
+            </pre>
+            <p>En syntaxe raccourcie, cela donne :</p>
+            <p class="code-etiquette">Code</p>
+            <pre class="exemple-code">              border-radius: 20px 6px 10px 14px/10px 20px 25px 50px;
+            </pre>
+            <p>Au rendu on obtient : </p>
+            <p class="resultat-etiquette">Résultat</p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="KwVgmVa" data-pen-title="c07-css3-02" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/KwVgmVa">
+            c07-css3-02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>Grâce à un choix judicieux de valeur pour <code>width</code>, <code>height</code> et <code>border-radius</code>, cette propriété permet de créer des formes personnalisées, comme, par exemple, un cercle :</p>
+            <p class="codepen" data-height="310" data-default-tab="css,result" data-slug-hash="emJdWJG" data-pen-title="c08-css3-03" data-editable="true" data-user="frlacroix" style="height: 310px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/emJdWJG">
+  c08-css3-03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br>
+            <div class="references-section">
+              <ul>
+                <li><a href="http://border-radius.com/" target="_blank">Générateur de code pour border-radius <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="card">
+                        <div class="card-body">
+            <h3 id="pos2">Ombre projetée : <code>box-shadow</code></h3>
+            <p>Nom de la propriété : <code>box-shadow</code>  </p>
+            <p>Supportée par : <a href="http://caniuse.com/#feat=css-boxshadow" target="_blank">http://caniuse.com/#feat=css-boxshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">box-shadow: none|<i>décalage-h décalage-v flou étendue couleur</i>|inset|intitial|inherit;</pre>
+            <div class="note">
+              <p>Pour ajouter plus d'une ombre, séparer les ombres par une virgule.</p>
+            </div>
+            <p>Il est possible de créer une ombre projetée ou encore une lueur sous un conteneur (type bloc) comme le montre les exemples qui suivent. </p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="raxMmxY" data-pen-title="c07-css3-04" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxMmxY">
+              c07-css3-04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>Les valeurs associées à la propriété <strong>box-shadow</strong> dans la déclaration <br><code><span class="rose">box-shadow:</span> 5px 5px 12px 3px #999<span class="rose">;</span></code><br> contrôlent respectivement les paramètres suivants de l'ombre: </p>
+            <ul>
+              <li><code>5px</code> : décalage vers la droite (valeur négative vers la gauche)</li>
+              <li><code>5px</code> : décalage vers le bas (valeur négative vers le haut)</li>
+              <li><code>12px</code> : niveau de flou </li>
+              <li><code>3px</code> : étendue de l'ombre vers l'extérieur </li>
+              <li><code>#999</code> : couleur de l'ombre</li>
+            </ul>
+            <p>En supprimant les décalages en x et en y, cette propriété permet d'obtenir une sorte de lueur qui fait tout le tour de la boîte comme le montre l'exemple suivant&nbsp;: </p>
+            <p class="codepen" data-height="310" data-default-tab="css,result" data-slug-hash="xbZEdZz" data-pen-title="c07-css3-05" data-editable="true" data-user="frlacroix" style="height: 310px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/frlacroix/pen/xbZEdZz">
+              c07-css3-05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p><code><span class="rose">box-shadow:</span> 0 0 20px 5px #999<span class="rose">;</span></code> où:</p>
+            <ul>
+              <li><code>0</code> : décalage horizontal nul</li>
+              <li><code>0</code> : décalage vertical nul</li>
+              <li><code>20px</code> : quantité de flou vers l'extérieur </li>
+              <li><code>5px</code> : étendue de l'ombre</li>
+              <li><code>#999</code> : couleur de l'ombre</li>
+            </ul>
+            <p>Par défaut, l'ombre est projetée vers l'extérieur comme le montre les exemples précédents. La valeur <code>inset</code> permet de simuler une ombre qui se projète plutôt vers l'intérieur&nbsp;: </p>
+            <p class="codepen" data-height="330" data-default-tab="css,result" data-slug-hash="qEbambM" data-pen-title="c07-css3-05b" data-editable="true" data-user="frlacroix" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEbambM">
+  c07-css3-05b</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p><code><span class="rose">box-shadow:</span> 0 0 20px 5px #bbb inset<span class="rose">;</span></code> où:</p>
+            <ul>
+              <li><code>0</code> : décalage horizontal nul</li>
+              <li><code>0</code> : décalage vertical nul</li>
+              <li><code>20px</code> : niveau de flou </li>
+              <li><code>5px</code> : étendue de l'ombre </li>
+              <li><code>#bbb</code> : couleur de l'ombre</li>
+              <li><code>inset</code> : projection de l'ombre vers l'intérieur</li>
+            </ul>
+            </div>
+            </div>
+            <hr>
+            <div class="card">
+                        <div class="card-body">
+            <h3 id="pos3">Ombre projetée sous le texte : <code>text-shadow</code></h3>
+            <p>Nom de la propriété standard : <code>text-shadow</code></p>
+            <p>Supportée par : <a href="http://caniuse.com/#feat=css-textshadow" target="_blank">http://caniuse.com/#feat=css-textshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">text-shadow: none|<i>décalage-h décalage-v flou couleur</i>|intitial|inherit;</pre>
+            <div class="note">
+              <p>Pour ajouter plus d'une ombre, séparer les ombres par une virgule.</p>
+            </div>
+            <p>Il est possible de créer une ombre projetée sous un texte avec CSS3, comme le montre cet exemple:  </p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="ogbzWbQ" data-pen-title="c08-css3-06" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ogbzWbQ">
+  c08-css3-06</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br>              
+<p>Considérez les valeurs de cette déclaration&nbsp;:</p>
+              <p class="code-etiquette">Code</p>
+              <pre class="exemple-code">                text-shadow: 2px 2px 2px #999; 
+              </pre> 
+              <p>Elles contrôlent respectivement les paramètres de l'ombre suivants&nbsp;: </p>
+            <ul>
+              <li><code>2px</code> :  décalage vers la droite (valeur négative vers la gauche)</li>
+              <li><code>2px</code> : décalage vers le bas (valeur négative vers le haut)</li>
+              <li><code>2px</code> : quantité de flou vers l'extérieur </li>
+              <li><code>#999</code> : couleur</li>
+            </ul>
+            <p>La même propriété peut être  utilisée pour créer du texte incrusté, comme le montre l'exemple suivant :</p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="dPGpWGw" data-pen-title="c08-css3-07" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/dPGpWGw">
+  c08-css3-07</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>Notez bien que pour produire l'effet d'incrustation, un choix judicieux de valeurs pour les propriétés <code>color</code> (couleur des caractères) et <code>background-color</code> (couleur de l'arrière-plan) est important car la valeur "inset" n'existe pas pour text-shadow. </p>
+            </div></div>
+            <hr>
+            <div class="card">
+                        <div class="card-body">
+            <h3 id="pos4">Transparence (d'un élément HTML) : <code>opacity</code></h3>
+            <p>Nom de la propriété standard : <code>opacity</code></p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">opacity: <i>nombre(0-1)</i>|intitial|inherit;</pre>
+            <p>L'opacité d'un élément HTML (et son contenu) est contrôlée par la propriété <code>opacity</code>.</p>
+            <p>La propriété <code>opacity</code> permet d'attribuer un certain degré d'opacité (et donc de transparence) à un élément HTML et son contenu, quel que soit cet élément. L'exemple suivant montre l'application successive d'une opacité de 100% (1), 60% (0.6), 30% (0.3) et 10% (0.1) à l'élément div&nbsp;:</p>
+            <p class="codepen" data-height="320" data-default-tab="css,result" data-slug-hash="YPwGVwg" data-pen-title="c08-css3_opacity" data-editable="true" data-user="frlacroix" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/YPwGVwg">
+  c08-css3_opacity</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
+<hr>            
+<div class="card">
+                        <div class="card-body">
+<h3 id="pos5">Transparence (couleur d'arrière-plan): <code>rgba</code>, <code>hsla</code></h3>
+            <p>Le format de couleur <code>rgba</code> permet d'obtenir une couleur d'arrière-plan semi-transparente pour n'importe quel élément HTML. </p>
+            <div class="note">
+              <p>À la différence de la propriété 'opacity', ce n'est que la couleur d'arrière-plan qui est touchée dans l'exemple suivant. Le contenu demeure 100% opaque.</p>
+            </div>
+            <p>L'exemple de code suivant permet d'obtenir la couleur vert avec 50&nbsp;% d'opacité&nbsp;:</p>
+            <p class="code-etiquette">Code
+            </p><pre class="exemple-code">              p { 
+              &nbsp;&nbsp;<span class="rose">background-color: rgba(0, 255, 0, 0.5)</span> 
+              }
+            </pre>
+            <p>Le même effet peut être obtenu par le format de couleur <code>hsla</code>&nbsp;:</p>
+            <p class="code-etiquette">Code
+            </p><pre class="exemple-code">              p { 
+              &nbsp;&nbsp;<span class="rose">background-color: hsla(120, 100%, 50%, 0.5)</span> 
+              }
+            </pre>
+            <div class="note">
+              <p>Le format <code>hsla</code> signifie <em>Hue</em> (teinte), <em>Saturation</em>, <em>Lightness</em> (luminosité) et <em>Alpha</em> (transparence). La première valeur demande un nombre entre 0 et 359 (pour déterminer la teinte en degrés). Les deux valeurs suivantes indiquent en pourcentage le taux de saturation et de luminosité de la teinte choisie. La dernière représente l'opacité.</p>
+            </div>
+            <p>L'exemple suivant présente différentes valeur d'opacité de la même couleur d'arrière-plan&nbsp;:
+              </p><p class="resultat-etiquette">Exemple
+            </p><p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="myVrmVZ" data-pen-title="c08-css3-08" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/myVrmVZ">
+  c08-css3-08</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<hr>            
+<p>L'exemple suivant met en parallèle la propriété <code>opacity</code> et le conteneur <code>rgba</code>. Notez que la propriété <code>opacity</code> agit à la fois sur le contenu et l'arrière-plan alors que le conteneur <code>rgba</code> n'agit que sur l'arrière-plan&nbsp;:</p>
+            <p class="resultat-etiquette">Exemple
+            </p><p class="codepen" data-height="390" data-default-tab="css,result" data-slug-hash="ByjLRKN" data-pen-title="c08-css3_opacity-vs-rgba" data-editable="true" data-user="frlacroix" style="height: 390px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ByjLRKN">
+  c08-css3_opacity-vs-rgba</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
+<hr>            
+<div class="card">
+                        <div class="card-body">
+<h3 id="pos6">Box sizing</h3>
+            <p>Propriété standard&nbsp;: <code>box-sizing</code></p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">box-sizing: content-box|border-box|initial|inherit;</pre>
+            <p>Le modèle de boîte CSS par défaut est parfois frustrant pour le développeur. En effet, si on déclare une largeur de 200 pixels et une marge interne (<code>padding</code>) de 20 pixels, cet élément aura dans les faits une largeur totale de 240 pixels. Ce n'est pas un problème en soi jusqu'au moment où l'on doive changer la marge interne: il faut alors recalculer la largeur, et éventuellement les valeurs de marge externe et de bordure.</p>
+            <p>La propriété CSS3 <code>box-sizing</code> avec la valeur <code>border-box</code> permet d'inclure dans la largeur (<code>width</code>) les valeurs de marge interne (<code>padding</code>) et de bordure (<code>border</code>). Sa valeur par défaut est <code>content-box</code>, soit le modèle de boîte courant.</p>
+            <p>L'exemple suivant montre une comparaison entre deux éléments comportant les mêmes valeurs de <code>width</code>, <code>padding</code> et <code>border</code>, mais dont la valeur de <code>box-sizing</code> est différente:</p>
+            <p class="resultat-etiquette">Exemple
+            </p><p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="bNEwWpE" data-pen-title="c08-css3-09" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNEwWpE">
+  c08-css3-09</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br><div class="note"><p><strong>L’utilisation de <code>border-box</code> est recommandée, car cela simplifie grandement le calcul de la largeur d’une boîte.</strong> C'est pourquoi nous prendrons donc l’habitude d’activer ce comportement dès l’initialisation de nos feuilles de style.</p>
+            </div>
+            <div class="references-section">
+              <ul>
+                <li><a href="https://css-tricks.com/almanac/properties/b/box-sizing/" target="_blank">box-sizing sur CSS-Tricks <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+            </div></div>
+            <hr>
+            <div class="card">
+                        <div class="card-body">
+            <h3 id="pos7">Transition</h3>
+            <p>Nom de la propriété standard: <code>transition</code>  </p>
+            <p>Supportée par : <a href="http://caniuse.com/#feat=css-transitions" target="_blank">http://caniuse.com/#feat=css-transitions <i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="syntaxe-etiquette">Syntaxe</p>
+            <pre class="exemple-code exemple-code--nowrap">transition: <i>propriété durée fonction-rythme délai</i>|initial|inherit;
+</pre>
+            <p>Il est possible de créer des animations simples avec CSS3 qui démarrent lorsque certains événements se déclenchent sur la page. </p>
+            <p class="resultat-etiquette">Exemple
+            </p><p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="QwyKvNK" data-pen-title="c08-css3_transition01" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/QwyKvNK">
+  c08-css3_transition01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>La propriété <code>transition</code> permet, pour la propriété visée, de passer d'une valeur à une autre de manière graduelle et selon une vitesse définie. Le déclenchement de la transition peut se faire au chargement de la page ou encore à la suite d'une action comme le survol (<code>hover</code>) ou le clic (<code>target</code>) d'un élément. </p>
+            <p>Les transitions sur les liens sont courantes. Voici un exemple de transition de couleur appliquée sur un lien&nbsp;:</p>
+            <p class="resultat-etiquette">Exemple
+            </p><p class="codepen" data-height="380" data-default-tab="css,result" data-slug-hash="pvgEPye" data-pen-title="c08-css3-10" data-editable="true" data-user="frlacroix" style="height: 380px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/pvgEPye">
+  c08-css3-10</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <br><p>La propriété <code>transition</code> est en fait composée de quatre sous-propriétés&nbsp;: </p>
+            <ul>
+              <li><code>transition-delay</code>&nbsp;: détermine le délai en secondes (<code>s</code>) avant le démarrage de la transition&nbsp;;</li>
+            <li><code>transition-duration</code>&nbsp;: détermine la <strong>durée</strong> de la transtion en secondes (<code>s</code>) ou millisecondes (<code>ms</code>)&nbsp;;</li>
+            <li><code>transition-property</code>&nbsp;: détermine la <strong>propriété</strong> à animer (valeurs: toutes les noms de propriétés ou le mot-clé <code>all</code> qui permet d'animer plusieurs propriétés à la fois)&nbsp;;</li>
+            <li><code>transition-timing-function</code>&nbsp;: détermine la courbe de vitesse de l'animation (valeurs: <code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>, <code>cubic-bezier(n,n,n,n)</code>). </li>
+            <li>le <strong>délai</strong>, non présent dans l'exemple (<code>s</code> ou <code>ms</code>).</li>
+          </ul>
+            <div class="references-section">
+              <ul>
+                <li><a href="http://www.w3schools.com/cssref/css3_pr_transition.asp" target="_blank">Voir la page de W3School consacrée à la propriété <i>Transition</i> <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+            </div></div>
+          <hr>
+          <div class="card">
+                        <div class="card-body">
+          <h3 id="pos8">Transform</h3>
+          <p>Nom de la propriété standard&nbsp;: <code>transform</code>  </p>
+          <p>Support par les navigateurs&nbsp;: <a href="http://caniuse.com/transforms2d" target="_blank">http://caniuse.com/transforms2d <i class="bi bi-box-arrow-up-right"></i></a></p> 
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">transform: none|<i>transform-functions</i>|initial|inherit;</pre> 
+          <div class="note">
+            <p>Seuls les éléments de type bloc seront affectés par <code>transform</code>. Pour qu'un hyperlien (<code>&lt;a&gt;</code>) soit affecté il faut donc lui ajouter la déclaration <code>display:block</code>. </p>
+          </div>
+          <p>La propriété <code>transform</code> permet des transformations, des déplacements (<code>translate</code>), des rotations (<code>rotate</code>), des déformations (<code>skew</code>), des changements de taille (<code>scale</code>). </p>
+          <p>Voici un exemple avec la fonction 'rotate' où la valeur '9deg' produit une rotation positive de neuf degrés&nbsp;:</p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">            .transform {
+            &nbsp;&nbsp;<span class="rose">transform: rotate(9deg);</span>
+            }
+            </pre>
+          <p>Il est possible de jumeler cette propriété à la propriété <code>transition</code> pour créer des animations fluides au survol par exemple.</p> 
+          <p>Il est possible de jumeler plusieurs types de transformations dans la même déclaration, comme <code>rotate</code> et <code>scale</code> dans l'exemple suivant&nbsp;:</p>
+          <p class="code-etiquette">Code</p>
+          <pre class="exemple-code">            a:link {  
+            &nbsp;&nbsp;<span class="rose">transition: all .3s ease;</span> 
+            }
+
+            a:hover {
+            &nbsp;&nbsp;<span class="rose">transform: rotate(9deg) scale(1.5);</span> 
+            }
+          </pre>
+          <p>Dans l'exemple suivant, les deux cercles s'animent au survol: le premier sans transition et le second, avec. L'animation du second cercle dure une seconde: cela permet de rendre plus évident les effets d'accélération et de décélération engendrés par la valeur <code>ease</code>&nbsp;:</p>
+          <p class="resultat-etiquette">Exemple
+          </p><p class="codepen" data-height="670" data-default-tab="css,result" data-slug-hash="raxMmeY" data-pen-title="c08-css3-11" data-editable="true" data-user="frlacroix" style="height: 670px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxMmeY">
+  c08-css3-11</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
+<hr>          
+<div class="card">
+                        <div class="card-body">
+<h3 id="filter">Filter</h3>
+          <p>Nom de la propriété standard&nbsp;: <code>filter</code></p>
+          <p>Supportée par&nbsp;: <a href="https://caniuse.com/#feat=css-filters" target="_blank">https://caniuse.com/#feat=css-filters <i class="bi bi-box-arrow-up-right"></i></a></p>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();</pre> 
+          <div class="note">
+          <p>Filter est utilisé pour générer des effets visuels comme le flou, l'échelle de gris, la luminosité...</p>
+          <p>Dans l'exemple suivant, c'est la pseudo-classe <code>hover</code> qui déclenche les effets au survol de l'un des liens. </p>
+          </div>
+          <p class="resultat-etiquette">Exemple
+          </p><p class="codepen" data-height="363" data-default-tab="css,result" data-slug-hash="XJXjRdV" data-pen-title="c07-filters-flexbox02" data-editable="true" data-user="frlacroix" style="height: 363px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/XJXjRdV">
+  c07-filters-flexbox02</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div></div>
+        </section> <!-- .section01 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <div class="tf" role="alert">
+                        <p class="tf-intitule">Votre lecture se termine ici.</p><p>Avant le prochain cours, <strong>assurez-vous d’avoir: </strong></p>
+                        <ul>
+<li>réalisé les travaux formatifs;</li>
+<li>visionné les vidéos;</li>
+<li>expérimenté et sauvegardé les <em>pens</em> dans votre compte Codepen;</li>
+<li>noté les questions qui vous sont venues pendant votre lecture.</li>
+
+                        </ul>
+                    </div>
+            </article>
+            </div>
+            
+             
+        </div><!-- .row -->
+    <footer class="footer-commun flottants">
+        <div class="credits">
+          <small>
+            
+            582-104-SF Intégration I - Techniques d'intégration multimédia - Cégep de Sainte-Foy
+          </small>
+        </div>
+      </footer>        </main> <!-- .container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="js/functions.js?"></script>
+    </body>
+</html>
