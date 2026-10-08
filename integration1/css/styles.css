@@ -821,14 +821,19 @@ section {
   margin-bottom: 30px;
 }
 
-a.list-group-item {
+a.list-group-item, span.list-group-item, span.list-group-item a {
   z-index: 2;
   color: #FFF;
   background-color: transparent !important;
   border-color: transparent !important;
 }
+span.list-group-item{
+  color:#758ED3 !important;
+  padding-left:30px;
+  font-size:0.9em;
+}
 
-a.list-group-item:hover {
+a.list-group-item:hover, span.list-group-item a:hover {
   z-index: 2;
   color: #758ED3 !important;
 }

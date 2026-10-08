@@ -168,6 +168,17 @@ ul#liste_ex1 li {
                     <nav id="sidebar-nav" class="list-group sticky-top ">
                       <p><a href="#" class="nav-link titre"><strong>Leçon 8</strong></a></p>
                       <a href="#section01" class="list-group-item list-group-item-action">Quelques propriétés CSS3 utiles</a>
+                      <span class="list-group-item list-group-item-action">
+                        <a href="#pos1">border&#8209;radius</a> | 
+                        <a href="#pos2">box&#8209;shadow</a> | 
+                        <a href="#pos3">text&#8209;shadow</a> | 
+                        <a href="#pos4">opacity</a> | 
+                        <a href="#pos5">rgba,&nbsp;hsla</a> | 
+                        <a href="#pos6">Box sizing</a> | 
+                        <a href="#pos7">Transition</a> | 
+                        <a href="#pos8">Transform</a> | 
+                        <a href="#filter">Filter</a>
+                      </span>
                       <a href="#section02" class="list-group-item list-group-item-action">Les propriétés d'arrière-plan&nbsp;: background</a>
                       <a href="#section03" class="list-group-item list-group-item-action">La nomemclature BEM</a>
                       <a href="#section04" class="list-group-item list-group-item-action">Les boites flexibles (suite)</a>
@@ -190,6 +201,8 @@ ul#liste_ex1 li {
             <li><a href="#filter">Filter</a></li>
           </ul>
           <hr> 
+          <div class="card">
+                        <div class="card-body">
             <h3 id="pos1">Coins arrondis : <code>border-radius</code></h3>
             <p>Nom de la propriété standard: <code>border-radius</code>  </p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -269,7 +282,11 @@ ul#liste_ex1 li {
                 <li><a href="http://border-radius.com/" target="_blank">Générateur de code pour border-radius <i class="bi bi-box-arrow-up-right"></i></a></li>
               </ul>
             </div>
+            </div>
+            </div>
             <hr>
+            <div class="card">
+                        <div class="card-body">
             <h3 id="pos2">Ombre projetée : <code>box-shadow</code></h3>
             <p>Nom de la propriété : <code>box-shadow</code>  </p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-boxshadow" target="_blank">http://caniuse.com/#feat=css-boxshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
@@ -324,7 +341,11 @@ ul#liste_ex1 li {
               <li><code>#bbb</code> : couleur de l'ombre</li>
               <li><code>inset</code> : projection de l'ombre vers l'intérieur</li>
             </ul>
+            </div>
+            </div>
             <hr>
+            <div class="card">
+                        <div class="card-body">
             <h3 id="pos3">Ombre projetée sous le texte : <code>text-shadow</code></h3>
             <p>Nom de la propriété standard : <code>text-shadow</code></p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-textshadow" target="_blank">http://caniuse.com/#feat=css-textshadow <i class="bi bi-box-arrow-up-right"></i></a></p>
@@ -360,7 +381,10 @@ ul#liste_ex1 li {
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
             <br><p>Notez bien que pour produire l'effet d'incrustation, un choix judicieux de valeurs pour les propriétés <code>color</code> (couleur des caractères) et <code>background-color</code> (couleur de l'arrière-plan) est important car la valeur "inset" n'existe pas pour text-shadow. </p>
+            </div></div>
             <hr>
+            <div class="card">
+                        <div class="card-body">
             <h3 id="pos4">Transparence (d'un élément HTML) : <code>opacity</code></h3>
             <p>Nom de la propriété standard : <code>opacity</code></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -373,7 +397,11 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
 <hr>            
+<div class="card">
+                        <div class="card-body">
 <h3 id="pos5">Transparence (couleur d'arrière-plan): <code>rgba</code>, <code>hsla</code></h3>
             <p>Le format de couleur <code>rgba</code> permet d'obtenir une couleur d'arrière-plan semi-transparente pour n'importe quel élément HTML. </p>
             <div class="note">
@@ -411,7 +439,11 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
 <hr>            
+<div class="card">
+                        <div class="card-body">
 <h3 id="pos6">Box sizing</h3>
             <p>Propriété standard&nbsp;: <code>box-sizing</code></p>
             <p class="syntaxe-etiquette">Syntaxe</p>
@@ -432,7 +464,10 @@ ul#liste_ex1 li {
                 <li><a href="https://css-tricks.com/almanac/properties/b/box-sizing/" target="_blank">box-sizing sur CSS-Tricks <i class="bi bi-box-arrow-up-right"></i></a></li>
               </ul>
             </div>
+            </div></div>
             <hr>
+            <div class="card">
+                        <div class="card-body">
             <h3 id="pos7">Transition</h3>
             <p>Nom de la propriété standard: <code>transition</code>  </p>
             <p>Supportée par : <a href="http://caniuse.com/#feat=css-transitions" target="_blank">http://caniuse.com/#feat=css-transitions <i class="bi bi-box-arrow-up-right"></i></a></p>
@@ -469,7 +504,10 @@ ul#liste_ex1 li {
                 <li><a href="http://www.w3schools.com/cssref/css3_pr_transition.asp" target="_blank">Voir la page de W3School consacrée à la propriété <i>Transition</i> <i class="bi bi-box-arrow-up-right"></i></a></li>
               </ul>
             </div>
+            </div></div>
           <hr>
+          <div class="card">
+                        <div class="card-body">
           <h3 id="pos8">Transform</h3>
           <p>Nom de la propriété standard&nbsp;: <code>transform</code>  </p>
           <p>Support par les navigateurs&nbsp;: <a href="http://caniuse.com/transforms2d" target="_blank">http://caniuse.com/transforms2d <i class="bi bi-box-arrow-up-right"></i></a></p> 
@@ -504,7 +542,11 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
 <hr>          
+<div class="card">
+                        <div class="card-body">
 <h3 id="filter">Filter</h3>
           <p>Nom de la propriété standard&nbsp;: <code>filter</code></p>
           <p>Supportée par&nbsp;: <a href="https://caniuse.com/#feat=css-filters" target="_blank">https://caniuse.com/#feat=css-filters <i class="bi bi-box-arrow-up-right"></i></a></p>
@@ -521,6 +563,7 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div></div>
         </section> <!-- .section01 -->
         <div class="haut-de-page">
             <a href="#">Haut de page</a>
@@ -535,11 +578,13 @@ ul#liste_ex1 li {
             <li><a href="#bg3">Mosaïque d'arrière-plan: <code>background-repeat</code></a></li>
             <li><a href="#bg4">Position d'arrière-plan: <code>background-position</code></a></li>
             <li><a href="#bg5">Point d'attache de l'arrière-plan: <code>background-attachment</code></a></li>
-            <li><a href="#bg6">Super propriété de l'arrière-plan: <code>background</code></a></li>
             <li><a href="#bg7">Ajuster la taille de l'arrière-plan: <code>background-size</code></a></li>
+            <li><a href="#bg6">Super propriété de l'arrière-plan: <code>background</code></a></li>
             <li><a href="#bg8">Expérimentez les propriétés d'arrière-plan (<code>background</code>)</a></li>
           </ul>
           <hr> 
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg1">Couleur d'arrière-plan: <code>background-color</code></h3>
           <p>Valeurs:<code> transparent</code>, <code>inherit</code> ou un code de couleur</p>
           <p>Valeur initiale: <code>transparent</code></p>
@@ -550,7 +595,11 @@ ul#liste_ex1 li {
           <p id="ex2"><code>{background-color: #0F0;}</code></p>
           <p id="ex3"><code>{background-color: rgb(200,88,5);}</code></p>
           <p id="ex4"><code>{background-color: rgb(0%,0%,0%);}</code></p>
+          </div>
+          </div>
           <hr>
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg2">Images d'arrière-plan: <code>background-image</code></h3>
           <p>Valeurs: <code> url(adresse de l'image)</code>, <code>none</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>none</code></p>
@@ -570,8 +619,12 @@ ul#liste_ex1 li {
           <ul class="rendu" id="liste_ex1">  
             <li>Premier élément de liste</li>
             <li>Deuxième élément de liste</li>
-          </ul>  
+          </ul> 
+          </div>
+          </div> 
           <hr> 
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg3">Mosaïque d'arrière-plan: <code>background-repeat</code></h3>
           <p>Valeurs: <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, <code>no-repeat</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>repeat</code></p>
@@ -589,7 +642,11 @@ ul#liste_ex1 li {
           <h4>Utilisation de la valeur <code>repeat-y</code> :</h4>
           <p class="resultat-etiquette">Exemple</p>
           <p id="ex8" class="bordure">Ce paragraphe est tapissé d'image d'arrière-plan qui rendent la lecture hasardeuse, sinon impossible. Pourquoi en est-il ainsi, quand on pourrait faire autrement? Ce paragraphe est tapissé d'image d'arrière-plan qui rendent la lecture hasardeuse, sinon impossible. Pourquoi en est-il ainsi, quand on pourrait faire autrement? </p>
+          </div>
+          </div>
           <hr> 
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg4">Position d'arrière-plan: <code>background-position</code></h3>
           <p>Valeurs: </p>
           <ul>
@@ -617,7 +674,11 @@ ul#liste_ex1 li {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+</div>
           <hr> 
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg5">Point d'attache de l'arrière-plan: <code>background-attachment</code></h3>
           <p>Valeurs: <code>scroll</code>, <code>fixed</code>, <code>inherit</code></p>
           <p>Valeur initiale: <code>scroll</code></p>
@@ -643,23 +704,10 @@ ul#liste_ex1 li {
             <br>
             <br>
             Lorsque la page défile, l'image reste en place, comme si le contenu défilait par dessus.</p>
+          </div></div>
           <hr> 
-          <h3 id="bg6">Super propriété de l'arrière-plan: <code>background</code></h3>
-          <p>Valeurs: <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-attachment</code>, <code>background-position</code></p>
-          <p class="syntaxe-etiquette">Syntaxe</p>
-          <pre class="exemple-code exemple-code--nowrap">background: <i>bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment</i> | initial | inherit;</pre>
-          <p>Règles d'utilisation: aucune valeur n'est obligatoire et les valeurs peuvent apparaître dans n'importe quel ordre. </p>
-          <p>Si deux valeurs sont fournies pour la propriété <code>background-position</code>, elles doivent apparaître ensemble en commençant par la valeur horizontale (x), suivie immédiatement par la valeur verticale (y).</p>
-          <p class="code-etiquette">Exemple 1</p>
-          <pre class="exemple-code">          <span class="rose">background</span>: #fff url(images/decor.jpg) repeat-x scroll 0 4px;
-          </pre>
-          <p class="code-etiquette">Exemple 2</p>
-          <pre class="exemple-code">          <span class="rose">background</span>: url(images/rond.jpg) no-repeat 0 50%, url(images/carre.jpg) no-repeat 120px 10px, url(images/triangle.jpg) repeat-y center top;
-          </pre>
-          <div class="note">
-            <p>Puisqu'il s'agit d'une propriété abrégée, <strong>les valeurs omises seront réinitialisées aux valeurs par défaut</strong> des propriétés correspondantes. Par exemple, si on omet de citer les valeurs pour la propriété <code>background-position</code>, ce sont les valeurs <code>0 0</code> qui seront implicitement reconnues. </p>
-          </div>
-          <hr> 
+          <div class="card">
+                        <div class="card-body">
           <h3 id="bg7">Ajuster la taille de l'arrière-plan:<br> <code>background-size</code></h3>
 
           <p>Valeurs : auto, [taille], cover, contain, initial, inherit</p>
@@ -681,7 +729,28 @@ ul#liste_ex1 li {
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://public.codepenassets.com/embed/index.js"></script>
-
+</div></div>
+            <hr> 
+            <div class="card">
+                        <div class="card-body">
+          <h3 id="bg6">Super propriété de l'arrière-plan: <code>background</code></h3>
+          <p>Valeurs: <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-attachment</code>, <code>background-position</code></p>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">background: <i>bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment</i> | initial | inherit;</pre>
+          <p>Règles d'utilisation: aucune valeur n'est obligatoire et les valeurs peuvent apparaître dans n'importe quel ordre. </p>
+          <p>Si deux valeurs sont fournies pour la propriété <code>background-position</code>, elles doivent apparaître ensemble en commençant par la valeur horizontale (x), suivie immédiatement par la valeur verticale (y).</p>
+          <p class="code-etiquette">Exemple 1</p>
+          <pre class="exemple-code">          <span class="rose">background</span>: #fff url(images/decor.jpg) repeat-x scroll 0 4px;
+          </pre>
+          <p class="code-etiquette">Exemple 2</p>
+          <pre class="exemple-code">          <span class="rose">background</span>: url(images/rond.jpg) no-repeat 0 50%, url(images/carre.jpg) no-repeat 120px 10px, url(images/triangle.jpg) repeat-y center top;
+          </pre>
+          <div class="note">
+            <p>Puisqu'il s'agit d'une propriété abrégée, <strong>les valeurs omises seront réinitialisées aux valeurs par défaut</strong> des propriétés correspondantes. Par exemple, si on omet de citer les valeurs pour la propriété <code>background-position</code>, ce sont les valeurs <code>0 0</code> qui seront implicitement reconnues. </p>
+          </div>
+          </div>
+          </div>
+          
           <hr>
           <div class="tf" id="bg8">
           <p class="tf-intitule">Expérimentez les propriétés d'arrière-plan (<code>background</code>)</p>
@@ -834,21 +903,22 @@ ul#liste_ex1 li {
                 <section id="section04">
                 
                     <h2>Le modèle de boite flexible (flexbox)&nbsp;: quelques propriétés des flex-items</h2>
+                    <div class="note">
+                        <p>Rappel: nous avons vu les principales propriétés des flex-containers dans la leçon précédente: <a href="https://frlacroix1.github.io/integration1/lecon07.html#section02" target="_blank">Une intro aux boites flexibles</a>. </p>
+                    </div>
                     <p>Rappelons que la structure de base de flexbox repose sur&nbsp;: </p>
                     <ul>
                         <li>un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs ;<figure class="w50">
-            <img src="images/cours06/01-container.svg" alt="Conteneur" class="sansBordure">
+            <img src="images/lecon07/01-container.svg" alt="Conteneur" class="sansBordure">
             <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
           </figure></li>
                         <li>des <strong>flex-items</strong> qui sont les enfants directs du flex-container. <figure class="w50">
-            <img src="images/cours06/02-items.svg" alt="Enfants" class="sansBordure">
+            <img src="images/lecon07/02-items.svg" alt="Enfants" class="sansBordure">
             <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
           </figure></li>
                     </ul>
-                    <p>Un flex-container peut être n'importe quel éléments HTML affublé d'une déclaration <code>display:flex</code>.</p>
-                    <div class="note">
-                        <p>Rappel: nous avons vu les principales propriétés des flex-containers dans la leçon précédente: <a href="https://frlacroix1.github.io/integration1/lecon06.html#section02" target="_blank">Une intro aux boites flexibles</a>. </p>
-                    </div>
+                    <p>Un flex-container peut être n'importe quel éléments HTML associé à une déclaration <code>display:flex</code>.</p>
+                    
                     <p>Ses enfants directs deviennent alors automatiquement des <strong>flex-item</strong> qui occupent initialement la taille minimale de leur contenu.</p>
                     <p>Nous allons voir ici les principales propriétés des flex-items.</p>
                     <h3>Les propriétés des enfants (flex-items) </h3>

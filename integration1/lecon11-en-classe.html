@@ -67,11 +67,90 @@
            <div class="col-lg-3 order-lg-2 table-des-matieres">
                     <nav id="sidebar-nav" class="list-group sticky-top ">
                       <p><a href="#" class="nav-link titre"><strong>Leçon 11</strong></a></p>
+                      <a href="#section00" class="list-group-item list-group-item-action">BEM – La classe modificateur pour le lien de la page active</a>
+                      <a href="#section01" class="list-group-item list-group-item-action">Les images (et les vidéos) vs vertical-align</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">L'indicateur de lien externe</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Optimiser un média pour le&nbsp;Web</a>
                       <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
                     </nav>
                 </div>
             <div class="col-lg-9 order-lg-1">
             <article>
+                      <section id="section00">
+          <h2>BEM – La classe modificateur pour le lien de la page active</h2>
+          <div class="note">
+            <p><strong>Rappel : la nomemclature BEM pour nommer les classes</strong></p>
+            <p>Vous devrez dorénavant utiliser la nomemclature BEM pour nommer les classes dans tous vos travaux, y compris le <strong>TP examen</strong>.</p>
+          <div class="reference-section">
+            <p>Revoir les notes de la leçon 7 : <a href="https://frlacroix1.github.io/integration1/lecon07.html#section03" target="_blank">La nomemclature BEM <img class="icone" src="images/cours06/lien_ext_noir_16px.png"></a></p>
+          </div>
+            </div>
+          <p>La classe de modificateur (voir la méthode BEM pour la définition) peut être utilisée pour définir le lien de la page courante.</p>
+          <p>Il suffit d'ajouter cette classe (ex.: menu__lien--actif) à la classe de base du lien (menu__lien) et de définir la mise en forme du lien actif à l'aide du sélecteur de classe.</p>
+          <p>On peut insérer deux classes consécutive en laissant un espace entre elles, comme ceci: </p>
+          <pre class="exemple-code">&lt;a class="<span class="vert">menu__lien</span> <span class="rose">menu__lien--actif</span>"&gt;...</pre>
+          <p class="codepen" data-height="315" data-default-tab="result" data-slug-hash="pvgOWqB" data-pen-title="c10_classe-modificateur-lien-actif" data-editable="true" data-user="frlacroix" style="height: 315px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/pvgOWqB">
+  c10_classe-modificateur-lien-actif</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          
+        </section>
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section01">
+          <h2>Les images (et les vidéos) vs vertical-align</h2>
+          <p class="codepen" data-height="570" data-default-tab="result" data-slug-hash="bNExoOx" data-pen-title="c10_img-vertical-align" data-editable="true" data-user="frlacroix" style="height: 570px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNExoOx">
+  c10_img-vertical-align</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section>
+         <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section03">
+          
+          <h2>L'indicateur de lien externe</h2>
+          <p>Les bonnes pratiques recommandent d’indiquer visuellement les liens menant vers un autre site. On peut, par exemple, ajouter une petite icône à droite du lien au moyen d’une classe et de la propriété <code>background-image</code>.</p>
+<p>Pensez aussi à ajouter l’attribut <code>target="_blank"</code> pour ouvrir ces liens dans un nouvel onglet.</p>
+          <p>L'exemple suivant illustre cette façon de faire.</p>
+          <p class="codepen" data-height="380" data-default-tab="result" data-slug-hash="ZYQMXVg" data-pen-title="c09_lien-externe" data-editable="true" data-user="frlacroix" style="height: 380px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/frlacroix/pen/ZYQMXVg">
+  c09_lien-externe</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+        </section> <!-- #section01 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+          <section id="section04">
+          
+          <h2>Optimiser un média pour le Web</h2>
+          <p><strong>Objectif de l’optimisation :</strong><br>Réduire le poids du fichier pour accélérer le chargement des pages Web, améliorer l’expérience utilisateur et limiter la consommation de bande passante et d’énergie.</p>
+          <hr>
+          <p>Voici les étapes pour optimiser un média pour le Web:</p>
+          <ol style="margin-bottom:0;">
+            <li><strong>Ouvrir l’image</strong> dans Photoshop.</li>
+            <li>Aller dans <strong>Image > Taille de l’image</strong> et ajuster aux dimensions souhaitées.</li>
+            <li>Choisir <strong>Fichier > Exportation > Enregistrer pour le Web (hérité)</strong>.</li>
+            <li><strong>Sélectionner le format approprié</strong> : JPEG pour les photos, PNG-24 pour les images avec transparence</li>
+            <li><strong>Ajuster le niveau de qualité</strong> (entre 60 % et 80 % pour les JPEG).</li>
+            <li><strong>Cocher Optimisé</strong> pour réduire le poids du fichier.</li>
+            <li><strong>Vérifier la taille du fichier</strong> dans l’aperçu.</li>
+            <li><strong>Enregistrer avec un nom de fichier descriptif</strong>, sans accents ni espaces, et <strong>ajouter le suffixe indiquant la largeur</strong> à la fin (ex. _w600 pour 600 px de&nbsp;large). <br>
+Exemple : <code>article-titre-entete_w600.jpg</code></li>
+          </ol>
+          <p><a href="https://cegepsaintefoy.sharepoint.com/sites/INTGRATION1-A2025-gr.1/_layouts/15/stream.aspx?id=%2Fsites%2FINTGRATION1%2DA2025%2Dgr%2E1%2FDocuments%20partages%2FGeneral%2Fdemo%2Dexporter%2Dpour%2Dweb%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee5d4ba79%2Db162%2D4087%2D8ec6%2D1c606b8cf9b9&isDarkMode=true" class="btn btn-primary" role="button" target="_blank"><i class="bi bi-play-fill"></i> Visionner un exemple vidéo de l'exportation</a></p>
+          <p>Vous pouvez pratiquer l'optimisation <a href="https://frlacroix1.github.io/images/pratique-optimisation_2.jpg" target="_blank">à partir de cette image de grandes dimensions <i class="bi bi-box-arrow-up-right"></i></a>. </p>
+        </section> <!-- #section01 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
         <section id="sectionAE">
         
           <h2>Activités d'évaluation</h2>
