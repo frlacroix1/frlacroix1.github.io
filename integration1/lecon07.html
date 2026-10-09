@@ -60,7 +60,7 @@
         <main class="container">
              <header>
                     <div class="cours-numero">Leçon 7</div>
-                    <h1>CSS : position, classes et design réactif</h1>
+                    <h1>CSS : Flex, position et design réactif</h1>
                 </header>
             <div class="row">
               
@@ -370,6 +370,322 @@
         <div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
+          <section id="section03">
+          
+          <h2>La propriété&nbsp;<code>position</code></h2>
+          <p>La propriété&nbsp;<code>position</code>&nbsp;sert à contrôler le placement d’un élément sur la page.</p>
+          <h3>Les valeurs principales</h3>
+          <ul>
+            <li><a href="#pos1">static</a></li>
+            <li><a href="#pos2">relative</a></li>
+            <li><a href="#pos3">absolute</a></li>
+            <li><a href="#pos4">fixed</a></li>
+            <li><a href="#pos5">z-index</a></li>
+          </ul>
+          <hr>          
+<h4 id="pos1"><code>static</code></h4>
+          <ul style="margin-bottom:0;">
+            <li>Valeur par défaut.</li>
+            <li>L’élément reste dans le flux normal.</li>
+            <li>Rarement utilisé explicitement, sauf pour rétablir un comportement normal.</li>
+          </ul>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">position:<span class="rose">static</span>;</pre>
+          <hr>          
+          <h4 id="pos2"><code>relative</code></h4>
+          <ul style="margin-bottom:0;">
+            <li>L’élément reste dans le flux, mais on peut le décaler avec <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>.</li>
+            <li>Les autres éléments gardent leur place comme si rien n’avait bougé.</li>
+            <li>Sert de repère pour un enfant en <code>absolute</code>.</li>
+            <li>Donne accès à la propriété <code>z-index</code>.</li>
+          </ul>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">position:<span class="rose">relative</span>;</pre>
+          <p>Dans l'exemple ci-dessous, l'élément <code>strong</code> est en position relative. On utilise les propriétés <code>top</code>, <code>right</code>, <code>bottom</code> ou <code>left</code> jumelées à des valeurs en <code>px</code> ou <code>%</code> pour le positionner:</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <p class="codepen" data-height="270" data-default-tab="css,result" data-slug-hash="PwZodoj" data-pen-title="c08-pos-01" data-editable="true" data-user="frlacroix" style="height: 270px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZodoj">
+            c08-pos-01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <hr>          
+          <h4 id="pos3"><code>absolute</code></h4>
+          <ul style="margin-bottom:0;">
+            <li>L’élément est retiré du flux et devient indépendant des éléments HTML qui le côtoient.</li>
+            <li>Positionné par rapport au premier ancêtre ayant une <code>position</code> autre que <code>static</code>.</li>
+            <li>Si aucun ancêtre n’est positionné, il se place par rapport à la page.</li>
+            <li>Ne conserve pas sa largeur par défaut (ne fait plus 100%).</li>
+          </ul>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">position:<span class="rose">absolute</span>;</pre>
+          
+          <p>Il est capital de noter qu'un élément bénéficiant d'une position absolue ne bougera pas de sa position initiale tant que l'une des propriétés&nbsp;<code>top</code>,&nbsp;<code>bottom</code>,&nbsp;<code>left</code>&nbsp;ou&nbsp;<code>right</code>&nbsp;n'a pas été précisée; il s'agit d'ailleurs là d'un comportement appliquable à toutes les positions :</p>
+          <p class="resultat-etiquette">Exemple</p>
+          <p class="codepen" data-height="500" data-default-tab="css,result" data-slug-hash="bNEGxGa" data-pen-title="c08-pos-03" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/bNEGxGa">
+  c08-pos-03</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <h4><code>fixed</code></h4>
+          <ul style="margin-bottom:0;">
+            <li>Lorsque son positionnement est précisé (<code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>), l’élément devient <strong>fixé</strong> par rapport à la fenêtre du&nbsp;navigateur.</li>
+            <li>Il ne bouge pas quand on fait défiler la page.</li>
+            <li>Typiquement utilisé pour des menus persistants ou des boutons flottants.</li>
+          </ul>
+          <p class="syntaxe-etiquette">Syntaxe</p>
+          <pre class="exemple-code exemple-code--nowrap">position:<span class="rose">fixed</span>;</pre>
+          <p class="resultat-etiquette">Exemple 1: le texte jaune reste fixe même lorsqu'on défile</p>
+          <p class="codepen" data-height="340" data-default-tab="css,result" data-slug-hash="KwVKxKB" data-pen-title="c08-pos05" data-editable="true" data-user="frlacroix" style="height: 340px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/KwVKxKB">
+  c08-pos05</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<br>
+          <p class="resultat-etiquette">Exemple 2: barre de navigation fixée</p>
+          <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="raxNZNR" data-pen-title="c08-pos04" data-editable="true" data-user="frlacroix" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/raxNZNR">
+  c08-pos04</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<hr>          
+    <h4 id="pos5"><code>z-index</code></h4>
+    <p>La propriété z-index contrôle l’ordre d’empilement des éléments quand ils se chevauchent.</p>
+    <p>Elle agit sur l’axe z, c’est-à-dire <strong>la profondeur</strong>&nbsp;:</p>
+    <ul style="margin-bottom:0;">
+    <li>plus la valeur est élevée, plus l’élément apparaît «&nbsp;au-dessus&nbsp;» des&nbsp;autres;</li>
+    <li>plus la valeur est faible, plus il est «&nbsp;en&nbsp;dessous&nbsp;».</li>
+    </ul>
+    <p><strong>Comportement par défaut</strong></p>
+    <ul style="margin-bottom:0;">
+      <li>Quand plusieurs éléments se chevauchent, l’ordre suit celui du code HTML&nbsp;: le premier est en arrière-plan, le dernier en avant-plan.</li>
+      <li>Cet ordre naturel ne se voit que si les éléments se superposent partiellement.</li>
+    </ul>
+<p><strong>Usage de z-index</strong></p>
+<ul style="margin-bottom:0;">
+      <li>z-index permet de modifier cet ordre et de forcer un élément à passer devant ou derrière les autres.</li>
+      <li>Nécessite que l’élément ait une <code>position</code> différente de <code>static</code> (<code>relative</code>, <code>absolute</code> ou <code>fixed</code>).</li>
+</ul>
+<p><strong>Exemple typique</strong></p>
+<ul style="margin-bottom:0;">
+      <li>Forcer une barre de navigation fixe à rester toujours au premier plan (<code>z-index:&nbsp;100</code>).</li>
+      <li>Superposer un texte par-dessus une&nbsp;image.</li>
+</ul>
+          <p class="resultat-etiquette">Exemple</p>
+          <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="PwZPLMY" data-pen-title="c06-pos06" data-editable="true" data-user="frlacroix" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/PwZPLMY">
+  c06-pos06</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<br>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          <div class="tf">
+         <p class="tf-intitule">Propriété position</p>
+         <p>Créez la feuille de style de ce "pen" en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.):</p>
+         <ol>
+         <li>Ouvrez dans Codepen et faites-vous une copie.</li>
+         <li>Superposez le nom de l'item et son prix sur l'image en utlisant la propriété position. (Voir en classe pour les directives.) </li>
+         <li>Remarquez le lien qui enblobe à la fois l'image, le nom de l'item et le prix: effectuez sa mise en forme.</li>
+         <figure class="w20">
+            <figcaption>Résultat attendu</figcaption>
+            <img src="images/lecon07/cours06_tf01.jpg" alt="Résultat tf1">
+         </figure>
+</ol>
+<p class="codepen" data-height="500" data-default-tab="css,result" data-slug-hash="qEbbqGq" data-pen-title="c06-1/3-position absolute+design réactif" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/qEbbqGq">
+  c06-1/3-position absolute+design réactif</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+             
+          </div>
+        </section> <!-- fin section03 -->
+        <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+        <section id="section04">
+          
+          <h2>Le design réactif et l'approche «&nbsp;mobile d'abord&nbsp;»</h2>
+                    <p>Un site web doit s’adapter à la taille de l’écran de l’utilisateur. L'approche <strong>Mobile d'abord</strong> (ou&nbsp;<i>Mobile&nbsp;first</i>) repose sur ces fondements&nbsp;:</p>
+                    <ul>
+                        <li><strong>concevoir le site d’abord pour les appareils les plus simples</strong> (petits écrans, navigateurs limités) avec un code minimal et&nbsp;robuste; </li>
+                        <li><strong>ajouter ensuite, couche par couche, des styles supplémentaires pour les écrans plus larges</strong> et les appareils plus puissants.</li> 
+                    </ul>
+                    <p><strong>Conséquences pratiques</strong></p>
+                    <ul>
+                        <li>Les styles de base ciblent en priorité les téléphones.</li>
+                        <li>À mesure que l’écran s’élargit, on introduit des ajustements avec des requêtes médias (<code>@media</code>).</li>
+                        <li>Chaque point de rupture (<em>breakpoint</em>) adapte la mise en page <br>(par exemple&nbsp;: une&nbsp;colonne → deux&nbsp;colonnes → trois&nbsp;colonnes).</li>
+                    </ul>
+                    <h3>Exemple d’application</h3>
+                    <p>Un répertoire de photos dont l'affichage s'adapte selon la taille de&nbsp;l'écran: 
+                      </p>
+                      <ul>
+                      <li><strong>sur mobile, par défaut</strong> (écran de largeur étroite): une&nbsp;colonne;</li>
+                      <li><strong>sur tablette</strong> (écran de largeur moyenne): deux&nbsp;colonnes;</li>
+                      <li><strong>sur ordinateur</strong> de table (écran large): trois&nbsp;colonnes.</li>
+                    </ul>
+                    <figure class="w100">
+                        <figcaption>Approche « mobile d'abord »</figcaption>
+                        <img src="images/lecon07/cours07_maq05b.jpg" alt="Appoche Mobile first">
+                    </figure>
+                    <p>Comment y arriver sans dupliquer les contenus?</p>
+                    <h4>La requête media : <code>@media</code></h4>
+                    <p>On y arrive en ajoutant des règles de style conditionnelles.</p>
+                    <p>La condition dans cet exemple est fondée sur la largeur de l'écran.</p>
+                    <p>Ainsi, à partir d'une certaine largeur d'écran, la fonction <code>@media</code> permet de modifier la valeur d'une propriété (ou d'ajouter de nouvelles déclarations), comme ceci :</p>
+                    <p class="code-etiquette">Code
+                    </p><pre class="exemple-code">                      <span class="rose">.catalogue {</span>
+                      &nbsp;&nbsp;display: flex;
+                      &nbsp;&nbsp;flex-direction: column;
+                      <span class="rose">}</span>
+                      <span class="vert">@media (min-width:700px) {</span>
+                      &nbsp;&nbsp;<span class="rose">.catalogue {</span>
+                      &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;
+                      &nbsp;&nbsp;<span class="rose">}</span>
+                      <span class="vert">}</span>
+                    </pre>
+                    <p class="resultat-etiquette">Résultat</p>
+                    <div class="resultat">
+                      <img src="images/lecon07/cours06_requete-media01.png" alt="exemple de requête média">
+                      </div>
+                      <div class="note">
+                        <p>Ajoutez cette <code>meta</code> dans la partie <code>head</code> du document HTML afin que les fonctions <code>@media</code> soient interprétées correctement: <br>
+                <pre class="exemple-code exemple-code--nowrap">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </pre></p></div>
+          <div class="tf">
+            <p class="tf-intitule">La requête media : <code>@media</code></p>
+            <ol>
+              <li>Reprenez le Codepen précédent.</li>
+              <li>Complétez la feuille de style de ce <em>pen</em> en utilisant uniquement des sélecteurs de classe. (Voir en classe pour les directives.)</li>
+              <li>À l'aide de la fonction <code>@media</code>, rendez réactive la disposition des six items:
+                <ul style="padding-bottom:0;">
+                  <li>Les six items forment au départ une colonne.</li>
+                  <li>À mesure que l'écran s'élargit, ces items doivent former des rangées de deux items, puis, enfin, des rangées de trois items.</li>
+                </ul>
+              </li>
+              <li>N'oubliez pas de sauvegarder votre <em>pen</em> pour une utilisation ultérieure.</li>
+            </ol>
+            <div class="row">
+                <div class="col"> <figure class="w100">
+              <figcaption class="equal"><strong>Mise en page sur une&nbsp;colonne:</strong> par&nbsp;défaut</figcaption>
+              <img src="images/lecon07/cours06_tf02a.jpg" alt="Résultat tf2">
+            </figure></div>
+                <div class="col"><figure class="w100">
+              <figcaption class="equal"><strong>Mise en page sur deux&nbsp;colonnes</strong>: lorsque la largeur de l'écran est <u>plus&nbsp;grande que 380&nbsp;px</u>.</figcaption>
+              <img src="images/lecon07/cours06_tf02b.jpg" alt="Résultat tf2">
+            </figure></div>
+                <div class="col"> <figure class="w100">
+              <figcaption class="equal"><strong>Mise en page sur trois&nbsp;colonnes</strong>: lorsque la largeur de l'écran est <u>plus&nbsp;grande que 700&nbsp;px</u>.</figcaption>
+              <img src="images/lecon07/cours06_tf02c.jpg" alt="Résultat tf2">
+            </figure></div>
+
+            </div>
+           
+            
+           
+          </div>
+          </section> <!-- fin section04 -->
+          
+      <div class="haut-de-page">
+            <a href="#">Haut de page</a>
+          </div>
+          
+        <!-- ACTIVITÉS D'ÉVALUATION -->
+        <section id="sectionAE">
+          
+          <h2>Activités d'évaluation</h2>
+          
+          <h3>Travail pratique 2 (10%)</h3>
+          <p>Le TP2 a pour objectif d'expérimenter la propriété CSS position et le web réactif.</p>
+          <h4>Sources</h4>
+          <!-- <p>Téléchargez le dossier <a href="materiel/TP2__.zip" class="btn btn-primary" role="button">TP2.zip</a>.</p> -->
+           <p>Téléchargez le dossier <strong>TP_2026.zip</strong> qui vous sera partagé <a href="https://teams.microsoft.com/l/channel/19%3A143d899b78bd40f3865162f21e89c512%40thread.tacv2/07%20-%20Flex%2C%20position%20et%20design%20r%C3%A9actif?groupId=37ca9486-970f-4c37-9735-7c8d5629b902&tenantId=3055536a-130a-492f-8a62-391bdb79c9e9" target="_blank">dans le canal Teams de la leçon&nbsp;7 <i class="bi bi-box-arrow-up-right"></i></a>.</p>
+          <p>Décompressez ce dossier sur votre poste et renommez-le adéquatement avec votre numéro de groupe et votre nom.</p>
+          <figure class="w50">
+              <figcaption>Structure de fichiers du tp2</figcaption>
+              <img class="bordure" src="images/lecon07/cours06_tp2_arbo01.jpg" alt="Arborescence de fichiers du TP2.">
+          </figure>
+          <h4>Échéancier</h4>
+          <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le lundi 19&nbsp;octobre à&nbsp;8h</strong>. <br>Svp prendre note: pénalité de 15% pour une remise en retard.</p>
+                    <!-- <p>Remettez l'archive zippée <strong>sur LÉA</strong>, à la date correspondante à votre groupe: </p>
+                    <ul>
+                        <li>groupe 1 : <strong>au plus tard mercredi 8 octobre à 8h</strong></li>
+                        <li>groupe 2 : <strong>au plus tard lundi 6 octobre à 8h</strong></li>
+                    </ul> -->
+                    <h4>Grille de correction</h4>
+                    <p><a href="materiel/TP2-Grille-de-correction.pdf" target="_blank">Consultez la grille de correction pour le travail&nbsp;<i class="bi bi-file-pdf"></i></a>. Référéz-vous à cette grille pour vérifier votre travail avant de le remettre sur&nbsp;LÉA.</p>
+                    
+          <h4>TP2: Travail à faire</h4>
+          <p><a href="https://youtu.be/4vDjfPq9Xvc" class="btn btn-primary" role="button" target="_blank"><i class="bi bi-play-fill"></i> Visionnez un exemple de résultat final attendu</a></p>
+            <ol>
+              <li><strong>Ouvrez le dossier de travail du tp2 dans VSC.</strong></li>
+              <li><strong>Dans le document <code>catalogue.html</code>:</strong>
+                <ol>
+                  <li>À la ligne 11, <strong>inscrivez votre nom</strong> dans la balise correspondante.</li>
+                  <li><strong>Intégrez le favicon dans la page</strong>: le fichier image se nomme <em>favicon_32x32.png</em>. <br><a href="https://frlacroix1.github.io/integration1/lecon04.html#section06" target="_blank">Référez-vous à la leçon 4 pour l'intégrer correctement&nbsp;<i class="bi bi-box-arrow-up-right"></i></a>.
+                </li>
+              </ol>
+              </li>
+              <li><strong>Dans le document <code>styles.css</code>:</strong>
+                <ol>
+              <li>Au tout début de la feuille de style, ajoutez le code <code>@charset "UTF-8";</code>.</li>
+              <li>À la suite de ce code, ajoutez le code <code>@import...</code> de <a href="https://fonts.google.com/" target="_blank">Google Fonts <i class="bi bi-box-arrow-up-right"></i></a> afin d'importer la police de caractères qui se nomme "Arimo".</li>
+              <li>Ensuite, ajoutez les règles de style de réinitialisation habituelles&nbsp;: </li>
+              <figure class="w80">
+              <figcaption>Réinitialisation</figcaption>
+              <img class="bordure" src="images/lecon07/cours06_tp2_reinit.jpg" alt=""> 
+            </figure>
+            <li>Assurez-vous que la propriété <code>font-family</code> correspond à la Google Font.</li>
+              <li>Effectuez la mise en forme du menu de navigation réactif de la page web à l'aide des directives données en classe.</li>
+              <li>Reproduisez la mise en forme du catalogue en observant les images de maquette affichées plus bas.
+                <ul style="margin:0;">
+                  <li>Effectuez une mise en forme fluide, basée sur le&nbsp;principe du 'Mobile&nbsp;d'abord';</li>
+                  <li>Créez des requêtes media pour la version '2&nbsp;colonnes' (>&nbsp;380px);</li>
+                  <li>Créez une requête media pour la version '3&nbsp;colonnes' (>&nbsp;700px);</li>
+                  <li>Établissez une largeur maximale de 800px pour le catalogue.</li>
+                  <li>Créez un pied de page flexible.</li>
+            </ul>
+              </li>
+
+              <li>Créez les règles de style nécessaires en vous inspirant des travaux formatifs effectués durant le cours.</li>
+              <li><strong>N'utilisez que des sélecteurs de classe</strong> dans vos règles de style. Les attributs <code>class</code> à utiliser sont déjà existants dans le document HTML, n'ajoutez pas de nouvelles classes.</li>
+              <li>Mettez votre feuille de style en ordre.</li>
+              <li>Insérez des commentaires dans votre feuille de style afin de vous y retrouver plus facilement.</li>
+              </ol></li>
+            </ol>
+            <figure class="w30">
+              <figcaption>Interface du tp2 sur une colonne: taille d'écran par défaut.</figcaption>
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface01.jpg" alt="Interface 1 colonne tp2"> 
+            </figure>
+            <figure class="w50">
+              <figcaption>Interface du tp2 sur des rangées de deux: largeur minimale de l'écran 380px</figcaption>
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface02.jpg" alt=""> 
+            </figure>
+            <figure class="w80">
+              <figcaption>Interface du tp2 sur des rangées de trois: largeur minimale de l'écran 700px</figcaption>
+              <img class="bordure" src="images/lecon07/cours06_tp2_interface03.jpg" alt=""> 
+            </figure>
+          
+        </section>  <!-- fin sectionAE --> 
+
+                <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>Finaliser le TP</strong> et le remettre <strong>sur LÉA au plus tard le lundi 19 octobre à 8h</strong>. <br>Svp prendre note: pénalité de 15% pour une remise en retard.</li>
+                            <li>Lire la documentation et réaliser les travaux formatifs de <a href="lecon08.html">la&nbsp;leçon&nbsp;8</a>. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
+                
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer>  
         
             </article>
             </div>
