@@ -160,7 +160,7 @@ ul#liste_ex1 li {
         <main class="container">
              <header>
                     <div class="cours-numero">Leçon 8</div>
-                    <h1>La nomemclature BEM et <br>les boites flexibles (la&nbsp;suite)</h1>
+                    <h1>Flex-items et nomenclature BEM</h1>
                 </header>
             <div class="row">
               
@@ -180,9 +180,9 @@ ul#liste_ex1 li {
                         <a href="#filter">Filter</a>
                       </span>
                       <a href="#section02" class="list-group-item list-group-item-action">Les propriétés d'arrière-plan&nbsp;: background</a>
-                      <a href="#section03" class="list-group-item list-group-item-action">La nomemclature BEM</a>
-                      <a href="#section04" class="list-group-item list-group-item-action">Les boites flexibles (suite)</a>
-                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">La nomenclature BEM</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Les boites flexibles (flex-items)</a>
+                      <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation - Exercice&nbsp;5</a>
                     </nav>
                 </div>
             <div class="col-lg-9 order-lg-1">
@@ -393,32 +393,29 @@ ul#liste_ex1 li {
                 </div>
                 <section id="section03">
                 
-                    <h2>La nomemclature BEM : Bloc-Élément-Modificateur</h2>
-                    <p>La nomemclature BEM, ou <strong>Bloc-Élément-Modificateur</strong>, est une méthode qui sert à nommer les classes de manière signifiante.</p>
-                    <p>Le sélecteur de classe  permet de cibler un élément ou un bloc d'éléments sans passer par la hiérarchie de la structure des éléments HTML.</p>
-          <div class="row"><div class="col"><p class="code-etiquette">HTML</p>
-          <pre class="exemple-code">&lt;p <span class="rose">class="note"</span>&gt;...&lt;⧸p&gt; 
-          </pre> </div>
-          <div class="col"><p class="code-etiquette-css">CSS</p>
-          <pre class="exemple-code"><span class="rose">.note</span> { ... }
-          </pre></div>
-                </div>
-           
-           
-                    <p>On peut donner n'importe quel nom aux classes, dans la mesure où celui-ci ne contient ni espaces, ni caractères spéciaux, ou encore, ne commence pas par un chiffre.</p>
-                    <p>Cela dit, si on n'y prête pas attention, la variété des noms de classe peut devenir déroutante dans un site web qui prend une certaine ampleur.</p>
-                    <p>C'est pourquoi il existe des approches qui consistent à mettre de l'ordre dans les noms de classes afin de les rendre signifiants.</p>
-                    <p>La nomemclature BEM est l'approche que nous adoptons dans le cadre de ce cours.</p>
+                    <h2>La nomenclature BEM : Bloc-Élément-Modificateur</h2>
+                    <p>Comme nous l'avons déjà vu, le sélecteur de classe permet de cibler un élément ou un bloc d'éléments sans passer par la hiérarchie de la structure des éléments HTML.</p>
+                    
+                    <div class="row"><div class="col"><p class="code-etiquette">HTML</p>
+                        <pre class="exemple-code">&lt;p <span class="rose">class="note"</span>&gt;...&lt;⧸p&gt; 
+                        </pre> </div>
+                        <div class="col"><p class="code-etiquette-css">CSS</p>
+                            <pre class="exemple-code"><span class="rose">.note</span> { ... }
+                            </pre></div>
+                        </div>
+                        
+                        <p>On peut donner n'importe quel nom aux classes, dans la mesure où celui-ci ne contient ni espaces, ni caractères spéciaux, ou encore, ne commence pas par un chiffre. Cela dit, si on n'y prête pas attention, la variété des noms de classe peut devenir déroutante dans un site web qui prend une certaine ampleur.</p>
+                        <p>C'est pourquoi il existe des approches qui consistent à mettre de l'ordre dans les noms de classes afin de les rendre signifiants.</p>
+                    <p>La nomenclature BEM (<strong>Bloc-Élément-Modificateur</strong>)est l'approche que nous adoptons dans le cadre de ce cours.</p>
                     <p>Voyons chacune des composantes de la méthode BEM.</p>
                     <div class="references-section">
                       <ul>
                         <li><a href="https://en.bem.info/" target="_blank">Le site officiel de la méthode BEM <i class="bi bi-box-arrow-up-right"></i></a></li>
       </ul>
       </div><hr>
-                    <h3>Bloc</h3>
-                    <p><code>bloc</code></p>
+                    <h3>Bloc (<code>bloc</code>)</h3>
                     <p>La première étape consiste à donner un nom signifiant aux blocs.</p>
-                    <p>Le bloc est un ensemble cohérent d'éléments qui est susceptible d'être réutilisé tel quel dans une autre partie du document ou dans un autre document.</p>
+                    <p><strong>Le bloc est un ensemble cohérent d'éléments qui est susceptible d'être réutilisé tel quel dans une autre partie du document</strong> ou dans un autre document.</p>
                     <p>Comme on le voit dans l'illustration suivante, les blocs peuvent être imbriqués les uns dans les autres.</p>
                     <figure class="w80">
                       <figcaption>Le bloc indique un ensemble cohérent d'éléments susceptible d'être réutilisé.</figcaption>
@@ -438,8 +435,7 @@ ul#liste_ex1 li {
                     
                     <p>Au besoin, le nom du bloc peut être composé de plus d'un mot. Dans ce cas, on utilise un trait-d'union pour séparer chaque mot (<i lang="en">Kebab case</i>), comme par exemple  <code>titre-principal</code>. </p><p>Il existe d'autres conventions de nomenclature (<i lang="en">Camel case</i> (titrePrincipal), <i lang="en">Snake case</i> (titre_principal), etc.)&nbsp;: l'important est de choisir une méthode et de s'y tenir.</p>
                     <hr>
-                    <h3>Élément</h3>
-                    <p><code>bloc__element</code></p>
+                    <h3>Élément (<code>bloc__element</code>)</h3>
                     <p>La deuxième étape consiste à donner un nom signifiant aux éléments et aux sous-éléments du bloc (quand il y en a).</p>
                     <p>Contrairement au bloc, l'élément ne peut être réutilisé seul dans une autre section ou une autre page, sans le contexte de son parent bloc.</p>
                     <figure class="w60">
@@ -479,8 +475,7 @@ ul#liste_ex1 li {
                         &lt;/form&gt;
                     </pre>
                     <hr>
-                    <h3>Modificateur</h3>
-                    <p><code>bloc__element--modificateur</code></p>
+                    <h3>Modificateur (<code>bloc__element--modificateur</code>)</h3>
                     <p>La troisième étape consiste à donner un nom signifiant aux modificateurs (quand il y en a) d'un bloc ou d'un élément.</p>
                     <figure class="w80">
                       <figcaption>Le modificateur indique le changement d'état d'un bloc ou d'un élément.</figcaption>
@@ -506,7 +501,7 @@ ul#liste_ex1 li {
                         &lt;/ul&gt;
                     </pre>
                     <div class="tf">
-                        <p class="tf-intitule">La nomemclature BEM</p>
+                        <p class="tf-intitule">La nomenclature BEM</p>
                         <p>Dans le Codepen suivant, ajoutez des classes à TOUS les éléments HTML en suivant l'approche BEM.</p>
                         <p>Insérez en plus un modificateur pour le lien de la page active.</p>
                         <p class="codepen" data-height="620" data-default-tab="html,result" data-slug-hash="YPwGVqg" data-pen-title="c07-BEM" data-editable="true" data-user="frlacroix" style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -527,16 +522,20 @@ ul#liste_ex1 li {
                         <p>Rappel: nous avons vu les principales propriétés des flex-containers dans la leçon précédente: <a href="https://frlacroix1.github.io/integration1/lecon07.html#section02" target="_blank">Une intro aux boites flexibles</a>. </p>
                     </div>
                     <p>Rappelons que la structure de base de flexbox repose sur&nbsp;: </p>
-                    <ul>
-                        <li>un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs ;<figure class="w50">
+                    <div class="row">
+                        <div class="col">
+                            <p class="no-margin">un <strong>flex-container</strong> qui génère le contexte d'affichage pour ses enfants directs ;</p><figure class="no-margin">
             <img src="images/lecon07/01-container.svg" alt="Conteneur" class="sansBordure">
             <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure></li>
-                        <li>des <strong>flex-items</strong> qui sont les enfants directs du flex-container. <figure class="w50">
+          </figure></div>
+                        <div class="col">
+                            <p class="no-margin">des <strong>flex-items</strong> qui sont les enfants directs du flex-container. </p><figure class="no-margin">
             <img src="images/lecon07/02-items.svg" alt="Enfants" class="sansBordure">
             <p class="source text-center">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Layout Guide <i class="bi bi-box-arrow-up-right"></i></a></p>
-          </figure></li>
-                    </ul>
+          </figure></div>
+
+                    </div>
+                    
                     <p>Un flex-container peut être n'importe quel éléments HTML associé à une déclaration <code>display:flex</code>.</p>
                     
                     <p>Ses enfants directs deviennent alors automatiquement des <strong>flex-item</strong> qui occupent initialement la taille minimale de leur contenu.</p>
@@ -600,9 +599,8 @@ ul#liste_ex1 li {
           </div>
                 <section id="sectionAE">
                 
-                <h2>Activités  d'évaluation</h2>
-                <h3>Exercice 5</h3>
-                <p>L'exercice 5 a pour objectif d'approfondir vos habiletés dans l'utilisation des boites flexibles ou <i>flexbox</i> et d'introduire l'utilisation d'images d'arrière-plan. </p>
+                <h2>Activités d'évaluation - Exercice&nbsp;5</h2>
+                <p>L'exercice 5 a pour objectif d'approfondir vos habiletés dans l'utilisation des boites flexibles (<i>flexbox</i>) et d'introduire l'utilisation d'images d'arrière-plan. </p>
                 <h4>Sources</h4>
                 <p>Suivez les indications en classe pour télécharger le matériel de l'exercice&nbsp;5.</p>
                 <!-- <p>Téléchargez le dossier <a href="materiel/Ex5.zip" class="btn btn-primary" role="button">Ex5.zip</a>.</p> -->
@@ -612,12 +610,12 @@ ul#liste_ex1 li {
                     <img class="bordure" src="images/cours07/cours07_ex5_01.jpg" alt="Arborescence de fichiers pour l&#39;Ex5.">
                 </figure>
                     <h3>Échéancier</h3>
-                    <p>Remettez <u>obligatoirement</u> l'archive zippée <strong>sur LÉA</strong>, au plus tard : <strong>avant la fin du cours.</strong></p>
+                    <p>Remettez l'archive zippée <strong>sur LÉA au plus tard le jeudi suivant à&nbsp;8h</strong>. </p>
                     <h3>Travail à faire</h3>
-                    <p>Renommez le dossier fourni et ouvrez-le dans <em>VSC</em>.</p>
-                    <p>Le travail consiste à monter un gabarit entier à l'aide de flexbox. </p>
+                    <p>Une structure de dossier contenant quatre documents HTML et des images vous est fournie. <strong>Le travail consiste à rédiger une feuille de style CSS en respectant des consignes de mise en page à l'aide de <i>flexbox</i>.</strong> </p>
                     <ol>
-                        <li>Dans le dossier <code>css</code>, créez un nouveau fichier nommé <i>styles.css</i>.</li>
+                        <li>Renommez le dossier fourni et ouvrez-le dans <em>VSC</em>.</li>
+                        <li>Dans le dossier <code>css</code>, <strong>créez</strong> un nouveau fichier nommé <code>styles.css</code>.</li>
                         <li>À l'aide de l'élément <code>&lt;link&gt;</code> habituel, liez les <strong>quatre pages HTML</strong> à la feuille de style externe. Vous trouverez un exemple de cette balise dans les exercices des dernières leçons. </li>
                         <li>Débutez la rédaction de la feuille de style par l'encodage de caractères :<br>
                             <figure class="w30">
@@ -712,7 +710,7 @@ ul#liste_ex1 li {
                             <figure class="w80">
                                 <img class="bordure" src="images/cours07/cours08_tp8a2020_19.jpg">
                             </figure>
-                            Attention, le URL vers l'image d'arrière-plan devra débuter par <code><strong>../</strong>images/</code> (deux points et une barre oblique). <br><br>Vérifiez le résultat. Au survol du lien, on devrait voir ceci :
+                            <strong>Attention:</strong> le URL vers l'image d'arrière-plan devra débuter par <code><strong>../</strong>images/</code> (deux points et une barre oblique). <br><br>Vérifiez le résultat. Au survol du lien, on devrait voir ceci :
                             <figure class="w40">
                                 <img class="bordure" src="images/cours07/cours08_tp8a2020_20.jpg">
                             </figure>
@@ -734,7 +732,7 @@ ul#liste_ex1 li {
                             </figure>
                         </li>
                         <!-- <li>Dernière étape: en ciblant la bonne classe déjà existante dans le document HTML et en utilisant les règles de styles CSS que vous venez de créer, faites en sorte que l'image du légume apparaisse aussi lorsqu'on nous sommes dans sa page courante. </li> -->
-                        <li>Vous allez maintenant modifier le code HTML pour <strong>ajouter une image et sa légende dans le texte</strong>, soit juste sous l'élément <code>h1</code> du contenu principal. <strong>N'oubliez pas d'utiliser la <a href="#section03" target="_blank">nomemclature BEM</a>.</strong> <br><br>Vérifiez le résultat :
+                        <li>Vous allez maintenant modifier le code HTML pour <strong>ajouter une image et sa légende dans le texte</strong>, soit juste sous l'élément <code>h1</code> du contenu principal. <strong>N'oubliez pas d'utiliser la <a href="#section03" target="_blank">nomenclature BEM</a>.</strong> <br><br>Vérifiez le résultat :
                             <figure class="w80">
                             <figcaption>Ajout d'une image et sa légende dans le texte.</figcaption>
                                 <img class="bordure" src="images/cours07/cours08_tp8a2020_28.jpg">
@@ -766,10 +764,17 @@ ul#liste_ex1 li {
                       <p>N'oubliez pas de vérifier la réactivité de votre page en utilisant les outils de l'inspecteur de Google Chrome&nbsp;!</p>
                         </div>
                     <p>Bravo ! Le travail est terminé.</p>
-                    <p>Remettez <u>obligatoirement</u> l'archive zippée <strong>sur&nbsp;LÉA</strong>, au&nbsp;plus tard&nbsp;: <strong>avant la&nbsp;fin du&nbsp;cours.</strong></p>
                 </section>  <!-- #sectionAE -->
                 <div class="haut-de-page">
             <a href="#">Haut de page</a>
+            <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>Finaliser l’exercice 5</strong> et le remettre sur LÉA <strong>au plus tard jeudi 8h</strong>.</li>
+                            <li>Lire la documentation et réaliser les travaux formatifs de <a href="lecon06.html">la&nbsp;leçon&nbsp;6</a>. </li>
+                            <li>Noter les questions qui vous sont venues pendant votre lecture.</li>
+                        </ul>
+                    </div>
           </div>
             </article>
             </div>
