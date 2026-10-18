@@ -69,65 +69,17 @@
                       <p><a href="#" class="nav-link titre"><strong>Leçon 9</strong></a></p>
                       <a href="#section01" class="list-group-item list-group-item-action">Qu'est-ce qu'un site monopage?</a>
                       <a href="#section02" class="list-group-item list-group-item-action">Les ancres HTML</a>
-                      <a href="#section03" class="list-group-item list-group-item-action">Intégrer une vidéo avec la balise video</a>
-                      <a href="#section04" class="list-group-item list-group-item-action">Les images réactives</a>
                       <a href="#section05" class="list-group-item list-group-item-action">Le menu réactif</a>
                       <a href="#section06" class="list-group-item list-group-item-action">La mise en forme alternée</a>
+                      <a href="#section03" class="list-group-item list-group-item-action">Intégrer une vidéo avec la balise video</a>
+                      <a href="#section04" class="list-group-item list-group-item-action">Les images réactives</a>
                       <a href="#section07" class="list-group-item list-group-item-action">Tester la réactivité dans Chrome</a>
                       <a href="#sectionAE" class="list-group-item list-group-item-action">Activités d'évaluation</a>
                     </nav>
                 </div>
             <div class="col-lg-9 order-lg-1">
             <article>
-              <section id="section01">
-          <h2>Qu'est-ce qu'un site monopage?</h2>
-          <p>Le site monopage est formée d'une seule page HTML. Cette vogue  est apparue il y a quelques années. Ce type de site est populaire pour présenter un produit, un artiste ou encore un portfolio professionnel.</p>
-          <p>En anglais, on l'appelle <em>one page website</em> ou <em>single page website</em>.</p>
-          <p>La navigation peut y être verticale ou horizontale. On y retrouve typiquement beaucoup d'éléments visuels. </p>
-          <p>Il n'est pas rare non plus d'y voir des effets divers, tel que le parallaxe ou des animations inventives. </p>
-          <h3>Références</h3>
-          <div class="references-section">
-            <p class="references-intitule">Exemples</p>
-            <ul>
-              <li><a href="https://onepagelove.com/" target="_blank">One Page Love: The ultimate showcase of One Page websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-              <li><a href="http://www.awwwards.com/websites/single-page/" target="_blank">Awwwards: single Page Websites <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-              
-            </ul>
-            <p class="references-intitule">Article à propos des sites monopages</p>
-            <ul>
-              <li><a href="https://blog-fr.orson.io/creation-de-site-internet/creer-site-one-page" target="_blank">Créer un site one page, bonne ou mauvaise idée ?<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-              <li><a href="https://www.storydoc.com/blog/what-is-a-one-pager" target="_blank">Qu'est-ce qu'un site monopage? Types, avantages et cas d'utilisation  (anglais) <img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a></li>
-            </ul>
-          </div>  
-        </section> <!-- #section01 --><div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
-        <section id="section02">
-        
-          <h2>Les ancres HTML pour naviguer dans un site monopage</h2>
-          <p>Contrairement aux hyperliens courants - qui permettent de naviger d'une page à l'autre -, les ancres HTML sont des liens qui permettent de naviguer à l'intérieur même d'une page HTML. Ils sont particulièrement utiles dans le cas d'une longue page HTML  ou encore dans le cas d'un site monopage, c'est-à-dire un site formé d'une seule page mais comportant plusieurs sections.</p>
-          <p>L'adresse du lien cliquable s'écrit ainsi (remarquez le <code class="rose">#</code> qui débute le nom de l'ancre)&nbsp;: </p>
-          <p class="code-etiquette">Exemple de lien vers une ancre</p>
-          <pre class="exemple-code">            &lt;a href=<span class="rose">"#biographie"</span>&gt;Lien vers mon ancre&lt;/a&gt;
-          </pre>
-          <p>La destination du lien est identifiée par un <code>id</code> inséré dans la balise ouvrante de l'élément HTML visé (souvent un élément de structure ou un titre). Comme ceci: </p>
-          <p class="code-etiquette">Exemple d'ancre (la destination)</p>
-          <pre class="exemple-code">&lt;article id=<span class="rose">"biographie"</span>&gt;...&lt;/article&gt;</pre>
-          <h3>Lien vers le haut de la page</h3>
-          <p>Dans une longue page HTML, il est fréquent de trouver un ou des liens pointant  vers le haut de la page. L'adresse de celui-ci s'écrit simplement ainsi : <code>#</code>. Dans ce cas, il n'est pas nécessaire d'ajouter une ancre de destination dans le haut de la page. Le lien vers le haut de la page s'écrit ainsi :</p>
-          <p class="code-etiquette">Exemple de lien vers le haut de la page</p>
-          <pre class="exemple-code">&lt;a href=<span class="rose">"#"</span>&gt;Lien vers le haut de la page&lt;/a&gt;</pre>
-          <p>Voyez maintenant un exemple complet d'un menu de trois liens menant vers des ancres plus loin dans la page. Cliquez sur l'un des liens pour constater&nbsp;:</p>
-          <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="JoGNRrP" data-pen-title="ancres HTML et retour en haut de page" data-editable="true" data-user="frlacroix" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-          <span>See the Pen <a href="https://codepen.io/frlacroix/pen/JoGNRrP">
-          ancres HTML et retour en haut de page</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://public.codepenassets.com/embed/index.js"></script>  
-        </section> <!-- section02 -->
-        <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
+             
         <section id="section03">
         
           <h2>Intégrer une vidéo avec les balises video et source</h2>
@@ -255,32 +207,7 @@
         </section> <!-- #section05 --><div class="haut-de-page">
             <a href="#">Haut de page</a>
           </div>
-        <section id="section05">
         
-          <h2>Le menu réactif</h2>
-          <p>Voici un exemple de menu réactif. En mode écran étroit, le premier lien du menu - qui est aussi le titre du site - prend toute la largeur. En mode écran large, ce lien côtoie les autres. Faites varier la largeur de la fenêtre pour constater la transformation. </p>
-          <p class="codepen" data-height="270" data-default-tab="html,result" data-slug-hash="WbrjGXM" data-pen-title="c08-menu01" data-editable="true" data-user="frlacroix" style="height: 270px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/WbrjGXM">
-  c08-menu01</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-        </section><!-- fin section06 --> <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
-        <section id="section06">
-       
-          <h2>La mise en forme alternée</h2>
-          <p>Pour mettre en forme de manière alternative une suite d'éléments (paragraphes, articles, lignes de tableau, etc.) on peut utiliser le pseudo-élément <code>nth-of-type</code> ou <code>nth-child</code> avec les modificateurs spécialisés '<code>odd</code>' (impair) et '<code>even</code>' (pair). </p>
-          <p class="codepen" data-height="430" data-default-tab="html,result" data-slug-hash="jEWmMax" data-pen-title="c09-nth-child" data-editable="true" data-user="frlacroix" style="height: 430px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/jEWmMax">
-  c09-nth-child</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-        </section><!-- fin section 07 --><div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
         <section id="section07">
         
           <h2>Tester la réactivité dans Chrome</h2>
