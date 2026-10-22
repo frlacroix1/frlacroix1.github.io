@@ -163,7 +163,7 @@
             <p>À partir du codepen suivant:</p>
             <ol>
               <li>Faites en sorte que la taille de la vidéo soit fluide et occupe 100% de la largeur de la fenêtre du navigateur, quelque soit cette largeur;</li>
-              <li>Faites disparaître la barre de contrôle de la vidéo;</li>
+              <li>Faites disparaître la barre de contrôle de la vidéo (<code style="text-decoration: line-through;">controls</code>);</li>
               <li>Faites jouer la vidéo automatiquement (<code>autoplay</code>);</li>
               <li>Rendez la vidéo muette (<code>muted</code>);</li>
               <li>Faites jouer la vidéo en boucle (<code>loop</code>);</li>
@@ -291,7 +291,7 @@
 </div>
                     
           <h4>Travail à faire</h4>
-          <p><a href="https://cegepsaintefoy.sharepoint.com/:v:/r/sites/INTGRATION1-A2025-gr.1/Documents%20partages/General/TP3-exemple.mp4?csf=1&web=1&e=5hZXYR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" class="btn btn-primary" role="button" target="_blank"><i class="bi bi-play-fill"></i> Visionnez un exemple de résultat final attendu</a></p>
+          <p><a href="https://youtube.com/shorts/7ptj4vZHzBM?feature=share" class="btn btn-primary" role="button" target="_blank"><i class="bi bi-play-fill"></i> Visionnez un exemple de résultat final attendu</a></p>
           <p>Créez votre dossier de travail et ouvrez-le dans <em>VSC</em>.</p>
           <p>Le travail consiste à créer un site monopage à partir des fichiers sources. </p>
           <p>Le résultat final doit ressembler à ceci (voir en classe pour la version interactive): </p>
@@ -368,7 +368,7 @@
           </ol>
           <p class="vert"><strong>/* POLICES LIÉES */</strong>
           </p><ul>  
-            <li>Vous devez lier deux polices de votre choix à partir de <a href="https://fonts.google.com/" target="_blank">Google Fonts&nbsp;<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a>. </li>
+            <li>Vous devez <strong>lier deux polices de votre choix</strong> à partir de <a href="https://fonts.google.com/" target="_blank">Google Fonts&nbsp;<img class="icone" src="images/cours08/lien_ext_noir_16px.png"></a>. </li>
             <li>Assurez-vous que les deux polices choisies s'harmonisent bien et contiennent les caractères dont vous avez besoin (accents, caractères spéciaux, etc.).</li>     
           </ul>
           <p class="vert"><strong>/* RÉINITIALISATION */</strong>
@@ -383,11 +383,19 @@
           <p>Rédigez la charte graphique de base sous le sélecteur <code>:root</code>.</p>
           <p>Elle doit comprendre au minimum :    </p>
           <ul>
-            <li>la police de caractère principale, soit celle qui sert pour le texte courant (il s'agit de l'une des polices choisies dans Google Fonts), en plus des polices alternatives et de la collection (sans-serif ou serif, selon votre choix);</li>
-            <li>la taille de caractère de base en "em";</li>
-            <li>la couleur de caractère la plus courante; </li>
-            <li>la hauteur de ligne la plus courante (sans unité).</li>
+            <li><strong>la police</strong> de caractère principale, soit celle qui sert pour le texte courant (il s'agit de l'une des polices choisies dans Google Fonts), en plus des polices alternatives et de la collection (sans-serif ou serif, selon votre choix);</li>
+            <li><strong>la taille</strong> de caractère de base en "em";</li>
+            <li><strong>la couleur</strong> de caractère la plus courante dans la page Web; </li>
+            <li><strong>la hauteur de ligne</strong> la plus courante (sans unité).</li>
         </ul>
+        <pre class="exemple-code"> :root {
+            &nbsp;&nbsp;<span class="rose">font-family: ;</span> /* la police de caractère principale */
+            &nbsp;&nbsp;<span class="rose">font-size: ;</span> /* la taille de caractère de base en "em"; */
+            &nbsp;&nbsp;<span class="rose">color: ;</span> /* la couleur de caractère la plus courante ; */ 
+            &nbsp;&nbsp;<span class="rose">line-height: 1.5;</span> /* la hauteur de ligne la plus courante  */ 
+            &nbsp;&nbsp;<span class="rose">scroll-behavior: smooth;</span> /* ralentit le délacement vers une ancre */
+            }
+          </pre>
         <div class="note">
           <p>Toutes les tailles de caractères subséquentes dans la feuille de style doivent être indiquées à l'aide de l'unité <code>em</code>.</p>
         </div>
@@ -400,7 +408,6 @@
                 <li>Établissez sa position à <code>top:0</code> et <code>left:0</code></li>
                 <li>Forcer son affichage au premier plan en utilisant <code>z-index:100</code></li>
               <li>Ajoutez une propriété pour que la largeur soit de 100%</li>
-              <li style="text-decoration: line-through;">Ajouter une hauteur de votre choix</li>  
               <li>Ajoutez une couleur d'arrière-plan</li>
             </ul>
           </li>
@@ -451,18 +458,26 @@
             <li>Avec <code>.footer</code>, transformez le footer en flex-container pour alignements ces trois élément. Cette section doit occuper <strong>au moins</strong> la hauteur de la fenêtre du navigateur</li>
             <li>La liste du menu comprend elle aussi trois éléments. Transformez le menu en <i>flex-container</i> afin d'aligner ces trois éléments. Ils doivent être d'abord alignés en colonne pour les écrans étroits, et alignés en rangée pour les écrans large à partir d'une certaine largeur.</li>
         </ol>
-        
-        <h3>&gt;&gt;&gt; DÉFILEMENT DE LA PAGE</h3>
-            <p>Vous avez sans doute remarqué qu'avec l'utilisation des ancres, on a parfois l'impression de quitter une page pour une autre en raison de l'instantanéïté du mouvement.</p>
-            <p>Vous devez adoucir le défilement de la page au clic d'un lien en utilisant la propriété <code>scroll-behavior</code> avec la valeur <code>smooth</code></p>
-            <p>Cette propriété est transmise vers les descendants, de telle sorte que pour l'appliquer au document en entier, il s'agit d'ajouter la déclaration <code>scroll-behavior:smooth</code> sous le sélecteur <code>:root</code> qui est déjà en place au début de la feuille de style.</p>
-            <h3>&gt;&gt;&gt; TESTEZ LA RÉACTIVITÉ</h3>
+        <h3>&gt;&gt;&gt; TESTEZ LA RÉACTIVITÉ</h3>
+         <p><a href="https://youtube.com/shorts/7ptj4vZHzBM?feature=share" class="btn btn-primary" role="button" target="_blank"><i class="bi bi-play-fill"></i> Visionnez un exemple de résultat final attendu</a></p>
+          
             <p>Utilisez le mode <i>Inspecter</i> dans Google Chrome pour tester la réactivité de votre site monopage. <br><a href="#section07">Voir les notes d'aujourd'hui</a>.</p>
-            <p>Lorsque vous est à votre goût, remettez une archive zip sur LÉA à l'endroit prévu.</p>
-        </section>  <!-- #sectionAE --> 
-                <div class="haut-de-page">
-            <a href="#">Haut de page</a>
-          </div>
+            <p>Lorsque le résultat est à votre goût, remettez une archive zip sur LÉA à l'endroit prévu.</p>
+        </section> 
+        <div class="tf" role="alert">
+                        <p class="tf-intitule">À faire avant la prochaine leçon</p>
+                        <ul>
+                            <li><strong>Finaliser le TP</strong> et le remettre <strong>sur LÉA au plus tard le mercredi 4 novembre à&nbsp;8h</strong>. <br>Svp prendre note: pénalité de 15% pour une remise en retard.</li>
+                
+                        </ul>
+                    </div>
+                    
+                
+                <footer>
+                    <div class="haut-de-page">
+                        <a href="#">Retour en haut de la page</a>
+                    </div>
+                </footer> 
             </article>
             </div>
             
