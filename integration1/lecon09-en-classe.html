@@ -127,7 +127,7 @@
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
           <br><p><strong>À noter : </strong></p>
           <ul>
-            <li>l'image affichée avant le démarrage de la vidéo de l'exemple précédent est l'mage désignée par l'attribut <code>poster</code>; en l'absence d'un  «poster», c'est la première image de la vidéo qui apparaît;</li>
+            <li>l'image affichée avant le démarrage de la vidéo de l'exemple précédent est l'image désignée par l'attribut <code>poster</code>; en l'absence d'un  «poster», c'est la première image de la vidéo qui apparaît;</li>
             <li>il arrive que des formats supplémentaires (comme .ogg ou autres), en plus de <em>MP4</em> et <em>Webm, </em>soient offerts dans l'élément <code>&lt;video&gt;</code>;</li>
             <li>Le texte alternatif contenu entre les balises <code>&lt;video&gt;</code> s'affiche dans la page HTML  dans la situation où le navigateur n'est pas compatible avec le lecteur vidéo HTML5;</li>
             <li>l'élément <code>&lt;video&gt;</code> est une balise « en ligne »;</li>
@@ -144,7 +144,7 @@
             <li>L'attribut&nbsp;<code>poster="url de l'image"</code>&nbsp;permet d'indiquer une&nbsp;image à afficher par défaut&nbsp;dans l'espace réservé à la vidéo avant que la lecture de celle-ci ne soit lancée. Comme on l'a vu, par défaut, c'est la première image de la vidéo qui sera affichée. Le format de l'image peut être <code>jpg</code>, <code>png</code> ou <code>gif</code>.</li>
             <li>L'attribut&nbsp;<code>loop</code>&nbsp;indique que la lecture se fait&nbsp;<strong>en boucle</strong>. Il est utile  dans le cas d'une courte boucle vidéo insérée dans une bannière.</li>
             <li>L'attribut&nbsp;<code>muted</code>&nbsp;permet de bloquer la diffusion du son de la vidéo.</li>
-            <li>L'attribut <code>type="video/format"</code> indique le <strong>type MIME</strong> du format de la vidéo. Sans cet attribut,  le navigateur télécharge un extrait de la vidéo pour en vérifier la prise en charge, ce qui ajoute un délai au démarrage de la lecture. Les types MIME les plus courants pour notre usage sont: video/mp4, video/webm, video/ogg.</li>
+            <li>L'attribut <code>type="video/<em>format</em>"</code> indique le <strong>type MIME</strong> du format de la vidéo. Sans cet attribut,  le navigateur télécharge un extrait de la vidéo pour en vérifier la prise en charge, ce qui ajoute un délai au démarrage de la lecture. Les types MIME les plus courants pour notre usage sont: video/mp4, video/webm, video/ogg.</li>
             <li>Les attributs <code>width</code> et <code>height</code> permettent de préciser en pixels la taille de la vidéo affichée au chargement. Puisque le lecteur vidéo HTML5 permet la lecture en plein écran, il peut être justifié que les fichiers sources demeurent par exemple au format 1280 x 720 même si la taille de l'affichage au chargement est de 640 x 360. Au final, la taille des fichiers sources est toujours fonction des appareils cibles à privilégier. </li>
           </ul>
           <h4>Formats</h4>
@@ -154,13 +154,15 @@
             <li><strong>H.264</strong> (codec vidéo MP4 et codec audio AAC);</li>
             <li><strong> VP8</strong> (codec vidéo WEBM et codec audio Vorbis).</li>
           </ul>
-          <div class="note">
-            <p>Voir cette page pour un tableau complet des compatibilités des formats vidéos:<br>
-            <a href="https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats" target="_blank">https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats</a></p>
-          </div>
           <div class="tf">
             <p class="tf-intitule" id="section03-video">Étude de cas: utiliser une boucle vidéo d'entête</p>
-            <p>À partir du codepen suivant:</p>
+            <p class="codepen" data-height="430" data-default-tab="html,result" data-slug-hash="LEGyROE" data-pen-title="c08_video-titre-superposé" data-editable="true" data-user="frlacroix" style="height: 430px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/LEGyROE">
+  c08_video-titre-superposé</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p><br>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+            <p>À partir du codepen suivant: <i class="bi bi-arrow-up"></i></p>
             <ol>
               <li>Faites en sorte que la taille de la vidéo soit fluide et occupe 100% de la largeur de la fenêtre du navigateur, quelque soit cette largeur;</li>
               <li>Faites disparaître la barre de contrôle de la vidéo (<code style="text-decoration: line-through;">controls</code>);</li>
@@ -177,12 +179,7 @@
               <figcaption>Résultat attendu : </figcaption>
               <img src="images/cours08/cours08_tf01_resultat.jpg" alt="tp8">
             </figure>
-          <p class="codepen" data-height="430" data-default-tab="html,result" data-slug-hash="LEGyROE" data-pen-title="c08_video-titre-superposé" data-editable="true" data-user="frlacroix" style="height: 430px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frlacroix/pen/LEGyROE">
-  c08_video-titre-superposé</a> by Frédéric Lacroix (<a href="https://codepen.io/frlacroix">@frlacroix</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
+          
             </div>
         </section> <!-- #section04 --> <div class="haut-de-page">
             <a href="#">Haut de page</a>
